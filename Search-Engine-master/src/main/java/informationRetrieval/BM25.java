@@ -12,10 +12,18 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 import java.util.StringTokenizer;
+import java.util.Vector;
 import java.util.Map.Entry;
 
 import org.jsoup.Jsoup;
@@ -104,7 +112,7 @@ public class BM25 {
 		File[] files = inputFolder.listFiles();
 		bm25.setNumDocs(files.length);
 		//String tempPath=System.getProperty("user.dir")+"/temp";
-		String tempPath="D:/hackathon/Search-Engine-master/temp";
+		String tempPath="temp/";
 
 		createDirectory(tempPath);
 		createDirectory(outputDir);
@@ -140,7 +148,7 @@ public class BM25 {
 		int stopIdx = 0;
 		
 		for(int i = name.length()-1; i>=0; i--){
-			if(name.charAt(i)=='\\')
+			if(name.charAt(i)=='/')
 			{
 				stopIdx = i;
 				break;
@@ -175,8 +183,32 @@ public class BM25 {
 	    }
 	    file.delete();
 	}
+
+
+	public static class MyProperties extends Properties {
+		private static final long serialVersionUID = 1L;
+	
+		public Enumeration<Object> keys() {
+			Enumeration<Object> keysEnum = super.keys();
+			Vector<Object> keyList = new Vector<Object>();
+	
+			while (keysEnum.hasMoreElements()) {
+				keyList.add(keysEnum.nextElement());
+			}
+	
+			Collections.sort(keyList, new Comparator<Object>() {
+				@Override
+				public int compare(Object o1, Object o2) {
+					return ((Double) o2).compareTo((Double) o1);
+					
+				}
+			});
+	
+			return keyList.elements();
+		}
+	}
 	private static void writeTempTokenFile(HashMap<String,Integer> freqMapForFile, String filePath) {
-		Properties properties = new Properties();
+		MyProperties properties = new MyProperties();
 
 		for(Entry<String, Integer> entry: freqMapForFile.entrySet()) {
 			properties.put(entry.getKey(), entry.getValue().toString());
@@ -228,12 +260,15 @@ public class BM25 {
 				e.printStackTrace();
 			}
 			//write into one file at a time
-			writeTokenFile(scoreMapPerFile,outputFolder.toString()+"/"+prop.getName());
+			HashMap<String,Double> tscoreMapPerFile=sortByValue(scoreMapPerFile);
+			writeTokenFile(tscoreMapPerFile,outputFolder.toString()+"/"+prop.getName());
+			
 			//iterate over properties of prop file
 		}
 
 	}
 	private static void writeTokenFile(HashMap<String,Double> freqMapForFile, String filePath) {
+		
 		Properties properties = new Properties();
 
 		for(Entry<String, Double> entry: freqMapForFile.entrySet()) {
@@ -849,4 +884,46 @@ public class BM25 {
 		stopWords.add("no");
 		return stopWords;
 	}
+
+
+	public static HashMap<String, Double> sortByValue(HashMap<String, Double> hm)
+    {
+        // Create a list from elements of HashMap
+        List<Map.Entry<String, Double> > list =
+               new LinkedList<Map.Entry<String, Double> >(hm.entrySet());
+ 
+        // Sort the list
+        Collections.sort(list, new Comparator<Map.Entry<String, Double> >() {
+            public int compare(Map.Entry<String, Double> o1,
+                               Map.Entry<String, Double> o2)
+            {
+                return (o2.getValue()).compareTo(o1.getValue());
+            }
+        });
+         
+        // put data from sorted list to hashmap
+        HashMap<String, Double> temp = new LinkedHashMap<String, Double>();
+        for (Map.Entry<String, Double> aa : list) {
+            temp.put(aa.getKey(), aa.getValue());
+        }
+
+		System.out.println("Unsorted:::");
+		int i=0;
+		for (Map.Entry<String, Double> aa : hm.entrySet()) {
+
+            System.out.println(aa.getKey()+" = "+aa.getValue());
+			i++;
+			if(i==5)break;
+        }
+
+		i=0;
+		System.out.println("Sorted:::::::::::::");
+		for (Map.Entry<String, Double> aa : temp.entrySet()) {
+
+            System.out.println(aa.getKey()+" = "+aa.getValue());
+			i++;
+			if(i==5)break;
+        }
+        return temp;
+    }
 }

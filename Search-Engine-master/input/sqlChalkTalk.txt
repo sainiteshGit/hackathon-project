@@ -1,0 +1,151 @@
+eff Dickman0:07
+Can everybody see my screen?
+CG
+Chandra Prakash Garg0:12
+Yes, I can.
+JD
+Jeff Dickman0:13
+Awesome.
+OK so.
+Today we're talking about a little adventure Leechi had.
+
+Rishabh Sachdeva joined the meeting
+
+Diana Chang joined the meeting
+JD
+Jeff Dickman0:24
+During her life site supporting Canary.
+And basically it.
+Boiled down to something I had done to break Canary and how.
+It we can't have it fail because it ran successfully the first time it needs to run every time successfully and so you can test that actually in your scripts.
+Like if I come here, I'll just run the scripts.
+Ran great the first time.
+Broke the second time.
+Now the good news is.
+We have a unit test.
+Project.
+This hydrate databases unit test it would have caught that bug and and and this script would have failed merge validation because it actually tests for item potency. It runs all of the scripts and then it wipes the database version state and then runs all of the scripts again and if any errors are detected.
+The test fails and so that would fail merge validation. So you you would never be able to commit this to master.
+So you can rest easy with that knowledge, but yeah.
+Good catch, Chandra.
+Any questions at this point, I just wanted to.
+Call this out as as a little sequel adventure we had yesterday and thought it would be a good refresher course on the how and the why of some things that we do and yeah.
+OK, well, that's all I've got for today.
+So thanks to everybody for attending.
+RS
+Rishabh Sachdeva19:35
+I I Jeff, I have a quick question.
+JD
+Jeff Dickman19:37
+Ohh yeah hey.
+RS
+Rishabh Sachdeva19:39
+So what what I'm trying to understand is the significance of these bunch of dot SQL files.
+I mean.
+Uh, you were saying that when you did the same thing manually in the SQL Server you were saying that this is not the way to go ahead and we should write these SQL scripts and whatnot, so I mean.
+What is the difference between the these two processes?
+JD
+Jeff Dickman20:02
+So.
+This was what I did manually where I did it, right click and delete right. That was a one off hack we have.
+80 different availability groups, right? Go going in and manually updating the database schema in all 80 of our availability groups.
+Just wouldn't scale and then and then you get into the situation where we're not running the same code everywhere.
+And.
+You know it's it's, it's not something that we, you know we we we can let happen. I've I've worked on teams where that has happened and it's awful.
+RS
+Rishabh Sachdeva20:36
+Right. OK. And.
+JD
+Jeff Dickman20:45
+Was you get into the situation where you can't fix bugs because you don't know what's running anywhere.
+RS
+Rishabh Sachdeva20:46
+OK.
+Right. And when are these uh dot SQL files executed in production?
+JD
+Jeff Dickman20:53
+Yeah.
+So they are executed by a micro service called hydrate databases. So I'm popping into XTS right now and if you look at a dsms, OK, this is.
+RS
+Rishabh Sachdeva21:09
+What's 60 years?
+JD
+Jeff Dickman21:10
+Uh, XTS is the uh control plane for autopilot and pilotfish.
+So this is this is our view into all of the machines that are running. So if we look, here's the dsms SQL machine that's running in one of our environments.
+
+Tyler Sorrels left the meeting
+JD
+Jeff Dickman21:27
+And if I just drill into this, I'm gonna.
+Right click and say machine view.
+And up in the upper right hand pane you can see all of the.
+Microservices that we have running inside of this machine and if I type HYD to filter.
+We can see that there's a hydrate databases service running there.
+And we can even drill into the logs on that. I'm just going to double click on the machine, double click local logs, and then I'm gonna filter the logs by dsms dash I can see.
+The logs for.
+Hydrate databases.
+And so basically what this is doing is.
+Ah, it it'll be called out in detail in this.
+Wiki here the the service is waking up.
+RS
+Rishabh Sachdeva22:34
+OK.
+JD
+Jeff Dickman22:37
+Every minute and then it's looking at the scripts in the folder that got deployed with the service and then seeing if any of them need to run.
+And the way it knows that is by querying this DB schema version table.
+RS
+Rishabh Sachdeva22:56
+Umm.
+JD
+Jeff Dickman22:57
+So if we select the top.
+That and my machine locks up.
+But if my machine hadn't been locked up, what you would have seen was, oh, there you go. So I can see it on my saw, but not on the actual machine. That's funny.
+You can see all of the scripts that have run.
+And and so.
+RS
+Rishabh Sachdeva23:20
+OK.
+JD
+Jeff Dickman23:22
+It's a little bit small for my.
+For me to read, but I think it says we're at VO23.
+Or maybe 22?
+RS
+Rishabh Sachdeva23:31
+Yeah. Yes, it says 22.
+JD
+Jeff Dickman23:33
+OK. Yeah. So I've been testing a bunch of other stuff with different branches and such so but anyways, so hydrate databases wakes up and so like if we just deployed the new version that had version 23 it would go hey my database that I'm running against right now is a version 22, but I've got a V23 script here. I better run that and then it would run it and if it ran successfully it would update this table to say yeah now I'm a version 23.
+And if it ran unsuccessfully, it would also update that with a with an unsuccessful marker, and then that would be a signal to itself in the future to keep trying to run this script until it succeeds.
+And so that's how we do.
+A schema versioning and then.
+Basically, we're managing our schema versions in code the same place that we're managing our C code.
+Now that makes it a little bit difficult to understand what the schema version looks like, because when you look at our code, we have all of these scripts and what the database schema looks like is.
+What you see after all of these scripts have been run. You can't just look at one script and go ohh, that's what the database looks like because there may have been a script that came after it that.
+Layered something on top of that. So typically what I'll do is I'll run unit tests that will run the hydrate databases and then I can just pop into my local database and I can see what does everything look like.
+RS
+Rishabh Sachdeva25:13
+OK. Yeah.
+And and also if you don't mind, can you paste the link of that wiki URL and the chat?
+JD
+Jeff Dickman25:21
+Absolutely.
+RS
+Rishabh Sachdeva25:44
+Awesome. Thank you.
+JD
+Jeff Dickman25:45
+Yeah.
+So yeah, and so the reason this fix is important to get in before the June release right is.
+If we didn't make that fix, then that foreign key would get installed everywhere in production over the course of about a week.
+And then we'd have a big mess on our hands.
+RS
+Rishabh Sachdeva26:15
+OK.
+JD
+Jeff Dickman26:29
+Cool. Any other questions?
+OK, I'm gonna go ahead and stop recording here.

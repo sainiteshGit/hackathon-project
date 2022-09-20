@@ -1,0 +1,2471 @@
+0:0:0.0 --> 0:0:3.630 
+Jackie Kajdzik 
+OK, so first of all, let me share my screen. 
+
+0:0:6.590 --> 0:0:7.730 
+Jackie Kajdzik 
+Yeah. OK. 
+
+0:0:9.70 --> 0:0:14.180 
+Jackie Kajdzik 
+So today we're going to talk about just the get help management portal. 
+
+0:0:14.970 --> 0:0:20.600 
+Jackie Kajdzik 
+And so let me go over here and I'm gonna go to get help. 
+
+0:0:21.490 --> 0:0:22.130 
+Jackie Kajdzik 
+Umm. 
+
+0:0:25.240 --> 0:0:34.670 
+Jackie Kajdzik 
+And provide a little bit of background first. So this website is this site was built years and years and years ago. 
+
+0:0:36.760 --> 0:0:58.230 
+Jackie Kajdzik 
+I would say at least 5-6 years ago um. And since that time it has not been upgraded on the technical end at all, so it's using really old versions of DLLS. It's using net for .8. I think it's an MVC app. 
+
+0:0:59.430 --> 0:1:2.500 
+Jackie Kajdzik 
+And and as you can see the UI. 
+
+0:1:2.940 --> 0:1:5.470 
+Jackie Kajdzik 
+Uh is also very, very dated. 
+
+0:1:6.310 --> 0:1:6.910 
+Jackie Kajdzik 
+Now. 
+
+0:1:7.810 --> 0:1:14.600 
+Jackie Kajdzik 
+I say all of this, the people that use this system have no problem with it. They think it's great. 
+
+0:1:15.420 --> 0:1:29.410 
+Jackie Kajdzik 
+Umm so. So basically this system it mean it is a case management system. We have concepts of a queue. So we have these customer service and support teams that. 
+
+0:1:30.760 --> 0:1:44.360 
+Jackie Kajdzik 
+Are set-up in here and they will take each of these cases and they will work them just like you would a normal support case. So let me and and stop me anytime if you have questions. 
+
+0:1:45.770 --> 0:2:0.900 
+Jackie Kajdzik 
+So I'm just going to open up a case so that you can see this case detail page is kind of the guts of what this application does. So for example we have keys details. 
+
+0:2:3.220 --> 0:2:6.370 
+Jackie Kajdzik 
+In this tab we have status where they can fill out. 
+
+0:2:7.10 --> 0:2:7.480 
+Jackie Kajdzik 
+Uh. 
+
+0:2:8.660 --> 0:2:14.810 
+Jackie Kajdzik 
+You know, with each step that it takes to work these cases, they fill out like what the next steps are. 
+
+0:2:16.560 --> 0:2:23.610 
+Jackie Kajdzik 
+You know, this is the impact, you know, whether it's, I mean these are the types of things that cause impact. 
+
+0:2:24.460 --> 0:2:32.170 
+Jackie Kajdzik 
+You know, as you know, their system completely down, they can't deploy, it's a sales blocker, a legal blocker. 
+
+0:2:33.880 --> 0:2:51.90 
+Jackie Kajdzik 
+And then they can add references to other cases, right? So if there's, you know, a case in defram a case in rave, and then we also have other like sales systems that have cases, they could be listed here as well. 
+
+0:2:52.490 --> 0:2:58.190 
+Jackie Kajdzik 
+And then if we look at so this is the customer that this is for, right, so. 
+
+0:2:59.280 --> 0:3:19.170 
+Jackie Kajdzik 
+Umm, you know the customer segments that we have in this system are commercial partner and it says consumer, but it's actually executive cases and I'll talk about those later, but then it'll have what company, so the company name and then we also have the primary contacts. 
+
+0:3:20.310 --> 0:3:21.0 
+Jackie Kajdzik 
+4. 
+
+0:3:22.760 --> 0:3:26.560 
+Jackie Kajdzik 
+That customer, so we've got their name, e-mail and phone number. 
+
+0:3:27.940 --> 0:3:35.200 
+Jackie Kajdzik 
+And because we store this types of information and you know we also have. 
+
+0:3:35.890 --> 0:3:39.660 
+Jackie Kajdzik 
+You know these descriptions like this description here. 
+
+0:3:41.320 --> 0:3:42.500 
+Jackie Kajdzik 
+You know we. 
+
+0:3:43.310 --> 0:3:48.100 
+Jackie Kajdzik 
+Any type of information can be put in here. As you can see, there's an e-mail address. 
+
+0:3:48.490 --> 0:3:53.240 
+Jackie Kajdzik 
+Uh, you know, this looks like I don't know if it's a license key for office. 
+
+0:3:53.400 --> 0:4:23.650 
+Jackie Kajdzik 
+Umm, you know, so that sensitive information and so because we capture all of this, this system is subject to what we call EU shrimps and that means that any data for a customer that is within the EU that starting January 1, all of their information has to reside in EU regions. So today this application is deployed to just the United States. 
+
+0:4:24.140 --> 0:4:34.290 
+Jackie Kajdzik 
+Umm, but we did a bunch of work last month to create a completely separate instance of this whole system that resides just in the EU. 
+
+0:4:36.790 --> 0:4:39.850 
+Jackie Kajdzik 
+But I'm just going to demo one of them because they're exactly the same. 
+
+0:4:41.390 --> 0:4:43.650 
+Jackie Kajdzik 
+So other features of this system. 
+
+0:4:44.190 --> 0:4:48.0 
+Jackie Kajdzik 
+Umm is, so you can always view the case history. 
+
+0:4:48.800 --> 0:4:50.990 
+Jackie Kajdzik 
+You know, these are changes that. 
+
+0:4:52.720 --> 0:4:54.280 
+Jackie Kajdzik 
+Maybe there's not one for this. 
+
+0:4:57.160 --> 0:4:57.600 
+Jackie Kajdzik 
+Log. 
+
+0:4:59.570 --> 0:5:2.980 
+Jackie Kajdzik 
+See. Yeah. So anytime anything changes about the case. 
+
+0:5:4.150 --> 0:5:4.900 
+Jackie Kajdzik 
+It's tracked. 
+
+0:5:6.40 --> 0:5:11.90 
+Jackie Kajdzik 
+And then a huge part of this system is e-mail. 
+
+0:5:12.270 --> 0:5:28.750 
+Jackie Kajdzik 
+So within the system, you know, anytime the case owner is changed, the new case owner will get an e-mail anytime the queue you know for this case is changed that the owners of the queue will also get an e-mail. 
+
+0:5:29.400 --> 0:5:30.100 
+Jackie Kajdzik 
+Umm. 
+
+0:5:31.20 --> 0:5:32.100 
+Jackie Kajdzik 
+You know when a case is. 
+
+0:5:30.760 --> 0:5:32.300 
+Olga Ermolova 
+Check how many queues the we have. 
+
+0:5:32.790 --> 0:5:33.230 
+Jackie Kajdzik 
+Pardon. 
+
+0:5:33.690 --> 0:5:35.10 
+Olga Ermolova 
+Come when you killed, that would have. 
+
+0:5:36.50 --> 0:5:36.790 
+Jackie Kajdzik 
+Umm. 
+
+0:5:37.930 --> 0:5:38.590 
+Jackie Kajdzik 
+I actually. 
+
+0:5:38.10 --> 0:5:39.630 
+Olga Ermolova 
+Each team has its own right. 
+
+0:5:40.120 --> 0:5:43.770 
+Jackie Kajdzik 
+Yeah, I'll have to look here so. 
+
+0:5:43.130 --> 0:5:45.70 
+Olga Ermolova 
+And technically what you means? 
+
+0:5:46.360 --> 0:5:47.100 
+Jackie Kajdzik 
+What does it mean? 
+
+0:5:46.370 --> 0:5:54.350 
+Olga Ermolova 
+Is a different. Yeah. Is it the technically new you from where API will read it and push it to database or not? 
+
+0:5:55.550 --> 0:5:55.800 
+Olga Ermolova 
+No. 
+
+0:5:54.580 --> 0:6:0.850 
+Jackie Kajdzik 
+No, no, no, no, no. When we talk about a queue, we're talking about a team, right? 
+
+0:6:0.410 --> 0:6:6.740 
+Olga Ermolova 
+To adjust like from business logic right, there are no technical queue from. Yeah, yeah, you understood. 
+
+0:6:8.970 --> 0:6:9.270 
+Olga Ermolova 
+Mm-hmm. 
+
+0:6:2.610 --> 0:6:11.430 
+Jackie Kajdzik 
+Correct it. No, it's not a technical queue. It's more of, you know case routing, right. So you know if. 
+
+0:6:10.880 --> 0:6:16.840 
+Olga Ermolova 
+So they still all will go to the same database right to the same tables. Mm-hmm. OK, thank you. 
+
+0:6:14.580 --> 0:6:24.10 
+Jackie Kajdzik 
+Correct, correct. Yeah. But you know, depending on like the types of cases, right? So if it's a licensing? 
+
+0:6:24.410 --> 0:6:33.80 
+Jackie Kajdzik 
+Umm, a licensing question for Asia. Then it'll go to this team if it's in the Americas, it'll it'll route to this queue. 
+
+0:6:34.0 --> 0:6:34.650 
+Olga Ermolova 
+OK, OK. 
+
+0:6:35.130 --> 0:6:38.190 
+Jackie Kajdzik 
+Yeah. And so yeah, it looks like. 
+
+0:6:38.940 --> 0:6:40.210 
+Jackie Kajdzik 
+We have 29 cues. 
+
+0:6:41.930 --> 0:6:42.290 
+Olga Ermolova 
+Mm-hmm. 
+
+0:6:42.900 --> 0:6:49.660 
+Jackie Kajdzik 
+And so in each of these cues, there's people assigned, right? So that you can look at team membership. 
+
+0:6:52.340 --> 0:6:53.990 
+Jackie Kajdzik 
+And you can see. 
+
+0:6:56.370 --> 0:6:59.690 
+Jackie Kajdzik 
+You know you can see who's who's in these types of cues. 
+
+0:7:5.860 --> 0:7:22.970 
+Jackie Kajdzik 
+Right. And this is all, so our business, it actually comes in here and they works in this area, right? So if they wanna go in and change SLA's or add a new queue, add add some programs or products, they can do that. 
+
+0:7:27.920 --> 0:7:33.390 
+Jackie Kajdzik 
+Umm. So back to let me just search for one of my cases, because then I won't risk. 
+
+0:7:34.170 --> 0:7:35.580 
+Jackie Kajdzik 
+Doing anything dumb. 
+
+0:7:36.250 --> 0:7:37.180 
+Jackie Kajdzik 
+On a real case. 
+
+0:7:41.680 --> 0:8:11.590 
+Jackie Kajdzik 
+What's a search for me? And you can see this is very up to date. Some of the pages look, you know, it looks like they've had a little bit of an uplift, but again, it's still, I mean we still have this right. I mean it's just it's not been kept up to date in the problem is it's really, really difficult to make any changes in this system. And I'll show you why. But hey, so here's one of my cases that I created. I can click on it. 
+
+0:8:12.110 --> 0:8:12.730 
+Jackie Kajdzik 
+Umm. 
+
+0:8:13.730 --> 0:8:14.460 
+Jackie Kajdzik 
+So. 
+
+0:8:15.220 --> 0:8:20.540 
+Jackie Kajdzik 
+Let's see. So what happens here for e-mail? So I can create? 
+
+0:8:21.830 --> 0:8:22.680 
+Jackie Kajdzik 
+An e-mail. 
+
+0:8:23.880 --> 0:8:32.310 
+Jackie Kajdzik 
+It takes a while, so we have all these templates right? We'll just say a generic template and we just want. 
+
+0:8:33.650 --> 0:8:36.50 
+Jackie Kajdzik 
+You know, whatever. And you hit continue. 
+
+0:8:37.310 --> 0:8:38.690 
+Jackie Kajdzik 
+And then it'll actually. 
+
+0:8:41.330 --> 0:8:41.820 
+Jackie Kajdzik 
+Really. 
+
+0:8:46.460 --> 0:8:46.750 
+Jackie Kajdzik 
+Right. 
+
+0:8:51.520 --> 0:8:52.110 
+Jackie Kajdzik 
+I hate this. 
+
+0:8:55.560 --> 0:9:1.390 
+Jackie Kajdzik 
+So that the phone thing would be an option, but now you have to enter your password before it'll ping your phone. 
+
+0:9:2.700 --> 0:9:3.610 
+Jackie Kajdzik 
+It's really annoying. 
+
+0:9:5.330 --> 0:9:6.770 
+Jackie Kajdzik 
+Sorry, I've got to approve it. 
+
+0:9:9.490 --> 0:9:12.830 
+Jackie Kajdzik 
+And do you both already have the Authenticator app on your phones? 
+
+0:9:13.840 --> 0:9:14.110 
+Olga Ermolova 
+Yeah. 
+
+0:9:14.740 --> 0:9:15.170 
+Jackie Kajdzik 
+OK. 
+
+0:9:14.0 --> 0:9:15.470 
+Sai Nitesh Palamakula 
+Yes, we did so. 
+
+0:9:15.980 --> 0:9:16.530 
+Jackie Kajdzik 
+OK, good. 
+
+0:9:17.250 --> 0:9:17.840 
+Jackie Kajdzik 
+Umm. 
+
+0:9:18.530 --> 0:9:18.870 
+Jackie Kajdzik 
+No. 
+
+0:9:19.530 --> 0:9:21.220 
+Jackie Kajdzik 
+That's for the Sass website. 
+
+0:9:23.110 --> 0:9:26.440 
+Jackie Kajdzik 
+OK. So we'll go here. 
+
+0:9:28.90 --> 0:9:32.460 
+Jackie Kajdzik 
+Ohh yeah it was creating again now which and this always opens in another screen. 
+
+0:9:33.330 --> 0:9:34.460 
+Jackie Kajdzik 
+Which is a pain. 
+
+0:9:35.360 --> 0:9:37.10 
+Jackie Kajdzik 
+Don't create the e-mail. 
+
+0:9:37.820 --> 0:9:38.650 
+Jackie Kajdzik 
+Naric. 
+
+0:9:42.260 --> 0:9:43.220 
+Jackie Kajdzik 
+Continue. 
+
+0:9:48.60 --> 0:9:51.520 
+Jackie Kajdzik 
+Oh oh, and it downloads it OK. 
+
+0:9:52.140 --> 0:9:53.820 
+Jackie Kajdzik 
+So then you open this thing up. 
+
+0:9:55.620 --> 0:10:6.30 
+Jackie Kajdzik 
+And it has this template in it, but this will be you know I can send this e-mail to anybody, right? So I can put customers in here. 
+
+0:10:7.240 --> 0:10:16.360 
+Jackie Kajdzik 
+You know, there's some information here, but I can add whatever I want, right? And this e-mail is sent from my mailbox, OK. 
+
+0:10:17.180 --> 0:10:20.250 
+Jackie Kajdzik 
+Now part of this system now. 
+
+0:10:20.870 --> 0:10:26.800 
+Jackie Kajdzik 
+For privacy and security, this is a horrible way to do things absolutely horrible. 
+
+0:10:27.940 --> 0:10:44.40 
+Jackie Kajdzik 
+What should happen is that all communications should remain in the tool, right? So I should be able to at mention somebody in a note or something or some comments and then that person would also go to the tool to work the problem. 
+
+0:10:44.720 --> 0:11:9.870 
+Jackie Kajdzik 
+That is not how it works today. Some of these emails contain, you know, customer verbatim. So what the customer put in those fields, it can contains, you know customer e-mail, I mean all kinds of stuff. So but the business 100% relies on this to do business. Everything is done via e-mail. So because of that. 
+
+0:11:10.940 --> 0:11:24.370 
+Jackie Kajdzik 
+All of these emails that you generate from the system, they CC this mailbox and they contain, you know, this case, tracking information. And so this is just you know. 
+
+0:11:25.250 --> 0:11:34.560 
+Jackie Kajdzik 
+I'll say encrypted, but it's not strongly encrypted and encrypted string that contains what case this is for right? So when I. 
+
+0:11:36.300 --> 0:11:37.780 
+Jackie Kajdzik 
+When I send this e-mail. 
+
+0:11:38.620 --> 0:11:44.940 
+Jackie Kajdzik 
+Great. It'll send it also to this mailbox, so I'll go ahead and send because it's my case. 
+
+0:11:45.800 --> 0:11:48.20 
+Jackie Kajdzik 
+Umm so then what happens? 
+
+0:11:49.380 --> 0:11:50.670 
+Jackie Kajdzik 
+I'll go to my e-mail. 
+
+0:11:52.670 --> 0:11:54.460 
+Jackie Kajdzik 
+We'll go to the mailbox. 
+
+0:11:56.300 --> 0:11:58.380 
+Jackie Kajdzik 
+See if it'll open without Outlook crashing. 
+
+0:12:8.880 --> 0:12:9.890 
+Jackie Kajdzik 
+Yeah, it's gonna crash. 
+
+0:12:15.460 --> 0:12:16.550 
+Jackie Kajdzik 
+There's not refreshing. 
+
+0:12:18.60 --> 0:12:19.140 
+Jackie Kajdzik 
+Let's see. 
+
+0:12:20.390 --> 0:12:20.930 
+Jackie Kajdzik 
+1st. 
+
+0:12:31.240 --> 0:12:31.610 
+Jackie Kajdzik 
+Yeah. 
+
+0:12:36.420 --> 0:12:39.200 
+Jackie Kajdzik 
+I don't know why it's not showing up here, but anyway. 
+
+0:12:40.330 --> 0:12:54.20 
+Jackie Kajdzik 
+I've been having a lot of outlook problems, so all of those additional boxes haven't haven't been opening properly, but you know, here's the e-mail that I sent and so now when I go back to the tool. 
+
+0:12:54.670 --> 0:12:57.660 
+Jackie Kajdzik 
+And I look at, you know, Keith history. 
+
+0:13:0.360 --> 0:13:1.600 
+Jackie Kajdzik 
+That e-mail should show up. 
+
+0:13:3.200 --> 0:13:5.670 
+Jackie Kajdzik 
+713 at 11:00 AM. 
+
+0:13:6.770 --> 0:13:22.490 
+Jackie Kajdzik 
+So there's that now. And So what happens is we have a job that goes out and connects to that mailbox and picks up all of the the emails and and adds them to the system. 
+
+0:13:25.100 --> 0:13:29.540 
+Jackie Kajdzik 
+And if there's these emails aren't being added to the system, it's a big deal. 
+
+0:13:30.320 --> 0:13:33.770 
+Jackie Kajdzik 
+Umm, we had a sev two like a week or so ago. 
+
+0:13:34.760 --> 0:13:47.220 
+Jackie Kajdzik 
+Where one of our vendors, Taruna, accidentally turned off those jobs. And so for like 12 hours, these emails weren't coming in. And there are SLA's on. 
+
+0:13:48.480 --> 0:13:56.290 
+Jackie Kajdzik 
+On these emails being sent in a timely manner, so all of the SLA's were wrong because the system wasn't updating. 
+
+0:13:57.930 --> 0:14:7.140 
+Olga Ermolova 
+Ticket and the information about this e-mail. This is about e-mail was triggered or about e-mail was actually received right? Because on the last mile. 
+
+0:14:8.180 --> 0:14:18.710 
+Olga Ermolova 
+Get help on something right? And e-mail was not excellion landed on the mailbox. So in such situation this information on the system still will be presented or not. 
+
+0:14:19.240 --> 0:14:19.560 
+Jackie Kajdzik 
+No. 
+
+0:14:20.990 --> 0:14:22.170 
+Jackie Kajdzik 
+So if it if. 
+
+0:14:21.160 --> 0:14:30.740 
+Olga Ermolova 
+So it will look like it will look like it was sent right, despite it was not actually received on the system. We still will consider that e-mail was sent. This is sent. 
+
+0:14:36.740 --> 0:14:37.20 
+Olga Ermolova 
+Umm. 
+
+0:14:29.490 --> 0:14:44.630 
+Jackie Kajdzik 
+Yeah, because the only way we know that an e-mail was even sent was because that mailbox was CC. Now the person that opens that e-mail to send it if they remove the mailbox, we'll never know that what whatever they did with it. 
+
+0:14:44.870 --> 0:14:48.320 
+Olga Ermolova 
+That is how we know, because we copy that CT. 
+
+0:14:48.780 --> 0:14:50.60 
+Jackie Kajdzik 
+Yeah, and and that's. 
+
+0:14:49.550 --> 0:14:52.80 
+Olga Ermolova 
+And by that case, I see, right? Mm-hmm. 
+
+0:14:52.620 --> 0:14:54.230 
+Jackie Kajdzik 
+Yeah. And it's not a deal. 
+
+0:14:55.680 --> 0:15:3.290 
+Jackie Kajdzik 
+I mean, you know, for privacy sake, you know, all of this stuff should be done within the tool, right, because. 
+
+0:15:4.300 --> 0:15:11.550 
+Jackie Kajdzik 
+You you have to be authenticated to look at this you have to be, you know, have to be members of these queues to even see these cases. 
+
+0:15:12.660 --> 0:15:13.40 
+Jackie Kajdzik 
+But when? 
+
+0:15:12.260 --> 0:15:17.210 
+Olga Ermolova 
+So you mean that in long term we want to have our own communication service inside of this tool? 
+
+0:15:19.990 --> 0:15:20.550 
+Jackie Kajdzik 
+Sorry I was. 
+
+0:15:20.250 --> 0:15:25.380 
+Olga Ermolova 
+Instead of emails instead of emails, you want to have internal communication tool. 
+
+0:15:26.30 --> 0:15:28.110 
+Jackie Kajdzik 
+Yes, I I would love to do that. 
+
+0:15:35.990 --> 0:15:36.390 
+Jackie Kajdzik 
+Yes. 
+
+0:15:28.590 --> 0:15:36.850 
+Olga Ermolova 
+I can Facebook right you go to messages, right? And all that messages. They are visible only inside of Facebook. So the same like here, right some separate. 
+
+0:15:37.330 --> 0:15:37.750 
+Jackie Kajdzik 
+Yeah. 
+
+0:15:37.800 --> 0:15:38.630 
+Olga Ermolova 
+Indication. 
+
+0:15:39.380 --> 0:15:40.730 
+Olga Ermolova 
+Service. Mm-hmm. 
+
+0:15:38.810 --> 0:15:50.440 
+Jackie Kajdzik 
+Something because the problem is, is that when I go to create this e-mail, you know, I mean there's a lot of templates and a lot of it contains, you know, customer information. 
+
+0:16:1.250 --> 0:16:1.440 
+Jackie Kajdzik 
+No. 
+
+0:15:50.830 --> 0:16:3.590 
+Olga Ermolova 
+And do they know what template they're looking for? It's example. I don't understand you and Lauren, right? You did now four templates, but here I see on your mail type much more than much. More than four. What does that mean? 
+
+0:16:1.520 --> 0:16:5.980 
+Jackie Kajdzik 
+Yeah, so, so these emails are not covered by MEO. 
+
+0:16:6.660 --> 0:16:11.290 
+Jackie Kajdzik 
+Because they're generated for download that the customer sends themselves. 
+
+0:16:12.420 --> 0:16:14.550 
+Jackie Kajdzik 
+Right. So we don't need MO to do that. 
+
+0:16:15.790 --> 0:16:19.170 
+Olga Ermolova 
+OK, then who is what service responsible for changing this templates? 
+
+0:16:19.980 --> 0:16:21.630 
+Jackie Kajdzik 
+Your outlook mailbox. 
+
+0:16:22.670 --> 0:16:26.760 
+Jackie Kajdzik 
+Right. So when I hit continue, it downloads the e-mail right here. 
+
+0:16:27.520 --> 0:16:32.270 
+Jackie Kajdzik 
+It creates it, you open it and this is in your outlook mailbox. 
+
+0:16:34.490 --> 0:16:34.900 
+Jackie Kajdzik 
+Yeah. 
+
+0:16:32.590 --> 0:16:40.600 
+Olga Ermolova 
+Ohh and it's responsible for that. Templates which are being sent behind the hood, right? 
+
+0:16:41.570 --> 0:16:42.230 
+Jackie Kajdzik 
+Yeah. So. 
+
+0:16:42.960 --> 0:16:48.500 
+Jackie Kajdzik 
+So the get help code will generate this file with the template already added. 
+
+0:16:48.960 --> 0:16:49.430 
+Olga Ermolova 
+Mm-hmm. 
+
+0:16:49.850 --> 0:16:50.860 
+Jackie Kajdzik 
+And then at this point. 
+
+0:16:50.170 --> 0:16:58.60 
+Olga Ermolova 
+And I myself, I myself send it and e-mail is responsible for such type of templates when like task was assigned right. 
+
+0:16:58.690 --> 0:17:0.750 
+Jackie Kajdzik 
+Yeah. So the the MEO stuff. 
+
+0:17:5.110 --> 0:17:6.120 
+Olga Ermolova 
+OK, understood. 
+
+0:17:1.770 --> 0:17:7.80 
+Jackie Kajdzik 
+Is just for the system automated emails, so things like the cases assigned. 
+
+0:17:11.770 --> 0:17:12.90 
+Olga Ermolova 
+Umm. 
+
+0:17:7.960 --> 0:17:12.820 
+Jackie Kajdzik 
+And Umm, you know, the case is closed. Here's a survey. You know, stuff like that. 
+
+0:17:14.170 --> 0:17:18.820 
+Jackie Kajdzik 
+But the vast majority of the emails out of get help are generated this way. 
+
+0:17:19.510 --> 0:17:19.870 
+Olga Ermolova 
+Mm-hmm. 
+
+0:17:20.120 --> 0:17:25.550 
+Jackie Kajdzik 
+And so you know, again if I remove this then get, it'll never come into the history. 
+
+0:17:25.970 --> 0:17:26.500 
+Olga Ermolova 
+Umm. 
+
+0:17:26.530 --> 0:17:34.270 
+Jackie Kajdzik 
+But what I don't like is that you know this can contain sensitive information and you know I can just, I can add anybody I want. 
+
+0:17:34.960 --> 0:17:39.490 
+Jackie Kajdzik 
+I could add my husband, who works at a different whole different company. 
+
+0:17:40.400 --> 0:17:45.430 
+Olga Ermolova 
+And why we can't uh connect it with MEO as well for such type of emails? 
+
+0:17:46.70 --> 0:17:46.560 
+Jackie Kajdzik 
+Umm. 
+
+0:17:49.230 --> 0:17:51.350 
+Jackie Kajdzik 
+We could. It would take. 
+
+0:17:52.180 --> 0:17:52.630 
+Jackie Kajdzik 
+Well. 
+
+0:17:53.480 --> 0:17:55.130 
+Jackie Kajdzik 
+I don't know if we even could. 
+
+0:17:59.980 --> 0:18:0.360 
+Jackie Kajdzik 
+Yes. 
+
+0:17:55.700 --> 0:18:6.240 
+Olga Ermolova 
+There's some small template right? So this template should be very very simple, right? Just like some text and this text can be then sent on the payload to trigger that e-mail. 
+
+0:18:4.740 --> 0:18:33.830 
+Jackie Kajdzik 
+Yes, so the the problem with using MO in this situation is you know, MEO does not like it. If I say I wanna template where I control you know I can put whatever I want as the subject and I can put whatever I want in the body they want everything parameterized so that you know, they can ensure that the proper data is being sent. So if I wanna say. 
+
+0:18:36.990 --> 0:18:37.220 
+Sai Nitesh Palamakula 
+Yeah. 
+
+0:18:34.750 --> 0:18:48.990 
+Jackie Kajdzik 
+You know, hey, dump all of the details into the case here, you know? Sure. I could build a giant string and put it in here, but MEO has a problem with that. Their editors will come back and say no, no, no. 
+
+0:18:49.670 --> 0:19:0.350 
+Jackie Kajdzik 
+No, these need to be highly highly template tized and the way that this is used today is they can put whatever they want here they add a bunch of stuff to this. 
+
+0:19:1.0 --> 0:19:6.90 
+Olga Ermolova 
+And understood. So in a way you template e-mail says emails based on the template. 
+
+0:19:6.730 --> 0:19:7.110 
+Jackie Kajdzik 
+Yes. 
+
+0:19:7.550 --> 0:19:9.130 
+Olga Ermolova 
+Pre approved that would say right? 
+
+0:19:9.470 --> 0:19:9.750 
+Jackie Kajdzik 
+Yeah. 
+
+0:19:10.330 --> 0:19:11.860 
+Olga Ermolova 
+Not just flexible. 
+
+0:19:13.310 --> 0:19:13.870 
+Olga Ermolova 
+Mm-hmm. 
+
+0:19:14.210 --> 0:19:15.650 
+Jackie Kajdzik 
+Yeah, I mean, I. 
+
+0:19:16.430 --> 0:19:19.130 
+Jackie Kajdzik 
+I absolutely hate that it opens up an outlook. 
+
+0:19:20.290 --> 0:19:22.430 
+Jackie Kajdzik 
+Right, this should be done within the tool. 
+
+0:19:23.570 --> 0:19:29.330 
+Jackie Kajdzik 
+They fill in this template and then we let emio handle it. That would be ideal. 
+
+0:19:30.270 --> 0:19:38.380 
+Olga Ermolova 
+Well, if we have a long term strategy to rebuild the stolen at least face up this tool right then the probably can sync through it once again. 
+
+0:19:37.30 --> 0:19:39.50 
+Jackie Kajdzik 
+Yes, yes, yeah. 
+
+0:19:40.40 --> 0:19:41.320 
+Jackie Kajdzik 
+Yeah. So. 
+
+0:19:42.630 --> 0:19:47.320 
+Jackie Kajdzik 
+So that's kind of the end of my demo of what the tool does. 
+
+0:19:50.640 --> 0:19:50.870 
+Jackie Kajdzik 
+Sure. 
+
+0:19:58.850 --> 0:20:0.880 
+Jackie Kajdzik 
+The attachment is then added to the system. 
+
+0:20:12.860 --> 0:20:13.260 
+Jackie Kajdzik 
+Yep. 
+
+0:20:13.310 --> 0:20:14.600 
+Sai Nitesh Palamakula 
+Respective of attachment. 
+
+0:20:14.700 --> 0:20:15.190 
+Jackie Kajdzik 
+Yep. 
+
+0:20:15.690 --> 0:20:27.300 
+Sai Nitesh Palamakula 
+OK, OK. And one other question I have is so in general to get into the portal, who can get into this portal of get help? 
+
+0:20:28.280 --> 0:20:29.310 
+Jackie Kajdzik 
+You have to be. 
+
+0:20:30.290 --> 0:20:32.420 
+Jackie Kajdzik 
+Actually, I don't think you guys have even been added yet. 
+
+0:20:35.350 --> 0:20:37.910 
+Jackie Kajdzik 
+So you have to be added to a queue. 
+
+0:20:39.680 --> 0:20:41.280 
+Jackie Kajdzik 
+So let me see. 
+
+0:20:42.30 --> 0:20:43.100 
+Jackie Kajdzik 
+No I want. 
+
+0:20:55.870 --> 0:20:56.340 
+Jackie Kajdzik 
+Umm. 
+
+0:20:44.270 --> 0:21:2.660 
+Sai Nitesh Palamakula 
+So for example, let's say if so, whenever some request is, will get created here, right? Who is the person who the will be creating the request in this portal? Is it like a end user customer or from the internal Microsoft support team? 
+
+0:21:7.370 --> 0:21:7.760 
+Sai Nitesh Palamakula 
+OK. 
+
+0:21:1.740 --> 0:21:13.550 
+Jackie Kajdzik 
+No, so so the memberships here are managed by the business. So business folks like Chris, Ben Lewis, there's another lady named Tamra. 
+
+0:21:16.880 --> 0:21:17.70 
+Sai Nitesh Palamakula 
+Yeah. 
+
+0:21:14.710 --> 0:21:17.450 
+Jackie Kajdzik 
+They are the ones that come in here and manage this. 
+
+0:21:20.150 --> 0:21:22.130 
+Jackie Kajdzik 
+So let me actually let me add you. 
+
+0:21:22.830 --> 0:21:23.550 
+Jackie Kajdzik 
+Umm. 
+
+0:21:25.180 --> 0:21:26.990 
+Jackie Kajdzik 
+Olga, what's your alias? 
+
+0:21:27.550 --> 0:21:32.790 
+Olga Ermolova 
+Olga Ermolova, Olga or LAERM? 
+
+0:21:34.830 --> 0:21:36.590 
+Olga Ermolova 
+ERM LOL. 
+
+0:21:37.410 --> 0:21:42.390 
+Olga Ermolova 
+No, no, no, after MOOLO. 
+
+0:21:44.160 --> 0:21:45.140 
+Olga Ermolova 
+So VAT. 
+
+0:21:45.570 --> 0:21:46.10 
+Jackie Kajdzik 
+OK. 
+
+0:21:49.50 --> 0:21:51.780 
+Jackie Kajdzik 
+Ohh I didn't put it in the right spot. I wonder if it's not coming. 
+
+0:21:53.320 --> 0:21:53.550 
+Jackie Kajdzik 
+Right. 
+
+0:21:57.650 --> 0:21:58.740 
+Jackie Kajdzik 
+OK, there you are. 
+
+0:21:59.950 --> 0:22:2.820 
+Jackie Kajdzik 
+It's so I'm gonna add you as a global admin. 
+
+0:22:3.400 --> 0:22:6.660 
+Jackie Kajdzik 
+Umm, you also have work as. 
+
+0:22:7.880 --> 0:22:11.640 
+Jackie Kajdzik 
+And then in order for you to get in, I have to add you to a team. 
+
+0:22:12.470 --> 0:22:13.280 
+Jackie Kajdzik 
+Umm. 
+
+0:22:14.630 --> 0:22:17.650 
+Jackie Kajdzik 
+This is their engineering 1 update. 
+
+0:22:18.570 --> 0:22:18.880 
+Sai Nitesh Palamakula 
+You need. 
+
+0:22:18.630 --> 0:22:20.40 
+Jackie Kajdzik 
+Insane. Ohh. 
+
+0:22:22.230 --> 0:22:23.650 
+Jackie Kajdzik 
+We're all dispatchers. 
+
+0:22:25.500 --> 0:22:32.30 
+Jackie Kajdzik 
+OK, so all right, now you should be able to go to r2.azurewebsites.net and you should be able to get in. 
+
+0:22:35.200 --> 0:22:36.40 
+Jackie Kajdzik 
+Umm. 
+
+0:22:38.90 --> 0:22:38.940 
+Jackie Kajdzik 
+Let me see. 
+
+0:22:39.880 --> 0:22:42.600 
+Jackie Kajdzik 
+I'll make a note to add the rest of the team. 
+
+0:22:44.210 --> 0:22:44.920 
+Jackie Kajdzik 
+And. 
+
+0:22:47.560 --> 0:22:48.440 
+Jackie Kajdzik 
+It's you. 
+
+0:22:49.210 --> 0:22:49.590 
+Sai Nitesh Palamakula 
+Who? 
+
+0:22:50.0 --> 0:22:54.710 
+Jackie Kajdzik 
+To earn to and I'll also need to add you to our dev environment and our test environment. 
+
+0:22:56.310 --> 0:23:1.20 
+Jackie Kajdzik 
+OK, so so that was kind of the demo. Now I'm gonna go into. 
+
+0:23:1.590 --> 0:23:4.630 
+Jackie Kajdzik 
+Umm the code and the database. 
+
+0:23:5.330 --> 0:23:5.960 
+Jackie Kajdzik 
+Umm. 
+
+0:23:6.660 --> 0:23:10.490 
+Jackie Kajdzik 
+Well and Azure. So first of all. 
+
+0:23:13.40 --> 0:23:16.510 
+Jackie Kajdzik 
+We put in a lock box request so that I can get up there. 
+
+0:23:21.280 --> 0:23:22.980 
+Jackie Kajdzik 
+One, OK. 
+
+0:23:24.130 --> 0:23:27.820 
+Jackie Kajdzik 
+And after a while you just learn the UM subscription ID. 
+
+0:23:41.200 --> 0:23:50.890 
+Jackie Kajdzik 
+And then So what happens now is that Lauren and Hanaro will get a notification on their phone, and they have to approve the lock box request before I can do anything. 
+
+0:23:53.960 --> 0:24:1.110 
+Jackie Kajdzik 
+Which again for DRI is not ideal because then if I'm woken up at 3:00 AM, then I have to call a team member. 
+
+0:24:2.390 --> 0:24:4.830 
+Jackie Kajdzik 
+At 3:00 AM and say hey approved my lock box. 
+
+0:24:7.470 --> 0:24:9.60 
+Jackie Kajdzik 
+So let me go in. 
+
+0:24:18.940 --> 0:24:25.750 
+Jackie Kajdzik 
+Yeah, so logging in with torus, you don't go to the regular portal login screen or Azure login screen. 
+
+0:24:26.190 --> 0:24:31.900 
+Jackie Kajdzik 
+Umm everything for Taurus environment is they put this in front of it. 
+
+0:24:32.590 --> 0:24:39.280 
+Jackie Kajdzik 
+And so then I have to log in with my UB key, um, which the UB keys you have to actually touch them to turn them on. 
+
+0:24:40.250 --> 0:24:41.590 
+Jackie Kajdzik 
+And then you have a pin. 
+
+0:24:46.290 --> 0:24:50.520 
+Jackie Kajdzik 
+And then I elevated with an admin account. So I'm going to select it here. 
+
+0:24:54.340 --> 0:24:56.190 
+Jackie Kajdzik 
+And this will bring me to. 
+
+0:24:58.700 --> 0:24:59.100 
+Jackie Kajdzik 
+Portal. 
+
+0:25:3.280 --> 0:25:6.880 
+Jackie Kajdzik 
+OK. So we look at resource groups. 
+
+0:25:7.660 --> 0:25:8.280 
+Jackie Kajdzik 
+Umm. 
+
+0:25:9.800 --> 0:25:19.930 
+Jackie Kajdzik 
+And this I've cleaned up a lot of the resources in here, but all of the primary resources for the application are in this resource group. 
+
+0:25:20.820 --> 0:25:24.690 
+Jackie Kajdzik 
+And so I can kind of go down, go down the line and show you. 
+
+0:25:25.310 --> 0:25:52.10 
+Jackie Kajdzik 
+Umm, so we have 5 app services that are part of this. So R2 is the one that I showed you. There's an API that goes along with it that communicates with like my system and other systems. Then there's the web jobs and those are the ones that control that e-mail stuff. Those are the jobs that pull from the mailbox and add them to the database for example. 
+
+0:25:52.870 --> 0:25:53.290 
+Olga Ermolova 
+Umm. 
+
+0:25:52.670 --> 0:26:4.70 
+Jackie Kajdzik 
+Then we have this old thing, which I think we can get rid of it that we need to do some analysis, but it's basically one page and all it does is pull information. 
+
+0:26:4.740 --> 0:26:13.650 
+Jackie Kajdzik 
+So I don't know why we can't make it part of this, because we can make a separate section of R and two that doesn't require special permissions. 
+
+0:26:15.370 --> 0:26:15.930 
+Jackie Kajdzik 
+Umm. 
+
+0:26:15.720 --> 0:26:22.490 
+Olga Ermolova 
+Will you mean that we need to get rid from the CPI or we need to revoke them and make just one API instead of you? 
+
+0:26:22.880 --> 0:26:26.930 
+Jackie Kajdzik 
+Yeah, like this, both of these, these things are. 
+
+0:26:29.310 --> 0:26:30.950 
+Jackie Kajdzik 
+The remnants of when. 
+
+0:26:31.690 --> 0:26:35.760 
+Jackie Kajdzik 
+This this application used to be the place where you submitted cases. 
+
+0:26:37.600 --> 0:26:39.720 
+Jackie Kajdzik 
+So escalation front door took over that. 
+
+0:26:40.570 --> 0:26:41.0 
+Olga Ermolova 
+Umm. 
+
+0:26:40.770 --> 0:26:44.710 
+Jackie Kajdzik 
+But there was like a couple pages that were still left that they wanted to use. 
+
+0:26:45.470 --> 0:26:50.410 
+Jackie Kajdzik 
+And so because of that, we have, you know this and this API that are left. 
+
+0:26:51.540 --> 0:26:56.950 
+Jackie Kajdzik 
+And I think this could be integrated easily into UEMUM. 
+
+0:26:57.940 --> 0:27:0.600 
+Jackie Kajdzik 
+You know, or even the existing escalation front door. 
+
+0:27:2.110 --> 0:27:4.220 
+Jackie Kajdzik 
+But again, we just need time for. 
+
+0:27:6.410 --> 0:27:9.640 
+Jackie Kajdzik 
+Ah, you know to do some analysis, right? 
+
+0:27:9.370 --> 0:27:9.870 
+Olga Ermolova 
+Mm-hmm. 
+
+0:27:11.760 --> 0:27:17.570 
+Jackie Kajdzik 
+So then we have all of the slots, so the staging slots for the app services. 
+
+0:27:18.500 --> 0:27:20.500 
+Jackie Kajdzik 
+And that's just for ease of deployment. 
+
+0:27:22.50 --> 0:27:24.930 
+Jackie Kajdzik 
+App service plans and then all the. 
+
+0:27:24.300 --> 0:27:30.570 
+Olga Ermolova 
+Is it deployment of what part of Portal or of escalation creation of escalation? 
+
+0:27:29.520 --> 0:27:34.520 
+Jackie Kajdzik 
+No. So so this is all just the get help management side? 
+
+0:27:38.20 --> 0:27:38.950 
+Olga Ermolova 
+OK. Mm-hmm. 
+
+0:27:35.310 --> 0:27:39.630 
+Jackie Kajdzik 
+The escalations are in a separate subscription escalation. Front door is separate. 
+
+0:27:41.660 --> 0:27:42.300 
+Jackie Kajdzik 
+Umm. 
+
+0:27:43.870 --> 0:27:56.470 
+Jackie Kajdzik 
+And then we have. So this is the Azure data factory that we've been talking about that has, you know, all of the feeds that we get from the CALC team and that that are imported to our database. 
+
+0:27:57.20 --> 0:27:57.480 
+Olga Ermolova 
+Umm. 
+
+0:27:57.900 --> 0:28:0.830 
+Jackie Kajdzik 
+Umm, so and it's there's a ton of stuff in here. 
+
+0:28:1.320 --> 0:28:1.730 
+Olga Ermolova 
+Mm-hmm. 
+
+0:28:1.450 --> 0:28:11.990 
+Jackie Kajdzik 
+Umm. And then we have, you know, just your standard stuff. We've got log analytics, we've got key vaults, and then all of the databases, the servers. 
+
+0:28:30.110 --> 0:28:30.490 
+Olga Ermolova 
+Umm. 
+
+0:28:14.120 --> 0:28:42.310 
+Jackie Kajdzik 
+You know for for our main databases we actually replicate them to another region. So you'll see these replicas here and those are controlled by Azure SQL. So it moves all the data itself. We don't have to do anything. So that if this guy goes down, then you know it's immediately this guy. If this guy goes down right here, then this guy immediately takes over. 
+
+0:28:43.600 --> 0:28:44.310 
+Jackie Kajdzik 
+Uh, that's. 
+
+0:28:43.920 --> 0:28:46.510 
+Olga Ermolova 
+And the will how often replica happens. 
+
+0:28:47.440 --> 0:28:50.450 
+Jackie Kajdzik 
+Umm, it's live. I mean it's like real time. 
+
+0:28:51.770 --> 0:28:52.80 
+Jackie Kajdzik 
+Yeah. 
+
+0:28:50.690 --> 0:28:54.970 
+Olga Ermolova 
+In the same time, OK. And this is synchronously or asynchronously. 
+
+0:28:55.660 --> 0:28:56.180 
+Olga Ermolova 
+You know. 
+
+0:28:55.610 --> 0:29:0.200 
+Jackie Kajdzik 
+Umm, I don't know because Azure SQL actually manages it. 
+
+0:29:0.680 --> 0:29:1.80 
+Olga Ermolova 
+Mm-hmm. 
+
+0:29:5.570 --> 0:29:5.910 
+Olga Ermolova 
+Umm. 
+
+0:29:1.560 --> 0:29:6.980 
+Jackie Kajdzik 
+All we do is, I mean in SQL you can just say create a replica and then it does everything for you. 
+
+0:29:7.160 --> 0:29:7.570 
+Olga Ermolova 
+Umm. 
+
+0:29:10.0 --> 0:29:13.60 
+Jackie Kajdzik 
+And then the only thing other things are just all the storage accounts. 
+
+0:29:15.40 --> 0:29:27.880 
+Jackie Kajdzik 
+So the what I really wanted to show is, you know beyond this like I said earlier today, we're only deployed into West US two. So West US two goes down. 
+
+0:29:28.330 --> 0:29:31.120 
+Jackie Kajdzik 
+Umm. Then this whole thing is. 
+
+0:29:32.750 --> 0:29:39.140 
+Jackie Kajdzik 
+Is down, right? So what we need is to create, you know a second instance. 
+
+0:29:39.440 --> 0:29:41.810 
+Jackie Kajdzik 
+Uh, in another US region. 
+
+0:29:43.380 --> 0:29:46.430 
+Jackie Kajdzik 
+And then here this is our EU instance. 
+
+0:29:47.550 --> 0:29:51.370 
+Jackie Kajdzik 
+That we just created and that one, you know, I put some. 
+
+0:29:52.850 --> 0:29:58.180 
+Jackie Kajdzik 
+You know standard naming conventions because a lot of this stuff is just like default or whatever. 
+
+0:30:0.330 --> 0:30:4.760 
+Jackie Kajdzik 
+And so for some of this, we've got no that one, the one that's MC, OK. 
+
+0:30:5.860 --> 0:30:16.920 
+Jackie Kajdzik 
+Sweden central is where you know all of the apps are some of the SQL Server stuff and then they put I they put some stuff in France. 
+
+0:30:17.860 --> 0:30:20.660 
+Jackie Kajdzik 
+Yeah, they did. They put the data factory in France. 
+
+0:30:22.550 --> 0:30:31.840 
+Jackie Kajdzik 
+And the reason that these are in different regions is because because these subscriptions are are technically internal subscriptions. 
+
+0:30:34.0 --> 0:30:44.160 
+Jackie Kajdzik 
+We there's limits on the number of resource resource types that we can have in each region. So for example, like during the beginning of COVID. 
+
+0:30:45.180 --> 0:30:56.0 
+Jackie Kajdzik 
+You know Azure was just being hammered with people on boarding, moving their workloads to the cloud, onboarding to teams. And so you know. 
+
+0:30:56.660 --> 0:31:6.540 
+Jackie Kajdzik 
+Azure was completely stretched and for like a month or two. If I wanted to even create an app service anywhere I was denied because they needed the resources. 
+
+0:31:8.230 --> 0:31:21.60 
+Jackie Kajdzik 
+So it could be kind of a pain in the **** because they don't really tell you that you can't create something in a region. You just try and create it and it'll say, you know you have zero of zero quota for this resource type. 
+
+0:31:24.510 --> 0:31:30.140 
+Jackie Kajdzik 
+Umm. OK. So the other thing, the one thing that I really wanted to show was the database. 
+
+0:31:31.620 --> 0:31:36.870 
+Jackie Kajdzik 
+So you know how I showed logging into Taurus, right? You have to do. 
+
+0:31:37.990 --> 0:31:53.830 
+Jackie Kajdzik 
+You know the lock box request. It has to be approved and then you have to authenticate again to get into the actual portal. Now that should also be the case for the databases. So for the EU instance for example. 
+
+0:31:55.480 --> 0:32:10.620 
+Jackie Kajdzik 
+You know that that's true. So for this one, I absolutely have to be elevated. I have to be on my saw workstation, right. If I try to go to this database outside of the saw, it's gonna it's gonna bark at me and say no. 
+
+0:32:11.490 --> 0:32:23.270 
+Jackie Kajdzik 
+Umm, now one of the issues we have with the current production database for get help is it's still resides in the Microsoft tenant, not the torus tenant. 
+
+0:32:24.60 --> 0:32:34.750 
+Jackie Kajdzik 
+Umm. And this is something I've wanted to fix for a long time, it just it just has not been a priority. So right now I'm gonna go back to my regular machine. 
+
+0:32:35.970 --> 0:32:36.920 
+Jackie Kajdzik 
+I can open. 
+
+0:32:37.590 --> 0:32:41.400 
+Jackie Kajdzik 
+Ohh, sequel shut down last night. Let me give a chance to open again. 
+
+0:32:44.0 --> 0:32:44.580 
+Jackie Kajdzik 
+Umm. 
+
+0:32:46.530 --> 0:32:47.80 
+Jackie Kajdzik 
+Come on. 
+
+0:32:49.120 --> 0:32:50.650 
+Jackie Kajdzik 
+Sorry, it's on my other screen. 
+
+0:32:51.720 --> 0:32:52.100 
+Jackie Kajdzik 
+I can't. 
+
+0:32:52.720 --> 0:32:55.240 
+Jackie Kajdzik 
+Getting here ohh approve. 
+
+0:32:59.870 --> 0:33:0.150 
+Jackie Kajdzik 
+OK. 
+
+0:33:11.570 --> 0:33:11.980 
+Jackie Kajdzik 
+OK. 
+
+0:33:23.300 --> 0:33:25.580 
+Jackie Kajdzik 
+So as you can see on my machine. 
+
+0:33:26.140 --> 0:33:35.680 
+Jackie Kajdzik 
+Umm my regular dev machine, I didn't have to authenticate to torus, I didn't have to have a lock box request. I can come in here and go to the production database. 
+
+0:33:36.780 --> 0:33:56.250 
+Jackie Kajdzik 
+This is, you know, a huge violation of policy. Um, so one of the things that I'd like to do now that the EU shrimp stuff is wrapped up and we can go back to focusing on fundamentals is this whole database needs to be moved from the Microsoft tenant to the torus tenant. 
+
+0:33:58.740 --> 0:34:1.750 
+Jackie Kajdzik 
+But again, that's a big impact. 
+
+0:34:3.760 --> 0:34:8.990 
+Jackie Kajdzik 
+So let me show you first of all, the number of tables in this database. 
+
+0:34:9.950 --> 0:34:10.470 
+Jackie Kajdzik 
+Now. 
+
+0:34:9.910 --> 0:34:15.510 
+Olga Ermolova 
+And what does that mean to move through Microsoft tenant to torus tenant? What exactly have to be done? 
+
+0:34:16.260 --> 0:34:30.230 
+Jackie Kajdzik 
+What what needs to be done honestly is it's you. Go in and change the administrator from somebody that's in the Microsoft tenant and you switch it to somebody in the torus tenant and then that moves the authentication. 
+
+0:34:31.90 --> 0:34:33.510 
+Jackie Kajdzik 
+The whole authentication model will move to that tenant. 
+
+0:34:36.120 --> 0:34:40.470 
+Jackie Kajdzik 
+So I mean it's a simple change, um, but like. 
+
+0:34:39.850 --> 0:34:44.480 
+Olga Ermolova 
+But who who it can be? Do we have such administrator? Who is administrator here and there? 
+
+0:34:45.500 --> 0:34:51.150 
+Jackie Kajdzik 
+I you know anyone that has Taurus access to our system can do it. 
+
+0:34:52.940 --> 0:34:59.680 
+Jackie Kajdzik 
+It's just that, you know, all of the things that are connecting to this database are all using Microsoft tenant. 
+
+0:35:0.290 --> 0:35:3.620 
+Jackie Kajdzik 
+Umm. Identities. So if we look at all the users. 
+
+0:35:4.880 --> 0:35:7.380 
+Jackie Kajdzik 
+So all of these these will need to be switched. 
+
+0:35:7.930 --> 0:35:30.940 
+Jackie Kajdzik 
+Umm, now this is just like our team, but we have, you know, CSS BI. This is the escalation front door, the get help production environment is a service principal in the Microsoft tenant. So the and this is the primary way the application talks to the database. 
+
+0:35:31.560 --> 0:35:34.730 
+Jackie Kajdzik 
+We'd also have to switch this to torus and. 
+
+0:35:35.710 --> 0:35:44.140 
+Jackie Kajdzik 
+We have not had time to actually test what this is gonna look like and and document every single thing we need to change at the time of the switch. 
+
+0:35:56.710 --> 0:35:57.30 
+Jackie Kajdzik 
+Yep. 
+
+0:35:46.830 --> 0:36:8.860 
+Olga Ermolova 
+So basically we need to sync get through all these systems. What that means for all of them to change this authentication process right? Then we need to schedule when we want to do it and by that time all these systems so who who have to go first they have to update their transition or we have to move database and then they updated translation or they should happen on the same time. 
+
+0:36:10.540 --> 0:36:11.120 
+Olga Ermolova 
+Basically. 
+
+0:36:9.580 --> 0:36:22.190 
+Jackie Kajdzik 
+Yeah. So So what our original plan was was to not actually do anything and touch this database, but what we were gonna do is create a second replica. 
+
+0:36:25.850 --> 0:36:26.310 
+Olga Ermolova 
+Mm-hmm. 
+
+0:36:22.900 --> 0:36:33.950 
+Jackie Kajdzik 
+Great, because that copies everything over, and then when we're ready to make the switch, we will take the website down South. No additional data can be written to the database. 
+
+0:36:34.310 --> 0:36:34.710 
+Olga Ermolova 
+Mm-hmm. 
+
+0:36:34.540 --> 0:36:35.170 
+Jackie Kajdzik 
+Umm. 
+
+0:36:36.20 --> 0:37:1.20 
+Jackie Kajdzik 
+And then on the replica database that will also be in the Microsoft tenant. So we'll take that, that, that replica database, break, break, break replication, which will then make that database writable. Then we'll go in and run a script that updates all of the security switches, everything from Toronto, from Microsoft accounts to Taurus account. 
+
+0:37:2.260 --> 0:37:12.610 
+Jackie Kajdzik 
+And then then we'll bring up. We'll change all the connection strings and the key vaults so that we bring the application back up and it's talking. It's now talking to the new torus system. 
+
+0:37:14.620 --> 0:37:18.300 
+Jackie Kajdzik 
+It seems fairly straightforward, but you know. 
+
+0:37:19.60 --> 0:37:34.660 
+Jackie Kajdzik 
+Because get help is such a minefield, it's and everyone that's working on it has no historical knowledge of what what is involved with this system. So we're pretty much flying by the seat of our pants every time we make a change. 
+
+0:37:35.80 --> 0:37:37.660 
+Olga Ermolova 
+And can we make this exercise first on past? 
+
+0:37:40.110 --> 0:37:40.540 
+Jackie Kajdzik 
+Yes. 
+
+0:37:38.500 --> 0:37:43.470 
+Olga Ermolova 
+Not directly in production and testing production only. This works then to do the same in production. 
+
+0:37:43.10 --> 0:37:46.20 
+Jackie Kajdzik 
+Yes, and we so. 
+
+0:37:46.710 --> 0:37:59.640 
+Jackie Kajdzik 
+The previous set of vendors, the ones that actually built the system, they did it in the test environment, so the test environment is already in torus, but of course they didn't document what changes needed to be made. 
+
+0:38:0.460 --> 0:38:4.590 
+Jackie Kajdzik 
+So we need to figure that out, which I think we know. 
+
+0:38:7.20 --> 0:38:9.490 
+Jackie Kajdzik 
+But again, we would need to do some dry runs. 
+
+0:38:10.110 --> 0:38:12.750 
+Jackie Kajdzik 
+Just to make sure that we're 100%. 
+
+0:38:18.470 --> 0:38:24.210 
+Jackie Kajdzik 
+And I'll show you the rest of my list of all of the things that need to change. 
+
+0:38:27.90 --> 0:38:33.0 
+Jackie Kajdzik 
+But so for instance, so this is all of the tables in get help right now. 
+
+0:38:33.880 --> 0:38:35.750 
+Jackie Kajdzik 
+I mean, there's over 600 of them. 
+
+0:38:36.580 --> 0:38:41.730 
+Jackie Kajdzik 
+And I I really don't think that we're using all 600. 
+
+0:38:43.580 --> 0:38:57.200 
+Jackie Kajdzik 
+You know, every time the system was changed or upgraded, you know the old tables were left intact. They were never cleaned up. Plus a bunch of tables have like these backups created. 
+
+0:38:58.780 --> 0:39:5.620 
+Jackie Kajdzik 
+And I don't know why those were made it they must have been doing, you know, some schema change or something and wanted to have a backup of it. 
+
+0:39:6.960 --> 0:39:10.50 
+Jackie Kajdzik 
+But again, once they were done, it was never deleted. 
+
+0:39:10.900 --> 0:39:14.390 
+Jackie Kajdzik 
+So I mean, all of this stuff needs to be purged. 
+
+0:39:16.300 --> 0:39:23.250 
+Jackie Kajdzik 
+Because like case product history, this is related to a case. This is case data and we can't keep that. 
+
+0:39:24.30 --> 0:39:31.840 
+Jackie Kajdzik 
+Umm so yeah, though all of those need to be purged. And then there's just a bunch of stuff in here that I know we're not using anymore. 
+
+0:39:32.340 --> 0:39:52.690 
+Jackie Kajdzik 
+Umm. But again, that all has to be verified. So not just with all of these tables, right? Which is? I mean, there's a bazillion of them, but then you look at all of the views. So if we start dropping tables, we also need to make sure that we're not breaking views that are currently in use. 
+
+0:39:53.690 --> 0:39:56.50 
+Jackie Kajdzik 
+Umm. Again hundreds of those. 
+
+0:39:57.880 --> 0:40:18.30 
+Jackie Kajdzik 
+And and the real problem with with get help is that you know, like I mentioned earlier, the code is ancient, but the vast majority of the logic, the code, the logic code for the application has been written in the database. It's written in all of these stored procedures. 
+
+0:40:18.740 --> 0:40:26.880 
+Jackie Kajdzik 
+And you know, you can see the scroll bar. I mean is there is just tons and tons and tons of them and you know most of these. 
+
+0:40:27.540 --> 0:40:36.910 
+Jackie Kajdzik 
+You know are not just simple hey out of product to the list or get the list of products. It's these massive joins and. 
+
+0:40:39.250 --> 0:40:43.600 
+Jackie Kajdzik 
+Some of them call additional stored procedures and we also have function. 
+
+0:40:42.780 --> 0:40:44.570 
+Olga Ermolova 
+Would you please show some examples? 
+
+0:40:44.860 --> 0:40:47.100 
+Jackie Kajdzik 
+Yeah, let me let me find a good one. 
+
+0:40:47.800 --> 0:40:52.770 
+Jackie Kajdzik 
+So like P, you want PK's get case details, right? 
+
+0:40:59.990 --> 0:41:0.480 
+Jackie Kajdzik 
+Where is it? 
+
+0:41:3.870 --> 0:41:4.470 
+Jackie Kajdzik 
+Here we go. 
+
+0:41:13.520 --> 0:41:15.890 
+Jackie Kajdzik 
+Peak case insert, so this is adding a case. 
+
+0:41:17.210 --> 0:41:17.760 
+Jackie Kajdzik 
+Now. 
+
+0:41:33.330 --> 0:41:39.260 
+Jackie Kajdzik 
+So so for example, so when you're inserting a brand new case, obviously there's gonna be a ton of parameters, right? 
+
+0:41:39.800 --> 0:41:40.260 
+Olga Ermolova 
+Mm-hmm. 
+
+0:41:40.410 --> 0:41:45.500 
+Jackie Kajdzik 
+And so you can see all those here, but then you know, there's just tons of logic. 
+
+0:41:46.140 --> 0:41:51.530 
+Jackie Kajdzik 
+Right. So they they select a bunch of stuff, they declare more variables. 
+
+0:41:52.120 --> 0:41:52.800 
+Olga Ermolova 
+Umm. 
+
+0:41:52.110 --> 0:41:56.480 
+Jackie Kajdzik 
+Uh and more variables and you know. 
+
+0:41:58.150 --> 0:42:4.980 
+Jackie Kajdzik 
+You know you're still selecting. I mean, eventually you'll get to an insert, but there's just so much stuff in here. 
+
+0:42:6.380 --> 0:42:9.460 
+Jackie Kajdzik 
+And again, I don't know what's being used in here. 
+
+0:42:11.680 --> 0:42:13.270 
+Olga Ermolova 
+But how we to test this? 
+
+0:42:14.30 --> 0:42:14.670 
+Jackie Kajdzik 
+Exactly. 
+
+0:42:15.660 --> 0:42:16.390 
+Jackie Kajdzik 
+There's there's. 
+
+0:42:17.30 --> 0:42:26.510 
+Jackie Kajdzik 
+Yeah, I don't there's, I mean, we don't have. I mean, if we try to create unit tests and whatnot, you know, I don't know how we do that for all of this logic being in the database. 
+
+0:42:27.240 --> 0:42:29.410 
+Jackie Kajdzik 
+I mean, most of this stuff should be done. 
+
+0:42:30.10 --> 0:42:32.280 
+Jackie Kajdzik 
+Umm. And you know, business logic. 
+
+0:42:34.690 --> 0:42:45.470 
+Jackie Kajdzik 
+I mean, at least I was always trained that you know your database operations, your stored procedures should stick to straight up CRUD operations and not do a whole bunch of this stuff. 
+
+0:42:46.180 --> 0:42:51.410 
+Olga Ermolova 
+But this can be the case that sometimes it is slow, right? Because they have seen the story that we need to. 
+
+0:42:57.680 --> 0:42:58.860 
+Jackie Kajdzik 
+Yeah, yeah, yes. 
+
+0:43:0.180 --> 0:43:1.450 
+Jackie Kajdzik 
+Ohh absolutely it is. 
+
+0:42:52.880 --> 0:43:1.690 
+Olga Ermolova 
+Investigate why sometimes I don't remember what exactly on there are like slow operations, right? Maybe this is the reason for slow operations. If there are such pros. 
+
+0:43:2.260 --> 0:43:10.470 
+Jackie Kajdzik 
+Yeah, yeah. The one that we were talking about was the PK SLA refresh. So this is the one. 
+
+0:43:11.220 --> 0:43:13.880 
+Jackie Kajdzik 
+Oops, don't execute it, yeah. 
+
+0:43:15.600 --> 0:43:15.940 
+Jackie Kajdzik 
+What? 
+
+0:43:17.460 --> 0:43:18.40 
+Jackie Kajdzik 
+Script. 
+
+0:43:18.690 --> 0:43:20.580 
+Jackie Kajdzik 
+Great to query window. 
+
+0:43:24.280 --> 0:43:25.830 
+Jackie Kajdzik 
+So yeah, this is also a good one. 
+
+0:43:27.760 --> 0:43:34.210 
+Jackie Kajdzik 
+So for example, so this thing takes like 7 or 8 minutes to run. 
+
+0:43:34.850 --> 0:43:40.740 
+Jackie Kajdzik 
+Umm, it looks, you know, fairly straightforward, but when you start looking through here. 
+
+0:43:42.450 --> 0:43:43.750 
+Jackie Kajdzik 
+Let's see if I can find it. 
+
+0:43:47.50 --> 0:43:49.10 
+Jackie Kajdzik 
+Sweet. Done some analysis here. 
+
+0:43:49.720 --> 0:44:3.210 
+Jackie Kajdzik 
+But in this one, there's a whole bunch of of functions that are also being called, so you've got, you know, the store procedure and then the stored procedure calls these functions. 
+
+0:44:3.940 --> 0:44:5.40 
+Jackie Kajdzik 
+And see if I can find it. 
+
+0:44:22.630 --> 0:44:24.840 
+Jackie Kajdzik 
+I'm not finding it at the top of my head here. 
+
+0:44:31.760 --> 0:44:37.610 
+Jackie Kajdzik 
+But yeah, I mean, there's just, there's a ton. And then if we look at. 
+
+0:44:37.60 --> 0:44:41.470 
+Olga Ermolova 
+And what happens if some error is thrown here? Then what our? 
+
+0:44:42.720 --> 0:44:46.990 
+Olga Ermolova 
+Code will catch up this error and show it to the logs through customer or what? 
+
+0:44:47.420 --> 0:44:47.610 
+Jackie Kajdzik 
+No. 
+
+0:44:47.690 --> 0:44:49.860 
+Jackie Kajdzik 
+So like you'll see here, it just returns nothing. 
+
+0:44:51.120 --> 0:45:1.410 
+Jackie Kajdzik 
+Right, it returns an error number and then the I mean the at the very least, there's still their logging the error to another table in the database. 
+
+0:45:2.240 --> 0:45:4.870 
+Olga Ermolova 
+So This is why it's so hard to debark and see. 
+
+0:45:5.80 --> 0:45:6.550 
+Jackie Kajdzik 
+Oh yeah. Oh yeah. 
+
+0:45:7.880 --> 0:45:8.500 
+Jackie Kajdzik 
+Yeah. So. 
+
+0:45:5.820 --> 0:45:10.250 
+Olga Ermolova 
+Why? Something wrong going on right? They can't understand where the logic is. 
+
+0:45:10.700 --> 0:45:35.850 
+Jackie Kajdzik 
+Yeah. So then if we look at functions, I mean, again, they've created a bunch scalar functions. There's even more that are have been created. I mean, there's just so much code here that, you know, like when you're you're debugging locally, you know, you basically get to the database call and then in the database, that's where all the logic is happening. 
+
+0:45:36.270 --> 0:45:38.820 
+Olga Ermolova 
+Yeah. And then you just get back zero and this is it, right? 
+
+0:45:47.700 --> 0:45:48.90 
+Olga Ermolova 
+Umm. 
+
+0:45:39.80 --> 0:45:52.150 
+Jackie Kajdzik 
+Yeah. And that's it. I mean it's it's, I mean that's when I say that get help is an absolute bear to update. This is why and there's no documentation at all on any of this. 
+
+0:45:52.780 --> 0:45:55.360 
+Jackie Kajdzik 
+I don't know if they have aggregate functions, these are just the. 
+
+0:45:54.900 --> 0:46:5.490 
+Olga Ermolova 
+And now when we have to switch this example to Geneva logs, what does that mean for us? So this looks from databases example, they're being stored in database as well. So how we can? 
+
+0:46:6.530 --> 0:46:9.170 
+Jackie Kajdzik 
+I I don't know the answer to that that. 
+
+0:46:8.490 --> 0:46:9.960 
+Olga Ermolova 
+Send them to Geneva. 
+
+0:46:10.110 --> 0:46:31.380 
+Jackie Kajdzik 
+Yeah. So that's that's one of the big problems here. So. So what they'll need to do if we wanna get the this these errors into Geneva is they absolutely have to return, you know the the detailed error message to the the the application. Then at that point we can log it and Geneva will pick it up. 
+
+0:46:32.930 --> 0:46:37.600 
+Jackie Kajdzik 
+But Geneva cannot natively take logging from databases. 
+
+0:46:41.810 --> 0:46:46.560 
+Olga Ermolova 
+And that looks which are being pushed by our application. That looks kind of now direct to Geneva. 
+
+0:46:46.820 --> 0:46:48.460 
+Jackie Kajdzik 
+Yes, yes. 
+
+0:46:47.770 --> 0:46:49.760 
+Olga Ermolova 
+And there are only the ones anymore. Not yet. 
+
+0:46:50.300 --> 0:46:51.700 
+Jackie Kajdzik 
+They're not in Geneva, no. 
+
+0:46:52.870 --> 0:46:53.80 
+Jackie Kajdzik 
+Now. 
+
+0:46:53.90 --> 0:46:58.160 
+Olga Ermolova 
+I see. I seen the story. Do they know how to connect it with Geneva? How to integrate it there? 
+
+0:46:58.320 --> 0:47:6.640 
+Jackie Kajdzik 
+So for the the the initial hookup to Geneva, I've actually assigned that to Lauren because Lauren has experience doing it. 
+
+0:47:7.280 --> 0:47:8.200 
+Olga Ermolova 
+Hmm. 
+
+0:47:7.880 --> 0:47:25.580 
+Jackie Kajdzik 
+Once we get the logs blowing to Geneva, at least what little logs we have today, once we get that flowing to Geneva, then they can, you know, go back and update the code to log it. Basically if you log it to App Insights, Geneva picks it up as well. 
+
+0:47:25.560 --> 0:47:26.20 
+Olga Ermolova 
+Umm. 
+
+0:47:26.670 --> 0:47:28.250 
+Jackie Kajdzik 
+Uh, you install? 
+
+0:47:27.490 --> 0:47:30.360 
+Olga Ermolova 
+So if you just use some looks framework, right? 
+
+0:47:40.630 --> 0:47:41.30 
+Olga Ermolova 
+Mm-hmm. 
+
+0:47:31.230 --> 0:47:53.210 
+Jackie Kajdzik 
+Yeah. So, so there's so Geneva developed this monitoring agent and you will you install it on the app Service plan for your Azure application and then once that's running then any logs that you're sending to App Insights will also send to Geneva. So it's like a dual logging solution. 
+
+0:47:53.710 --> 0:47:54.210 
+Olga Ermolova 
+Mm-hmm. 
+
+0:48:8.10 --> 0:48:8.310 
+Jackie Kajdzik 
+No. 
+
+0:47:57.250 --> 0:48:9.470 
+Olga Ermolova 
+Yes, when they look on all this now, I would wait for a writing this system. I don't know if we have such opportunity on because I just do not see how to support it, right? Any change? It's just a nightmare. 
+
+0:48:9.940 --> 0:48:12.570 
+Jackie Kajdzik 
+Oh yeah, absolutely. I mean. 
+
+0:48:13.980 --> 0:48:22.770 
+Jackie Kajdzik 
+You know, that's why I mean, like this emio change we've been working on trying to get this to work, you know, for a while and it and it took. 
+
+0:48:23.890 --> 0:48:34.700 
+Jackie Kajdzik 
+Just the analysis to try and figure out where the code is. Because ohh yeah, I haven't even shown the code hold on. So I mean the database itself. 
+
+0:48:35.410 --> 0:48:38.860 
+Jackie Kajdzik 
+You know, if I I love database stuff, right? 
+
+0:48:39.990 --> 0:48:58.260 
+Jackie Kajdzik 
+If I could be given a week and just spend all of my time analyzing all this stuff, I would love it. But you know, I don't have that kind of time and so I've created a task for the vendors, but I don't think that they have the skill set to be able to deal with this. 
+
+0:48:59.850 --> 0:49:0.190 
+Olga Ermolova 
+Umm. 
+
+0:48:59.890 --> 0:49:0.600 
+Jackie Kajdzik 
+To be honest. 
+
+0:49:3.660 --> 0:49:13.980 
+Jackie Kajdzik 
+I mean, because the only thing that shows up in the sequel audit logs where we can tell what's being used. The only thing that shows up is that you know this stored procedure was called. 
+
+0:49:14.870 --> 0:49:31.670 
+Jackie Kajdzik 
+That's it. So then you've got to go into each of these and figure out, OK, what view is it calling? What other function is it calling? What tables are is it calling? And then you've got to go, you know, then to that function and then to that view to even figure out what tables are involved. 
+
+0:49:32.640 --> 0:49:37.770 
+Olga Ermolova 
+And during the back mode it doesn't show you all this right? You just see that call to database happened. 
+
+0:49:37.930 --> 0:49:38.200 
+Jackie Kajdzik 
+Yeah. 
+
+0:49:38.690 --> 0:49:39.190 
+Olga Ermolova 
+Mm-hmm. 
+
+0:49:39.170 --> 0:49:39.430 
+Jackie Kajdzik 
+Yep. 
+
+0:49:40.440 --> 0:49:47.140 
+Jackie Kajdzik 
+Yeah. I mean, I think the sequel audit logs are a godsend. So that at least we can see, I mean. 
+
+0:49:48.90 --> 0:49:53.250 
+Jackie Kajdzik 
+I can run a report for the last four months to see which of these guys have been called. 
+
+0:49:53.940 --> 0:49:55.800 
+Jackie Kajdzik 
+Right. So I mean. 
+
+0:49:57.260 --> 0:50:3.310 
+Jackie Kajdzik 
+All of these can't possibly be in use still. I mean, my God, that's so many stored procedures. 
+
+0:50:3.830 --> 0:50:12.760 
+Jackie Kajdzik 
+Umm. So I mean if we can identify the ones that are no longer needed, you know then that'll drop the amount of analysis that we're gonna need to do. 
+
+0:50:14.820 --> 0:50:15.370 
+Olga Ermolova 
+Mm-hmm. 
+
+0:50:14.900 --> 0:50:33.700 
+Jackie Kajdzik 
+But yeah, that that's why, like some of these tables that are like you can, you can totally tell that it was just a backup at one point. But I'm super hesitant to even drop it because again, knowing the folks that were maintaining this, they could have switched so that this was the primary table. 
+
+0:50:35.180 --> 0:50:44.800 
+Jackie Kajdzik 
+Seriously. Like I I have zero trust in anything here that I would need to do detailed analysis before I could say yes. Let's drop this table. 
+
+0:50:45.360 --> 0:50:45.880 
+Olga Ermolova 
+Mm-hmm. 
+
+0:50:47.220 --> 0:50:48.630 
+Jackie Kajdzik 
+Umm, so let me. 
+
+0:50:49.580 --> 0:50:52.100 
+Jackie Kajdzik 
+Pull up. Oh, I think I have it open. 
+
+0:50:53.590 --> 0:50:54.620 
+Jackie Kajdzik 
+Ohh yes I do. 
+
+0:50:55.320 --> 0:51:2.510 
+Jackie Kajdzik 
+OK, so now we're in the code, so everything is in this master solution. 
+
+0:51:3.140 --> 0:51:3.760 
+Jackie Kajdzik 
+Umm. 
+
+0:51:4.530 --> 0:51:16.890 
+Jackie Kajdzik 
+Now one of the problems that I discovered with this code is that there's a ton of code in here that's not used anymore, but it's never been removed. 
+
+0:51:18.90 --> 0:51:24.650 
+Jackie Kajdzik 
+They also it's kind of laughable they have all these integration tests. These haven't been touched in six years. 
+
+0:51:25.450 --> 0:51:30.640 
+Jackie Kajdzik 
+I don't know why we keep them. They should be deleted. So here's like our webjobs. 
+
+0:51:31.200 --> 0:51:31.920 
+Jackie Kajdzik 
+Umm. 
+
+0:51:33.880 --> 0:51:52.290 
+Jackie Kajdzik 
+Then so the Web API. So this is everything for R and two and the R and two API and then everything relies on these common functions or common projects, right? So we've got helpers services. 
+
+0:51:53.730 --> 0:51:58.860 
+Jackie Kajdzik 
+You know entities and again you know some of this stuff is never referenced. 
+
+0:51:59.800 --> 0:52:0.130 
+Jackie Kajdzik 
+Ever. 
+
+0:52:2.80 --> 0:52:15.270 
+Jackie Kajdzik 
+They also have unit tests, which are also laughable and then like they even have this encryption tool to encrypt the passwords for these, like those e-mail addresses here. 
+
+0:52:17.260 --> 0:52:20.390 
+Jackie Kajdzik 
+Which I mean it's it's not even good in corruption. 
+
+0:52:21.720 --> 0:52:22.130 
+Jackie Kajdzik 
+Right. 
+
+0:52:21.570 --> 0:52:24.560 
+Olga Ermolova 
+But what do they use for encryption 64? 
+
+0:52:26.340 --> 0:52:33.400 
+Jackie Kajdzik 
+You know what? It has been a while since I looked, but it produces the same encrypted string, so the so the same. 
+
+0:52:32.600 --> 0:52:34.490 
+Olga Ermolova 
+So like you can decrypt it back, right? 
+
+0:52:34.580 --> 0:52:36.930 
+Jackie Kajdzik 
+Yeah, yeah, yeah, yeah. 
+
+0:52:38.450 --> 0:52:42.360 
+Jackie Kajdzik 
+They have this environment set-up project but it doesn't do anything. 
+
+0:52:42.920 --> 0:52:43.690 
+Jackie Kajdzik 
+Umm. 
+
+0:52:44.400 --> 0:52:47.410 
+Jackie Kajdzik 
+This I have no idea why it's still here. 
+
+0:52:49.960 --> 0:53:1.250 
+Jackie Kajdzik 
+Unit tests again. Funny. So under web, you know this is that that get help website that can go away that I think should go away. 
+
+0:53:4.590 --> 0:53:7.600 
+Jackie Kajdzik 
+There. No, that's RMT. Where's the other one? 
+
+0:53:8.930 --> 0:53:12.840 
+Jackie Kajdzik 
+Did they maybe remove it from master? I think they removed it. 
+
+0:53:13.460 --> 0:53:14.40 
+Jackie Kajdzik 
+Umm. 
+
+0:53:14.830 --> 0:53:17.160 
+Jackie Kajdzik 
+But but yeah, I mean this, it's just. 
+
+0:53:17.950 --> 0:53:18.780 
+Jackie Kajdzik 
+It's just a mess. 
+
+0:53:25.420 --> 0:53:25.720 
+Jackie Kajdzik 
+Yeah. 
+
+0:53:32.10 --> 0:53:32.410 
+Jackie Kajdzik 
+Correct. 
+
+0:53:17.900 --> 0:53:39.730 
+Olga Ermolova 
+So basically rewrites in the system the just the question of time if not today in like in one or two years, we still will have to rewrite it because anyway we will face with the situation when we need to do some changes to just not possible here. So if we have this project now better like to finish everything now and then like in such situation like our. 
+
+0:53:40.600 --> 0:53:51.180 
+Olga Ermolova 
+Strategy was supporting this tool. Maybe then we have to do only think what are absolutely necessary and all the rest just do not touch. 
+
+0:53:50.380 --> 0:53:51.790 
+Jackie Kajdzik 
+Goes away, yeah. 
+
+0:53:52.820 --> 0:53:54.250 
+Jackie Kajdzik 
+I agree 100%. 
+
+0:53:54.930 --> 0:54:4.580 
+Olga Ermolova 
+Because why even like walking on? I don't know, like cleaning and up adding unit testing console son. If we decide to drop it. 
+
+0:54:5.140 --> 0:54:5.420 
+Jackie Kajdzik 
+Yeah. 
+
+0:54:7.380 --> 0:54:7.630 
+Jackie Kajdzik 
+Yeah. 
+
+0:54:7.640 --> 0:54:13.900 
+Olga Ermolova 
+Because we will just continue putting our resources and our time for what for system, which is basically not. 
+
+0:54:15.40 --> 0:54:16.240 
+Olga Ermolova 
+Supportable at all. 
+
+0:54:16.660 --> 0:54:20.760 
+Jackie Kajdzik 
+Right. And and so one of the the struggles that we have is. 
+
+0:54:22.60 --> 0:54:30.420 
+Jackie Kajdzik 
+You know what we were hoping to do was just keep the thing running, right? Just keep it up and running. 
+
+0:54:29.790 --> 0:54:31.930 
+Olga Ermolova 
+Yeah, just to do that minimum. 
+
+0:54:32.370 --> 0:54:32.900 
+Sai Nitesh Palamakula 
+How long have you? 
+
+0:54:32.940 --> 0:54:52.480 
+Jackie Kajdzik 
+But to do the minimum you know like because this system violates basically all of our security policies, you know, that's why we had to switch over to NEO because this is using exchange web services which is obsolete and it uses basic auth. 
+
+0:54:53.350 --> 0:54:55.410 
+Jackie Kajdzik 
+And you know Microsoft's turning it off. 
+
+0:55:5.260 --> 0:55:5.480 
+Jackie Kajdzik 
+Yep. 
+
+0:54:54.210 --> 0:55:8.840 
+Olga Ermolova 
+Yeah, but you know, like, if we pop up on all the dashboards for security, for blah blah blah, this is just one more proof that we need to get rid from the system. Right? Because like, when we just as engineers say that this is. 
+
+0:55:20.320 --> 0:55:20.570 
+Jackie Kajdzik 
+Yeah. 
+
+0:55:10.240 --> 0:55:29.320 
+Olga Ermolova 
+But system right now it's believe us, right? Because like every like it's like, uh, how people say in medicine right each doctor say that recipe from previous doctor not. Right. Right. So the same here but when our application constantly there on all their dashboards and the constantly on the list of the teams were not able to fix it on time. 
+
+0:55:29.890 --> 0:55:30.190 
+Jackie Kajdzik 
+Yeah. 
+
+0:55:37.270 --> 0:55:37.500 
+Jackie Kajdzik 
+Yep. 
+
+0:55:30.650 --> 0:55:41.590 
+Olga Ermolova 
+Then it's a different story, right, and we're not able to fix it. Not because we can't, not because we don't want, but because we can't. Right? Because it takes so much time just to understand what to do and if it's even doable. 
+
+0:55:41.780 --> 0:55:55.470 
+Jackie Kajdzik 
+Exactly. And. And I know well my previous manager Darren, he had five open head count that we were trying to fill. I don't know why he didn't fill them but anyway. 
+
+0:55:56.380 --> 0:56:7.480 
+Jackie Kajdzik 
+That's beside the point, but if we had five FT E, you know, dedicated to get help and to escalation front door and the new UEM. 
+
+0:56:8.580 --> 0:56:14.570 
+Jackie Kajdzik 
+You know, then we can get rid of the vendor team, which are barely producing the work of one person. 
+
+0:56:15.30 --> 0:56:15.620 
+Olga Ermolova 
+Umm. 
+
+0:56:15.870 --> 0:56:17.210 
+Jackie Kajdzik 
+Great. I mean. 
+
+0:56:16.660 --> 0:56:18.420 
+Olga Ermolova 
+But require a lot of babysitting. 
+
+0:56:18.580 --> 0:56:27.400 
+Jackie Kajdzik 
+Be a lot. I mean, so much of my time is spent answering all of their questions and explaining things over and over again. 
+
+0:56:28.930 --> 0:56:29.310 
+Olga Ermolova 
+Mm-hmm. 
+
+0:56:29.180 --> 0:56:43.670 
+Jackie Kajdzik 
+And Rajesh Kallem is supposed to be the engineering manager, so he's the one that's supposed to be creating all of the PBIS he's supposed to be creating the tasks, and he's supposed to be managing the team. He's not at all. 
+
+0:56:44.540 --> 0:56:44.890 
+Olga Ermolova 
+Mm-hmm. 
+
+0:56:46.940 --> 0:56:47.610 
+Jackie Kajdzik 
+I mean it's. 
+
+0:56:48.620 --> 0:56:55.980 
+Jackie Kajdzik 
+It's so frustrating because I try to be nice, but you know, I just get excuse after excuse after excuse. 
+
+0:57:4.120 --> 0:57:4.760 
+Jackie Kajdzik 
+Yeah. 
+
+0:57:10.200 --> 0:57:10.560 
+Jackie Kajdzik 
+Yep. 
+
+0:57:17.760 --> 0:57:18.130 
+Jackie Kajdzik 
+Yes. 
+
+0:56:57.440 --> 0:57:27.510 
+Olga Ermolova 
+No, I think it's good that all these once again like visible from our JIRA board not Gerardo sorry our system board like Sprint board right because I see how many stories we have this example for this Sprint and how many out of them will be closed good is just one right we can run this velocity report and show it to management right to prove how weird things are and then additional all the security dashboards with the complaint to our system all the socialization. 
+
+0:57:27.750 --> 0:57:28.400 
+Olga Ermolova 
+Looks. 
+
+0:57:29.230 --> 0:57:29.540 
+Jackie Kajdzik 
+Yep. 
+
+0:57:29.200 --> 0:57:30.200 
+Olga Ermolova 
+And blah blah blah. 
+
+0:57:31.440 --> 0:57:57.90 
+Jackie Kajdzik 
+Yep. I mean for example, so that create get help development environment, right? So I went, I went to France for a week in April and I created a task for the team to go ahead and create that development environment. Now they should have, I mean the four of them together should have been able to have that up and running in a week. 
+
+0:57:57.810 --> 0:58:5.920 
+Jackie Kajdzik 
+Right, because they have all the resources they can create all the templates and and then just run them to create the new environment. 
+
+0:58:6.640 --> 0:58:9.610 
+Jackie Kajdzik 
+Right, that thing wasn't finished until two weeks ago. 
+
+0:58:10.550 --> 0:58:11.70 
+Olga Ermolova 
+Umm. 
+
+0:58:15.400 --> 0:58:19.70 
+Olga Ermolova 
+Actually I have seen this task on the board. I'm not sure if it's closed even today. 
+
+0:58:19.260 --> 0:58:24.930 
+Jackie Kajdzik 
+No, it's not. I reopened it because they didn't actually create the ARM templates like they said they did. 
+
+0:58:31.900 --> 0:58:32.210 
+Jackie Kajdzik 
+Yeah. 
+
+0:58:25.880 --> 0:58:33.230 
+Olga Ermolova 
+Umm, you see, because they remember that I seen this task I just today was going through the board to see what else we have there. 
+
+0:58:34.410 --> 0:58:38.940 
+Jackie Kajdzik 
+Yeah. And I think we're right at time. I know we have another postmortem to go to, but. 
+
+0:58:39.430 --> 0:58:43.220 
+Jackie Kajdzik 
+Umm, yeah. I mean, are are you scared yet? 
+
+0:58:45.920 --> 0:58:46.640 
+Olga Ermolova 
+I am not. 
+
+0:58:48.770 --> 0:58:53.670 
+Jackie Kajdzik 
+I am. I'm just like, Oh my God, if we have to make a change to this system, I just walk. 
+
+0:58:55.150 --> 0:58:56.290 
+Jackie Kajdzik 
+It's so much work. 
+
+0:58:55.460 --> 0:59:1.990 
+Olga Ermolova 
+No, just like me, the worst of the system, the better provement we have that we need to move to new system. 
+
+0:59:2.850 --> 0:59:3.310 
+Jackie Kajdzik 
+Yes. 
+
+0:59:7.100 --> 0:59:8.420 
+Jackie Kajdzik 
+No, it's not at all. 
+
+0:59:2.880 --> 0:59:13.880 
+Olga Ermolova 
+Because, uh, the system itself is not that complicated. It doesn't have that integration. Severson. It's pretty simple too. So it's not that hard to rewrite it. 
+
+0:59:14.640 --> 0:59:16.210 
+Jackie Kajdzik 
+Well, yeah. I mean if we if. 
+
+0:59:14.610 --> 0:59:18.580 
+Olga Ermolova 
+Especially like we have this system here with us. We have business people. 
+
+0:59:19.340 --> 0:59:27.80 
+Jackie Kajdzik 
+Yeah. When when we got this system in January, if we had started rewriting it in January, it would have been done by now. 
+
+0:59:26.720 --> 0:59:28.10 
+Olga Ermolova 
+Yeah, yeah. 
+
+0:59:28.430 --> 0:59:30.890 
+Jackie Kajdzik 
+With just me, Lauren and Genaro. 
+
+0:59:31.580 --> 0:59:32.30 
+Olga Ermolova 
+Mm-hmm. 
+
+0:59:31.520 --> 0:59:32.240 
+Jackie Kajdzik 
+We could have done. 
+
+0:59:34.790 --> 0:59:35.230 
+Olga Ermolova 
+Yeah. 
+
+0:59:34.780 --> 0:59:42.810 
+Jackie Kajdzik 
+But instead there's this big dynamics discussion and they don't have time for us and it's like, OK, we need to decide what we're gonna do with this thing. 
+
+0:59:45.200 --> 0:59:46.690 
+Jackie Kajdzik 
+Because it is not sustainable. 
+
+0:59:48.270 --> 0:59:55.840 
+Olga Ermolova 
+OK, so anyway, I'm not sure with us one more month, right. So we need to try to push this decision by that time when she leave. 
+
+0:59:56.280 --> 0:59:56.760 
+Jackie Kajdzik 
+Yes. 
+
+0:59:57.690 --> 1:0:5.790 
+Jackie Kajdzik 
+Yeah, yeah, we need. We need a decision so that if we need to dedicate resources to fixing all of the things that are wrong. 
+
+1:0:7.550 --> 1:0:12.150 
+Jackie Kajdzik 
+Or just saying, you know, dump it and we're just gonna create something from the ground up. 
+
+1:0:12.340 --> 1:0:14.800 
+Olga Ermolova 
+Yeah. And especially because Raunak is on our side. 
+
+1:0:15.260 --> 1:0:15.730 
+Jackie Kajdzik 
+Yeah. 
+
+1:0:16.60 --> 1:0:19.300 
+Olga Ermolova 
+He wants to create like 3 or end to end. 
+
+1:0:19.990 --> 1:0:20.830 
+Olga Ermolova 
+User flow. 
+
+1:0:20.290 --> 1:0:21.560 
+Jackie Kajdzik 
+Yes, yes. 
+
+1:0:23.720 --> 1:0:24.650 
+Olga Ermolova 
+Which makes sense. 
+
+1:0:28.680 --> 1:0:29.870 
+Olga Ermolova 
+Can you go to the next meeting? 
+
+1:0:30.130 --> 1:0:32.320 
+Olga Ermolova 
+No, thank you, Jay can. 
+
+1:0:30.240 --> 1:0:38.90 
+Jackie Kajdzik 
+Yeah. All right. Well, thank you guys. You know, let me know if after the meeting you think of anything you have questions. 
+
+1:0:38.530 --> 1:0:39.110 
+Jackie Kajdzik 
+Umm. 
+
+1:0:39.750 --> 1:0:41.160 
+Jackie Kajdzik 
+You know, don't hesitate to ask. 
+
+1:0:42.370 --> 1:0:43.10 
+Olga Ermolova 
+Thank you. 
+
+1:0:42.760 --> 1:0:45.140 
+Sai Nitesh Palamakula 
+OK. Thank you, Jackie. Bye. 
+
+1:0:43.230 --> 1:0:45.320 
+Jackie Kajdzik 
+All right. OK. Bye. Bye. 
+
+1:0:45.680 --> 1:0:46.370 
+Olga Ermolova 
+Have a good day. 
+
+1:0:46.780 --> 1:0:47.230 
+Jackie Kajdzik 
+You too. 

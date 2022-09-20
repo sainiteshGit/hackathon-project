@@ -1,0 +1,955 @@
+WEBVTT
+
+3f23cba5-e6b4-4896-bfda-14b921f7870b-0
+00:00:02.900 --> 00:00:06.647
+Sorry Jeff, I just started
+recording. You might Oh no
+
+3f23cba5-e6b4-4896-bfda-14b921f7870b-1
+00:00:06.647 --> 00:00:08.730
+worries. So I just copied the.
+
+9ba86d31-d36f-41d6-ad9f-d31287ff912f-0
+00:00:09.450 --> 00:00:14.675
+I went to this Hatter typed in
+U.S. central EAP, figured out
+
+9ba86d31-d36f-41d6-ad9f-d31287ff912f-1
+00:00:14.675 --> 00:00:20.071
+primary replica and environment.
+So now I'm going to grab this
+
+9ba86d31-d36f-41d6-ad9f-d31287ff912f-2
+00:00:20.071 --> 00:00:23.070
+value is in the third one
+primary.
+
+e9b7ea80-8b59-4fa6-a119-1c671697ffd1-0
+00:00:24.260 --> 00:00:29.223
+So this is the environment. OK,
+this is the individual machines
+
+e9b7ea80-8b59-4fa6-a119-1c671697ffd1-1
+00:00:29.223 --> 00:00:32.170
+so OK yeah, so now I'm gonna go
+here.
+
+45112efc-8996-4dec-87c9-cd230a5090f8-0
+00:00:33.530 --> 00:00:37.316
+Type this in. Yeah, just type
+that into the filter. I double
+
+45112efc-8996-4dec-87c9-cd230a5090f8-1
+00:00:37.316 --> 00:00:40.420
+click this and now we see a list
+of our machines.
+
+df6f40e1-95e7-4ece-a682-8a79be0f1b95-0
+00:00:43.280 --> 00:00:46.480
+And if we look back here, it's
+the one that ends in 553.
+
+954030fd-e04d-47a9-a316-c21cf959bf03-0
+00:00:47.590 --> 00:00:50.621
+That's gonna be this guy right
+here, so I'm going to right
+
+954030fd-e04d-47a9-a316-c21cf959bf03-1
+00:00:50.621 --> 00:00:50.930
+click.
+
+e0e4e70b-b9c5-4e4f-b166-93f136d5bb98-0
+00:00:51.830 --> 00:00:53.750
+Request admin access.
+
+978dd2b8-fcbe-4265-9f50-ce591c6d6857-0
+00:00:57.360 --> 00:00:58.530
+And we're going to go.
+
+da352930-e462-4a44-92b5-cadd8ff3ca08-0
+00:01:01.450 --> 00:01:03.530
+Live site issue.
+
+7d736575-c7f2-4582-b47e-afb0f2176c30-0
+00:01:06.940 --> 00:01:12.590
+And request access. So now you
+should have a JIT request.
+
+093e34b5-337f-4b01-bca0-8b31ddaa21e5-0
+00:01:13.250 --> 00:01:15.610
+Coming your way that you could
+approve, OK?
+
+07975d2d-c035-472a-aff2-3538fc8b8688-0
+00:01:17.040 --> 00:01:20.677
+And are you doing this from your
+saw? Yes, OK, so from that no
+
+07975d2d-c035-472a-aff2-3538fc8b8688-1
+00:01:20.677 --> 00:01:24.026
+one machine I can't do that.
+Yeah yeah yeah we have to do
+
+07975d2d-c035-472a-aff2-3538fc8b8688-2
+00:01:24.026 --> 00:01:25.470
+this from the saw always.
+
+72bb224b-9e34-431f-a981-7309814597a7-0
+00:01:31.850 --> 00:01:33.620
+I'm yet to request for saw.
+
+211127c9-cd4a-4997-8cf5-6f64303c96bb-0
+00:01:35.070 --> 00:01:35.680
+Ohh
+
+6f86f438-3dcf-43ca-ac42-a3591b1bfca9-0
+00:01:38.890 --> 00:01:43.742
+like I did some stuff, uh, do
+you not have a saw? Not yet. I
+
+6f86f438-3dcf-43ca-ac42-a3591b1bfca9-1
+00:01:43.742 --> 00:01:48.992
+requested for us silo and then I
+am yet to request for UB key and
+
+6f86f438-3dcf-43ca-ac42-a3591b1bfca9-2
+00:01:48.992 --> 00:01:49.470
+stuff.
+
+bfd9c3df-7941-4c23-9a25-02c5d54ff4f9-0
+00:01:50.380 --> 00:01:51.140
+OK, cool.
+
+17c32052-2272-4e5f-9947-56883d8565c3-0
+00:01:54.560 --> 00:01:57.340
+OK, looks like I have to do it
+like.
+
+cde868fe-28a9-4498-ae5c-3c3e5af068ad-0
+00:01:58.380 --> 00:01:59.820
+Esap sorting.
+
+13215520-685d-4d37-9a23-58072977fc31-0
+00:02:00.970 --> 00:02:06.410
+Yeah, I just added you both in a
+single chat OK.
+
+22d595c5-04fa-49e4-b92a-7c2a2480444a-0
+00:02:10.130 --> 00:02:14.970
+OK, so for to approve GIT. That
+also needs stop.
+
+744e0b84-176f-45d0-b6a9-6e4c9cc33d7e-0
+00:02:15.700 --> 00:02:17.970
+Yeah, it has to be on a saw so.
+
+6217856a-a2c8-41f2-b21f-2e0684b363ba-0
+00:02:18.760 --> 00:02:19.980
+Or maybe Joseph can.
+
+4eab0c79-8609-4512-bf67-0ed403e82de3-0
+00:02:20.920 --> 00:02:40.020
+
+
+b2bbb8b1-71c7-4cd8-8db3-dd8bacdbf708-0
+00:03:27.240 --> 00:03:30.460
+Well, it looks like somebody got
+it awesome so now.
+
+5796e6db-009d-4643-b087-c043ff0bf56f-0
+00:03:33.510 --> 00:03:37.435
+OK, so we need to wait at that
+same screen until someone
+
+5796e6db-009d-4643-b087-c043ff0bf56f-1
+00:03:37.435 --> 00:03:41.566
+approves it. Yeah, so somebody
+approved it. Yeah, so that's
+
+5796e6db-009d-4643-b087-c043ff0bf56f-2
+00:03:41.566 --> 00:03:45.423
+that's kind of standard
+operating procedure, so there's
+
+5796e6db-009d-4643-b087-c043ff0bf56f-3
+00:03:45.423 --> 00:03:47.420
+that DSMS core team stand up.
+
+48fe5bb1-dec2-4883-8925-8f577e243b04-0
+00:03:48.750 --> 00:03:51.410
+Usually somebody will see it in
+there.
+
+ca66b27e-88f1-4986-8717-b4c17d161e66-0
+00:03:52.750 --> 00:03:55.660
+Yeah, there are always messages
+JIT please yeah.
+
+414658bf-93cc-4baf-ae12-48402b04a794-0
+00:03:57.010 --> 00:04:00.228
+So now I'm just clicking on the
+Windows button. I type SSMS and
+
+414658bf-93cc-4baf-ae12-48402b04a794-1
+00:04:00.228 --> 00:04:02.140
+that will bring up management
+studio.
+
+72977aad-082e-48d9-9348-359f92ea4fe1-0
+00:04:14.280 --> 00:04:17.010
+So we're pretty confident that
+there's not going to be.
+
+7212f637-13d7-4c1f-868e-03be748f6489-0
+00:04:18.020 --> 00:04:20.960
+Substantial changes to this, so
+even if.
+
+9b0dc8ce-f529-4c93-a344-b9b6a97b99c8-0
+00:04:22.650 --> 00:04:24.250
+Like what ends up running.
+
+32a2897c-1e6c-4fa7-a386-037ed2fc5511-0
+00:04:24.910 --> 00:04:28.291
+Later on, it's just going to be
+the go statement, so if you make
+
+32a2897c-1e6c-4fa7-a386-037ed2fc5511-1
+00:04:28.291 --> 00:04:30.060
+any other changes to this
+script.
+
+178bf640-e171-47ee-a318-53a4d9010548-0
+00:04:30.960 --> 00:04:36.612
+Just if you could make a note
+that U.S. central EU AP is kind
+
+178bf640-e171-47ee-a318-53a4d9010548-1
+00:04:36.612 --> 00:04:37.160
+of in.
+
+d2d1dbc5-c568-4350-b983-72f2513bab1f-0
+00:04:38.680 --> 00:04:39.990
+Rogue mode.
+
+038cdd1a-47d2-4d8f-9f00-172e33b12d2d-0
+00:04:42.070 --> 00:04:44.970
+You know, because you know we
+did a one off script here. What
+
+038cdd1a-47d2-4d8f-9f00-172e33b12d2d-1
+00:04:44.970 --> 00:04:46.140
+we're trying to avoid is.
+
+a48f26e3-5363-4d39-85bb-95e6e170f302-0
+00:04:46.860 --> 00:04:47.460
+Umm?
+
+34f6e604-f780-4269-af10-3f3f1b12a979-0
+00:04:51.350 --> 00:04:54.417
+You know, snowflake service. You
+know, we want. We want all of
+
+34f6e604-f780-4269-af10-3f3f1b12a979-1
+00:04:54.417 --> 00:04:57.485
+our database servers to to look
+the way they do because all of
+
+34f6e604-f780-4269-af10-3f3f1b12a979-2
+00:04:57.485 --> 00:05:00.455
+the same scripts ran everywhere,
+right? And so we're kind of
+
+34f6e604-f780-4269-af10-3f3f1b12a979-3
+00:05:00.455 --> 00:05:03.280
+breaking that right now.
+Sometimes you got to do it, but.
+
+8215002b-2808-4eb0-91d8-e53760042b3a-0
+00:05:04.220 --> 00:05:08.096
+This this should be the
+exception and not the rule and
+
+8215002b-2808-4eb0-91d8-e53760042b3a-1
+00:05:08.096 --> 00:05:11.832
+we should get back to the
+everybody's the same state
+
+8215002b-2808-4eb0-91d8-e53760042b3a-2
+00:05:11.832 --> 00:05:12.890
+really fast so.
+
+e9368d78-717d-44eb-8245-82576ecfd56d-0
+00:05:13.860 --> 00:05:17.427
+This was so so when it was the
+one that you picked up from
+
+e9368d78-717d-44eb-8245-82576ecfd56d-1
+00:05:17.427 --> 00:05:17.730
+that.
+
+ec3943ce-37ad-43e3-b917-b93c135d69d9-0
+00:05:19.120 --> 00:05:23.143
+Geneva website exactly exactly.
+So now I'm going to go DSB
+
+ec3943ce-37ad-43e3-b917-b93c135d69d9-1
+00:05:23.143 --> 00:05:27.508
+synchronized so I can tell it's
+synchronized because I can tell
+
+ec3943ce-37ad-43e3-b917-b93c135d69d9-2
+00:05:27.508 --> 00:05:31.600
+our primary because it's gonna
+say synchronized by click on
+
+ec3943ce-37ad-43e3-b917-b93c135d69d9-3
+00:05:31.600 --> 00:05:33.510
+always on high availability.
+
+f504237a-233e-452a-90a4-f2e7a07fd8d6-0
+00:05:36.710 --> 00:05:39.906
+Right click and say show
+dashboard. We can see the always
+
+f504237a-233e-452a-90a4-f2e7a07fd8d6-1
+00:05:39.906 --> 00:05:43.379
+on availability group and all
+the other machines that are part
+
+f504237a-233e-452a-90a4-f2e7a07fd8d6-2
+00:05:43.379 --> 00:05:43.710
+of it.
+
+2fc0b596-eda8-455c-abf8-492079938c0d-0
+00:05:46.770 --> 00:05:50.213
+We don't need that for what
+we're doing right now, but this
+
+2fc0b596-eda8-455c-abf8-492079938c0d-1
+00:05:50.213 --> 00:05:53.541
+is just something you'll do a
+lot during your life sites,
+
+2fc0b596-eda8-455c-abf8-492079938c0d-2
+00:05:53.541 --> 00:05:57.156
+because there's always some some
+machine or database who's not
+
+2fc0b596-eda8-455c-abf8-492079938c0d-3
+00:05:57.156 --> 00:05:57.960
+happy with us.
+
+ad11a8de-0c3e-4e9b-8194-b61cde7c2856-0
+00:06:00.480 --> 00:06:01.940
+So I'm gonna say new query.
+
+fe84fbd0-993d-47e8-a65e-c27df751c000-0
+00:06:07.210 --> 00:06:11.859
+Gonna pop back out to here. This
+is our guy so I'm going to go
+
+fe84fbd0-993d-47e8-a65e-c27df751c000-1
+00:06:11.859 --> 00:06:13.040
+select all copy.
+
+12bbf406-84f6-456f-af10-a29a4bb85b50-0
+00:06:16.200 --> 00:06:19.360
+Taste, so now I just want to
+take a look at this.
+
+42aee351-f831-435e-bc18-8e6f51ebba04-0
+00:06:34.150 --> 00:06:36.560
+OK, I think we have extra go
+here, but.
+
+f2755af1-9fe5-43e5-be9a-d9101b43234f-0
+00:06:37.280 --> 00:06:40.590
+But it's alright I guess after
+the first if statement.
+
+e4ceb5e8-48ef-4a58-b758-247050403698-0
+00:06:42.140 --> 00:06:43.190
+Yeah, that's fine.
+
+387afe06-7ec2-4f6b-addd-8f9a2cf1f6c9-0
+00:06:46.200 --> 00:06:50.101
+And you tested this and
+everything, right? Yes, yes, I
+
+387afe06-7ec2-4f6b-addd-8f9a2cf1f6c9-1
+00:06:50.101 --> 00:06:52.300
+did OK. So what could go wrong?
+
+2e7b8d75-1fc3-4fd6-9c6b-056c2f029d8d-0
+00:06:54.000 --> 00:06:56.470
+Alright, so now.
+
+974038f8-de5b-420f-87d7-827b2b01eaac-0
+00:06:58.810 --> 00:07:03.238
+So if any, could you make a note
+that that we did a one off thing
+
+974038f8-de5b-420f-87d7-827b2b01eaac-1
+00:07:03.238 --> 00:07:04.580
+in U.S. central EAP?
+
+83086b07-2ec0-4ea2-9620-b77bb1ad2bad-0
+00:07:07.170 --> 00:07:08.670
+Just you know, after like.
+
+89218948-b3ff-4871-98c8-9aff45f8cc71-0
+00:07:09.420 --> 00:07:14.084
+This script goes into master. We
+just want to make sure that this
+
+89218948-b3ff-4871-98c8-9aff45f8cc71-1
+00:07:14.084 --> 00:07:15.710
+guy becomes consistent.
+
+47d10a7a-7b72-4832-b954-c9d534304d84-0
+00:07:17.720 --> 00:07:20.640
+And it probably will be, but I'm
+just being paranoid.
+
+4a284d6c-8c7d-4c8a-afd7-8badd6fcf783-0
+00:07:21.730 --> 00:07:22.850
+Yeah, I'll make a note.
+
+862a88ec-7063-441e-aea4-6800a3c433fd-0
+00:07:23.730 --> 00:07:27.680
+And I know, so I just if you
+have a couple of more minutes,
+
+862a88ec-7063-441e-aea4-6800a3c433fd-1
+00:07:27.680 --> 00:07:28.010
+Jeff.
+
+84e684d4-e249-4d44-b624-fe57a768b131-0
+00:07:29.620 --> 00:07:33.479
+First, I think you sent me an
+e-mail about adding the work
+
+84e684d4-e249-4d44-b624-fe57a768b131-1
+00:07:33.479 --> 00:07:37.535
+items, like adding, adding an
+item, saying that we might need
+
+84e684d4-e249-4d44-b624-fe57a768b131-2
+00:07:37.535 --> 00:07:40.609
+to uncomment that unit test that
+we commented.
+
+ce2413ff-1092-409d-9f3b-6f1f1cbd5547-0
+00:07:42.170 --> 00:07:45.038
+Right, but I but I don't have
+that. I don't have access to
+
+ce2413ff-1092-409d-9f3b-6f1f1cbd5547-1
+00:07:45.038 --> 00:07:46.400
+those work items or queries.
+
+77fa777e-63db-47d7-abd3-b8e8e573a95a-0
+00:07:48.450 --> 00:07:50.440
+So I don't know how to do that.
+
+a10a8575-5e48-4559-845a-bd2c55d9353c-0
+00:07:51.480 --> 00:07:55.773
+OK, so I don't. I'm gonna see I
+may not be able to do that
+
+a10a8575-5e48-4559-845a-bd2c55d9353c-1
+00:07:55.773 --> 00:07:57.010
+either right now.
+
+99cf583a-faf4-4c75-b167-d7101e8940c4-0
+00:07:58.360 --> 00:08:01.971
+But I I keep making the notes
+and I'll update once I get the
+
+99cf583a-faf4-4c75-b167-d7101e8940c4-1
+00:08:01.971 --> 00:08:04.280
+access. Yeah, so let's see here
+to do.
+
+d6a42562-638a-43be-a591-5ce23e0f2a1d-0
+00:08:08.680 --> 00:08:13.284
+I I can give the desktop machine
+and I can't get to my desktop
+
+d6a42562-638a-43be-a591-5ce23e0f2a1d-1
+00:08:13.284 --> 00:08:14.600
+machine right now.
+
+d74d6de2-18ba-4650-bd2a-2ef1d731a927-0
+00:08:15.820 --> 00:08:16.370
+Yes, Sir.
+
+7f9d525b-935b-43a5-8892-89de435acd53-0
+00:08:17.750 --> 00:08:20.740
+I just OK can can you access
+this link from yourself?
+
+c3900786-a619-4e0a-be3b-d062153b2536-0
+00:08:21.770 --> 00:08:23.620
+Let's see here that book.
+
+91a52782-6754-4f92-a0f4-1659ea3be2c8-0
+00:08:41.010 --> 00:08:43.490
+OK, cool so I'm gonna add this
+as a favorite.
+
+465d4f50-75a1-4097-ae59-2abbdf19be9e-0
+00:08:45.340 --> 00:08:47.640
+Is there a way you can add me
+here?
+
+3bd09a93-b05f-4329-b2a6-42693c83b1de-0
+00:08:48.630 --> 00:08:51.020
+Oh, you don't have access. I see
+what you're saying, yeah?
+
+cf904750-db07-4cd5-be6e-bb5cb905557b-0
+00:08:52.810 --> 00:08:53.210
+This thing.
+
+2229fdc4-e131-4849-9e45-535f7264e23f-0
+00:08:53.970 --> 00:08:56.980
+For this specific you know query
+I can actually like. I can see a
+
+2229fdc4-e131-4849-9e45-535f7264e23f-1
+00:08:56.980 --> 00:08:58.440
+bunch of items but not this one.
+
+6d007cf5-bcc8-4d5e-a2ed-992222d1a700-0
+00:09:00.180 --> 00:09:02.280
+This 18217 feature.
+
+1bd603be-627f-48d7-9aa5-8ecc6c4fa3ab-0
+00:09:03.060 --> 00:09:03.930
+That that.
+
+7dbca015-000f-4fbf-989d-670f31c10347-0
+00:09:04.980 --> 00:09:07.390
+I wonder if it's just because
+it's a.
+
+89d905b2-7513-43af-85f8-47d3a92e345b-0
+00:09:21.190 --> 00:09:27.240
+Is it because it's in my area?
+So like if I save this to?
+
+d8b879ed-9d49-41e0-a5d2-7f44659744f0-0
+00:09:59.650 --> 00:10:01.580
+Yeah, I can see these folders as
+well.
+
+811882ad-2759-49b5-9a01-0fc92ae67f5e-0
+00:10:08.380 --> 00:10:09.760
+So if I put it in.
+
+7e0b0e95-f690-4a1d-83bf-f070e804f778-0
+00:10:49.040 --> 00:10:49.800
+
+
+74344f69-9b0e-48bb-9a1d-84e3aea3316a-0
+00:10:50.660 --> 00:10:55.743
+OK, do you still have that open?
+Can you paste the link in chat?
+
+74344f69-9b0e-48bb-9a1d-84e3aea3316a-1
+00:10:55.743 --> 00:11:00.201
+Oh nuts, I didn't. OK no
+problem. I can get there. I can
+
+74344f69-9b0e-48bb-9a1d-84e3aea3316a-2
+00:11:00.201 --> 00:11:02.470
+either so I'll click on this.
+
+1fe5912a-68da-4041-a52f-2e6e543d9fb2-0
+00:11:03.130 --> 00:11:07.095
+And then I'll take me to what
+you sent me to. And then I'm
+
+1fe5912a-68da-4041-a52f-2e6e543d9fb2-1
+00:11:07.095 --> 00:11:08.440
+gonna go to queries.
+
+5a357160-228a-4d0b-bc2f-3a04fd9bbf0b-0
+00:11:11.070 --> 00:11:14.710
+My favorites, which is in shared
+queries.
+
+c2f7f195-c586-43e5-920c-34334f61b846-0
+00:11:16.280 --> 00:11:17.240
+Secret management
+
+604e93af-9261-4da2-a837-d8bdb48554f6-0
+00:11:18.010 --> 00:11:20.330
+and then I'll give that back to
+you.
+
+ddaf60c5-812b-4f94-8db7-da6b6b304e3d-0
+00:11:21.600 --> 00:11:23.560
+So can you access that?
+
+47734be8-3ea6-43c1-a480-c634f0afe7fb-0
+00:11:31.570 --> 00:11:32.210
+Yes.
+
+746e7889-5aba-437d-9fe8-48dfe2ab75cf-0
+00:11:33.010 --> 00:11:36.958
+Alright, so I'll add two work
+items here, one for that unit
+
+746e7889-5aba-437d-9fe8-48dfe2ab75cf-1
+00:11:36.958 --> 00:11:39.920
+test and the one that we did
+today, awesome.
+
+532c5999-b8c6-4d2f-829c-fd9c5067000f-0
+00:11:40.930 --> 00:11:44.840
+Yeah, and so the way we
+typically do things is is we do.
+
+ae111edd-3855-4476-9967-be54e2f7b8b8-0
+00:11:46.790 --> 00:11:50.190
+Is it one month sprints? I think
+we do one month sprints now.
+
+7e2b4372-475b-43c1-8751-5bb917f18daf-0
+00:11:51.210 --> 00:11:55.706
+And so we'll do this this
+trophy. It will be a feature and
+
+7e2b4372-475b-43c1-8751-5bb917f18daf-1
+00:11:55.706 --> 00:12:00.050
+this will typically span
+multiple months. But like we'll
+
+7e2b4372-475b-43c1-8751-5bb917f18daf-2
+00:12:00.050 --> 00:12:04.317
+be something that we try and
+deliver within a semester.
+
+7e2b4372-475b-43c1-8751-5bb917f18daf-3
+00:12:04.317 --> 00:12:08.890
+Although we usually take a
+little bit longer. And then what
+
+7e2b4372-475b-43c1-8751-5bb917f18daf-4
+00:12:08.890 --> 00:12:13.767
+we put in these product backlogs
+are things that we're going to
+
+7e2b4372-475b-43c1-8751-5bb917f18daf-5
+00:12:13.767 --> 00:12:15.520
+try and fit in a month.
+
+d0d5db02-3c04-4bbb-a5a0-bf79c5d37ccb-0
+00:12:17.100 --> 00:12:20.360
+And then that's going to be what
+Srinivas tracks and what he
+
+d0d5db02-3c04-4bbb-a5a0-bf79c5d37ccb-1
+00:12:20.360 --> 00:12:23.514
+takes to like his management
+meetings where he talks about
+
+d0d5db02-3c04-4bbb-a5a0-bf79c5d37ccb-2
+00:12:23.514 --> 00:12:26.935
+what the team completed. So try
+and organize your work that way
+
+d0d5db02-3c04-4bbb-a5a0-bf79c5d37ccb-3
+00:12:26.935 --> 00:12:30.142
+and then anything that you put
+inside. Like you know all of
+
+d0d5db02-3c04-4bbb-a5a0-bf79c5d37ccb-4
+00:12:30.142 --> 00:12:33.402
+these things that I did here.
+These work items and tasks and
+
+d0d5db02-3c04-4bbb-a5a0-bf79c5d37ccb-5
+00:12:33.402 --> 00:12:33.670
+such.
+
+a15c2d84-602f-45e2-be52-bf7655c79dac-0
+00:12:34.560 --> 00:12:38.305
+Uh, that's just whatever helps
+you to track your own work,
+
+a15c2d84-602f-45e2-be52-bf7655c79dac-1
+00:12:38.305 --> 00:12:42.431
+right? Right? Shrinivas is only
+gonna look at like this level of
+
+a15c2d84-602f-45e2-be52-bf7655c79dac-2
+00:12:42.431 --> 00:12:43.130
+visibility.
+
+3968f087-f727-4d5a-bf8a-6bc5b3ae101e-0
+00:12:44.970 --> 00:12:48.434
+So but yeah, as long as you make
+sure that everything you create
+
+3968f087-f727-4d5a-bf8a-6bc5b3ae101e-1
+00:12:48.434 --> 00:12:51.846
+is hanging off of this feature,
+it's not gonna get lost. So you
+
+3968f087-f727-4d5a-bf8a-6bc5b3ae101e-2
+00:12:51.846 --> 00:12:55.257
+know we we can clean things up
+later. Just just, you know, make
+
+3968f087-f727-4d5a-bf8a-6bc5b3ae101e-3
+00:12:55.257 --> 00:12:56.910
+sure it gets tracked somewhere.
+
+084e1f55-e344-496a-ad9b-f98efe4dc40b-0
+00:12:57.680 --> 00:13:01.359
+Right, like it makes sense to me
+just to create a like. OK so
+
+084e1f55-e344-496a-ad9b-f98efe4dc40b-1
+00:13:01.359 --> 00:13:04.980
+first parent is feature then we
+have product something right
+
+084e1f55-e344-496a-ad9b-f98efe4dc40b-2
+00:13:04.980 --> 00:13:05.930
+product space B.
+
+042fc3ed-7471-4c66-9a84-d7475e01830d-0
+00:13:07.220 --> 00:13:11.233
+That's that's all nested inside
+feature right? And then further
+
+042fc3ed-7471-4c66-9a84-d7475e01830d-1
+00:13:11.233 --> 00:13:13.680
+we have task right and then also
+bugs.
+
+dfaa361f-e46b-486a-88ac-4ca194396837-0
+00:13:15.560 --> 00:13:19.640
+OK, are these guys down here?
+They they exist at the same
+
+dfaa361f-e46b-486a-88ac-4ca194396837-1
+00:13:19.640 --> 00:13:24.002
+level as a product backlog and
+so I kind of go back and forth
+
+dfaa361f-e46b-486a-88ac-4ca194396837-2
+00:13:24.002 --> 00:13:28.435
+between tracking things as bugs
+and tracking them as tasks off
+
+dfaa361f-e46b-486a-88ac-4ca194396837-3
+00:13:28.435 --> 00:13:32.867
+of here so you know it kind of
+depends on the size of the bug,
+
+dfaa361f-e46b-486a-88ac-4ca194396837-4
+00:13:32.867 --> 00:13:33.290
+right?
+
+cd97ce6d-13ef-4229-970d-a131228b8305-0
+00:13:35.560 --> 00:13:39.386
+Right, so yeah, it's you know
+it's something that's going to
+
+cd97ce6d-13ef-4229-970d-a131228b8305-1
+00:13:39.386 --> 00:13:39.700
+take.
+
+fa2a0c15-1745-49a2-8751-142d40f9bfe9-0
+00:13:40.520 --> 00:13:43.400
+Along time to fix, you know you
+can go ahead and.
+
+26610dec-3f62-4791-9908-dea0e17b2bd9-0
+00:13:44.570 --> 00:13:48.697
+Just track it as a bug so, but
+yeah, because those two things
+
+26610dec-3f62-4791-9908-dea0e17b2bd9-1
+00:13:48.697 --> 00:13:52.160
+are like clean up. Think things
+right once we have.
+
+3dad72bf-96ec-4310-86bd-0911f3f9a5fa-0
+00:13:53.280 --> 00:13:54.990
+OK yeah yeah.
+
+3c37558d-c25b-492f-82a6-44764011dd73-0
+00:13:56.090 --> 00:13:57.880
+OK, probably I'll just create a
+bug then.
+
+ee3f4b59-079b-4092-9003-11d0790f941b-0
+00:14:02.150 --> 00:14:02.500
+
+
+955560ef-7aba-4727-88a6-7b0e0aded29b-0
+00:14:06.210 --> 00:14:06.890
+Sounds good.
+
+05614e78-3d93-4582-9a54-0c9c7bd5ea84-0
+00:14:16.830 --> 00:14:18.690
+Jeff, you there? Yeah, I'm here.
+
+e1d756fc-2699-4b7d-984d-5d4e6cee744c-0
+00:14:19.440 --> 00:14:24.519
+OK, so does it make sense to
+create a bug for both of those
+
+e1d756fc-2699-4b7d-984d-5d4e6cee744c-1
+00:14:24.519 --> 00:14:25.620
+items, I boy.
+
+bc544b69-edfd-4713-8b30-efe982cfaf3f-0
+00:14:26.910 --> 00:14:30.612
+Alright, I could just create a
+folder saying clean up and add.
+
+bc544b69-edfd-4713-8b30-efe982cfaf3f-1
+00:14:30.612 --> 00:14:32.610
+Yeah you know, I mean if
+there's.
+
+95e5b032-2cc8-4ab5-8369-ae475a393fb5-0
+00:14:34.970 --> 00:14:38.505
+Yeah, I'm not sure how to do
+that because I don't you know
+
+95e5b032-2cc8-4ab5-8369-ae475a393fb5-1
+00:14:38.505 --> 00:14:42.221
+like the the bug thing can get
+really unmanageable, you know.
+
+95e5b032-2cc8-4ab5-8369-ae475a393fb5-2
+00:14:42.221 --> 00:14:45.877
+And if we have so many tasks
+that we're just spending all of
+
+95e5b032-2cc8-4ab5-8369-ae475a393fb5-3
+00:14:45.877 --> 00:14:49.233
+our time clicking around on a
+website that gets kind of
+
+95e5b032-2cc8-4ab5-8369-ae475a393fb5-4
+00:14:49.233 --> 00:14:51.930
+annoying to yeah, so maybe what
+we wanna do.
+
+9ad4a31d-4f4f-4726-be43-1eefdebafc83-0
+00:14:57.640 --> 00:15:01.279
+You know what I would do is just
+create them as tasks hanging off
+
+9ad4a31d-4f4f-4726-be43-1eefdebafc83-1
+00:15:01.279 --> 00:15:03.320
+of this last bug here on the
+bottom.
+
+b9d7cff0-8319-4bfb-bf79-1dc7e34dcb8b-0
+00:15:04.170 --> 00:15:04.540
+OK.
+
+c4ccbe2d-3594-44a1-93c1-ced1a2aa3b63-0
+00:15:05.410 --> 00:15:06.520
+I think that's probably.
+
+16ff9178-5eee-4a1b-ba8d-3170cf90d0b3-0
+00:15:07.650 --> 00:15:10.872
+You know and then and then the
+bug's not done until you know
+
+16ff9178-5eee-4a1b-ba8d-3170cf90d0b3-1
+00:15:10.872 --> 00:15:12.510
+all of those subtasks are done.
+
+488085b4-c955-40bd-9bcd-9651891e257f-0
+00:15:13.820 --> 00:15:17.385
+OK, yeah sounds good. Can we do?
+Can we do that by like inside
+
+488085b4-c955-40bd-9bcd-9651891e257f-1
+00:15:17.385 --> 00:15:20.951
+your ****? Can we create task?
+OK yeah so like you can just go
+
+488085b4-c955-40bd-9bcd-9651891e257f-2
+00:15:20.951 --> 00:15:22.310
+here you can open it up.
+
+b641a36f-08f2-4791-8191-db456701ccdd-0
+00:15:23.670 --> 00:15:26.780
+Or you're actually. Here's what
+I. I'll click here and I'll say.
+
+0d9061cb-691f-4b3a-9b22-8346745ec11c-0
+00:15:27.870 --> 00:15:32.674
+Create new links where I linked
+to a new work item. OK yeah and
+
+0d9061cb-691f-4b3a-9b22-8346745ec11c-1
+00:15:32.674 --> 00:15:33.800
+then say child.
+
+6cc495d1-1bbf-4db3-9b7a-9898c409c89f-0
+00:15:36.300 --> 00:15:37.080
+Task.
+
+b4109934-58f3-4fb4-8c46-f9b6b58efd1c-0
+00:15:39.590 --> 00:15:41.060
+Blah blah blah.
+
+a9d4a93c-dc8a-4ced-9697-ee10e983cd02-0
+00:15:42.400 --> 00:15:44.600
+And one last thing.
+
+bb24e50e-3029-4b4c-93dd-0f3652c9f2c5-0
+00:15:47.340 --> 00:15:50.645
+I had something in mind, but I
+just forgot. OK, yeah, so I'm
+
+bb24e50e-3029-4b4c-93dd-0f3652c9f2c5-1
+00:15:50.645 --> 00:15:54.114
+saying I, I'll just make these
+go changes whatever you said and
+
+bb24e50e-3029-4b4c-93dd-0f3652c9f2c5-2
+00:15:54.114 --> 00:15:57.582
+I'll test it real quick and I'm
+gonna raise the PR again if you
+
+bb24e50e-3029-4b4c-93dd-0f3652c9f2c5-3
+00:15:57.582 --> 00:16:00.779
+get a chance please approve it.
+Then I'm going to merge it
+
+bb24e50e-3029-4b4c-93dd-0f3652c9f2c5-4
+00:16:00.779 --> 00:16:01.430
+sounds good.
+
+f1e852c1-370c-4576-8a1c-d889867486f9-0
+00:16:03.120 --> 00:16:04.390
+Thanks a lot for doing this.
+
+a04fbafe-b223-49e2-aee1-147377da27ef-0
+00:16:05.190 --> 00:16:05.840
+No problem.
+
+0a26a0bc-d50e-440b-98b0-ab103f91c11d-0
+00:16:06.780 --> 00:16:08.814
+OK, awesome, I'll talk to you
+later. Alright, talk to you
+
+0a26a0bc-d50e-440b-98b0-ab103f91c11d-1
+00:16:08.814 --> 00:16:09.200
+later, bye.

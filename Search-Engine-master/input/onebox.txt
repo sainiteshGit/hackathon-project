@@ -1,0 +1,6183 @@
+WEBVTT
+
+90928788-4c3e-45f3-807a-c3edc09acd6b-0
+00:00:02.900 --> 00:00:06.650
+So in in the artifact you you
+map like the UM.
+
+7cb57eab-5461-421c-bd43-f63daaf8e513-0
+00:00:10.530 --> 00:00:11.480
+The the bills.
+
+15d81d11-ba9a-47fa-998c-05ecab0a376c-0
+00:00:12.240 --> 00:00:16.580
+Pipelined, we want the latest
+version of specific version
+
+15d81d11-ba9a-47fa-998c-05ecab0a376c-1
+00:00:16.580 --> 00:00:21.220
+right and then the other weird
+thing is we've got this source
+
+15d81d11-ba9a-47fa-998c-05ecab0a376c-2
+00:00:21.220 --> 00:00:21.670
+alias.
+
+f72b87cf-293d-4970-b4de-b1634e08b2ef-0
+00:00:22.800 --> 00:00:27.386
+And it needs to map up match up
+with the value. If we go into
+
+f72b87cf-293d-4970-b4de-b1634e08b2ef-1
+00:00:27.386 --> 00:00:27.830
+tasks.
+
+ae33fbbb-67c2-41c3-887d-5840f2fe3716-0
+00:00:31.010 --> 00:00:35.050
+Select that first task it needs
+to match with.
+
+4ed929c9-a038-4ba4-b3e5-64d8fe850764-0
+00:00:36.270 --> 00:00:37.440
+This value here.
+
+cdee6274-52f8-40a1-b54f-d5a1a693c2d4-0
+00:00:38.430 --> 00:00:43.295
+Ohh which it looks like it
+already does and then what you
+
+cdee6274-52f8-40a1-b54f-d5a1a693c2d4-1
+00:00:43.295 --> 00:00:47.070
+do is you is you say this and
+then it's all.
+
+f279f941-f9fb-4f25-b2c1-25f0f232700f-0
+00:00:48.240 --> 00:00:51.490
+Goodness. So it looks like this
+is already.
+
+b7e9abfb-ee02-4ba2-97b6-63b65b3bdfec-0
+00:00:52.530 --> 00:00:55.552
+The primary artifact because if
+we look at one of these other
+
+b7e9abfb-ee02-4ba2-97b6-63b65b3bdfec-1
+00:00:55.552 --> 00:00:56.040
+artifacts.
+
+6ea06a49-b537-4c43-8e55-b816a7fc6cea-0
+00:00:57.600 --> 00:01:00.635
+We have an option to market as
+primary. So right now it looks
+
+6ea06a49-b537-4c43-8e55-b816a7fc6cea-1
+00:01:00.635 --> 00:01:03.866
+like it's pointed at master, but
+as pointed at a specific version
+
+6ea06a49-b537-4c43-8e55-b816a7fc6cea-2
+00:01:03.866 --> 00:01:06.853
+so we could point it at the
+version that Scott your stuff in
+
+6ea06a49-b537-4c43-8e55-b816a7fc6cea-3
+00:01:06.853 --> 00:01:07.000
+it.
+
+b755be88-9735-4b95-953a-cf8a2104e0fa-0
+00:01:07.830 --> 00:01:09.040
+And and then go.
+
+cf5eb5b9-1f06-4a49-8d3e-e1cf36b5043e-0
+00:01:10.650 --> 00:01:14.838
+Can we just the latest and it
+will pick up the latest green
+
+cf5eb5b9-1f06-4a49-8d3e-e1cf36b5043e-1
+00:01:14.838 --> 00:01:19.237
+bid? Right? Exactly. Except that
+the latest build is a garbage
+
+cf5eb5b9-1f06-4a49-8d3e-e1cf36b5043e-2
+00:01:19.237 --> 00:01:21.960
+build. OK. And the way I know
+that is.
+
+8daf1fa2-8698-40ca-a46d-a6a113fea4e5-0
+00:01:25.860 --> 00:01:28.830
+Looking at Red Dog builds
+branches.
+
+e4be9d2c-9b8f-472f-8546-da56d801e54c-0
+00:01:29.560 --> 00:01:30.170
+UM.
+
+fc575613-dff5-4830-b5cc-c9b36942ade7-0
+00:01:33.190 --> 00:01:35.540
+The most recent build would be
+this guy.
+
+2d7feb5a-ad4d-47ed-959b-5d440710499e-0
+00:01:36.930 --> 00:01:40.320
+And we don't even have like a
+retail AMD 64.
+
+8930bc0b-e498-42c1-80b1-ebca4ce7d549-0
+00:01:41.120 --> 00:01:43.830
+Like, who knows? I don't know
+what happened on this thing.
+
+f46bad75-3b5b-47ce-a67e-001ed99664c9-0
+00:01:45.410 --> 00:01:48.700
+OK, so it may not be deployable.
+
+4662b292-e3a5-4c7e-9505-0a7868ed6aa5-0
+00:01:50.470 --> 00:01:53.520
+So so how do you know the second
+last is also not deployed?
+
+5e293deb-77a5-4c88-b366-69d6ede10075-0
+00:01:54.400 --> 00:01:58.955
+I I just I checked that folder
+as well. So it it was also
+
+5e293deb-77a5-4c88-b366-69d6ede10075-1
+00:01:58.955 --> 00:02:01.390
+lacking those debug retail. OK.
+
+bc70224a-c278-40ac-b546-4e20d30505b9-0
+00:02:02.410 --> 00:02:04.540
+So, uh, I can tell these are
+garbage.
+
+877f07e7-0dbf-4b15-a957-1c2d0ece788f-0
+00:02:07.650 --> 00:02:12.229
+OK, looks like on the 9th we
+maybe got a good one and so that
+
+877f07e7-0dbf-4b15-a957-1c2d0ece788f-1
+00:02:12.229 --> 00:02:13.190
+was 328-5060.
+
+71e8563f-9f26-47b1-a1a7-4446b1e2a460-0
+00:02:14.410 --> 00:02:16.790
+OK. So that's what we are
+pointing to.
+
+4d5ce9f1-8410-4116-801d-fee71299e945-0
+00:02:19.880 --> 00:02:20.920
+328.
+
+e70b774b-51ca-4324-b495-efeae8b0e672-0
+00:02:21.860 --> 00:02:22.960
+56 oh.
+
+6c07c013-4175-45cf-98b4-ab93b2fece8c-0
+00:02:24.210 --> 00:02:27.520
+So we could actually go specific
+version.
+
+1f62ec99-cee9-44a2-814b-4e36c6be0a9f-0
+00:02:30.010 --> 00:02:32.830
+OK, so according to them like
+this.
+
+19230f24-c544-406f-91ce-59c8dbe82ab8-0
+00:02:33.520 --> 00:02:37.990
+It looks like it only does good
+builds. Yeah. Say latest. Yeah.
+
+0ddda3d8-a798-463f-96b5-c0aa3accbe20-0
+00:02:39.210 --> 00:02:39.930
+So uh.
+
+36af0654-1805-4050-99e0-5b27a438abff-0
+00:02:40.780 --> 00:02:44.595
+The question is whoever last
+updated this sounds like
+
+36af0654-1805-4050-99e0-5b27a438abff-1
+00:02:44.595 --> 00:02:48.410
+somebody was doing something
+really specific in here.
+
+8492cece-41ea-4b15-b934-a38f692dbb18-0
+00:02:49.990 --> 00:02:51.690
+So that's why I was trying to
+get.
+
+4b3dcdfa-bcb3-4cd1-8f56-57cec5905e66-0
+00:02:52.530 --> 00:02:54.100
+Something from Danny.
+
+8fc7d037-5114-42b9-b7dd-7f4deaf9d0eb-0
+00:02:57.820 --> 00:03:01.160
+And no answer. So yeah, I'm not
+sure.
+
+33e78ebe-8c06-4448-a2dd-824464124525-0
+00:03:02.950 --> 00:03:06.893
+And then, UM, we're kind of low
+on developer environments right
+
+33e78ebe-8c06-4448-a2dd-824464124525-1
+00:03:06.893 --> 00:03:10.652
+now that that's kind of our our
+problem, right. So we've got
+
+33e78ebe-8c06-4448-a2dd-824464124525-2
+00:03:10.652 --> 00:03:14.287
+developer two, which we're all
+kind of sharing, so whoever
+
+33e78ebe-8c06-4448-a2dd-824464124525-3
+00:03:14.287 --> 00:03:18.108
+needs it the most gets it. And
+that's been Danny for the past
+
+33e78ebe-8c06-4448-a2dd-824464124525-4
+00:03:18.108 --> 00:03:21.743
+few weeks because he's working
+on some Fiji stuff and then
+
+33e78ebe-8c06-4448-a2dd-824464124525-5
+00:03:21.743 --> 00:03:24.640
+we've got developer one, which
+is reserved by.
+
+5d2b0a48-02a7-4fb5-aa0a-41f6ef83b543-0
+00:03:25.660 --> 00:03:29.160
+The Australia team for testing
+the trigger service.
+
+3ec122fc-ae3f-4e3e-9146-46051a22db3d-0
+00:03:30.670 --> 00:03:31.550
+Ohh or no?
+
+5306c0ab-440b-4ff0-ad88-cdfd40d1ba6c-0
+00:03:32.310 --> 00:03:36.900
+By well, by by by the SDP's team
+and we got developer 4 which is
+
+5306c0ab-440b-4ff0-ad88-cdfd40d1ba6c-1
+00:03:36.900 --> 00:03:40.220
+Australia team developer three.
+Somebody else.
+
+d4f80d75-d518-49b3-b324-f308f4005a40-0
+00:03:41.110 --> 00:03:42.490
+Has UM.
+
+8c816bb9-aa38-497e-94e1-730471686380-0
+00:03:44.040 --> 00:03:47.220
+Hmm, so you know typically what
+we'll do is we'll just send out
+
+8c816bb9-aa38-497e-94e1-730471686380-1
+00:03:47.220 --> 00:03:50.450
+a an e-mail to the team and go,
+hey, is it OK if I test on this?
+
+ba416dee-bde3-4ffd-994e-a198343b7ef9-0
+00:03:53.480 --> 00:03:58.491
+OK, so but you didn't didn't
+send out any e-mail, right?
+
+ba416dee-bde3-4ffd-994e-a198343b7ef9-1
+00:03:58.491 --> 00:04:03.855
+Yeah. Can I test on developer
+two and then so just send that
+
+ba416dee-bde3-4ffd-994e-a198343b7ef9-2
+00:04:03.855 --> 00:04:05.790
+out to DSMS fte's and.
+
+099f6c41-61a1-4f5e-bf83-0171564697cb-0
+00:04:07.630 --> 00:04:10.759
+Go from there and then we. But
+we do need to find out from
+
+099f6c41-61a1-4f5e-bf83-0171564697cb-1
+00:04:10.759 --> 00:04:13.200
+Danny what the status of the
+master build is.
+
+8cbc1a08-ca37-45d8-ae30-fed04fd979b2-0
+00:04:15.930 --> 00:04:16.230
+Hmm.
+
+0d842f4e-fb8a-4383-a02d-e01dfac7a3ab-0
+00:04:20.910 --> 00:04:25.754
+Ohh the other thing I wanted to
+send you was the wiki article
+
+0d842f4e-fb8a-4383-a02d-e01dfac7a3ab-1
+00:04:25.754 --> 00:04:30.599
+about how all this works and so
+I'm looking in the DSMS Azure
+
+0d842f4e-fb8a-4383-a02d-e01dfac7a3ab-2
+00:04:30.599 --> 00:04:30.990
+wiki.
+
+41159fd7-7373-4c82-9c5f-662eda83e1df-0
+00:04:32.270 --> 00:04:35.390
+I'll send you that this is kind
+of our internal documentation.
+
+92dc8a36-71a9-41d0-bb60-557f67226d2b-0
+00:04:36.930 --> 00:04:41.236
+That we use and inside of there
+we've got this developer tips
+
+92dc8a36-71a9-41d0-bb60-557f67226d2b-1
+00:04:41.236 --> 00:04:42.000
+and tricks.
+
+4616178b-dadb-4afd-88fa-c3827957f87f-0
+00:04:44.410 --> 00:04:46.880
+So that's one good place to go.
+
+753b4074-7d95-4803-a1ab-54b14383016f-0
+00:04:47.670 --> 00:04:51.222
+Lot of neat stuff in there. And
+then there's also this bit on
+
+753b4074-7d95-4803-a1ab-54b14383016f-1
+00:04:51.222 --> 00:04:52.540
+deployment and release.
+
+241a880c-4e0e-4ceb-bd0c-e1e9365459f7-0
+00:04:58.310 --> 00:05:00.360
+And there should be something.
+
+c09f32ea-c188-46a0-aa7e-c38bf8589687-0
+00:05:01.870 --> 00:05:05.483
+I think there was something
+called deploying and building a
+
+c09f32ea-c188-46a0-aa7e-c38bf8589687-1
+00:05:05.483 --> 00:05:09.278
+microservice like I was going
+through that document. The steps
+
+c09f32ea-c188-46a0-aa7e-c38bf8589687-2
+00:05:09.278 --> 00:05:13.073
+you are saying looks similar to
+that. Yeah, well, there's also
+
+c09f32ea-c188-46a0-aa7e-c38bf8589687-3
+00:05:13.073 --> 00:05:14.820
+how do you do deployments to?
+
+df7bc9e4-7080-4b65-915a-6dc2c13d606f-0
+00:05:16.260 --> 00:05:16.760
+Here we go.
+
+9a0b3e0f-6861-486b-aa02-c6a7e2d71b50-0
+00:05:22.750 --> 00:05:24.390
+Uh, that's testing one cert.
+
+ccbbcb44-ede8-40e1-af81-5d610613b431-0
+00:05:26.670 --> 00:05:29.240
+I think it should be inside
+creating a microservice.
+
+37d7dca4-e914-4899-af11-c7585979b111-0
+00:05:31.740 --> 00:05:33.010
+Here's what I wanted you to.
+
+6505fab0-e29e-4374-ab52-10548a0bc9a2-0
+00:05:36.290 --> 00:05:36.770
+So.
+
+480ca0b0-11e2-44a4-b059-55153057d06d-0
+00:05:38.560 --> 00:05:39.870
+This wiki article.
+
+114e35e3-fad3-42e6-83d1-0d4453a2cbf7-0
+00:05:41.290 --> 00:05:43.070
+Explains everything that I just
+showed you.
+
+37318896-18e7-4914-bddb-eba21a429072-0
+00:05:44.080 --> 00:05:45.290
+Although in more detail.
+
+66542979-2183-4f1e-996d-4074691fc2b6-0
+00:05:47.030 --> 00:05:49.680
+Uh, so it'll it'll tell you how
+to, uh.
+
+f2f42b1f-0049-4e04-a27b-466f01f1ff55-0
+00:05:50.530 --> 00:05:53.340
+Reserve a dev environment build
+and deploy microservice.
+
+bb5f38b6-96e7-4ca9-87c5-edb1e6a8898e-0
+00:05:54.550 --> 00:05:58.726
+Ohh verify deployment so yeah
+this this will. This will get
+
+bb5f38b6-96e7-4ca9-87c5-edb1e6a8898e-1
+00:05:58.726 --> 00:06:01.580
+you unblocked so the next thing
+then is.
+
+997d462a-40c9-42f3-a61b-ec193e22b7b9-0
+00:06:02.670 --> 00:06:03.570
+Ohh Danny answered.
+
+ce1002ec-32b5-4e26-8bc7-20858cacc73f-0
+00:06:05.480 --> 00:06:06.530
+Nope, he didn't answer.
+
+0b655ca1-b26c-45f2-8704-99cbb5337082-0
+00:06:12.490 --> 00:06:15.760
+So so my question was why? Why
+are we?
+
+cf84b825-242d-4568-af49-9e674e4e0743-0
+00:06:17.450 --> 00:06:20.611
+Deploying it on a development
+environment, so will there be
+
+cf84b825-242d-4568-af49-9e674e4e0743-1
+00:06:20.611 --> 00:06:23.824
+traffic that we can later on
+check on kusto that you know we
+
+cf84b825-242d-4568-af49-9e674e4e0743-2
+00:06:23.824 --> 00:06:25.300
+we we can make some traffic?
+
+f5986944-fa29-4967-a0c6-ba44f35bee6d-0
+00:06:27.020 --> 00:06:28.640
+Is it the the The thing is?
+
+47bdd8d6-80a1-423d-8b8e-34ba39e17166-0
+00:06:29.800 --> 00:06:31.170
+Danny deployed.
+
+59f9bae1-e489-4002-ad45-f3b577f7c140-0
+00:06:32.000 --> 00:06:34.160
+We we were doing this in.
+
+17ea666d-e298-462f-a5d9-34615fe27152-0
+00:06:35.060 --> 00:06:35.640
+Canary.
+
+50e98ab5-e8c0-4cb5-8552-c61fc55a29c0-0
+00:06:36.280 --> 00:06:40.879
+Which was great, except that
+Danny deployed some test bits
+
+50e98ab5-e8c0-4cb5-8552-c61fc55a29c0-1
+00:06:40.879 --> 00:06:45.088
+into Canary for the Fiji
+project. It's kind of a high
+
+50e98ab5-e8c0-4cb5-8552-c61fc55a29c0-2
+00:06:45.088 --> 00:06:45.790
+pressure.
+
+854cdfa7-f190-4215-84ca-39eceda263e8-0
+00:06:46.700 --> 00:06:50.213
+Deliverable that we have right
+now that we we gotta get right
+
+854cdfa7-f190-4215-84ca-39eceda263e8-1
+00:06:50.213 --> 00:06:53.556
+before is it ignite or build or
+you know what one of those
+
+854cdfa7-f190-4215-84ca-39eceda263e8-2
+00:06:53.556 --> 00:06:56.673
+events is coming up where we
+want to, you know, make a
+
+854cdfa7-f190-4215-84ca-39eceda263e8-3
+00:06:56.673 --> 00:06:59.790
+product announcement. And so we
+got to get this right.
+
+22374c02-de92-46e0-97ad-9fbf45982551-0
+00:07:01.200 --> 00:07:05.360
+And he based his stuff off of
+April release.
+
+83ae46ab-ba91-4faa-98f2-5c787be66d30-0
+00:07:07.060 --> 00:07:08.940
+My stuff was based off of.
+
+e5d2f0d0-a28b-49ff-b9b2-9b9cdcf5789c-0
+00:07:10.000 --> 00:07:13.612
+And and your stuff was based off
+of master, and then there's just
+
+e5d2f0d0-a28b-49ff-b9b2-9b9cdcf5789c-1
+00:07:13.612 --> 00:07:15.310
+too many things to cherry pick.
+
+c42f222f-aa09-4b7f-a92e-61b48b97d198-0
+00:07:17.080 --> 00:07:20.819
+To get the stuff in there
+because my stuff probably went
+
+c42f222f-aa09-4b7f-a92e-61b48b97d198-1
+00:07:20.819 --> 00:07:22.000
+in in six commits.
+
+883ad85a-0fa5-4588-901a-07d8a616d922-0
+00:07:23.370 --> 00:07:29.070
+So uh and and and and going back
+months, right and and so.
+
+9379e732-4159-455e-a9d8-7203e31abeeb-0
+00:07:29.720 --> 00:07:33.998
+It just really didn't seem like
+a good use of time to figure out
+
+9379e732-4159-455e-a9d8-7203e31abeeb-1
+00:07:33.998 --> 00:07:38.277
+how to how to get that working,
+especially since we're trying to
+
+9379e732-4159-455e-a9d8-7203e31abeeb-2
+00:07:38.277 --> 00:07:40.910
+snap to the June release this
+week, so.
+
+ee8d539c-c519-467a-a6a8-ffe5383aace2-0
+00:07:42.100 --> 00:07:46.330
+That's kind of the issue. So
+what we can do.
+
+26052cb5-5ea2-40e3-a899-46bcfc90764c-0
+00:07:50.440 --> 00:07:52.490
+Is run it on.
+
+da2579a2-8a43-4a25-839d-9ac493dc4d82-0
+00:07:54.780 --> 00:07:56.290
+A1 box.
+
+fa47a4f5-5ffe-441d-882b-67886eed6703-0
+00:08:00.920 --> 00:08:03.935
+We're we're working on getting
+things working with the one box
+
+fa47a4f5-5ffe-441d-882b-67886eed6703-1
+00:08:03.935 --> 00:08:06.854
+and then so you at least see
+some, you know basic end to end
+
+fa47a4f5-5ffe-441d-882b-67886eed6703-2
+00:08:06.854 --> 00:08:09.821
+stuff. So you could set up a
+service, add some secrets to the
+
+fa47a4f5-5ffe-441d-882b-67886eed6703-3
+00:08:09.821 --> 00:08:12.932
+service, rotate the service and
+I'll be on one box and then then
+
+fa47a4f5-5ffe-441d-882b-67886eed6703-4
+00:08:12.932 --> 00:08:15.230
+background stuff should happen
+on the database.
+
+84cf2600-5352-44d5-be2b-2244c6e05e8f-0
+00:08:17.670 --> 00:08:21.300
+The one box code was written
+recently.
+
+90ecf34f-a375-434b-870e-180af8531b95-0
+00:08:23.300 --> 00:08:26.090
+What we had was we had a one box
+and then we.
+
+1ddb937d-9229-41fc-8129-f5ab1416ca9d-0
+00:08:26.790 --> 00:08:28.490
+Change the technologies.
+
+496f8daa-8b0f-4549-84b5-c64239d0d191-0
+00:08:29.460 --> 00:08:34.012
+Underlying or one box we went
+from Imos to SQL Server and
+
+496f8daa-8b0f-4549-84b5-c64239d0d191-1
+00:08:34.012 --> 00:08:36.210
+Fabric to pilot fish and so.
+
+f1dbfb55-4ca1-4cb4-b51b-80cd969d7cfc-0
+00:08:37.730 --> 00:08:40.409
+The one box really didn't match
+the way we run code in
+
+f1dbfb55-4ca1-4cb4-b51b-80cd969d7cfc-1
+00:08:40.409 --> 00:08:42.260
+production and so the Australia
+team.
+
+b29b033e-e6b1-4c37-a5bd-903ad32c6a03-0
+00:08:43.370 --> 00:08:47.210
+Reworked the one box framework
+so that it does match.
+
+4caae1b2-da4a-4369-9e8a-d95998c539a6-0
+00:08:48.220 --> 00:08:50.510
+The way we do things in
+production again.
+
+fde5d046-1aa1-44dd-bfa6-8755f8f06bb5-0
+00:08:52.120 --> 00:08:53.360
+But it's not perfect yet.
+
+fb63081b-7130-41bd-b8ed-23fa6ab675fa-0
+00:08:54.190 --> 00:08:55.050
+But uh.
+
+e6ce355a-5398-408d-a909-7ef49ea60d58-0
+00:08:57.060 --> 00:09:00.946
+I think that's probably the best
+we can do right now, so I'm
+
+e6ce355a-5398-408d-a909-7ef49ea60d58-1
+00:09:00.946 --> 00:09:03.750
+trying to think where all of
+that stuff is.
+
+b265945d-b3a0-496e-a416-fc6ae3c0191e-0
+00:09:20.960 --> 00:09:25.090
+All right, let's look in the
+code here. Service.
+
+98fef7b6-30d7-450f-94f9-6b2c02212e4f-0
+00:09:38.410 --> 00:09:42.210
+So in core we've got one Box 1
+box launcher.
+
+f47f0a16-780b-49e0-9551-c8b064e4c164-0
+00:09:58.870 --> 00:10:02.250
+
+
+b17f7f5b-19b2-4237-8a43-921983a40e79-0
+00:10:44.430 --> 00:10:47.600
+OK, so I think what I need to do
+here is.
+
+84fbb470-9c6d-4b5d-b2fb-63ff9ac0c1b3-0
+00:10:53.310 --> 00:10:56.810
+So I think this one box is our
+legacy code.
+
+083cd260-7023-44c2-99d8-df48cec28b67-0
+00:11:03.510 --> 00:11:04.050
+Yeah.
+
+6b178b4a-b36b-48e2-88e0-9b5acf95c56a-0
+00:11:06.560 --> 00:11:08.680
+So we're looking at.
+
+a575ed21-829b-4290-b809-bdadac046dad-0
+00:11:15.290 --> 00:11:17.320
+Getting this going. I'm just
+gonna paste it.
+
+a73c868a-fce0-4e28-a0e1-239937847cbc-0
+00:11:19.540 --> 00:11:20.150
+Here.
+
+c43b131f-892c-4c95-a6c2-f12f96581ab9-0
+00:11:23.110 --> 00:11:24.560
+It's my pop out here.
+
+cfc73225-814b-4043-8941-36f99a51720e-0
+00:11:30.540 --> 00:11:30.890
+No.
+
+619959d8-7720-463b-ab27-82a56cd9713b-0
+00:11:33.620 --> 00:11:50.980
+
+
+5bb4cb97-9dc0-4610-96da-20cc2a0da4ce-0
+00:11:56.510 --> 00:11:59.080
+Trying to find where that
+documentation is.
+
+1ad4b368-81e8-4801-8082-64c2072f8e84-0
+00:12:03.910 --> 00:12:06.110
+About when box yeah.
+
+0c3bfd5d-60d5-48c7-a789-a9b3028c9d4f-0
+00:12:15.330 --> 00:12:19.150
+So the onboarding document that
+I was following it has it had.
+
+961f0fe4-f4a0-45f0-bbae-6d82a6ee0c78-0
+00:12:20.470 --> 00:12:23.030
+Like steps to run the one box
+and stuff.
+
+5e621dee-221e-4400-9b97-4ff2c142830e-0
+00:12:25.910 --> 00:12:26.450
+Oh, here we go.
+
+33b3c256-5cc7-4d71-80e6-02cb53be516c-0
+00:12:30.560 --> 00:12:33.290
+Running the one box PowerShell
+script.
+
+b3c46543-4e75-44a0-b6f0-7b540e207f06-0
+00:12:50.550 --> 00:12:55.100
+So yeah, do a build do the
+initialization.
+
+728cccc9-cb97-4976-8185-09fc0f626477-0
+00:12:55.920 --> 00:12:57.470
+Launch it in PowerShell.
+
+2aac14b9-1aab-433d-9d7a-aa356c4e2d09-0
+00:12:58.590 --> 00:12:58.900
+Hmm.
+
+a2c37747-41b7-4d90-bfe6-df2b43de8996-0
+00:13:00.290 --> 00:13:05.080
+And so then what you could do is
+you could go include service.
+
+99cc0bc3-d121-49d6-ac8f-6a0c068ff647-0
+00:13:05.990 --> 00:13:09.625
+And if you include the service
+like the DSMS distribution
+
+99cc0bc3-d121-49d6-ac8f-6a0c068ff647-1
+00:13:09.625 --> 00:13:10.190
+packager.
+
+f59e71c8-3741-4cef-b86a-7c210f12c190-0
+00:13:10.990 --> 00:13:16.192
+But that'll run and so if you
+include distribution packager
+
+f59e71c8-3741-4cef-b86a-7c210f12c190-1
+00:13:16.192 --> 00:13:16.800
+and UM.
+
+d4383205-640c-4d85-b4ed-668561cb2d44-0
+00:13:18.620 --> 00:13:19.790
+DSS launcher.
+
+e9eb7421-2c50-4260-a4a5-511af7cf3936-0
+00:13:21.270 --> 00:13:21.850
+Then.
+
+decc7c25-46c8-47cf-89a3-dafc1e601934-0
+00:13:23.710 --> 00:13:28.009
+You'll you'll basically have our
+service running on your dev box
+
+decc7c25-46c8-47cf-89a3-dafc1e601934-1
+00:13:28.009 --> 00:13:32.176
+with with the thing that you and
+I are building running in the
+
+decc7c25-46c8-47cf-89a3-dafc1e601934-2
+00:13:32.176 --> 00:13:36.145
+background and then you can do
+things like create a secret,
+
+decc7c25-46c8-47cf-89a3-dafc1e601934-3
+00:13:36.145 --> 00:13:39.452
+create a service, just follow
+like the basic DSMS
+
+decc7c25-46c8-47cf-89a3-dafc1e601934-4
+00:13:39.452 --> 00:13:43.752
+documentation for how to create
+a service, and add a secret to a
+
+decc7c25-46c8-47cf-89a3-dafc1e601934-5
+00:13:43.752 --> 00:13:47.787
+service, rotate a secret and
+just do ad hoc secrets and self
+
+decc7c25-46c8-47cf-89a3-dafc1e601934-6
+00:13:47.787 --> 00:13:49.110
+signed certificates.
+
+c7ace48e-021a-4974-8721-e2e849cf711a-0
+00:13:49.970 --> 00:13:52.580
+Because those those are super
+easy to UM.
+
+f625ef55-1281-40de-9392-1b7d1262500d-0
+00:13:53.600 --> 00:13:56.321
+Those are completely
+self-contained, right? You don't
+
+f625ef55-1281-40de-9392-1b7d1262500d-1
+00:13:56.321 --> 00:13:57.330
+have to worry about.
+
+bad102cb-f1b9-4983-af61-9dd5f9c2bf39-0
+00:13:59.800 --> 00:14:03.934
+Oh, was I able to talk to one
+search or the, you know, the
+
+bad102cb-f1b9-4983-af61-9dd5f9c2bf39-1
+00:14:03.934 --> 00:14:08.278
+various SaaS or anything like
+that, right, or storage? So, so
+
+bad102cb-f1b9-4983-af61-9dd5f9c2bf39-2
+00:14:08.278 --> 00:14:09.610
+ad hoc secrets and.
+
+2a6ea787-66aa-491f-8670-c9a76c900518-0
+00:14:11.120 --> 00:14:14.141
+Self signed certificates and I
+was gonna show you something.
+
+2a6ea787-66aa-491f-8670-c9a76c900518-1
+00:14:14.141 --> 00:14:15.330
+What was gonna show you?
+
+e2eef317-fb31-4b2f-8497-b808b57e66a6-0
+00:14:16.370 --> 00:14:17.440
+Ohh the.
+
+74065dc8-f979-41fd-9f24-40463962fa66-0
+00:14:18.900 --> 00:14:21.530
+Documentation on how to use
+DSMS.
+
+a56a908e-281e-4c4f-b132-4ae5aacc9698-0
+00:14:27.720 --> 00:14:33.050
+You've you've been here, right?
+Yes. OK, I'll go ahead and give
+
+a56a908e-281e-4c4f-b132-4ae5aacc9698-1
+00:14:33.050 --> 00:14:34.550
+you that link and.
+
+4494365f-0ef2-45f6-8930-24af43f8a32e-0
+00:14:35.470 --> 00:14:39.261
+Than to learn how DSMS works.
+Uh, you've got that on your
+
+4494365f-0ef2-45f6-8930-24af43f8a32e-1
+00:14:39.261 --> 00:14:40.830
+development environment.
+
+5ddd3809-4c8f-41f6-93ee-681b3012ab82-0
+00:14:43.670 --> 00:14:45.040
+When you open up git.
+
+e3cabcaf-43d6-4e24-ad9e-84b8df16dbd4-0
+00:14:46.110 --> 00:14:48.270
+From the git window, just type.
+
+68d92dab-c3a3-474c-9f71-e55e0927e289-0
+00:14:49.280 --> 00:14:50.330
+DSMS.
+
+ac144949-e5fa-42e2-a873-7327012b5d53-0
+00:14:51.470 --> 00:14:51.980
+And that'll.
+
+ebad05a2-17b1-43b6-9948-f41260f6050e-0
+00:14:53.040 --> 00:14:53.840
+Not work.
+
+ea89663e-ff39-4902-8102-dd8723b58143-0
+00:14:54.660 --> 00:14:55.190
+What?
+
+c54d0d76-2b81-489a-8467-7338b27eb3a0-0
+00:14:57.350 --> 00:14:57.950
+Used to work.
+
+75e403ae-adc8-45d1-b59d-feaf06e803f7-0
+00:14:59.330 --> 00:15:00.040
+Interesting.
+
+4e109551-ef7c-4732-aa33-4b5259532828-0
+00:15:02.210 --> 00:15:03.120
+Type out.
+
+88163f70-eccf-4463-a68e-6a8d3cb82af3-0
+00:15:04.210 --> 00:15:05.310
+CD.
+
+e970602d-ba94-4eff-8668-02d40fa2e867-0
+00:15:06.020 --> 00:15:10.840
+Detail AMD 64 CD SMS clients.
+
+bf9940b6-8d97-4c82-9d40-a4eaacebe800-0
+00:15:13.560 --> 00:15:15.110
+Really. OK.
+
+2d4c571c-f91c-4c81-8089-b4437a3e8a23-0
+00:15:16.600 --> 00:15:18.230
+Well, nuts. So anyways.
+
+16b591e7-5e82-483c-be16-cc55abe10c8e-0
+00:15:20.310 --> 00:15:24.218
+I probably cleaned out my build
+so I don't have a good SMS
+
+16b591e7-5e82-483c-be16-cc55abe10c8e-1
+00:15:24.218 --> 00:15:28.060
+client build, but you should be
+able to type DSMS client.
+
+0b7a7db3-e2e8-4385-b854-e50fb0d04623-0
+00:15:29.800 --> 00:15:32.050
+Anywhere in the end listener.
+Here we go. It worked that time.
+
+3d020ff7-ea6f-4687-bf90-350a9e074b8c-0
+00:15:34.040 --> 00:15:37.460
+If I type DSMS client.exe help.
+
+dd3f22f5-6f27-4038-90f4-0b067fd668a1-0
+00:15:38.510 --> 00:15:38.970
+Uh.
+
+ce2b3927-80fe-45ad-9d8c-610a4ecdc531-0
+00:15:39.650 --> 00:15:43.862
+Yeah, I can see everything OK.
+Yeah. Yeah. And then and then
+
+ce2b3927-80fe-45ad-9d8c-610a4ecdc531-1
+00:15:43.862 --> 00:15:46.210
+you can do things like help
+dash.
+
+475619e6-dc83-4fd2-8af7-222953db598b-0
+00:15:46.910 --> 00:15:47.920
+Commands.
+
+ca481de0-86c2-43b8-8d42-12c3864e16d9-0
+00:15:52.400 --> 00:15:54.740
+You know, gets dash.
+
+4b5aef6c-61c6-47c4-8611-da745c6b8100-0
+00:15:56.630 --> 00:15:58.360
+Nay, and that would give you.
+
+aa74a86a-3610-44c3-a9d3-b0d14b9af1d9-0
+00:16:00.490 --> 00:16:03.570
+All of the get help and then you
+can do things like uh.
+
+acd8a09c-af1e-4ae3-b60c-8cc37176eeae-0
+00:16:06.260 --> 00:16:08.310
+Culture ad hoc.
+
+8d3f79f2-c154-4e98-a4a1-c5742dbf9ffc-0
+00:16:11.950 --> 00:16:16.589
+Secrets and that would show you
+everything for ad hoc secrets,
+
+8d3f79f2-c154-4e98-a4a1-c5742dbf9ffc-1
+00:16:16.589 --> 00:16:19.240
+right. And then the final thing
+is.
+
+2bc250bf-1ada-4c0f-b9ad-9b41ab6aac23-0
+00:16:22.130 --> 00:16:24.100
+We've got a secret arguments.
+
+9e364b27-ae63-4e2a-a04c-a8a6d4501f86-0
+00:16:25.990 --> 00:16:27.860
+Dash dev info.
+
+e85e7ecd-0ed9-47a7-bd34-b156a993bb37-0
+00:16:28.590 --> 00:16:29.200
+True.
+
+70306585-b09a-43a7-ada6-b3c860f5269e-0
+00:16:33.120 --> 00:16:36.931
+Which just there there there's a
+few extra commands in there. So
+
+70306585-b09a-43a7-ada6-b3c860f5269e-1
+00:16:36.931 --> 00:16:40.625
+what you would want to do is.
+This would be a good exercise to
+
+70306585-b09a-43a7-ada6-b3c860f5269e-2
+00:16:40.625 --> 00:16:44.377
+go through anyways. Just create
+a secret, create a service, add
+
+70306585-b09a-43a7-ada6-b3c860f5269e-3
+00:16:44.377 --> 00:16:47.719
+the secret to the service
+against the one box using DSMS
+
+70306585-b09a-43a7-ada6-b3c860f5269e-4
+00:16:47.719 --> 00:16:48.130
+client.
+
+703941f0-016f-4e2f-b9cb-9df8dc70b3af-0
+00:16:51.700 --> 00:16:56.200
+Yeah. So that's probably the
+best way to to test this stuff
+
+703941f0-016f-4e2f-b9cb-9df8dc70b3af-1
+00:16:56.200 --> 00:16:57.250
+at this point.
+
+3af2dd4c-088c-4fc5-bdd6-5cab8209906c-0
+00:17:00.240 --> 00:17:01.930
+OK. So OK.
+
+aea29b26-5261-448a-b7e5-3bbcd9b4ae9e-0
+00:17:03.100 --> 00:17:05.951
+So there were two different
+things we were talking about,
+
+aea29b26-5261-448a-b7e5-3bbcd9b4ae9e-1
+00:17:05.951 --> 00:17:08.949
+right? I I just got mixed up a
+little bit. The first one was
+
+aea29b26-5261-448a-b7e5-3bbcd9b4ae9e-2
+00:17:08.949 --> 00:17:11.948
+the developer in my environment
+and the second part is 1 box
+
+aea29b26-5261-448a-b7e5-3bbcd9b4ae9e-3
+00:17:11.948 --> 00:17:14.799
+like which is purely machine,
+right, so so right now with
+
+aea29b26-5261-448a-b7e5-3bbcd9b4ae9e-4
+00:17:14.799 --> 00:17:15.930
+developer environments.
+
+568ca88d-82fb-45a3-8a2c-a8b96b3030a2-0
+00:17:18.600 --> 00:17:22.389
+Might be a little too much and
+well I I think it's just. It's
+
+568ca88d-82fb-45a3-8a2c-a8b96b3030a2-1
+00:17:22.389 --> 00:17:25.690
+it's a nonstarter because the
+master build is broken.
+
+7f3dc605-4878-40fa-9c3c-dfb37bbe8c80-0
+00:17:27.840 --> 00:17:32.192
+You're not gonna be able to fix
+bugs in it, right? And whereas
+
+7f3dc605-4878-40fa-9c3c-dfb37bbe8c80-1
+00:17:32.192 --> 00:17:34.610
+this this will be more of a
+rapid.
+
+4a9a3e58-4db3-4286-89f4-3d672a90e194-0
+00:17:35.340 --> 00:17:38.828
+Test thing right, you'll be able
+to fix the bug. Kill your one
+
+4a9a3e58-4db3-4286-89f4-3d672a90e194-1
+00:17:38.828 --> 00:17:41.210
+box, restart your one box you
+know and go.
+
+ea372521-7e3d-4690-8cc5-9e94068b9eff-0
+00:17:42.710 --> 00:17:43.310
+And.
+
+d6e5a04a-46b6-4b0f-923e-f9c39d196911-0
+00:17:45.450 --> 00:17:48.191
+I I think that this would be
+good enough and that this will.
+
+d6e5a04a-46b6-4b0f-923e-f9c39d196911-1
+00:17:48.191 --> 00:17:50.842
+This will give you confidence
+that your codes working. Now
+
+d6e5a04a-46b6-4b0f-923e-f9c39d196911-2
+00:17:50.842 --> 00:17:52.459
+what you won't have necessarily
+is.
+
+248224d1-dd38-4a35-8746-98c5e4be591c-0
+00:17:56.340 --> 00:17:59.750
+Stuff going to Cousteau, but in
+the one box.
+
+44528e5a-b287-4ed2-9929-835dea28e91d-0
+00:18:01.380 --> 00:18:02.940
+If they did it right.
+
+2159ba33-e99a-4314-b1d6-ea871f842db3-0
+00:18:05.510 --> 00:18:06.770
+You know, and I know they did.
+
+1faefb76-02d7-44f9-a924-83362c75976d-0
+00:18:07.980 --> 00:18:11.294
+A lot of the stuff that would
+the the lot, the trace events
+
+1faefb76-02d7-44f9-a924-83362c75976d-1
+00:18:11.294 --> 00:18:14.719
+and such that that you added
+that that are would go to kusto,
+
+1faefb76-02d7-44f9-a924-83362c75976d-2
+00:18:14.719 --> 00:18:15.990
+they go to the console.
+
+ec3498c8-f6e9-4457-8cd5-a431e87ccf7b-0
+00:18:16.810 --> 00:18:17.820
+So.
+
+fcb39db8-bcd0-4c6a-a711-681642d5dd25-0
+00:18:18.480 --> 00:18:21.782
+You should. You should be able
+to see those traces events that
+
+fcb39db8-bcd0-4c6a-a711-681642d5dd25-1
+00:18:21.782 --> 00:18:24.981
+you added. Yes, I think there's
+a different table called SMS
+
+fcb39db8-bcd0-4c6a-a711-681642d5dd25-2
+00:18:24.981 --> 00:18:27.550
+test. Something in Kusto where
+where we can see.
+
+0c4a7a0e-e5a4-49d0-8582-e587f9ae3fd2-0
+00:18:28.710 --> 00:18:31.879
+Even specific to one box did did
+they do that? OK, cool. I'm
+
+0c4a7a0e-e5a4-49d0-8582-e587f9ae3fd2-1
+00:18:31.879 --> 00:18:34.892
+like, I mean, I I read that
+somewhere. I don't know. Oht.
+
+0c4a7a0e-e5a4-49d0-8582-e587f9ae3fd2-2
+00:18:34.892 --> 00:18:35.880
+Yeah. Look at that.
+
+1aadb2af-733b-4524-b8b0-aa9c070722f1-0
+00:18:38.650 --> 00:18:40.420
+OK, so so maybe.
+
+f1f85412-c763-4b9b-b5a2-d7b667ad1ec3-0
+00:18:44.510 --> 00:18:48.182
+That's cool. I like that. OK, so
+yeah, they they've been doing
+
+f1f85412-c763-4b9b-b5a2-d7b667ad1ec3-1
+00:18:48.182 --> 00:18:51.622
+stuff. Now. I know there's been
+some frustration about the
+
+f1f85412-c763-4b9b-b5a2-d7b667ad1ec3-2
+00:18:51.622 --> 00:18:53.080
+stability of the one box.
+
+0864ff58-9cfe-4f5c-940f-43233018b583-0
+00:18:54.810 --> 00:18:58.946
+Like it maybe not watching for
+you, but like the best we can do
+
+0864ff58-9cfe-4f5c-940f-43233018b583-1
+00:18:58.946 --> 00:19:03.082
+is just start using it and then
+reporting those bugs to the AQI
+
+0864ff58-9cfe-4f5c-940f-43233018b583-2
+00:19:03.082 --> 00:19:07.282
+team and starting to fix those.
+Our vision for the one box right
+
+0864ff58-9cfe-4f5c-940f-43233018b583-3
+00:19:07.282 --> 00:19:07.800
+is that.
+
+96cf7e23-e3f8-407b-b8af-58c6f65d9a4a-0
+00:19:09.970 --> 00:19:13.974
+But you're somebody in your
+position starts up right? You
+
+96cf7e23-e3f8-407b-b8af-58c6f65d9a4a-1
+00:19:13.974 --> 00:19:18.185
+enlist with you, get your you
+clone, you get repository, you
+
+96cf7e23-e3f8-407b-b8af-58c6f65d9a4a-2
+00:19:18.185 --> 00:19:18.600
+build.
+
+d477454c-86b1-4056-8477-e5d430745f4c-0
+00:19:19.600 --> 00:19:22.520
+You fire up the one box and
+you've got the service running
+
+d477454c-86b1-4056-8477-e5d430745f4c-1
+00:19:22.520 --> 00:19:25.441
+on your box that day. That
+that's what we're trying to get
+
+d477454c-86b1-4056-8477-e5d430745f4c-2
+00:19:25.441 --> 00:19:25.590
+to.
+
+68171b5d-9e9e-4600-bff7-a0167d17ee9b-0
+00:19:27.400 --> 00:19:32.044
+We're not there yet, but you're
+the person who's most qualified
+
+68171b5d-9e9e-4600-bff7-a0167d17ee9b-1
+00:19:32.044 --> 00:19:36.471
+to tell us how useful this stuff
+is, and then we need to fix
+
+68171b5d-9e9e-4600-bff7-a0167d17ee9b-2
+00:19:36.471 --> 00:19:37.559
+those bugs. So.
+
+c30cf2c9-fcb1-4504-b80d-954c958344b1-0
+00:19:38.570 --> 00:19:40.450
+Yeah, sounds good. Yeah. And uh.
+
+b3006df9-c1b7-4511-a25a-39d305cc2686-0
+00:19:42.290 --> 00:19:45.540
+Yeah, you you may end up being
+the one who fixes them too.
+
+22531e11-9bec-4a17-abee-28507b808efb-0
+00:19:48.820 --> 00:19:53.900
+I have two questions. The first
+one was the first is like I keep
+
+22531e11-9bec-4a17-abee-28507b808efb-1
+00:19:53.900 --> 00:19:58.745
+seeing like retail- something
+and and debug- AMD 64. So these
+
+22531e11-9bec-4a17-abee-28507b808efb-2
+00:19:58.745 --> 00:20:03.513
+are like two different kinds of
+builds three different build
+
+22531e11-9bec-4a17-abee-28507b808efb-3
+00:20:03.513 --> 00:20:08.515
+outputs. So what gets deployed
+to production is retail dash AMD
+
+22531e11-9bec-4a17-abee-28507b808efb-4
+00:20:08.515 --> 00:20:08.750
+64.
+
+12966a39-b1f2-4372-9d90-b5984fb5363e-0
+00:20:10.440 --> 00:20:14.810
+I don't know if we do anything
+with the arm 64, honestly. So
+
+12966a39-b1f2-4372-9d90-b5984fb5363e-1
+00:20:14.810 --> 00:20:16.100
+there's one debug-
+
+3597e349-9926-4474-87c7-c03ba88cbb6c-0
+00:20:17.280 --> 00:20:20.530
+that's just for, you know, debug
+symbols, debug builds.
+
+a18b3df5-8c9b-4a37-af2a-587f12755b8c-0
+00:20:21.760 --> 00:20:24.040
+We don't send that to
+production.
+
+f62f12a9-fd2c-4577-96d4-634ae7be6a65-0
+00:20:25.220 --> 00:20:29.440
+OK, so so if I use UH-1 box, I
+mean probably should.
+
+6a833183-4bb1-462b-b550-fee726b0f3f3-0
+00:20:30.080 --> 00:20:34.181
+Point to a retail build outs,
+right? Well, it'll you'll point
+
+6a833183-4bb1-462b-b550-fee726b0f3f3-1
+00:20:34.181 --> 00:20:38.349
+to whatever you build locally,
+right? If you do a debug build,
+
+6a833183-4bb1-462b-b550-fee726b0f3f3-2
+00:20:38.349 --> 00:20:42.319
+then you can actually step into
+the code and debug it as it
+
+6a833183-4bb1-462b-b550-fee726b0f3f3-3
+00:20:42.319 --> 00:20:42.650
+runs.
+
+1af819e8-ac12-4152-a1f7-e962b32f977c-0
+00:20:43.830 --> 00:20:47.713
+OK. Yeah. Yeah, because because
+when we when we use like a build
+
+1af819e8-ac12-4152-a1f7-e962b32f977c-1
+00:20:47.713 --> 00:20:51.000
+command the two folders
+generated in the out directory
+
+1af819e8-ac12-4152-a1f7-e962b32f977c-2
+00:20:51.000 --> 00:20:54.764
+the file, yeah retail- lick and
+the second one is debug- I was
+
+1af819e8-ac12-4152-a1f7-e962b32f977c-3
+00:20:54.764 --> 00:20:58.409
+just curious like whether these
+two things are like the same
+
+1af819e8-ac12-4152-a1f7-e962b32f977c-4
+00:20:58.409 --> 00:21:00.800
+when I'm concerned like as a
+developer.
+
+4e5dd2f8-8322-4edc-8acb-f553dbe98eec-0
+00:21:01.590 --> 00:21:03.420
+So as a developer.
+
+5574fd45-d170-419a-bb74-5c8260ff28a6-0
+00:21:04.880 --> 00:21:07.837
+So. So the retail bill is gonna
+run faster because it doesn't
+
+5574fd45-d170-419a-bb74-5c8260ff28a6-1
+00:21:07.837 --> 00:21:10.270
+have all those debug symbols and
+and hooks, right?
+
+019350c3-4651-40a4-aa34-7634c180e483-0
+00:21:12.310 --> 00:21:12.740
+But.
+
+b9892871-845c-478e-80ec-fd7b6b8f2f10-0
+00:21:16.050 --> 00:21:20.024
+You know, you also aren't gonna
+be able to step into the code
+
+b9892871-845c-478e-80ec-fd7b6b8f2f10-1
+00:21:20.024 --> 00:21:21.050
+with a debugger.
+
+53242e1b-7a00-4f2d-a5c0-8380927ba61c-0
+00:21:21.860 --> 00:21:26.189
+Which at whereas you could with
+UM a debug build. Yeah, that,
+
+53242e1b-7a00-4f2d-a5c0-8380927ba61c-1
+00:21:26.189 --> 00:21:30.310
+that, that sounds helpful. Yeah.
+And the second thing was.
+
+73d18027-63d0-4e08-93d8-6a4ae5f82602-0
+00:21:32.110 --> 00:21:36.517
+So. So the service that I was
+touching and we were working on,
+
+73d18027-63d0-4e08-93d8-6a4ae5f82602-1
+00:21:36.517 --> 00:21:40.295
+they they are a part of
+distribution package manager,
+
+73d18027-63d0-4e08-93d8-6a4ae5f82602-2
+00:21:40.295 --> 00:21:44.702
+right, right, right. So where is
+this mapping in the code base
+
+73d18027-63d0-4e08-93d8-6a4ae5f82602-3
+00:21:44.702 --> 00:21:48.830
+like where are these names
+defined? Sure. Let me show you.
+
+883702da-7ce7-4a5f-83d0-59256752180f-0
+00:21:51.830 --> 00:21:52.400
+So.
+
+a65e2fb2-7418-40ab-a237-17d6828ae6f8-0
+00:21:54.560 --> 00:21:59.281
+And we talked about we've got
+the core service core
+
+a65e2fb2-7418-40ab-a237-17d6828ae6f8-1
+00:21:59.281 --> 00:22:02.550
+distribution, right, so
+everything.
+
+490dcb2a-01eb-40ed-9eae-9f6a761320b5-0
+00:22:04.910 --> 00:22:09.513
+All of the core business logic
+and plumbing with the database
+
+490dcb2a-01eb-40ed-9eae-9f6a761320b5-1
+00:22:09.513 --> 00:22:13.969
+and everything happens here that
+this is. This is where our
+
+490dcb2a-01eb-40ed-9eae-9f6a761320b5-2
+00:22:13.969 --> 00:22:17.756
+libraries that are related to
+distribution go. The
+
+490dcb2a-01eb-40ed-9eae-9f6a761320b5-3
+00:22:17.756 --> 00:22:22.509
+distribution packager is going
+to have another folder inside of
+
+490dcb2a-01eb-40ed-9eae-9f6a761320b5-4
+00:22:22.509 --> 00:22:23.920
+service pilot fish.
+
+70dd747e-cbb1-4782-9513-c63def808d28-0
+00:22:26.240 --> 00:22:30.951
+And then DSMS, we're a little
+bit out of control here with
+
+70dd747e-cbb1-4782-9513-c63def808d28-1
+00:22:30.951 --> 00:22:32.070
+other folders.
+
+6891251a-0dec-4363-86fc-ef0f050245d1-0
+00:22:35.140 --> 00:22:39.390
+DSMS distribution packager and
+this is basically the plumbing.
+
+7cb7cf22-505a-45a5-8afd-bda7430be3d4-0
+00:22:40.850 --> 00:22:43.831
+That runs the thing, right? So
+you wanna you wanna do most of
+
+7cb7cf22-505a-45a5-8afd-bda7430be3d4-1
+00:22:43.831 --> 00:22:44.360
+the coding?
+
+24f5f01a-e61b-463c-97de-3cadecb9894b-0
+00:22:45.250 --> 00:22:45.960
+Up here.
+
+164a89cb-9f96-4d7a-bca3-c345d6f8936c-0
+00:22:46.830 --> 00:22:49.578
+Because this is gonna be the
+stuff that's easy to hook into
+
+164a89cb-9f96-4d7a-bca3-c345d6f8936c-1
+00:22:49.578 --> 00:22:52.144
+unit tests where you can
+basically test it anywhere and
+
+164a89cb-9f96-4d7a-bca3-c345d6f8936c-2
+00:22:52.144 --> 00:22:52.740
+all the time.
+
+c70c21cf-2f8a-4202-8029-92b2138906d2-0
+00:22:54.400 --> 00:22:58.521
+And then the only stuff you
+wanna put here is that stuff
+
+c70c21cf-2f8a-4202-8029-92b2138906d2-1
+00:22:58.521 --> 00:23:03.150
+that just fires it up, right? So
+if you look at program dot CS.
+
+02be3eee-0c2b-4a8f-9037-ef58eb99a473-0
+00:23:03.860 --> 00:23:06.723
+There's a few things like, you
+know, firing up the logging and
+
+02be3eee-0c2b-4a8f-9037-ef58eb99a473-1
+00:23:06.723 --> 00:23:07.950
+then, you know, in the run.
+
+ee08b9fe-0a6e-40ea-b57d-885fe164f5e5-0
+00:23:11.850 --> 00:23:17.188
+We basically this is the the
+guts of the service, right? This
+
+ee08b9fe-0a6e-40ea-b57d-885fe164f5e5-1
+00:23:17.188 --> 00:23:18.910
+packager is part of.
+
+e733ef86-45ef-4db1-9fcc-6cfc0e30a751-0
+00:23:20.800 --> 00:23:21.370
+UM.
+
+202925e9-632d-4470-b9ed-71c5cee20005-0
+00:23:23.220 --> 00:23:26.480
+It's it's the distribution
+package or that's part of the
+
+202925e9-632d-4470-b9ed-71c5cee20005-1
+00:23:26.480 --> 00:23:30.084
+core distribution folder, right?
+We just loaded up and then we
+
+202925e9-632d-4470-b9ed-71c5cee20005-2
+00:23:30.084 --> 00:23:32.030
+say run and then that's going
+to.
+
+fd0e4855-7b6a-49f2-bd69-8d138b28984e-0
+00:23:33.360 --> 00:23:34.870
+Feed into.
+
+05de9e30-f9d6-41a6-9e05-63191ab6d3dc-0
+00:23:37.400 --> 00:23:39.200
+This guy here in core.
+
+fd7f7776-2ed0-4768-b5d1-76ef8d745ec6-0
+00:23:40.260 --> 00:23:42.810
+OK, right. And so, UM.
+
+d875f62f-7d99-4c92-ae33-beca2d130d06-0
+00:23:45.570 --> 00:23:47.640
+But if we look at this program.
+
+e23553cd-2ad9-4620-91ef-19cdfdb80204-0
+00:23:48.820 --> 00:23:51.130
+Here's where the one box becomes
+kind of cool.
+
+70f9ac99-8c62-4655-b652-5dbb3da85592-0
+00:23:53.450 --> 00:23:56.560
+One of the things that it does
+is, UM.
+
+638896da-110f-478b-835f-d1a4b8c2d55b-0
+00:23:57.460 --> 00:24:02.346
+It takes some common command
+line arguments. One of the
+
+638896da-110f-478b-835f-d1a4b8c2d55b-1
+00:24:02.346 --> 00:24:03.830
+command lines is.
+
+00fe2fab-3852-4511-b5b6-b6e22d233c7a-0
+00:24:05.540 --> 00:24:08.988
+You know, inside of run, if I'm
+running on A1 box and you don't
+
+00fe2fab-3852-4511-b5b6-b6e22d233c7a-1
+00:24:08.988 --> 00:24:12.328
+have to write any of that code,
+it's just going to know, hey,
+
+00fe2fab-3852-4511-b5b6-b6e22d233c7a-2
+00:24:12.328 --> 00:24:13.460
+I'm on A1 box, right?
+
+b06830d4-aace-4732-b9cd-99b80588fc2b-0
+00:24:14.120 --> 00:24:16.780
+And you passed in the debug
+option.
+
+befcfe2d-7d7a-448d-a968-89cec4308623-0
+00:24:17.800 --> 00:24:20.400
+Then it's going to launch the
+debugger for you.
+
+073aa998-0119-4d4b-8d35-ce133e82839c-0
+00:24:21.060 --> 00:24:24.760
+With the break point. So you
+just put like a a break point.
+
+acde3174-48ee-41db-bb5f-ef1b90b97265-0
+00:24:25.660 --> 00:24:26.260
+Here.
+
+3add1f1a-3599-401a-9aa3-c60fd506406c-0
+00:24:27.480 --> 00:24:28.300
+And then.
+
+d279c769-21c7-4ce9-b8d4-ae70aa583fbf-0
+00:24:29.070 --> 00:24:32.397
+When you launch your one box,
+there's a a command line option
+
+d279c769-21c7-4ce9-b8d4-ae70aa583fbf-1
+00:24:32.397 --> 00:24:35.725
+you can pass into the the one
+box PowerShell script that says
+
+d279c769-21c7-4ce9-b8d4-ae70aa583fbf-2
+00:24:35.725 --> 00:24:36.960
+hey, I'm in debug mode.
+
+03fbe00a-5e62-422c-9352-f87116109992-0
+00:24:38.410 --> 00:24:41.348
+Boom, you're it'll fire up
+Visual Studio and you're
+
+03fbe00a-5e62-422c-9352-f87116109992-1
+00:24:41.348 --> 00:24:44.060
+stepping through the code, which
+I don't think.
+
+8703ffe4-a647-49da-b57b-9423ff126ef8-0
+00:24:47.390 --> 00:24:51.522
+We can do that in pilot fish at
+all and like some of the old
+
+8703ffe4-a647-49da-b57b-9423ff126ef8-1
+00:24:51.522 --> 00:24:54.300
+versions of Autopilot, it was
+supported.
+
+129f084c-1d01-4f63-9dbb-2370da1f0cf4-0
+00:24:56.140 --> 00:25:00.016
+But all the documentation I was
+able to find on it was like, you
+
+129f084c-1d01-4f63-9dbb-2370da1f0cf4-1
+00:25:00.016 --> 00:25:03.833
+know from 2014 and so much has
+changed since then and and pilot
+
+129f084c-1d01-4f63-9dbb-2370da1f0cf4-2
+00:25:03.833 --> 00:25:07.411
+fish is supposed to be this
+locked down secure environment.
+
+129f084c-1d01-4f63-9dbb-2370da1f0cf4-3
+00:25:07.411 --> 00:25:10.990
+So I would be really surprised
+if we supported that at all.
+
+9a1c9123-4d7d-46ce-9bc3-cf1cc96c756e-0
+00:25:13.100 --> 00:25:17.270
+But you know and and and this is
+easy, right? It's. Yeah.
+
+dcf0717d-93aa-4484-9eaf-217574122866-0
+00:25:18.850 --> 00:25:22.674
+I've done remote debugging on a
+production environment. You got
+
+dcf0717d-93aa-4484-9eaf-217574122866-1
+00:25:22.674 --> 00:25:26.020
+to put so many things in place
+and it's so fragile and.
+
+6b017937-ea60-4c5a-9cbc-95fcdd70b125-0
+00:25:27.520 --> 00:25:27.960
+Umm.
+
+55b3ec78-6f49-4c59-ae44-9815c3b5c467-0
+00:25:28.600 --> 00:25:29.070
+So yeah.
+
+4dea1b2d-9dd5-4e30-a30f-8550a5277c0a-0
+00:25:29.740 --> 00:25:31.770
+So so this run method.
+
+b27d243b-4c11-41b9-8046-4022171e03e3-0
+00:25:32.640 --> 00:25:36.139
+In program so program dot CS is
+pretty much presented. All of
+
+b27d243b-4c11-41b9-8046-4022171e03e3-1
+00:25:36.139 --> 00:25:37.720
+these folders towards right.
+
+526ff4d2-95ba-4c8e-9375-eb21a12c9e6d-0
+00:25:39.040 --> 00:25:43.189
+Great. Uh. Like, like in the
+distribution packages, it must
+
+526ff4d2-95ba-4c8e-9375-eb21a12c9e6d-1
+00:25:43.189 --> 00:25:47.684
+be also be in the SSMS bootstrap
+or whatever it is in in many of
+
+526ff4d2-95ba-4c8e-9375-eb21a12c9e6d-2
+00:25:47.684 --> 00:25:48.030
+them.
+
+6a0705bf-a9aa-4862-aeb9-1666e694a640-0
+00:25:49.450 --> 00:25:54.543
+This was like my boilerplate
+microservice creation code,
+
+6a0705bf-a9aa-4862-aeb9-1666e694a640-1
+00:25:54.543 --> 00:25:54.990
+yeah.
+
+657fa2bd-22e2-4a38-939e-faeded5c4694-0
+00:25:56.670 --> 00:26:00.599
+You know that's evolved with
+time as as we discover things.
+
+657fa2bd-22e2-4a38-939e-faeded5c4694-1
+00:26:00.599 --> 00:26:04.593
+Ohh we really useful if we did
+it this way, right? So if you
+
+657fa2bd-22e2-4a38-939e-faeded5c4694-2
+00:26:04.593 --> 00:26:06.100
+look at a lot of these.
+
+5593da0d-00ee-4f30-ad94-3c0fb772d949-0
+00:26:07.160 --> 00:26:10.676
+Console apps. They'll all look a
+little bit different and a lot
+
+5593da0d-00ee-4f30-ad94-3c0fb772d949-1
+00:26:10.676 --> 00:26:12.270
+of times that's just because.
+
+02c23f7e-f5a8-4b10-b49e-cde87467cb40-0
+00:26:14.220 --> 00:26:17.839
+Well, the the tool had evolved
+right to do things a little bit
+
+02c23f7e-f5a8-4b10-b49e-cde87467cb40-1
+00:26:17.839 --> 00:26:21.458
+differently and and sometimes we
+go back and retroactively fix
+
+02c23f7e-f5a8-4b10-b49e-cde87467cb40-2
+00:26:21.458 --> 00:26:24.905
+things and sometimes we don't.
+It's kind of on an as needed
+
+02c23f7e-f5a8-4b10-b49e-cde87467cb40-3
+00:26:24.905 --> 00:26:25.250
+basis.
+
+f483fe00-3f32-41ff-8500-c795953d547e-0
+00:26:26.720 --> 00:26:27.120
+So.
+
+b9ff949d-1fa2-4afb-a64e-af67354fa9cf-0
+00:26:28.060 --> 00:26:31.452
+You know we we've got, we've got
+a high number of services that
+
+b9ff949d-1fa2-4afb-a64e-af67354fa9cf-1
+00:26:31.452 --> 00:26:34.897
+just always work and we've we've
+never had to go back and change
+
+b9ff949d-1fa2-4afb-a64e-af67354fa9cf-2
+00:26:34.897 --> 00:26:36.170
+anything about them, so.
+
+8cf5575d-cef6-4cde-bb85-5b052a35757e-0
+00:26:37.300 --> 00:26:41.652
+Yeah. Yeah. So the line number
+18 SDS distribution package or
+
+8cf5575d-cef6-4cde-bb85-5b052a35757e-1
+00:26:41.652 --> 00:26:45.794
+the name of the service that
+with our original like source
+
+8cf5575d-cef6-4cde-bb85-5b052a35757e-2
+00:26:45.794 --> 00:26:50.427
+code of this. Yeah. So what that
+maps up to is that will match up
+
+8cf5575d-cef6-4cde-bb85-5b052a35757e-3
+00:26:50.427 --> 00:26:54.288
+with the folder. And then
+there's this service map ini
+
+8cf5575d-cef6-4cde-bb85-5b052a35757e-4
+00:26:54.288 --> 00:26:54.639
+file.
+
+56101b15-64f5-472b-962d-a6f2135b0c9e-0
+00:26:56.050 --> 00:26:59.000
+And now you'll see this in every
+single.
+
+a13e2a8d-f4d9-4a6b-a727-cb1971da7482-0
+00:27:01.380 --> 00:27:05.271
+Service folder there's gonna be
+this SMS service map I and I but
+
+a13e2a8d-f4d9-4a6b-a727-cb1971da7482-1
+00:27:05.271 --> 00:27:05.990
+it's linked.
+
+796d663b-e3af-48c2-b6ce-04e563916795-0
+00:27:07.210 --> 00:27:08.620
+If you look at the properties of
+it.
+
+0f0773dc-c479-495f-a03a-d82c6fc99073-0
+00:27:11.200 --> 00:27:12.850
+It's a build action. None.
+
+e760ccd8-19a8-482d-b506-6dfb9be44c9c-0
+00:27:14.580 --> 00:27:15.000
+Umm.
+
+232308ab-0c12-4be3-9f19-621aa4a54bab-0
+00:27:15.980 --> 00:27:19.922
+It it all maps to the same
+location, it's it's just a link,
+
+232308ab-0c12-4be3-9f19-621aa4a54bab-1
+00:27:19.922 --> 00:27:23.864
+it's not a copy of the file
+service map I defines. What are
+
+232308ab-0c12-4be3-9f19-621aa4a54bab-2
+00:27:23.864 --> 00:27:27.149
+all of the services and so on a
+DSMS app machine.
+
+b8593793-dcf4-4c97-bc62-6c063f1a3102-0
+00:27:28.030 --> 00:27:32.253
+We've got the distribution
+packager running and this this
+
+b8593793-dcf4-4c97-bc62-6c063f1a3102-1
+00:27:32.253 --> 00:27:35.530
+executable is gonna launch every
+60 seconds.
+
+9f901a9b-510f-48b6-a55a-950652060d95-0
+00:27:36.870 --> 00:27:37.870
+Hmm, OK.
+
+159d9c4d-98ce-4384-b0cb-3a2e9f27d727-0
+00:27:39.020 --> 00:27:46.419
+And what is the 2nd argument?
+The zero? Uh, I don't remember.
+
+159d9c4d-98ce-4384-b0cb-3a2e9f27d727-1
+00:27:46.419 --> 00:27:48.210
+I I think it's.
+
+196da3cd-4ced-4057-a7fa-f659961e7239-0
+00:27:50.500 --> 00:27:54.362
+If you look in the documentation
+as something like this is
+
+196da3cd-4ced-4057-a7fa-f659961e7239-1
+00:27:54.362 --> 00:27:57.570
+reserved by a pilot fish. Always
+set it to 0 so.
+
+a6439ed5-ac4e-4d37-b7f1-bb5ff4252a24-0
+00:27:59.150 --> 00:28:02.592
+Is this the first one? Is the
+one that we care about? OK.
+
+a6439ed5-ac4e-4d37-b7f1-bb5ff4252a24-1
+00:28:02.592 --> 00:28:04.610
+Yeah. And like, if you set it
+to.
+
+6ca24496-39bb-4a4a-975e-850a0b63884d-0
+00:28:05.860 --> 00:28:11.170
+0, zero. That means it is a long
+running service.
+
+dcc64d74-98ce-429b-bd39-3cf3ae8d0eee-0
+00:28:13.060 --> 00:28:13.460
+If it.
+
+83afe790-ec90-4c35-9f9c-460d24a18c82-0
+00:28:14.360 --> 00:28:16.570
+Stops running and restarted
+immediately.
+
+a78b44e5-a663-4d8a-807d-1c22ddbcdbeb-0
+00:28:17.280 --> 00:28:21.630
+OK, like like SQL connectivity.
+This. Yeah. And then if you set
+
+a78b44e5-a663-4d8a-807d-1c22ddbcdbeb-1
+00:28:21.630 --> 00:28:24.350
+it to negative one, it's never
+running.
+
+900be634-b51c-43c6-bc8a-327ca8f013dc-0
+00:28:25.320 --> 00:28:30.366
+And it said something and and so
+like for example we have this
+
+900be634-b51c-43c6-bc8a-327ca8f013dc-1
+00:28:30.366 --> 00:28:32.610
+thing called DSMS SQL tools.
+
+c19120a9-fc4c-41bf-a6d6-ab13a346de00-0
+00:28:36.230 --> 00:28:40.175
+Yeah, 12 line number, right. And
+that's just a place where we
+
+c19120a9-fc4c-41bf-a6d6-ab13a346de00-1
+00:28:40.175 --> 00:28:44.120
+dump various executables that
+might be useful to have on a on
+
+c19120a9-fc4c-41bf-a6d6-ab13a346de00-2
+00:28:44.120 --> 00:28:45.329
+a DSMS SQL machine.
+
+0a972d3e-196d-4ff8-90e3-bfd3b0d139f5-0
+00:28:48.640 --> 00:28:52.452
+OK. And yes, sorry, uh, negative
+means don't run it ever. Like,
+
+0a972d3e-196d-4ff8-90e3-bfd3b0d139f5-1
+00:28:52.452 --> 00:28:56.086
+if I want to do it, I'll do it.
+These autopilot won't run it
+
+0a972d3e-196d-4ff8-90e3-bfd3b0d139f5-2
+00:28:56.086 --> 00:28:56.920
+automatically.
+
+96634bdd-a395-4611-a504-d71ae10c2b59-0
+00:28:57.930 --> 00:29:01.679
+OK. But you know it's still
+there and and so we've got a
+
+96634bdd-a395-4611-a504-d71ae10c2b59-1
+00:29:01.679 --> 00:29:05.559
+few, a few of our TSG, you'll
+see. Hey, go to the DSMS SQL
+
+96634bdd-a395-4611-a504-d71ae10c2b59-2
+00:29:05.559 --> 00:29:09.111
+Tools folder and run this
+executable. That's one that
+
+96634bdd-a395-4611-a504-d71ae10c2b59-3
+00:29:09.111 --> 00:29:10.230
+we've written so.
+
+02a033a4-3892-4598-bc9e-c4213f3b0ca7-0
+00:29:11.400 --> 00:29:15.913
+And and and the square bracket
+stuff like line number one and
+
+02a033a4-3892-4598-bc9e-c4213f3b0ca7-1
+00:29:15.913 --> 00:29:20.209
+six and 35. These are just a way
+to bifurcate these. Yeah,
+
+02a033a4-3892-4598-bc9e-c4213f3b0ca7-2
+00:29:20.209 --> 00:29:24.431
+they're just section headers,
+right? So. So these are the
+
+02a033a4-3892-4598-bc9e-c4213f3b0ca7-3
+00:29:24.431 --> 00:29:28.872
+services. So you have service
+lists and they've got the DSMS
+
+02a033a4-3892-4598-bc9e-c4213f3b0ca7-4
+00:29:28.872 --> 00:29:32.949
+SQL equals SQL service list
+which matches up with this,
+
+02a033a4-3892-4598-bc9e-c4213f3b0ca7-5
+00:29:32.949 --> 00:29:36.880
+right. And so these are
+basically all of the services
+
+02a033a4-3892-4598-bc9e-c4213f3b0ca7-6
+00:29:36.880 --> 00:29:39.720
+that you'll see on a DSMS SQL
+machine.
+
+49c92236-b685-46d5-b898-fdaa7f59905b-0
+00:29:40.420 --> 00:29:44.855
+Similarly for DSS app that maps
+to these guys, these are all the
+
+49c92236-b685-46d5-b898-fdaa7f59905b-1
+00:29:44.855 --> 00:29:48.200
+guys that you'll see on a DS app
+machine and so.
+
+a4a63bca-81b0-4855-a59b-c56b8d4ab002-0
+00:29:49.480 --> 00:29:52.400
+I can show you what I'm talking
+about here in XTS.
+
+2a2c837f-a41a-4b73-9629-5461ca6cba0f-0
+00:29:57.060 --> 00:29:58.940
+Just call up one of our
+environments.
+
+8d38834e-57a4-4b89-9cfe-474993cfb9b1-0
+00:30:00.500 --> 00:30:05.650
+So when you boot up XTS there is
+this in your saw or local. This
+
+8d38834e-57a4-4b89-9cfe-474993cfb9b1-1
+00:30:05.650 --> 00:30:10.800
+is on my developer machine right
+now. You'll have it on your saw
+
+8d38834e-57a4-4b89-9cfe-474993cfb9b1-2
+00:30:10.800 --> 00:30:15.553
+too. On the saw you can do
+everything here. I can only read
+
+8d38834e-57a4-4b89-9cfe-474993cfb9b1-3
+00:30:15.553 --> 00:30:18.010
+on the saw. I would be able to.
+
+895c4598-10d1-4618-9bc3-2712321d8047-0
+00:30:19.110 --> 00:30:21.743
+You know, execute a command to
+say hey, reboot this machine or
+
+895c4598-10d1-4618-9bc3-2712321d8047-1
+00:30:21.743 --> 00:30:22.580
+something like that.
+
+9a8c2de2-7810-4b77-8762-e0c9065962d8-0
+00:30:23.580 --> 00:30:24.010
+Gotcha.
+
+dca40fa4-6b92-42ff-b6fb-5d03464d9c27-0
+00:30:25.960 --> 00:30:29.020
+Yeah, this like I'm scared of
+XTS. This view is so horrifying.
+
+2178a0cb-d271-4f56-b133-264ba091089f-0
+00:30:31.170 --> 00:30:36.224
+Too much information. Yeah,
+there's it's a sharp learning
+
+2178a0cb-d271-4f56-b133-264ba091089f-1
+00:30:36.224 --> 00:30:37.880
+curve. I won't lie.
+
+8dcbc2e7-129a-403b-8325-4aeb7d595d95-0
+00:30:40.320 --> 00:30:44.790
+Excuse me, really grown to love
+it because it it has everything
+
+8dcbc2e7-129a-403b-8325-4aeb7d595d95-1
+00:30:44.790 --> 00:30:49.191
+you need and I really like the
+fact that it's in a Windows app
+
+8dcbc2e7-129a-403b-8325-4aeb7d595d95-2
+00:30:49.191 --> 00:30:50.170
+as opposed to.
+
+94dfd81d-85e1-4848-99cb-f951def05d64-0
+00:30:51.010 --> 00:30:52.190
+You know, here's.
+
+76bd76d5-c323-4509-90cd-2656a0f717ce-0
+00:30:53.050 --> 00:30:58.105
+1000 you know, little web pages
+that you know, some of them
+
+76bd76d5-c323-4509-90cd-2656a0f717ce-1
+00:30:58.105 --> 00:30:58.780
+perform.
+
+8ca543e1-208a-4658-893e-13886be06dde-0
+00:31:00.040 --> 00:31:03.370
+Don't you know perform better
+than others? And you know, this
+
+8ca543e1-208a-4658-893e-13886be06dde-1
+00:31:03.370 --> 00:31:03.800
+is like.
+
+6389d106-4d1f-4555-b556-f23241e70d1c-0
+00:31:04.830 --> 00:31:05.330
+Umm.
+
+38b911f9-73ec-455f-9cec-d60e8ac61e76-0
+00:31:07.760 --> 00:31:11.060
+You're constantly reaching out
+to the machines to get the
+
+38b911f9-73ec-455f-9cec-d60e8ac61e76-1
+00:31:11.060 --> 00:31:14.360
+current status and so, but let
+let me just show you like.
+
+691dac96-324b-4112-9807-815e2b55a047-0
+00:31:15.200 --> 00:31:18.973
+I'll show you some other cool
+things we can do here. So DSMS
+
+691dac96-324b-4112-9807-815e2b55a047-1
+00:31:18.973 --> 00:31:21.510
+app by right click and say
+machine view.
+
+0c6a6fc4-baa9-4351-9042-80b4f7416ff8-0
+00:31:24.900 --> 00:31:27.820
+It's gonna show us some high
+level stuff about this machine.
+
+f2407071-8699-4d4c-bfef-273710f877ec-0
+00:31:28.640 --> 00:31:30.971
+Up in this upper right hand
+corner is going to show us the
+
+f2407071-8699-4d4c-bfef-273710f877ec-1
+00:31:30.971 --> 00:31:32.670
+services that are running on
+this machine.
+
+a319f0c4-0596-44d2-97a1-fe4574ea62ff-0
+00:31:37.060 --> 00:31:38.460
+And what you'll see is.
+
+59827c25-fdf0-4df4-b943-a0e18c0154aa-0
+00:31:39.130 --> 00:31:43.023
+The name of the service is going
+to be some string dot and then
+
+59827c25-fdf0-4df4-b943-a0e18c0154aa-1
+00:31:43.023 --> 00:31:46.978
+this thing is is identifying the
+build number and so you can see
+
+59827c25-fdf0-4df4-b943-a0e18c0154aa-2
+00:31:46.978 --> 00:31:50.263
+that this is. These are
+developer pipeline builds but
+
+59827c25-fdf0-4df4-b943-a0e18c0154aa-3
+00:31:50.263 --> 00:31:50.750
+you can.
+
+7b1458e3-1496-4bab-be72-38b9e256f630-0
+00:31:52.190 --> 00:31:54.130
+Match these up with.
+
+238bed41-415d-48f5-a7c2-f8776289655a-0
+00:31:58.960 --> 00:31:59.750
+Wait a minute.
+
+10a47147-58f8-4e7b-ada3-470e15fd47cb-0
+00:32:01.760 --> 00:32:04.250
+You can match these up with the
+stuff that.
+
+520933a0-c502-4b57-a5ed-04238d397801-0
+00:32:04.890 --> 00:32:09.464
+You were seeing in this list, so
+there's going to be a DSMS app
+
+520933a0-c502-4b57-a5ed-04238d397801-1
+00:32:09.464 --> 00:32:13.253
+service, an OS feature
+installer, and if we pop into
+
+520933a0-c502-4b57-a5ed-04238d397801-2
+00:32:13.253 --> 00:32:15.040
+here then I go to filter.
+
+fb7630d3-c0b8-4300-9623-b70623240238-0
+00:32:16.660 --> 00:32:18.260
+There's our OS feature
+installer.
+
+b6ff6498-db4f-469e-b792-f187f02c233c-0
+00:32:19.160 --> 00:32:24.076
+Right. And you'll see the same
+thing for the DSMS SQL machines,
+
+b6ff6498-db4f-469e-b792-f187f02c233c-1
+00:32:24.076 --> 00:32:28.993
+right? So DSMS app and DSMS SQL
+we call those machine functions
+
+b6ff6498-db4f-469e-b792-f187f02c233c-2
+00:32:28.993 --> 00:32:30.760
+in pilot fish parlance.
+
+7ceb0bd7-0638-4d57-8bf1-b8b565383694-0
+00:32:31.900 --> 00:32:34.400
+And that's what maps up with.
+
+73c27e90-da49-46f6-bc79-d718bbec9f79-0
+00:32:36.450 --> 00:32:36.920
+Uh.
+
+de3964f5-cd1e-49ea-be1e-929d475e9c38-0
+00:32:37.760 --> 00:32:41.828
+These values like use the SMS
+SQL machine function maps to
+
+de3964f5-cd1e-49ea-be1e-929d475e9c38-1
+00:32:41.828 --> 00:32:45.690
+this service list, DS app
+machine function maps to this
+
+de3964f5-cd1e-49ea-be1e-929d475e9c38-2
+00:32:45.690 --> 00:32:47.070
+service list, right?
+
+e84fdee9-a862-479b-813e-4e4211a942a7-0
+00:32:47.940 --> 00:32:48.420
+Umm.
+
+5c90177d-29cb-4735-a767-bc4c8820cce2-0
+00:32:50.050 --> 00:32:55.173
+So one thing I commonly do in in
+the XTS is I'll come here and if
+
+5c90177d-29cb-4735-a767-bc4c8820cce2-1
+00:32:55.173 --> 00:32:59.907
+the machines unhappy you can
+check the status. It's gonna be
+
+5c90177d-29cb-4735-a767-bc4c8820cce2-2
+00:32:59.907 --> 00:33:02.780
+either H for healthy, F for
+failing.
+
+6ef906cc-3b19-44c2-abb1-033195d6056a-0
+00:33:04.870 --> 00:33:08.497
+P for in probation, meaning it's
+been, it's healthy, it looks
+
+6ef906cc-3b19-44c2-abb1-033195d6056a-1
+00:33:08.497 --> 00:33:11.948
+healthy, but it hasn't been
+healthy for very long. So it's
+
+6ef906cc-3b19-44c2-abb1-033195d6056a-2
+00:33:11.948 --> 00:33:15.283
+on probation. We're we're
+waiting. And then you've got D
+
+6ef906cc-3b19-44c2-abb1-033195d6056a-3
+00:33:15.283 --> 00:33:18.968
+for dead, which means that we
+have to go in and take some kind
+
+6ef906cc-3b19-44c2-abb1-033195d6056a-4
+00:33:18.968 --> 00:33:21.660
+of action. Any other state, it's
+going to be.
+
+2817d629-014d-4527-9433-3f5b8ecd350e-0
+00:33:24.890 --> 00:33:28.519
+You know, going through like
+this self healing life cycle of
+
+2817d629-014d-4527-9433-3f5b8ecd350e-1
+00:33:28.519 --> 00:33:32.207
+if it's not healthy, it's gonna
+go. Oh well, I'm not healthy.
+
+2817d629-014d-4527-9433-3f5b8ecd350e-2
+00:33:32.207 --> 00:33:36.134
+Try restarting the service. Ohh,
+well then. OK. Restarting didn't
+
+2817d629-014d-4527-9433-3f5b8ecd350e-3
+00:33:36.134 --> 00:33:39.584
+work three times. Let's just
+reboot the machine. OK, that
+
+2817d629-014d-4527-9433-3f5b8ecd350e-4
+00:33:39.584 --> 00:33:43.452
+didn't work. Well, let's try an
+image on the machine. Right. And
+
+2817d629-014d-4527-9433-3f5b8ecd350e-5
+00:33:43.452 --> 00:33:47.021
+Autopilot is doing that for us.
+As long as we our code sets
+
+2817d629-014d-4527-9433-3f5b8ecd350e-6
+00:33:47.021 --> 00:33:48.390
+these values correctly.
+
+a76ecc19-923e-41cf-878a-1ea10828aa92-0
+00:33:49.420 --> 00:33:51.830
+Then you know the whole thing
+becomes kind of hands free.
+
+68fe1ad9-47b4-4658-ada0-f923048deb67-0
+00:33:55.250 --> 00:33:59.124
+So yeah, so, so that's great.
+Yeah. So so the the key pieces
+
+68fe1ad9-47b4-4658-ada0-f923048deb67-1
+00:33:59.124 --> 00:34:03.062
+of information. So like looking
+here looking at the status of
+
+68fe1ad9-47b4-4658-ada0-f923048deb67-2
+00:34:03.062 --> 00:34:06.936
+machines, right click, machine
+view and then check the stuff
+
+68fe1ad9-47b4-4658-ada0-f923048deb67-3
+00:34:06.936 --> 00:34:11.001
+here. And if the machines in an
+unhealthy state, you'll see red
+
+68fe1ad9-47b4-4658-ada0-f923048deb67-4
+00:34:11.001 --> 00:34:12.780
+in this watchdog properties.
+
+88fbce19-3e22-45b6-b2ff-6a249c203bfd-0
+00:34:13.500 --> 00:34:17.078
+And so that'll give you a clue
+into what's going on and then
+
+88fbce19-3e22-45b6-b2ff-6a249c203bfd-1
+00:34:17.078 --> 00:34:17.900
+repair audits.
+
+bee7c0d3-c3a2-420e-a6be-af09021cdaf2-0
+00:34:20.270 --> 00:34:24.455
+This is where you can see all of
+the stuff that autopilot has
+
+bee7c0d3-c3a2-420e-a6be-af09021cdaf2-1
+00:34:24.455 --> 00:34:27.290
+been doing so we can see that on
+the 8th.
+
+80f60216-8071-41b5-ae69-14ef5a0c3dd8-0
+00:34:28.180 --> 00:34:31.370
+It did an OS upgrade, so apply
+to Windows Update.
+
+4c56af01-ffa4-4fd3-8941-bd685ceca8d5-0
+00:34:32.970 --> 00:34:33.830
+And then.
+
+3e170d7d-11ab-4e8f-bd94-873d9674178b-0
+00:34:35.400 --> 00:34:40.369
+Looks like it had tried to do an
+OS upgrade a couple of times,
+
+3e170d7d-11ab-4e8f-bd94-873d9674178b-1
+00:34:40.369 --> 00:34:44.787
+maybe failed the first try
+succeeded the second try and
+
+3e170d7d-11ab-4e8f-bd94-873d9674178b-2
+00:34:44.787 --> 00:34:49.835
+then did an app roll out to get
+us caught up again and then the
+
+3e170d7d-11ab-4e8f-bd94-873d9674178b-3
+00:34:49.835 --> 00:34:52.360
+other place I go quite often is.
+
+95c77e0e-317b-46a9-8d57-358fc668da48-0
+00:34:54.300 --> 00:34:56.490
+Like I'll double click on a
+machine here.
+
+0a91a779-c3d2-4595-970c-a98ae0ea5893-0
+00:34:58.680 --> 00:35:00.650
+I'll double click on local logs.
+
+759d74c9-7ec8-421f-a8ae-36c4ca281a1a-0
+00:35:06.690 --> 00:35:12.245
+And then go up here to filter
+logs and go DSMS dash and we can
+
+759d74c9-7ec8-421f-a8ae-36c4ca281a1a-1
+00:35:12.245 --> 00:35:17.801
+see all of our DSMS logs and so
+you know how we in the code we
+
+759d74c9-7ec8-421f-a8ae-36c4ca281a1a-2
+00:35:17.801 --> 00:35:23.092
+would do this trace to AP and
+ifx. So Ifx is going into say
+
+759d74c9-7ec8-421f-a8ae-36c4ca281a1a-3
+00:35:23.092 --> 00:35:28.736
+kusto AP is going directly onto
+the machine and we can actually
+
+759d74c9-7ec8-421f-a8ae-36c4ca281a1a-4
+00:35:28.736 --> 00:35:30.500
+look at the AP logs.
+
+5c9f56fc-5214-4814-9ce7-793212617f01-0
+00:35:31.180 --> 00:35:31.960
+So.
+
+e7e5ab58-3e4c-46ea-8ba0-4865242aceac-0
+00:35:35.020 --> 00:35:38.652
+You know, if you're trying to
+figure out what's going wrong
+
+e7e5ab58-3e4c-46ea-8ba0-4865242aceac-1
+00:35:38.652 --> 00:35:42.588
+with a specific machine, this is
+often a a more convenient place
+
+e7e5ab58-3e4c-46ea-8ba0-4865242aceac-2
+00:35:42.588 --> 00:35:46.282
+to go than Cousteau. But we
+logged to both because sometimes
+
+e7e5ab58-3e4c-46ea-8ba0-4865242aceac-3
+00:35:46.282 --> 00:35:50.036
+you're in Cousteau and you wanna
+look at stuff going on on 10
+
+e7e5ab58-3e4c-46ea-8ba0-4865242aceac-4
+00:35:50.036 --> 00:35:53.547
+different machines and so
+whatever is the most useful for
+
+e7e5ab58-3e4c-46ea-8ba0-4865242aceac-5
+00:35:53.547 --> 00:35:53.790
+you.
+
+dae86e40-4870-40d4-9f65-2c2d3357c411-0
+00:35:55.960 --> 00:36:01.080
+I don't find myself using this
+pain a lot we've got.
+
+b0db737a-889c-4bfe-a6b4-9ec0a266b5e2-0
+00:36:04.080 --> 00:36:07.898
+Better dashboards for that.
+Trying to think what else is a
+
+b0db737a-889c-4bfe-a6b4-9ec0a266b5e2-1
+00:36:07.898 --> 00:36:09.710
+good quick thing to look at.
+
+61745498-b6de-4abe-b062-ad0e42a89f53-0
+00:36:11.030 --> 00:36:13.200
+Ohh you can also browse the file
+system.
+
+a3d2e78a-59b1-4fdc-88f5-b423410b7bff-0
+00:36:14.960 --> 00:36:19.003
+So any autopilot or pilot fish
+machine go under the file
+
+a3d2e78a-59b1-4fdc-88f5-b423410b7bff-1
+00:36:19.003 --> 00:36:19.500
+system.
+
+44dc1e85-0de8-4764-870a-c6a2262fd6d5-0
+00:36:20.330 --> 00:36:24.477
+This is all going to be on the D
+drive that we you can't browse
+
+44dc1e85-0de8-4764-870a-c6a2262fd6d5-1
+00:36:24.477 --> 00:36:28.236
+the Windows folder on C drive.
+Why would you want to? You
+
+44dc1e85-0de8-4764-870a-c6a2262fd6d5-2
+00:36:28.236 --> 00:36:32.060
+should never want to. App is
+where all of our services go.
+
+84bccab4-a64a-43c4-9e06-09a600325b6c-0
+00:36:34.600 --> 00:36:35.940
+So for instance.
+
+b1871183-ef9a-4bc6-b6dd-d616e7083836-0
+00:36:40.640 --> 00:36:43.150
+We can see some some DSMS stuff.
+
+71b0892d-c949-4799-b15a-d845de5936dc-0
+00:36:43.830 --> 00:36:46.040
+Right. So this is where all the
+binaries are going to go.
+
+8b73a182-076e-41c5-9977-59448423f790-0
+00:36:47.200 --> 00:36:47.760
+UM.
+
+a19c4e6f-d3b8-4503-8a22-56a693405bb9-0
+00:36:51.370 --> 00:36:53.040
+And then data.
+
+fe48f311-3105-4164-bc3d-6116f30026da-0
+00:36:54.670 --> 00:36:57.848
+It's pretty self-explanatory.
+It's very we're various data
+
+fe48f311-3105-4164-bc3d-6116f30026da-1
+00:36:57.848 --> 00:37:00.866
+folders go and so there's gonna
+be stuff written by our
+
+fe48f311-3105-4164-bc3d-6116f30026da-2
+00:37:00.866 --> 00:37:03.991
+applications and then also stuff
+written by the autopilot
+
+fe48f311-3105-4164-bc3d-6116f30026da-3
+00:37:03.991 --> 00:37:04.530
+framework.
+
+e05bab60-1666-4ccf-ac32-68b74d1af6f6-0
+00:37:06.090 --> 00:37:08.970
+So. So what I've shown you is.
+
+d1b4384f-491c-4aed-a089-efadf792ca40-0
+00:37:11.020 --> 00:37:13.160
+80% of.
+
+dd98c52f-01f4-42e3-820f-e5ba18c393de-0
+00:37:13.850 --> 00:37:16.190
+What you're gonna be doing
+inside of? Uh.
+
+4653e50f-cccf-4ab3-b6d4-0cccedfc8611-0
+00:37:16.840 --> 00:37:19.867
+XTS if you if you're
+troubleshooting what's going on
+
+4653e50f-cccf-4ab3-b6d4-0cccedfc8611-1
+00:37:19.867 --> 00:37:23.181
+in environment, cut the other
+most often used thing is VE
+
+4653e50f-cccf-4ab3-b6d4-0cccedfc8611-2
+00:37:23.181 --> 00:37:23.810
+deployment.
+
+4d086a60-6bb1-45a9-8920-34c35dfc6081-0
+00:37:24.600 --> 00:37:27.350
+So someday you'll be running a
+release.
+
+e8c202f4-cda8-490d-92df-fa423e7ec41a-0
+00:37:29.920 --> 00:37:32.120
+And you'll come here.
+
+b83b5d3d-5432-4360-b5bc-1dd34e9ac18d-0
+00:37:36.650 --> 00:37:40.967
+And click on the app deployment
+page and you'll use this to
+
+b83b5d3d-5432-4360-b5bc-1dd34e9ac18d-1
+00:37:40.967 --> 00:37:45.284
+manage our staging, right? We
+don't blast out everything to
+
+b83b5d3d-5432-4360-b5bc-1dd34e9ac18d-2
+00:37:45.284 --> 00:37:46.219
+one place we.
+
+ef92d9f5-fafb-447f-aec1-210c36d2edb2-0
+00:37:47.080 --> 00:37:50.882
+Sort of. You know, slowly expand
+the scope. So we we you send it
+
+ef92d9f5-fafb-447f-aec1-210c36d2edb2-1
+00:37:50.882 --> 00:37:54.626
+to a test environment and then
+to a stage environment then to a
+
+ef92d9f5-fafb-447f-aec1-210c36d2edb2-2
+00:37:54.626 --> 00:37:58.136
+Canary environment and then to
+low traffic regions and then
+
+ef92d9f5-fafb-447f-aec1-210c36d2edb2-3
+00:37:58.136 --> 00:38:01.822
+medium traffic regions and then
+the right, that's where all of
+
+ef92d9f5-fafb-447f-aec1-210c36d2edb2-4
+00:38:01.822 --> 00:38:05.449
+this is managed. And so you can
+see how the stages are going.
+
+ef92d9f5-fafb-447f-aec1-210c36d2edb2-5
+00:38:05.449 --> 00:38:09.018
+Did we get stuck anywhere? Did
+we roll back or if this is an
+
+ef92d9f5-fafb-447f-aec1-210c36d2edb2-6
+00:38:09.018 --> 00:38:12.470
+emergency thing today, Danny's
+doing an emergency hot fix.
+
+6fbd6cf5-244d-450a-b9ec-29dae47835aa-0
+00:38:13.290 --> 00:38:13.730
+Umm.
+
+58196429-5e62-4c51-8f23-a09d6bfa836b-0
+00:38:15.030 --> 00:38:18.597
+You know, so he might come in
+here and go. Oh no, no. This
+
+58196429-5e62-4c51-8f23-a09d6bfa836b-1
+00:38:18.597 --> 00:38:21.984
+needs to go out to this region
+now, right. So you might
+
+58196429-5e62-4c51-8f23-a09d6bfa836b-2
+00:38:21.984 --> 00:38:24.040
+override our whole staging
+logic.
+
+e093ad1a-20f6-422a-8ec7-ca99fd8fa05e-0
+00:38:25.980 --> 00:38:28.423
+You can if you need to, you
+shouldn't, but so. So that's the
+
+e093ad1a-20f6-422a-8ec7-ca99fd8fa05e-1
+00:38:28.423 --> 00:38:30.627
+that this is the other, you
+know, really common place.
+
+e093ad1a-20f6-422a-8ec7-ca99fd8fa05e-2
+00:38:30.627 --> 00:38:32.470
+There's a whole bunch of other
+views up here.
+
+62921c05-6aad-47a6-9ab4-3518088c94b5-0
+00:38:34.640 --> 00:38:38.137
+Uh, there's a lot of stuff
+that's specific to one service
+
+62921c05-6aad-47a6-9ab4-3518088c94b5-1
+00:38:38.137 --> 00:38:40.610
+or another that not really
+useful to us.
+
+941fc571-d2c5-473c-a7ce-f14b3c733651-0
+00:38:42.330 --> 00:38:43.080
+But uh.
+
+35491e19-2a58-4a0c-9d62-8b1ff804bab9-0
+00:38:44.980 --> 00:38:46.670
+I'm always finding out about new
+ones.
+
+d81a5df1-972b-4cd1-9625-e3a875f3d10d-0
+00:38:48.260 --> 00:38:51.310
+But the ones I've shown you just
+now are the the ones you're
+
+d81a5df1-972b-4cd1-9625-e3a875f3d10d-1
+00:38:51.310 --> 00:38:52.510
+gonna look at every day.
+
+861841e8-8fa2-40a9-9cb4-aae9b73dbdc8-0
+00:38:55.370 --> 00:38:55.940
+Yeah. OK.
+
+95b759f6-3eb8-4bba-a46b-ab1a9e7be85d-0
+00:38:57.810 --> 00:39:01.287
+In the Navigation Pane, so the
+first tab is environments. Can
+
+95b759f6-3eb8-4bba-a46b-ab1a9e7be85d-1
+00:39:01.287 --> 00:39:04.708
+you just walk me through that?
+So if you go to environments,
+
+95b759f6-3eb8-4bba-a46b-ab1a9e7be85d-2
+00:39:04.708 --> 00:39:07.904
+we'll see a bunch of different
+environments, OK. So it's
+
+95b759f6-3eb8-4bba-a46b-ab1a9e7be85d-3
+00:39:07.904 --> 00:39:11.437
+filtered by one, you filtered,
+you picked it up from some ini,
+
+95b759f6-3eb8-4bba-a46b-ab1a9e7be85d-4
+00:39:11.437 --> 00:39:14.971
+OK. And you went inside it and
+there were a bunch of different
+
+95b759f6-3eb8-4bba-a46b-ab1a9e7be85d-5
+00:39:14.971 --> 00:39:18.336
+services matching from that.
+Those square bracket services.
+
+95b759f6-3eb8-4bba-a46b-ab1a9e7be85d-6
+00:39:18.336 --> 00:39:21.476
+So these are these are the
+machines. These are actually
+
+95b759f6-3eb8-4bba-a46b-ab1a9e7be85d-7
+00:39:21.476 --> 00:39:23.720
+each of these are the physical
+machine.
+
+4965ee52-bc75-40ff-a87c-e16bae92a7d7-0
+00:39:25.870 --> 00:39:29.342
+And then each of these machines
+as services running on it. Yeah.
+
+4965ee52-bc75-40ff-a87c-e16bae92a7d7-1
+00:39:29.342 --> 00:39:30.090
+Yeah, they do.
+
+0475d8ee-a08c-491a-a232-c9e8550d427c-0
+00:39:31.500 --> 00:39:36.630
+Tab or SQL OK and they have
+logical IP S. OK, gotcha. OK.
+
+99f448fe-89e7-4041-a221-9823f3ac2f79-0
+00:39:39.460 --> 00:39:42.350
+Yeah. OK. And so when when?
+
+8d5acde5-c9c0-415a-b7b4-0b61c9ee8273-0
+00:39:44.040 --> 00:39:47.966
+When do you use XT as the most?
+When you are on call or like
+
+8d5acde5-c9c0-415a-b7b4-0b61c9ee8273-1
+00:39:47.966 --> 00:39:48.610
+every day?
+
+291ffbf6-c12f-4d89-84cc-e05d922206ee-0
+00:39:50.130 --> 00:39:54.530
+Umm, you know, on call you spend
+all your time in here?
+
+d317853c-b05d-4987-88f3-a5cdd08e141e-0
+00:39:56.820 --> 00:39:59.770
+You know, because this is also
+your jumping off point for like.
+
+a14bf1b5-26b6-451c-ada1-0bc3c3657fea-0
+00:40:01.510 --> 00:40:04.481
+Doing our opening up a remote
+desktop session so I can show
+
+a14bf1b5-26b6-451c-ada1-0bc3c3657fea-1
+00:40:04.481 --> 00:40:07.650
+you what that looks like. I've
+been doing a lot of that lately,
+
+a14bf1b5-26b6-451c-ada1-0bc3c3657fea-2
+00:40:07.650 --> 00:40:09.780
+so let me go ahead and close
+this session.
+
+cfac3a11-88f1-48f0-aaf6-45241b3839a9-0
+00:40:14.720 --> 00:40:17.060
+And I will reshare.
+
+e0c5f243-d14f-43d0-9d48-2b68de087f01-0
+00:40:18.470 --> 00:40:19.560
+On my saw.
+
+b95077e1-7bf8-4c78-9add-f0485f657f04-0
+00:40:32.520 --> 00:40:35.566
+Yeah. So the only time I really
+come in here is like during live
+
+b95077e1-7bf8-4c78-9add-f0485f657f04-1
+00:40:35.566 --> 00:40:38.520
+site stuff where it's like, OK,
+you need to go to the machine.
+
+77ed655c-1747-4d4e-b2f1-7a94c96a067a-0
+00:40:39.340 --> 00:40:42.350
+To see what's wrong, right? So I
+mean.
+
+76c1182f-db6c-42c6-9d83-956828785d6e-0
+00:40:43.420 --> 00:40:46.677
+Sometimes it'll be the customer
+saying, hey, I, you know, blah,
+
+76c1182f-db6c-42c6-9d83-956828785d6e-1
+00:40:46.677 --> 00:40:49.884
+blah blah is not working for me.
+And then you're probably just
+
+76c1182f-db6c-42c6-9d83-956828785d6e-2
+00:40:49.884 --> 00:40:53.040
+gonna be helping them with the
+SMS client commands and things
+
+76c1182f-db6c-42c6-9d83-956828785d6e-3
+00:40:53.040 --> 00:40:56.297
+like that. And looking at their
+data via kusto. But then if you
+
+76c1182f-db6c-42c6-9d83-956828785d6e-4
+00:40:56.297 --> 00:40:58.690
+get something says, hey, this
+machine is dead.
+
+25c06d40-1d9b-47b4-a3d5-b877e3a5f2da-0
+00:40:59.910 --> 00:41:01.240
+You. You come here to fix it.
+
+f40c9b63-3a86-4b55-9c61-526310a7bcdd-0
+00:41:02.290 --> 00:41:04.010
+And so for example.
+
+2b2b1737-269f-4c7c-a255-df148cac94dc-0
+00:41:05.980 --> 00:41:08.999
+Let's see. I'm just gonna find
+one of the machines I've been
+
+2b2b1737-269f-4c7c-a255-df148cac94dc-1
+00:41:08.999 --> 00:41:09.890
+messing with here.
+
+29c23c44-ce45-45c5-851f-d804621dd87b-0
+00:41:15.030 --> 00:41:17.370
+Where is that? Here we go.
+
+8fea377d-f0ff-4408-87a1-70ff3c900b30-0
+00:41:24.120 --> 00:41:27.125
+I'm just fine. I'm. I'm just
+finding an environment that I
+
+8fea377d-f0ff-4408-87a1-70ff3c900b30-1
+00:41:27.125 --> 00:41:30.435
+had to mess with earlier today.
+Umm, I'll show you what it looks
+
+8fea377d-f0ff-4408-87a1-70ff3c900b30-2
+00:41:30.435 --> 00:41:31.200
+like to log in.
+
+1787c04a-0341-4036-af16-d556be184d49-0
+00:41:44.440 --> 00:41:46.650
+So I wanted to go here, so I
+double click.
+
+a41d6b6c-93f6-46ca-a50a-01ad99c3d9dd-0
+00:41:47.570 --> 00:41:50.940
+And now let's say if I want to
+remote desktop to a machine.
+
+4f332990-ae5a-4ffc-9d71-0e20c4e27ede-0
+00:41:51.670 --> 00:41:55.660
+So I figured I found out this
+guy's unhappy. I right click.
+
+ac7ddb33-77c5-4e97-a8d4-480a64b3d871-0
+00:41:56.450 --> 00:41:58.340
+I would do request admin access.
+
+b560cc05-7b03-4e77-8528-71be1b139fba-0
+00:42:06.680 --> 00:42:10.288
+Oh well, it's automatically
+logging me in because I already
+
+b560cc05-7b03-4e77-8528-71be1b139fba-1
+00:42:10.288 --> 00:42:13.957
+got admin access, but normally
+this would open up a dialogue
+
+b560cc05-7b03-4e77-8528-71be1b139fba-2
+00:42:13.957 --> 00:42:15.160
+window and it would.
+
+bd455658-aef7-4608-ab68-8eefac3e44fc-0
+00:42:17.920 --> 00:42:20.816
+Set and create a jet request on
+my behalf. Somebody would
+
+bd455658-aef7-4608-ab68-8eefac3e44fc-1
+00:42:20.816 --> 00:42:23.811
+approve it and then I would
+connect. So basically I've I've
+
+bd455658-aef7-4608-ab68-8eefac3e44fc-2
+00:42:23.811 --> 00:42:25.260
+logged into the machine here.
+
+dfc4fc6d-f233-498d-9078-951d12000c7e-0
+00:42:27.820 --> 00:42:32.110
+Well, and you'll see. Like if I
+just open up Windows Explorer.
+
+bebc5eb8-d3d5-4125-9f84-ccdf33a0174f-0
+00:42:33.340 --> 00:42:34.730
+I'll look on the D drive.
+
+38ba7efc-9873-453e-ac0d-06f214033a31-0
+00:42:35.780 --> 00:42:38.650
+There's my app folder, there's
+my data folder.
+
+9b4bba68-c055-4279-b229-dcb71578905b-0
+00:42:46.070 --> 00:42:47.120
+Alright so.
+
+a28bb5b7-5898-4c31-b6ff-3d4d812f9729-0
+00:42:50.690 --> 00:42:51.010
+Yeah.
+
+643d361d-f861-48a8-ab71-dc686fe4a995-0
+00:42:52.110 --> 00:42:52.510
+OK.
+
+37ec6d70-f23e-45ea-b2eb-e5f47d064d99-0
+00:42:55.000 --> 00:42:57.250
+And like, do anything back.
+
+a41c9d96-2063-4341-a33d-dd634998c1c9-0
+00:42:58.470 --> 00:43:02.521
+So in a couple of minutes back,
+you were saying you'll go to
+
+a41c9d96-2063-4341-a33d-dd634998c1c9-1
+00:43:02.521 --> 00:43:05.510
+Costco and and check the logs
+and stuff. Uh.
+
+27fab928-e2f4-4047-b321-fe8be217956b-0
+00:43:06.950 --> 00:43:10.027
+Like if if some customer is
+saying that you know I got some
+
+27fab928-e2f4-4047-b321-fe8be217956b-1
+00:43:10.027 --> 00:43:13.053
+troubles in this machine or
+whatever. So so will you go to
+
+27fab928-e2f4-4047-b321-fe8be217956b-2
+00:43:13.053 --> 00:43:16.335
+coast gusto in that scenario as
+well because it's gonna pull up
+
+27fab928-e2f4-4047-b321-fe8be217956b-3
+00:43:16.335 --> 00:43:19.207
+the logs from a bunch of
+different machines. Yeah. So I
+
+27fab928-e2f4-4047-b321-fe8be217956b-4
+00:43:19.207 --> 00:43:20.489
+mean it's it's kind of a.
+
+907c9a0e-d594-4739-9361-066d9e095b0e-0
+00:43:22.100 --> 00:43:26.673
+So wherever the right tool for
+the job is, right? So when I'm
+
+907c9a0e-d594-4739-9361-066d9e095b0e-1
+00:43:26.673 --> 00:43:31.394
+helping customers, I'm typically
+gonna be either inside of DSMS
+
+907c9a0e-d594-4739-9361-066d9e095b0e-2
+00:43:31.394 --> 00:43:34.640
+client on my saw machine going.
+Hey, let's.
+
+855bff07-54a8-462c-802e-bb7f5b868948-0
+00:43:35.710 --> 00:43:39.283
+Let's look at your secret.
+What's going on here? Or I'm
+
+855bff07-54a8-462c-802e-bb7f5b868948-1
+00:43:39.283 --> 00:43:43.176
+gonna be? Or if they're saying,
+hey, the the blah, blah blah
+
+855bff07-54a8-462c-802e-bb7f5b868948-2
+00:43:43.176 --> 00:43:47.070
+call fails whenever I try and
+rotate the certificate, I get.
+
+56e3a886-c476-4a04-8e01-68b5b172d2d5-0
+00:43:48.050 --> 00:43:51.220
+You know 500 or something,
+right? And then that one I
+
+56e3a886-c476-4a04-8e01-68b5b172d2d5-1
+00:43:51.220 --> 00:43:54.860
+probably go to kusto because
+we've got 10 front end machines.
+
+d3e4fa05-f8e1-44c8-975f-987afaee71ea-0
+00:43:56.000 --> 00:44:00.322
+Who knows which front end
+machine it hit that got the 500,
+
+d3e4fa05-f8e1-44c8-975f-987afaee71ea-1
+00:44:00.322 --> 00:44:05.011
+so I would go into Cousteau and
+I would form the query that OK,
+
+d3e4fa05-f8e1-44c8-975f-987afaee71ea-2
+00:44:05.011 --> 00:44:09.554
+what's the name of your secret?
+OK API called event where URL
+
+d3e4fa05-f8e1-44c8-975f-987afaee71ea-3
+00:44:09.554 --> 00:44:10.580
+path contains.
+
+dd7f3dc5-6ebf-4f1e-a0fa-95e4eeaddc7b-0
+00:44:11.240 --> 00:44:12.850
+This guy's secret name.
+
+ea0665c5-816a-45eb-b987-640c9ec81764-0
+00:44:13.540 --> 00:44:14.670
+Within the last.
+
+bf8fa33d-ba99-4943-a943-00516cd534bb-0
+00:44:15.420 --> 00:44:20.715
+Day where status code equals
+500, right? And then that will
+
+bf8fa33d-ba99-4943-a943-00516cd534bb-1
+00:44:20.715 --> 00:44:21.510
+get that.
+
+967f30b0-cbc4-4580-a0d0-6e8730182b05-0
+00:44:22.290 --> 00:44:26.272
+It won't matter what front end
+machine processed that call.
+
+967f30b0-cbc4-4580-a0d0-6e8730182b05-1
+00:44:26.272 --> 00:44:27.600
+We'll see it, right?
+
+fba185aa-edac-48f4-b673-073b2976a109-0
+00:44:29.360 --> 00:44:34.050
+So and then there's also the
+kusto has like.
+
+eb17e7a8-240f-481d-b279-cac8ffb29c47-0
+00:44:34.930 --> 00:44:39.100
+As a snapshot of customer
+secrets and stuff. So.
+
+a1614521-074e-4f77-8fda-6a4afcc542d4-0
+00:44:41.860 --> 00:44:45.999
+Customer facing stuff. I'll
+typically be in in kusto, DSS
+
+a1614521-074e-4f77-8fda-6a4afcc542d4-1
+00:44:45.999 --> 00:44:47.570
+client low level like.
+
+30b2a437-41a8-4790-bde6-658bc6161d32-0
+00:44:48.220 --> 00:44:52.031
+The service is unhealthy, but
+the customer probably doesn't
+
+30b2a437-41a8-4790-bde6-658bc6161d32-1
+00:44:52.031 --> 00:44:53.810
+know any better. I'm in XTS.
+
+0d3455a1-9c88-4fd3-a419-598ceaeb8aa2-0
+00:44:54.850 --> 00:44:57.080
+Full on outage. I'm in XTS.
+
+01cd8a22-e92b-4182-b956-ff1d8ba35688-0
+00:44:57.950 --> 00:44:58.940
+So yeah.
+
+f398f9df-238d-4bd8-a7a2-217d69da99ed-0
+00:44:59.910 --> 00:45:00.290
+OK.
+
+dc82db4c-ab4b-419b-8187-f88ed2a9a948-0
+00:45:01.090 --> 00:45:04.316
+Yeah, but outage has never
+happened, right? So you'll be
+
+dc82db4c-ab4b-419b-8187-f88ed2a9a948-1
+00:45:04.316 --> 00:45:04.600
+fine.
+
+fd68a43d-0049-48ad-8a95-444f7c258909-0
+00:45:07.720 --> 00:45:08.200
+OK.
+
+c05a7ec3-1519-4158-9e71-1366d2235743-0
+00:45:09.320 --> 00:45:14.312
+Yeah, so so next steps for me.
+I'm gonna. I'm gonna play around
+
+c05a7ec3-1519-4158-9e71-1366d2235743-1
+00:45:14.312 --> 00:45:17.510
+with UH-1 box, and I'm gonna try
+to run.
+
+d40707d6-2b82-4610-a00e-5da5d318a8aa-0
+00:45:18.820 --> 00:45:22.751
+Or like distribution package or
+service and try to look up the
+
+d40707d6-2b82-4610-a00e-5da5d318a8aa-1
+00:45:22.751 --> 00:45:26.495
+logs at in store everything is
+happening or not awesome and
+
+d40707d6-2b82-4610-a00e-5da5d318a8aa-2
+00:45:26.495 --> 00:45:27.120
+really do.
+
+35b53770-f8ef-4a64-b51e-11944906da2f-0
+00:45:27.830 --> 00:45:31.319
+You know, take notes and if
+there's anything that's unclear
+
+35b53770-f8ef-4a64-b51e-11944906da2f-1
+00:45:31.319 --> 00:45:33.820
+or difficult about the one box
+experience.
+
+ca0ba195-585c-42b1-8fd5-46cb22f46c73-0
+00:45:35.390 --> 00:45:40.507
+You know, write it down and fire
+off emails to like the DS.
+
+ca0ba195-585c-42b1-8fd5-46cb22f46c73-1
+00:45:40.507 --> 00:45:41.360
+MSFT's UM.
+
+58a06c7c-88cb-4d7a-9d46-32431dc3244b-0
+00:45:42.340 --> 00:45:46.876
+You know, because we really do
+want it to just become an
+
+58a06c7c-88cb-4d7a-9d46-32431dc3244b-1
+00:45:46.876 --> 00:45:50.060
+automatic hands free thing for
+sure so.
+
+401ba5b6-51b3-4913-80fc-1d48372cc2f8-0
+00:45:51.000 --> 00:45:52.360
+Def. Definitely uh.
+
+d26155bc-8426-4fe9-ba70-8459e47cdbc4-0
+00:45:53.440 --> 00:45:56.741
+Sure. Yeah. No, don't. Don't
+bang your head on the wall for
+
+d26155bc-8426-4fe9-ba70-8459e47cdbc4-1
+00:45:56.741 --> 00:45:59.988
+half a day and think that the
+problem is you. The problems
+
+d26155bc-8426-4fe9-ba70-8459e47cdbc4-2
+00:45:59.988 --> 00:46:03.290
+with the one box tool and it
+needs to just be bullet proof.
+
+169b88f8-244c-4def-9f42-30e3347160f0-0
+00:46:04.770 --> 00:46:09.469
+Yeah, I I yeah. I was just doing
+1 box stuff today because like
+
+169b88f8-244c-4def-9f42-30e3347160f0-1
+00:46:09.469 --> 00:46:14.169
+when I started like a month or
+something and I was trying to do
+
+169b88f8-244c-4def-9f42-30e3347160f0-2
+00:46:14.169 --> 00:46:18.795
+1 box, it wasn't working for me.
+And then I started again this
+
+169b88f8-244c-4def-9f42-30e3347160f0-3
+00:46:18.795 --> 00:46:22.834
+morning and I I had a bit of
+luck today like if things
+
+169b88f8-244c-4def-9f42-30e3347160f0-4
+00:46:22.834 --> 00:46:26.799
+worked. But so there's a there's
+a looks I I kind of.
+
+4d19bd3f-74f0-4242-a93b-c5815ff895d3-0
+00:46:27.800 --> 00:46:31.194
+Made a blunder or something on
+Friday like my whole machine
+
+4d19bd3f-74f0-4242-a93b-c5815ff895d3-1
+00:46:31.194 --> 00:46:34.644
+was, uh, you know, resetted and
+and I had to like my whole C
+
+4d19bd3f-74f0-4242-a93b-c5815ff895d3-2
+00:46:34.644 --> 00:46:38.151
+program files that folder was
+gone like with sticky notes and
+
+4d19bd3f-74f0-4242-a93b-c5815ff895d3-3
+00:46:38.151 --> 00:46:41.546
+every kind of stuff like every
+software I had installed. So
+
+4d19bd3f-74f0-4242-a93b-c5815ff895d3-4
+00:46:41.546 --> 00:46:43.129
+because there was something.
+
+e54688dc-a8a9-45a4-8390-bc573928a7b6-0
+00:46:44.150 --> 00:46:48.987
+Uh, so I was trying to enlist to
+PF gold. Uh on Friday and uh,
+
+e54688dc-a8a9-45a4-8390-bc573928a7b6-1
+00:46:48.987 --> 00:46:53.671
+when I was trying to do that it
+it kept giving me some weird
+
+e54688dc-a8a9-45a4-8390-bc573928a7b6-2
+00:46:53.671 --> 00:46:58.048
+errors saying username not
+authorized or something. So I
+
+e54688dc-a8a9-45a4-8390-bc573928a7b6-3
+00:46:58.048 --> 00:47:01.119
+looked up that error on Stack
+Overflow.
+
+c9b4a102-b5b8-4e84-8653-52a76c0ec2a9-0
+00:47:02.550 --> 00:47:05.941
+Internal Stack overflow and
+someone said it so that your
+
+c9b4a102-b5b8-4e84-8653-52a76c0ec2a9-1
+00:47:05.941 --> 00:47:09.690
+next stop is probably not set up
+correctly. You need to change
+
+c9b4a102-b5b8-4e84-8653-52a76c0ec2a9-2
+00:47:09.690 --> 00:47:13.558
+the name of your machine to blah
+blah blah just like your alias-
+
+c9b4a102-b5b8-4e84-8653-52a76c0ec2a9-3
+00:47:13.558 --> 00:47:17.247
+something. So I did that and
+like my whole stuff was gone and
+
+c9b4a102-b5b8-4e84-8653-52a76c0ec2a9-4
+00:47:17.247 --> 00:47:20.817
+I was trying to redo things and
+finally I got things up and
+
+c9b4a102-b5b8-4e84-8653-52a76c0ec2a9-5
+00:47:20.817 --> 00:47:24.268
+running again OK. And that that
+bug was resolved that the
+
+c9b4a102-b5b8-4e84-8653-52a76c0ec2a9-6
+00:47:24.268 --> 00:47:27.601
+original bug and that's why I
+started one box today and
+
+c9b4a102-b5b8-4e84-8653-52a76c0ec2a9-7
+00:47:27.601 --> 00:47:31.052
+probably it was the same issue
+with one box as well. Like
+
+c9b4a102-b5b8-4e84-8653-52a76c0ec2a9-8
+00:47:31.052 --> 00:47:32.540
+earlier maybe yeah maybe.
+
+d1bfb709-7a8c-46b3-9df8-4313d6b3e15f-0
+00:47:32.630 --> 00:47:35.916
+And then and then also one
+person who's been wrestling with
+
+d1bfb709-7a8c-46b3-9df8-4313d6b3e15f-1
+00:47:35.916 --> 00:47:37.340
+it a lot is Michael Daria.
+
+06e68a7c-8e41-40df-9721-b9583b03d028-0
+00:47:38.880 --> 00:47:41.929
+He's the guy who actually shares
+an office with me. I don't know
+
+06e68a7c-8e41-40df-9721-b9583b03d028-1
+00:47:41.929 --> 00:47:43.290
+if you've met. Yeah. Yeah, I.
+
+f3ba14aa-e6a2-42e1-8521-dc328795143b-0
+00:47:44.350 --> 00:47:44.870
+And uh.
+
+1b14e65a-df65-4e8b-bfcd-4e0397b7886f-0
+00:47:47.020 --> 00:47:50.903
+Yeah, he's he. He's been trying
+to get into end testing, going
+
+1b14e65a-df65-4e8b-bfcd-4e0397b7886f-1
+00:47:50.903 --> 00:47:54.478
+for the SDP project, so he might
+be able to give you some
+
+1b14e65a-df65-4e8b-bfcd-4e0397b7886f-2
+00:47:54.478 --> 00:47:55.280
+pointers but.
+
+30bcba07-0576-4ff1-ad30-39ae3ff248dd-0
+00:47:56.390 --> 00:47:59.882
+Yeah. So The thing is like I, I
+I don't know if you ever tried
+
+30bcba07-0576-4ff1-ad30-39ae3ff248dd-1
+00:47:59.882 --> 00:48:03.209
+like 1 box stuff. So, so I uh,
+so there's a step, there's a
+
+30bcba07-0576-4ff1-ad30-39ae3ff248dd-2
+00:48:03.209 --> 00:48:06.369
+bunch of documents I was
+following and there's a step to
+
+30bcba07-0576-4ff1-ad30-39ae3ff248dd-3
+00:48:06.369 --> 00:48:09.862
+run build, validation test. I
+don't know what test these tests
+
+30bcba07-0576-4ff1-ad30-39ae3ff248dd-4
+00:48:09.862 --> 00:48:13.299
+are, but every each of them was
+failing. So I talked to Diana
+
+30bcba07-0576-4ff1-ad30-39ae3ff248dd-5
+00:48:13.299 --> 00:48:16.848
+about this and like apparently
+that those tests are failing for
+
+30bcba07-0576-4ff1-ad30-39ae3ff248dd-6
+00:48:16.848 --> 00:48:20.340
+everyone. I mean no one got that
+running. So I don't know what
+
+30bcba07-0576-4ff1-ad30-39ae3ff248dd-7
+00:48:20.340 --> 00:48:23.722
+the issue is, but I'm going to
+make the notes and point like
+
+30bcba07-0576-4ff1-ad30-39ae3ff248dd-8
+00:48:23.722 --> 00:48:23.999
+make.
+
+92da070e-d9fa-4a52-bee9-83abda753c11-0
+00:48:25.280 --> 00:48:28.862
+Note these things. I'm gonna
+revisit them and yeah, I will
+
+92da070e-d9fa-4a52-bee9-83abda753c11-1
+00:48:28.862 --> 00:48:29.470
+follow up.
+
+11f6cfe9-7f0d-4e7d-9934-9464b0b785e7-0
+00:48:30.510 --> 00:48:31.860
+OK, cool. Yeah.
+
+b1d3841b-76c7-4607-b80d-73aa71028c9c-0
+00:48:34.510 --> 00:48:37.512
+Yeah, like the situation we were
+in before the one box got
+
+b1d3841b-76c7-4607-b80d-73aa71028c9c-1
+00:48:37.512 --> 00:48:38.480
+rewritten was like.
+
+3bf6d34f-25e3-4ddb-8809-0aeb79539b1a-0
+00:48:39.820 --> 00:48:41.050
+For half the team.
+
+4212f475-9f48-48e0-9481-02ccdbaae8fc-0
+00:48:42.490 --> 00:48:45.993
+Could get it working. It works
+on their dev machines but on
+
+4212f475-9f48-48e0-9481-02ccdbaae8fc-1
+00:48:45.993 --> 00:48:49.030
+nobody elses and nobody
+remembered why it's so they
+
+4212f475-9f48-48e0-9481-02ccdbaae8fc-2
+00:48:49.030 --> 00:48:52.300
+didn't know how to help the
+people that were broken so.
+
+2ba26075-f754-48ce-9c9f-45aa32629f86-0
+00:48:54.170 --> 00:48:58.710
+And I and I think it was like
+some certificate leftover from.
+
+26f965f6-0e79-4baf-8ea7-aabbb3327ca3-0
+00:48:59.790 --> 00:49:03.967
+The original Secret store
+application, which has now been
+
+26f965f6-0e79-4baf-8ea7-aabbb3327ca3-1
+00:49:03.967 --> 00:49:08.576
+deprecated, but the DSMS used to
+bootstrap off of or something.
+
+26f965f6-0e79-4baf-8ea7-aabbb3327ca3-2
+00:49:08.576 --> 00:49:13.113
+And like I'm still getting some
+errors, but I think they might
+
+26f965f6-0e79-4baf-8ea7-aabbb3327ca3-3
+00:49:13.113 --> 00:49:17.578
+be they might not be too harmful
+and OK to proceed, but yeah,
+
+26f965f6-0e79-4baf-8ea7-aabbb3327ca3-4
+00:49:17.578 --> 00:49:21.179
+I'll find it out. Yeah. And one
+last thing, Jeff.
+
+0daaf765-888e-42ca-b03d-a8014ed4f15c-0
+00:49:22.760 --> 00:49:27.058
+So so when you're talking about
+developer environment like Dev,
+
+0daaf765-888e-42ca-b03d-a8014ed4f15c-1
+00:49:27.058 --> 00:49:29.140
+two machine or whatever. So uh.
+
+28c35397-fc9e-4893-81a6-da1f4d25ce61-0
+00:49:30.070 --> 00:49:33.164
+So I remember the PPF gold
+thing. So do we need to make
+
+28c35397-fc9e-4893-81a6-da1f4d25ce61-1
+00:49:33.164 --> 00:49:36.535
+changes in that repository or
+use those functionalities when
+
+28c35397-fc9e-4893-81a6-da1f4d25ce61-2
+00:49:36.535 --> 00:49:39.685
+we are trying to deploy on
+Canary node or any production
+
+28c35397-fc9e-4893-81a6-da1f4d25ce61-3
+00:49:39.685 --> 00:49:43.167
+level or developer environments?
+Right now we've got four it's
+
+28c35397-fc9e-4893-81a6-da1f4d25ce61-4
+00:49:43.167 --> 00:49:45.819
+developer 1, developer 2
+developer 3 developer.
+
+f81d8948-fce0-4f4f-bbfb-b4f52941818f-0
+00:49:46.500 --> 00:49:49.530
+And those are full on.
+
+b15c355e-d515-4ab0-81b2-cca39aa77a6c-0
+00:49:50.360 --> 00:49:53.750
+Production like topologies.
+
+92ca91ee-36d5-4603-a989-e1203771acac-0
+00:49:55.190 --> 00:49:59.613
+They they are, you know,
+complete environments, you know,
+
+92ca91ee-36d5-4603-a989-e1203771acac-1
+00:49:59.613 --> 00:50:01.520
+in and of themselves and.
+
+6bf6f720-0caa-4ff7-9698-c5b64308a39a-0
+00:50:02.710 --> 00:50:05.220
+But to deploy to them you use
+that.
+
+791be756-54f4-4184-852c-e5ef1a7c4f28-0
+00:50:06.590 --> 00:50:10.407
+That pipeline that I was showing
+you earlier, we've it's it's not
+
+791be756-54f4-4184-852c-e5ef1a7c4f28-1
+00:50:10.407 --> 00:50:13.010
+like doing a production
+deployment where we.
+
+a07ca9f8-9109-4cc5-b15e-dc66013022ea-0
+00:50:13.820 --> 00:50:19.114
+Updated deployment ini file and
+there's a a code review and all
+
+a07ca9f8-9109-4cc5-b15e-dc66013022ea-1
+00:50:19.114 --> 00:50:20.190
+that for the.
+
+f348d3c9-a59a-4278-a077-0b9b59e49fcb-0
+00:50:21.550 --> 00:50:25.369
+Developer pipelines. We've tried
+to streamline it a little bit so
+
+f348d3c9-a59a-4278-a077-0b9b59e49fcb-1
+00:50:25.369 --> 00:50:28.610
+you can just go to the the
+website and say create a new
+
+f348d3c9-a59a-4278-a077-0b9b59e49fcb-2
+00:50:28.610 --> 00:50:31.620
+build and it should go pick it
+up from anywhere so.
+
+1c698a7e-4156-41df-b921-378aa5c00bb2-0
+00:50:32.800 --> 00:50:36.570
+So PF goal is specifically meant
+for production level deployments
+
+1c698a7e-4156-41df-b921-378aa5c00bb2-1
+00:50:36.570 --> 00:50:40.169
+and those now everything's PPF
+gold, right? Even the developer
+
+1c698a7e-4156-41df-b921-378aa5c00bb2-2
+00:50:40.169 --> 00:50:41.540
+machines are in PF gold.
+
+6d4161ed-4d80-41ad-85b2-1ea46d48907e-0
+00:50:42.330 --> 00:50:45.918
+Where does? Yeah, streamlined
+little bit like why are you guys
+
+6d4161ed-4d80-41ad-85b2-1ea46d48907e-1
+00:50:45.918 --> 00:50:46.260
+right?
+
+c16d203a-90d9-47c3-adb8-1284764a9b91-0
+00:50:47.930 --> 00:50:51.862
+If I want to deploy something on
+Karen Canary or production then
+
+c16d203a-90d9-47c3-adb8-1284764a9b91-1
+00:50:51.862 --> 00:50:55.855
+I need to interfere with PF gold
+actually like that, right? Yeah.
+
+c16d203a-90d9-47c3-adb8-1284764a9b91-2
+00:50:55.855 --> 00:50:59.606
+We have like a deployment.in I
+file where we say this maps to
+
+c16d203a-90d9-47c3-adb8-1284764a9b91-3
+00:50:59.606 --> 00:51:03.297
+this. This maps to that and
+there are ways to integrate that
+
+c16d203a-90d9-47c3-adb8-1284764a9b91-4
+00:51:03.297 --> 00:51:03.600
+with.
+
+be5a9645-f7e1-4f53-9f60-e899e82ff2dc-0
+00:51:04.480 --> 00:51:07.882
+Some of the modern you know, Web
+UI build pipelines, just like we
+
+be5a9645-f7e1-4f53-9f60-e899e82ff2dc-1
+00:51:07.882 --> 00:51:09.790
+did with the developer
+environments.
+
+3ae639b8-42d6-40bf-9e72-7698e8d2a598-0
+00:51:12.190 --> 00:51:14.070
+Right, OK. We just haven't.
+
+feac8fc1-d990-4567-9364-d3994c08dda1-0
+00:51:15.660 --> 00:51:18.714
+You know, we're not deploying to
+production that often. It's like
+
+feac8fc1-d990-4567-9364-d3994c08dda1-1
+00:51:18.714 --> 00:51:21.630
+a once a month thing. It just
+hasn't been a thing that we need
+
+feac8fc1-d990-4567-9364-d3994c08dda1-2
+00:51:21.630 --> 00:51:22.510
+to optimize, right.
+
+3257335f-75df-4a08-ae2a-f877421e1c7d-0
+00:51:23.250 --> 00:51:28.023
+And and can you explain me in in
+in single line the difference
+
+3257335f-75df-4a08-ae2a-f877421e1c7d-1
+00:51:28.023 --> 00:51:32.494
+between PF cold and and sorry
+the difference between pilot
+
+3257335f-75df-4a08-ae2a-f877421e1c7d-2
+00:51:32.494 --> 00:51:36.586
+fish and autopilot like
+autopilot is like a framework
+
+3257335f-75df-4a08-ae2a-f877421e1c7d-3
+00:51:36.586 --> 00:51:37.420
+autopilots.
+
+a9ac6750-7544-4873-b77f-38642b102a15-0
+00:51:38.310 --> 00:51:41.570
+Pilot fish is autopilot plus.
+
+984b72c4-aed2-4acd-aa6b-cda6459cbab2-0
+00:51:43.680 --> 00:51:47.270
+A whole bunch more security and
+compliance.
+
+bb8a0741-6397-4d9e-be76-0ce8c088ef59-0
+00:51:48.610 --> 00:51:51.760
+OK, so we use it
+interchangeably.
+
+ff629f01-17c9-4f40-9917-c400164cc35e-0
+00:51:53.570 --> 00:51:54.870
+Yeah. So.
+
+a7f2b795-33de-4cde-ad90-df64349b38a0-0
+00:51:57.080 --> 00:51:57.520
+Like.
+
+4d2f512c-8602-43e0-bad0-8570f7e6865f-0
+00:51:59.500 --> 00:52:00.230
+If you have.
+
+56d1ba6e-6132-4fb5-a5a7-5d5c893e8f6d-0
+00:52:00.950 --> 00:52:03.320
+So, so so for example.
+
+4957c442-5cd6-417e-97bc-1a5027df57dc-0
+00:52:06.960 --> 00:52:10.628
+You know, to to, to run
+something inside of the US
+
+4957c442-5cd6-417e-97bc-1a5027df57dc-1
+00:52:10.628 --> 00:52:13.290
+government. National cloud,
+there's.
+
+c4b1f918-e2ef-4040-9e2d-5a390fbee3e8-0
+00:52:14.680 --> 00:52:19.031
+Requirements you know about like
+you know how the environment is
+
+c4b1f918-e2ef-4040-9e2d-5a390fbee3e8-1
+00:52:19.031 --> 00:52:23.249
+managed, that autopilot doesn't
+mean. So we had to put it into
+
+c4b1f918-e2ef-4040-9e2d-5a390fbee3e8-2
+00:52:23.249 --> 00:52:26.530
+pilot fish. There is a place on
+engineering hub.
+
+cacead0a-5ed5-40b4-bd8a-cec774cecf37-0
+00:52:28.620 --> 00:52:30.370
+That goes into the details.
+
+096fa399-d905-4c9b-8ad4-6dd416aad91f-0
+00:52:31.630 --> 00:52:31.960
+OK.
+
+4f5ec525-45e1-4102-bc69-801da0127779-0
+00:52:36.020 --> 00:52:38.980
+Everything we do is in pilot
+fish.
+
+4f2d29bc-6fd2-4159-bac0-8309f928352b-0
+00:52:39.890 --> 00:52:40.230
+OK.
+
+9e2b2e1a-89c2-4839-8d0f-8af47cc79e63-0
+00:52:41.050 --> 00:52:45.473
+Of ohh another big difference
+between autopilot and pilot fish
+
+9e2b2e1a-89c2-4839-8d0f-8af47cc79e63-1
+00:52:45.473 --> 00:52:47.580
+is pilot fish is domain lists.
+
+9307b974-4720-47e1-a247-ea8f14112c78-0
+00:52:48.360 --> 00:52:52.941
+Where is Autopilot has a I think
+it's PHX domain, although I
+
+9307b974-4720-47e1-a247-ea8f14112c78-1
+00:52:52.941 --> 00:52:55.270
+think that that's changing but.
+
+c8e1629e-9a76-4317-9c38-1bf9cdf54e7b-0
+00:53:35.240 --> 00:53:38.424
+Yeah, pilot fish has been
+audited and is compliant with
+
+c8e1629e-9a76-4317-9c38-1bf9cdf54e7b-1
+00:53:38.424 --> 00:53:39.960
+blah, blah, blah blah blah.
+
+f5e8c929-a346-46c0-8f73-b7e735ae3882-0
+00:53:41.130 --> 00:53:41.720
+So.
+
+ec305a2d-5d86-408e-9f75-764cc479f2c4-0
+00:53:42.740 --> 00:53:44.180
+
+
+3ae7d45c-545e-4d0c-b9a9-97a838d1cf1d-0
+00:53:46.810 --> 00:53:48.240
+I'll go ahead and put that in
+chat.
+
+6271d46e-0397-4c31-a501-45cb4eee42b2-0
+00:53:52.390 --> 00:53:54.500
+And there are some additional.
+
+86944699-30e8-4cba-b8bc-ba9d7f17d3c1-0
+00:53:56.050 --> 00:53:57.800
+Process constraints about.
+
+65483ddf-ce99-43f0-a389-34bd6b964cd7-0
+00:53:58.540 --> 00:54:00.790
+You know how we get stuff into
+pilot fish?
+
+596a81dc-c7ce-4120-8da2-dd43b9593e38-0
+00:54:02.320 --> 00:54:02.790
+So.
+
+6f16bb94-c123-4c6a-aca7-3fb6f32054a4-0
+00:54:03.710 --> 00:54:08.160
+For example, any check in into
+the pilot Fish control plane,
+
+6f16bb94-c123-4c6a-aca7-3fb6f32054a4-1
+00:54:08.160 --> 00:54:10.350
+everything's got to be signed.
+
+95023772-e903-4db3-8413-92c96684e27d-0
+00:54:12.140 --> 00:54:14.791
+There's, you know, code review
+requirements and you know the
+
+95023772-e903-4db3-8413-92c96684e27d-1
+00:54:14.791 --> 00:54:15.270
+way things.
+
+d4af05b5-e426-4438-b9d6-72b4afe15884-0
+00:54:16.260 --> 00:54:17.330
+Uh, like that or done?
+
+fc8bdd37-68c5-4c89-b2f0-6edd21d6dcec-0
+00:54:19.270 --> 00:54:22.480
+Just more more stringent than in
+an AP classic.
+
+22a4c3fe-29fe-4c2e-bfbd-641ecdbee640-0
+00:54:25.760 --> 00:54:29.682
+I have a feeling that's
+everything is gonna be pilotfish
+
+22a4c3fe-29fe-4c2e-bfbd-641ecdbee640-1
+00:54:29.682 --> 00:54:30.990
+eventually because.
+
+20bcdf2d-057a-433b-8d2d-e91399fef3e4-0
+00:54:33.930 --> 00:54:36.610
+You know, so so many of the
+things that we have to do.
+
+38b37bb7-265a-4496-8101-5b8c5d7231c3-0
+00:54:38.220 --> 00:54:41.573
+Like if there's a really good
+security requirement to meet on
+
+38b37bb7-265a-4496-8101-5b8c5d7231c3-1
+00:54:41.573 --> 00:54:45.090
+pilot fish, why wouldn't we want
+to meet it in autopilot, right?
+
+94268f69-1008-48ee-b6e9-abf396ed9d0d-0
+00:54:48.650 --> 00:54:52.207
+But yeah, that that's just what
+my gut tells me. I I don't know
+
+94268f69-1008-48ee-b6e9-abf396ed9d0d-1
+00:54:52.207 --> 00:54:53.820
+that one way or the other so.
+
+117ece9a-37f5-4d86-94cd-084babcc75da-0
+00:55:00.490 --> 00:55:01.720
+Yeah, sounds good.
+
+fac4d72d-b8e2-467b-9f3a-ade28eff0bf7-0
+00:55:05.570 --> 00:55:09.540
+Can you send me this link as
+well? OK, I'll read it. Yeah.
+
+6eaf5383-0daf-4437-bef8-097bc035e0f7-0
+00:55:10.220 --> 00:55:12.480
+I'm just kind of reading it
+myself because I.
+
+cd887074-ea36-439f-b1ac-5b727f54710c-0
+00:55:13.400 --> 00:55:15.800
+I knew the generalities, but I
+didn't. Uh.
+
+236c29f3-19b0-4d54-b92f-c1090808e868-0
+00:55:17.550 --> 00:55:18.920
+Remember, a lot of the details.
+
+6c758ff2-2a93-48e6-8ef4-9ade976aebe4-0
+00:55:24.670 --> 00:55:25.460
+This is a biggie.
+
+279575aa-f172-4281-a41e-c4f3ca6e4df3-0
+00:55:47.330 --> 00:55:48.140
+Yeah. So.
+
+16570532-72b9-44e3-b7ea-ed4621dd677e-0
+00:55:49.990 --> 00:55:53.408
+Yeah, but a lot of people will
+use autopilot and pilot fish
+
+16570532-72b9-44e3-b7ea-ed4621dd677e-1
+00:55:53.408 --> 00:55:54.320
+interchangeably.
+
+46039f89-b8d7-4bc1-a906-e74fd25fb76b-0
+00:55:55.070 --> 00:55:55.480
+So.
+
+6ecc7dc6-3a66-462a-8931-1b55d8b32af1-0
+00:55:56.430 --> 00:55:56.690
+OK.
+
+eb67e062-a734-4a3d-97bd-23464d156c53-0
+00:56:02.270 --> 00:56:02.890
+Yeah, I.
+
+362e4454-ea2c-4770-8d76-04275f634201-0
+00:56:08.400 --> 00:56:09.060
+Signing.
+
+21799afb-853f-4d27-9fef-48abab63ba7b-0
+00:56:14.530 --> 00:56:16.940
+And I was also going through.
+
+954e0054-8348-42a8-96c0-1925e273646b-0
+00:56:17.960 --> 00:56:21.881
+The the the design doc that you
+shared with me. Yeah, I think it
+
+954e0054-8348-42a8-96c0-1925e273646b-1
+00:56:21.881 --> 00:56:25.622
+is very well written. I mean a
+lot of things made sense to me
+
+954e0054-8348-42a8-96c0-1925e273646b-2
+00:56:25.622 --> 00:56:29.303
+and I was feeling like, yeah,
+yeah, this is good. Thank you.
+
+954e0054-8348-42a8-96c0-1925e273646b-3
+00:56:29.303 --> 00:56:33.104
+Yeah. The other scenarios and
+everything, even though I didn't
+
+954e0054-8348-42a8-96c0-1925e273646b-4
+00:56:33.104 --> 00:56:36.905
+cover a few lasts scenarios. But
+yeah, like things were making
+
+954e0054-8348-42a8-96c0-1925e273646b-5
+00:56:36.905 --> 00:56:39.440
+sense. What we're trying to
+achieve here.
+
+0fc64f54-d099-48ac-a2ef-4b6356307246-0
+00:56:41.570 --> 00:56:44.746
+Cool. Yeah, so hopefully I don't
+know if you've looked at any of
+
+0fc64f54-d099-48ac-a2ef-4b6356307246-1
+00:56:44.746 --> 00:56:47.580
+the original code, but the the
+goal really is to make it.
+
+f4d986d6-e62c-4927-8fa6-74e1e97e7e49-0
+00:56:50.440 --> 00:56:55.490
+Simpler uh Brazil code like I
+tried. It's like it's difficult
+
+f4d986d6-e62c-4927-8fa6-74e1e97e7e49-1
+00:56:55.490 --> 00:56:59.400
+to understand it. I was just
+lost in that code.
+
+9289fe82-c825-4518-ae5a-15990c0dae8f-0
+00:57:00.280 --> 00:57:01.350
+Yeah, and.
+
+1f8beb7c-bda9-4160-9696-e6d61dcfe3c5-0
+00:57:02.640 --> 00:57:03.590
+Everybody is.
+
+b1b92eb7-6b85-4290-b2fa-cd0f580b6f3d-0
+00:57:04.770 --> 00:57:06.960
+Because, well, I mean, what was
+hard about it was.
+
+1f430512-77e2-46c9-9fe5-e68946b8bf38-0
+00:57:07.580 --> 00:57:11.441
+It was written against the
+original Imos database, which
+
+1f430512-77e2-46c9-9fe5-e68946b8bf38-1
+00:57:11.441 --> 00:57:14.490
+was an in process in memory
+database and so.
+
+2166e4c4-7c43-4f98-962a-2cf777411872-0
+00:57:18.090 --> 00:57:20.170
+Any operation against?
+
+5c1f564c-1c72-469c-b219-d4a0c975bf36-0
+00:57:21.220 --> 00:57:26.690
+A service that might have had
+baking secrets, you had to know.
+
+f0320e80-745c-4e06-94f3-0477968f8bd9-0
+00:57:27.770 --> 00:57:30.874
+About every other at any
+operation that you did on a
+
+f0320e80-745c-4e06-94f3-0477968f8bd9-1
+00:57:30.874 --> 00:57:34.682
+service object, you had to know
+about every other operation that
+
+f0320e80-745c-4e06-94f3-0477968f8bd9-2
+00:57:34.682 --> 00:57:38.080
+was currently in progress on the
+service object and then.
+
+206a0db2-3c4b-4742-bd85-a1130fe815c0-0
+00:57:39.990 --> 00:57:44.185
+Ohh well what I just was just
+what I'm trying to do renders
+
+206a0db2-3c4b-4742-bd85-a1130fe815c0-1
+00:57:44.185 --> 00:57:48.170
+you know these two things
+obviously. So I got just gotta
+
+206a0db2-3c4b-4742-bd85-a1130fe815c0-2
+00:57:48.170 --> 00:57:52.575
+cancel that one. And this other
+guy. I need to cancel them and
+
+206a0db2-3c4b-4742-bd85-a1130fe815c0-3
+00:57:52.575 --> 00:57:56.771
+then restart him. But with my
+new stuff added to it, right.
+
+206a0db2-3c4b-4742-bd85-a1130fe815c0-4
+00:57:56.771 --> 00:57:57.680
+And then but.
+
+80ef202e-4ba3-40d6-8d73-3acafb646ee9-0
+00:57:59.110 --> 00:58:02.344
+But then some other guy comes in
+and he's he's he's doing that to
+
+80ef202e-4ba3-40d6-8d73-3acafb646ee9-1
+00:58:02.344 --> 00:58:05.382
+your stuff. You're doing it to
+their stuff, and it was just a
+
+80ef202e-4ba3-40d6-8d73-3acafb646ee9-2
+00:58:05.382 --> 00:58:06.020
+mess. And UM.
+
+ba1a3a6d-e404-4414-a9f3-ffbf852eeef2-0
+00:58:07.530 --> 00:58:11.332
+Then and we got a lot of bugs in
+there. We've got performance
+
+ba1a3a6d-e404-4414-a9f3-ffbf852eeef2-1
+00:58:11.332 --> 00:58:15.380
+issues, we've got business logic
+errors. It's just a really hard.
+
+4d6bef1b-44c5-46af-a575-199a4b5feb04-0
+00:58:17.520 --> 00:58:20.210
+It's just a lot of complexity
+evolves that.
+
+f11d41f6-e87d-4e90-9327-f4a1cb810dfc-0
+00:58:22.410 --> 00:58:25.193
+You know, we're just really
+can't fix it in place. We just
+
+f11d41f6-e87d-4e90-9327-f4a1cb810dfc-1
+00:58:25.193 --> 00:58:27.080
+have to rewrite the thing from
+scratch.
+
+96b12061-6d30-44ed-9eb2-af3a3850e525-0
+00:58:28.560 --> 00:58:28.880
+So.
+
+ebf69a67-16d2-4c76-80e0-3f4ef0295fd6-0
+00:58:29.630 --> 00:58:30.940
+So you know definitely.
+
+a0448df3-954a-4cbc-bfb8-ef131073e57e-0
+00:58:33.720 --> 00:58:38.047
+You know, always be thinking
+like you know what's what's the
+
+a0448df3-954a-4cbc-bfb8-ef131073e57e-1
+00:58:38.047 --> 00:58:42.588
+simplest possible way we can do
+this? Uh, right. So yeah. And I
+
+a0448df3-954a-4cbc-bfb8-ef131073e57e-2
+00:58:42.588 --> 00:58:46.845
+think in the document you use
+the term SDPC secrets and non
+
+a0448df3-954a-4cbc-bfb8-ef131073e57e-3
+00:58:46.845 --> 00:58:51.030
+SDC secrets. So is there a
+bifurcation? Are there like two
+
+a0448df3-954a-4cbc-bfb8-ef131073e57e-4
+00:58:51.030 --> 00:58:54.720
+different kinds is a timing
+thing right? So we are.
+
+f7f931f4-d81b-4e13-9009-990cfaae2ed0-0
+00:58:56.450 --> 00:58:59.692
+So so First off there's there's
+SDP in two senses of the word,
+
+f7f931f4-d81b-4e13-9009-990cfaae2ed0-1
+00:58:59.692 --> 00:59:01.030
+right there's there's SDP.
+
+31030310-9755-4f0b-861a-a44c6f4418cd-0
+00:59:01.780 --> 00:59:06.117
+For just in region and that's
+what you and I are working on.
+
+31030310-9755-4f0b-861a-a44c6f4418cd-1
+00:59:06.117 --> 00:59:10.384
+That's OK. This secret got
+rotated and it's gonna go out to
+
+31030310-9755-4f0b-861a-a44c6f4418cd-2
+00:59:10.384 --> 00:59:14.936
+these three Canary nodes for the
+service and then it's gonna go
+
+31030310-9755-4f0b-861a-a44c6f4418cd-3
+00:59:14.936 --> 00:59:19.558
+out to all the other nodes after
+24 hours, right. So there's SDP
+
+31030310-9755-4f0b-861a-a44c6f4418cd-4
+00:59:19.558 --> 00:59:24.180
+in that sense. And then there's
+another SDP project in the works
+
+31030310-9755-4f0b-861a-a44c6f4418cd-5
+00:59:24.180 --> 00:59:28.590
+that's mostly being run by the
+Australia team and that's the.
+
+190d67b0-24cf-41f7-ad45-ae564c4ba017-0
+00:59:29.630 --> 00:59:37.409
+Cross regional SDP so UM service
+Foo has a presence in 10
+
+190d67b0-24cf-41f7-ad45-ae564c4ba017-1
+00:59:37.409 --> 00:59:40.360
+different regions and.
+
+4d2b79f1-0e2c-4859-8292-2258dba4cf87-0
+00:59:43.790 --> 00:59:46.610
+You know we're we're are right
+now our our assist.
+
+e5adbec4-e60a-4e4f-a8a2-53774abba75d-0
+00:59:47.340 --> 00:59:50.913
+System is a very eventually
+consistent secrets for service
+
+e5adbec4-e60a-4e4f-a8a2-53774abba75d-1
+00:59:50.913 --> 00:59:54.365
+food are, you know, being
+rotated all over the place and
+
+e5adbec4-e60a-4e4f-a8a2-53774abba75d-2
+00:59:54.365 --> 00:59:58.060
+distribution happy and all all
+the time. And it's kind of a.
+
+16c0d9d5-6498-4688-aa59-9614752c5d9f-0
+00:59:58.740 --> 01:00:02.291
+You know, just trust us. It's
+eventually consistent, except
+
+16c0d9d5-6498-4688-aa59-9614752c5d9f-1
+01:00:02.291 --> 01:00:05.310
+for when it's not sort of thing
+and and customers.
+
+b5c6019e-303f-4be9-99ee-174468871d56-0
+01:00:06.860 --> 01:00:08.690
+You know, they they wanna know.
+
+defa4145-5423-4a5b-b54e-943417a7faea-0
+01:00:09.700 --> 01:00:13.590
+The state of their system in a
+given time and they they want to
+
+defa4145-5423-4a5b-b54e-943417a7faea-1
+01:00:13.590 --> 01:00:17.359
+know what it's what it is now
+and what it's going to be in 24
+
+defa4145-5423-4a5b-b54e-943417a7faea-2
+01:00:17.359 --> 01:00:21.128
+hours and and where did it break
+down? Right. And things like
+
+defa4145-5423-4a5b-b54e-943417a7faea-3
+01:00:21.128 --> 01:00:24.532
+that. So there's this SDP
+project that is kind of doing
+
+defa4145-5423-4a5b-b54e-943417a7faea-4
+01:00:24.532 --> 01:00:28.544
+what you and I are doing, right.
+But in across regional state. So
+
+defa4145-5423-4a5b-b54e-943417a7faea-5
+01:00:28.544 --> 01:00:32.435
+service food might have a thing
+where says, OK, it's the 1st of
+
+defa4145-5423-4a5b-b54e-943417a7faea-6
+01:00:32.435 --> 01:00:32.800
+March.
+
+2e34928a-5b6e-469e-9853-118e9d113455-0
+01:00:33.730 --> 01:00:37.710
+Rotate all of the secrets for
+service Foo and.
+
+0bef21fe-1267-438d-97fe-9b36553d86e9-0
+01:00:38.790 --> 01:00:40.670
+And that'll all happen in.
+
+47ab8786-1ee3-42a6-8f20-18f06e06e0f0-0
+01:00:41.850 --> 01:00:43.260
+Their region 1.
+
+f8f99bf4-b1cc-448f-b689-f37e0d69df0c-0
+01:00:44.450 --> 01:00:49.260
+And then after three 4-5 days,
+we'll the system will say, oh,
+
+f8f99bf4-b1cc-448f-b689-f37e0d69df0c-1
+01:00:49.260 --> 01:00:51.200
+hey, everything for food.
+
+1a13b2cc-1e98-4276-adf0-3cf1718c2e0a-0
+01:00:52.430 --> 01:00:54.630
+Came off without a hitch in
+Region 1.
+
+153c6ca1-916d-4012-b173-e11cd1819a62-0
+01:00:55.670 --> 01:00:58.100
+Now let's do the same thing in
+regions 2-3 and four.
+
+7deaa3a0-f0dd-43b0-b42e-6ef35db1959b-0
+01:00:58.820 --> 01:01:02.177
+And so then, you know, boom, it
+goes and then maybe something
+
+7deaa3a0-f0dd-43b0-b42e-6ef35db1959b-1
+01:01:02.177 --> 01:01:05.752
+happened. Something bad happened
+in region four, we realized. Oh,
+
+7deaa3a0-f0dd-43b0-b42e-6ef35db1959b-2
+01:01:05.752 --> 01:01:09.164
+wait, that that rotation is bad
+because of either the way they
+
+7deaa3a0-f0dd-43b0-b42e-6ef35db1959b-3
+01:01:09.164 --> 01:01:12.630
+set up the secrets or a bug in
+their code. And then, like, that
+
+7deaa3a0-f0dd-43b0-b42e-6ef35db1959b-4
+01:01:12.630 --> 01:01:15.879
+would stop. And so, like, you
+get that staging that we talk
+
+7deaa3a0-f0dd-43b0-b42e-6ef35db1959b-5
+01:01:15.879 --> 01:01:19.454
+about, but with secret rotation.
+And so then each customer can be
+
+7deaa3a0-f0dd-43b0-b42e-6ef35db1959b-6
+01:01:19.454 --> 01:01:22.865
+on a different. They can set up
+different stages. They can set
+
+7deaa3a0-f0dd-43b0-b42e-6ef35db1959b-7
+01:01:22.865 --> 01:01:23.570
+up different.
+
+1a521d27-be7c-4bf0-98d8-c6d7341a7c39-0
+01:01:25.470 --> 01:01:29.132
+You know cadences and such and
+rollback policies and all that.
+
+1a521d27-be7c-4bf0-98d8-c6d7341a7c39-1
+01:01:29.132 --> 01:01:32.562
+And so then what you and I are
+working on is gonna operate
+
+1a521d27-be7c-4bf0-98d8-c6d7341a7c39-2
+01:01:32.562 --> 01:01:36.225
+within that. We're trying to get
+it so that that full rotation
+
+1a521d27-be7c-4bf0-98d8-c6d7341a7c39-3
+01:01:36.225 --> 01:01:39.888
+for Foo in region X happens in
+24 hours, which our code really
+
+1a521d27-be7c-4bf0-98d8-c6d7341a7c39-4
+01:01:39.888 --> 01:01:41.399
+doesn't support right now.
+
+0a8b6ee2-a562-4eec-9a14-5a910ee20a13-0
+01:01:42.760 --> 01:01:43.340
+So.
+
+64766ebc-d642-4c57-a5ac-1e19948d2bee-0
+01:01:44.670 --> 01:01:48.095
+So we're both, you know, taking
+care of. We're taking care of a
+
+64766ebc-d642-4c57-a5ac-1e19948d2bee-1
+01:01:48.095 --> 01:01:51.306
+PERF issue, and we're also
+simplifying the code while we're
+
+64766ebc-d642-4c57-a5ac-1e19948d2bee-2
+01:01:51.306 --> 01:01:54.410
+at it and fixing a bunch of
+other bugs that our customers
+
+64766ebc-d642-4c57-a5ac-1e19948d2bee-3
+01:01:54.410 --> 01:01:57.675
+have been complaining about. And
+then the, so that's the two
+
+64766ebc-d642-4c57-a5ac-1e19948d2bee-4
+01:01:57.675 --> 01:02:00.725
+flavors of SDP. There was a
+third thing I needed to tell
+
+64766ebc-d642-4c57-a5ac-1e19948d2bee-5
+01:02:00.725 --> 01:02:00.939
+you.
+
+d3475107-bc13-4198-bb7e-a85562aae0dd-0
+01:02:02.370 --> 01:02:06.315
+Oh, the bifurcation. So then
+like what we mean by non STP
+
+d3475107-bc13-4198-bb7e-a85562aae0dd-1
+01:02:06.315 --> 01:02:10.261
+secrets is for that cross
+regional SDP that we're talking
+
+d3475107-bc13-4198-bb7e-a85562aae0dd-2
+01:02:10.261 --> 01:02:10.669
+about.
+
+79665a05-779f-4ed0-bc56-133f6dbb8674-0
+01:02:12.280 --> 01:02:12.860
+UM.
+
+0ee3f29c-d747-49a6-a159-8bb64083637f-0
+01:02:15.130 --> 01:02:19.877
+The initial implementation is
+only for managed chained
+
+0ee3f29c-d747-49a6-a159-8bb64083637f-1
+01:02:19.877 --> 01:02:21.000
+certificates.
+
+5bfb0f8e-3991-40d3-ae83-49c847502121-0
+01:02:21.900 --> 01:02:25.924
+Like they they they bubble up to
+a PCA or manage self signed
+
+5bfb0f8e-3991-40d3-ae83-49c847502121-1
+01:02:25.924 --> 01:02:30.014
+certificates. Those are the only
+two kinds of secrets that we
+
+5bfb0f8e-3991-40d3-ae83-49c847502121-2
+01:02:30.014 --> 01:02:32.390
+support for the cross regional
+SDP.
+
+4d30ca49-d1e1-4e17-8169-5700f1f20b5d-0
+01:02:34.100 --> 01:02:34.810
+For.
+
+3d1c3f4e-1454-43b6-9ed4-4bd9ad90b321-0
+01:02:36.160 --> 01:02:37.370
+What we're doing?
+
+fceeadfe-3c73-4fa1-b3b6-5310486f48f1-0
+01:02:38.370 --> 01:02:39.980
+We're supporting all the
+secrets.
+
+3aafbac5-ec08-486b-8691-e7adffa74d01-0
+01:02:41.930 --> 01:02:43.560
+Right. So yeah.
+
+515d3cd1-d4de-4ff9-9317-a86ce323fbc1-0
+01:02:46.080 --> 01:02:49.892
+OK, yeah, eventually eventually
+the cross regional STP will
+
+515d3cd1-d4de-4ff9-9317-a86ce323fbc1-1
+01:02:49.892 --> 01:02:53.831
+support all secret types, but
+the idea is let's get the whole
+
+515d3cd1-d4de-4ff9-9317-a86ce323fbc1-2
+01:02:53.831 --> 01:02:57.644
+end to end thing working and
+then start adding secret types
+
+515d3cd1-d4de-4ff9-9317-a86ce323fbc1-3
+01:02:57.644 --> 01:02:58.470
+in great. OK.
+
+e6b85667-2687-47e7-96b8-42cf30330d5a-0
+01:02:59.880 --> 01:03:00.250
+OK.
+
+f2824834-8658-42ac-8fad-4a70d2e62534-0
+01:03:01.480 --> 01:03:01.840
+Oh.
+
+9262dcb0-a381-40b0-b16c-0b23e3e821d5-0
+01:03:07.740 --> 01:03:11.370
+And like probably I don't know
+if this is the right time to ask
+
+9262dcb0-a381-40b0-b16c-0b23e3e821d5-1
+01:03:11.370 --> 01:03:14.603
+this question, but so there
+were. There were a couple of
+
+9262dcb0-a381-40b0-b16c-0b23e3e821d5-2
+01:03:14.603 --> 01:03:17.950
+columns in certain tables that
+you in the document saying.
+
+cbd8faad-46ff-4b15-bc12-a40e1713f969-0
+01:03:19.140 --> 01:03:24.122
+Called Etag and payload in
+baking distribution package,
+
+cbd8faad-46ff-4b15-bc12-a40e1713f969-1
+01:03:24.122 --> 01:03:25.190
+right? Yeah.
+
+f9378d87-7e51-4b45-afcf-0b19d1439502-0
+01:03:26.340 --> 01:03:30.070
+Do you remember what is the
+significance? I do now? You also
+
+f9378d87-7e51-4b45-afcf-0b19d1439502-1
+01:03:30.070 --> 01:03:33.984
+may have noticed that the tables
+don't actually match what's in
+
+f9378d87-7e51-4b45-afcf-0b19d1439502-2
+01:03:33.984 --> 01:03:37.776
+the documents. Yeah, they're
+like, yeah, I was trying to find
+
+f9378d87-7e51-4b45-afcf-0b19d1439502-3
+01:03:37.776 --> 01:03:41.689
+them but. And. And. And that's
+just because as I started coding
+
+f9378d87-7e51-4b45-afcf-0b19d1439502-4
+01:03:41.689 --> 01:03:44.870
+what the code needed and what
+was in the documents.
+
+e9f91678-0e78-47c8-97a0-473a1dffad27-0
+01:03:47.710 --> 01:03:48.090
+You know.
+
+70f106df-0128-4774-99ac-74a277b81e62-0
+01:03:49.720 --> 01:03:53.404
+And and so you know. So the code
+is the source of truth, right?
+
+70f106df-0128-4774-99ac-74a277b81e62-1
+01:03:53.404 --> 01:03:56.974
+So the document's really good at
+capturing the intent, right?
+
+70f106df-0128-4774-99ac-74a277b81e62-2
+01:03:56.974 --> 01:03:59.680
+There's a distribution state,
+blah table, but.
+
+bb560e85-9963-4c16-a6b5-a00f378de5c6-0
+01:04:01.810 --> 01:04:05.083
+And it just there wasn't much
+point in going back and changing
+
+bb560e85-9963-4c16-a6b5-a00f378de5c6-1
+01:04:05.083 --> 01:04:08.200
+the document because, you know,
+we're we're just doing what
+
+bb560e85-9963-4c16-a6b5-a00f378de5c6-2
+01:04:08.200 --> 01:04:11.421
+works. So, yeah, so that was
+what was there. So as far as the
+
+bb560e85-9963-4c16-a6b5-a00f378de5c6-3
+01:04:11.421 --> 01:04:13.240
+etag and the distribution
+payload.
+
+56ab5d98-47b8-4654-976c-b8d25147e75b-0
+01:04:14.170 --> 01:04:15.200
+So the.
+
+ad5a752b-1cb7-4554-9041-3a159aa990bc-0
+01:04:18.950 --> 01:04:22.788
+So you've got the ACMS agent,
+right? That's the, that's the
+
+ad5a752b-1cb7-4554-9041-3a159aa990bc-1
+01:04:22.788 --> 01:04:23.300
+clients.
+
+6fcac7f6-e94c-4dd3-b399-fcb69372d797-0
+01:04:24.730 --> 01:04:28.955
+That that, that's the the client
+service that runs on everybody
+
+6fcac7f6-e94c-4dd3-b399-fcb69372d797-1
+01:04:28.955 --> 01:04:32.849
+who needs DSMS secrets. And so
+that's the guy who goes out
+
+6fcac7f6-e94c-4dd3-b399-fcb69372d797-2
+01:04:32.849 --> 01:04:36.480
+polls DSMS periodically gets
+down the payload and then
+
+6fcac7f6-e94c-4dd3-b399-fcb69372d797-3
+01:04:36.480 --> 01:04:40.309
+install search in the store or
+in some other secured blob
+
+6fcac7f6-e94c-4dd3-b399-fcb69372d797-4
+01:04:40.309 --> 01:04:41.630
+storage. Right. And.
+
+6ee4c2e9-2092-4be3-a0ea-04ac252f938a-0
+01:04:43.060 --> 01:04:44.130
+The UM.
+
+115588ff-40f1-402c-a25d-6b5b0e474056-0
+01:04:46.450 --> 01:04:49.320
+Interaction with DSMS that's a.
+
+77e6275d-f33d-41b8-a587-0b91a3fd7f5a-0
+01:04:52.140 --> 01:04:53.610
+It all comes down in one
+payload.
+
+c70744c3-8c88-4bd6-91f2-c9bfa2cc88dc-0
+01:04:54.560 --> 01:04:58.022
+Right. It's not. Oh, get me this
+secret because it rotated this.
+
+c70744c3-8c88-4bd6-91f2-c9bfa2cc88dc-1
+01:04:58.022 --> 01:05:01.379
+No, it's you're gonna get them
+all right. But it's also you're
+
+c70744c3-8c88-4bd6-91f2-c9bfa2cc88dc-2
+01:05:01.379 --> 01:05:03.990
+gonna get the last three
+versions of everything.
+
+26cf7dcf-28ed-4adb-bd30-144c941efaeb-0
+01:05:05.790 --> 01:05:07.380
+And so there's a really.
+
+23d28186-a65b-49ef-ab2d-58e2fc978914-0
+01:05:09.010 --> 01:05:14.230
+We we need to optimize the
+performance of the DSMS server
+
+23d28186-a65b-49ef-ab2d-58e2fc978914-1
+01:05:14.230 --> 01:05:14.680
+side.
+
+2b81521b-43c6-4427-a17e-cce81f0ba751-0
+01:05:15.960 --> 01:05:19.080
+Because this is a really compute
+intensive, you gotta get.
+
+f2e20303-2fbe-4234-88c6-e7434b13fc92-0
+01:05:20.340 --> 01:05:23.589
+Maybe there's, you know, 100
+secrets, right. And you gotta
+
+f2e20303-2fbe-4234-88c6-e7434b13fc92-1
+01:05:23.589 --> 01:05:23.810
+get.
+
+bf756c4b-595f-40cb-a56a-b0a4aa9c405f-0
+01:05:24.700 --> 01:05:28.420
+The last three versions of every
+secret and decrypts them all
+
+bf756c4b-595f-40cb-a56a-b0a4aa9c405f-1
+01:05:28.420 --> 01:05:32.020
+right, and then that needs to go
+to everybody. So there's a
+
+bf756c4b-595f-40cb-a56a-b0a4aa9c405f-2
+01:05:32.020 --> 01:05:35.800
+caching layer that caches those
+responses. And the other thing
+
+bf756c4b-595f-40cb-a56a-b0a4aa9c405f-3
+01:05:35.800 --> 01:05:38.920
+to keep in mind is some of these
+services may have.
+
+f842215e-3829-4bfd-8048-e5bf64eb4377-0
+01:05:39.790 --> 01:05:45.580
+Thousands of nodes hitting DSMS.
+So UM, we can't be.
+
+8cacda62-8636-4276-9692-a06d7948b6b4-0
+01:05:46.870 --> 01:05:49.702
+Going straight to the database,
+getting all that stuff and
+
+8cacda62-8636-4276-9692-a06d7948b6b4-1
+01:05:49.702 --> 01:05:52.534
+taking that that hit and the
+other thing is uh, and and so
+
+8cacda62-8636-4276-9692-a06d7948b6b4-2
+01:05:52.534 --> 01:05:54.550
+we've been catching that stuff
+in memory.
+
+cff5e94b-3f66-47dd-bf53-278d557367b8-0
+01:05:55.640 --> 01:05:56.570
+In the old way.
+
+02db2369-7424-4a5c-90e4-6b6d86d29f97-0
+01:05:58.070 --> 01:06:02.622
+One of the uh performance
+optimizations is that we're
+
+02db2369-7424-4a5c-90e4-6b6d86d29f97-1
+01:06:02.622 --> 01:06:03.550
+gonna also.
+
+b71d7bb1-0a7a-4475-a081-b0972658d813-0
+01:06:04.210 --> 01:06:08.617
+Write those cat that cached
+value to the database so that we
+
+b71d7bb1-0a7a-4475-a081-b0972658d813-1
+01:06:08.617 --> 01:06:10.930
+only take that compute hit once.
+
+d522c3c3-23de-47b4-8b7d-28cbe695bf84-0
+01:06:12.090 --> 01:06:16.144
+And so then if a front end gets
+rebooted and he goes, oh, I
+
+d522c3c3-23de-47b4-8b7d-28cbe695bf84-1
+01:06:16.144 --> 01:06:17.090
+don't have my.
+
+7ff9c2e7-0e6d-4b35-acee-559d0dfd3144-0
+01:06:18.700 --> 01:06:21.830
+By cashed payload for for this
+particular service.
+
+b87f7479-d6b6-4c33-8179-668f698e40aa-0
+01:06:22.490 --> 01:06:26.098
+Fetch it from the database and
+then stash it in memory and then
+
+b87f7479-d6b6-4c33-8179-668f698e40aa-1
+01:06:26.098 --> 01:06:29.649
+go right and so then everybody's
+working with the same payload
+
+b87f7479-d6b6-4c33-8179-668f698e40aa-2
+01:06:29.649 --> 01:06:33.201
+and then the other thing is that
+payloads getting updated once
+
+b87f7479-d6b6-4c33-8179-668f698e40aa-3
+01:06:33.201 --> 01:06:34.159
+every hour by us.
+
+8028b724-6344-4ab1-946c-1f395674b94c-0
+01:06:35.630 --> 01:06:36.230
+And so.
+
+dff86aad-22d3-4a02-b6b8-8c8107543de3-0
+01:06:36.960 --> 01:06:39.310
+That was that was the other
+thing was.
+
+8ddd87b4-f156-4d59-bba3-973b6f371f94-0
+01:06:40.450 --> 01:06:44.000
+The code was super complex
+because.
+
+bcfd7bad-3a5d-421c-8ca1-7f6c8708f01e-0
+01:06:47.780 --> 01:06:50.652
+You might have 10 different
+front ends and they've got 10
+
+bcfd7bad-3a5d-421c-8ca1-7f6c8708f01e-1
+01:06:50.652 --> 01:06:53.030
+different caches and then some
+back end worker.
+
+01d6d8b8-8449-4564-8486-63d29afc3a1b-0
+01:06:53.990 --> 01:06:55.640
+Updates the baking state.
+
+c2924b78-a58d-44b8-8a48-cf2e405d901d-0
+01:06:57.130 --> 01:06:58.980
+And this guy found out about it.
+
+522dbb14-3b11-4714-bdd4-2dffcea101e8-0
+01:07:00.610 --> 01:07:03.142
+And starts delivering the new
+stuff. But this guy didn't find
+
+522dbb14-3b11-4714-bdd4-2dffcea101e8-1
+01:07:03.142 --> 01:07:05.634
+out about it yet, and so for
+five minutes he's given the old
+
+522dbb14-3b11-4714-bdd4-2dffcea101e8-2
+01:07:05.634 --> 01:07:05.880
+stuff.
+
+267b9679-4824-4d1b-bf7d-d4d1231ff058-0
+01:07:07.040 --> 01:07:11.345
+Right. And we're trying to not
+have that happen either, UM and
+
+267b9679-4824-4d1b-bf7d-d4d1231ff058-1
+01:07:11.345 --> 01:07:11.550
+so.
+
+a19f77e8-aed5-407f-afc9-79d9fe1b7137-0
+01:07:12.330 --> 01:07:15.697
+This distribution packager. He's
+gonna do the state advancement,
+
+a19f77e8-aed5-407f-afc9-79d9fe1b7137-1
+01:07:15.697 --> 01:07:19.013
+but he's also going to go. OK.
+What is that? What's the package
+
+a19f77e8-aed5-407f-afc9-79d9fe1b7137-2
+01:07:19.013 --> 01:07:22.173
+need to look like that? I'm
+gonna send downstream. He's also
+
+a19f77e8-aed5-407f-afc9-79d9fe1b7137-3
+01:07:22.173 --> 01:07:24.660
+gonna write that. That's gonna
+be part of that.
+
+00b74d8d-6d1a-4df3-ba33-e2c06c004162-0
+01:07:26.110 --> 01:07:30.043
+Big stored procedure that
+commits the state. It's gonna
+
+00b74d8d-6d1a-4df3-ba33-e2c06c004162-1
+01:07:30.043 --> 01:07:34.398
+save those blobs there and then
+the caching layer which I was
+
+00b74d8d-6d1a-4df3-ba33-e2c06c004162-2
+01:07:34.398 --> 01:07:37.840
+working on up until about a
+month ago. And then.
+
+baab5d7c-e483-41c7-923a-99e1423efdbb-0
+01:07:39.320 --> 01:07:42.750
+You know the paternity leave for
+string of Austin on call and
+
+baab5d7c-e483-41c7-923a-99e1423efdbb-1
+01:07:42.750 --> 01:07:43.470
+stuff? I was.
+
+d6b447da-6318-489c-a81e-7b86d26f2bc4-0
+01:07:44.830 --> 01:07:46.700
+Beginning work on that piece of
+it.
+
+bfb55095-7cfd-47a6-a271-95e575c9bf9f-0
+01:07:48.020 --> 01:07:48.450
+So.
+
+e07d9614-7e5e-4f2d-816b-e3640b4c4da5-0
+01:07:49.480 --> 01:07:50.860
+And and so there's UM.
+
+dd6375dc-2d33-4d7d-bf79-aa8787c7c678-0
+01:07:51.680 --> 01:07:55.872
+There's the etag which is just
+one of the ways that it would
+
+dd6375dc-2d33-4d7d-bf79-aa8787c7c678-1
+01:07:55.872 --> 01:08:00.271
+identify like cash staleness and
+then the actual payload. Those
+
+dd6375dc-2d33-4d7d-bf79-aa8787c7c678-2
+01:08:00.271 --> 01:08:04.808
+fields are probably gonna evolve
+quite a bit as I've learned more
+
+dd6375dc-2d33-4d7d-bf79-aa8787c7c678-3
+01:08:04.808 --> 01:08:07.420
+about the code. It turns out
+there's.
+
+5033e96a-5509-4370-9908-d414afd0e01b-0
+01:08:08.560 --> 01:08:13.390
+A couple different flavors of E
+tag and a couple different.
+
+c395bb67-2708-4f0c-a6f7-e8655b3272d1-0
+01:08:14.080 --> 01:08:17.613
+UM, things within the payload,
+so that's probably gonna evolve
+
+c395bb67-2708-4f0c-a6f7-e8655b3272d1-1
+01:08:17.613 --> 01:08:17.950
+a lot.
+
+0c4998df-8783-40f3-88a7-c9fbc9fc4e28-0
+01:08:20.190 --> 01:08:23.270
+Yeah, because I was. I was still
+when? When I.
+
+9b84c84c-b15a-453c-8e65-2d1cab18cf18-0
+01:08:24.280 --> 01:08:27.775
+Press the pause button on this
+project. I was still trying to
+
+9b84c84c-b15a-453c-8e65-2d1cab18cf18-1
+01:08:27.775 --> 01:08:29.410
+understand our existing code.
+
+e9f87042-3ebf-4f3b-863d-065b375ae18b-0
+01:08:30.630 --> 01:08:36.149
+Yes. Wow. But I, uh, I hope I
+took good notes because I've
+
+e9f87042-3ebf-4f3b-863d-065b375ae18b-1
+01:08:36.149 --> 01:08:37.740
+forgotten it all.
+
+305d1e56-a816-4d88-b9a7-eece74c4ed87-0
+01:08:40.600 --> 01:08:41.190
+But.
+
+f3157b91-a52a-4c06-8cc7-442aca69625f-0
+01:08:41.970 --> 01:08:45.348
+If I remember correctly, like
+the E tag and payload, these
+
+f3157b91-a52a-4c06-8cc7-442aca69625f-1
+01:08:45.348 --> 01:08:48.841
+both attributes change every
+time the secret rotates, right?
+
+f3157b91-a52a-4c06-8cc7-442aca69625f-2
+01:08:48.841 --> 01:08:52.162
+So these are these are gonna be
+changing once every hour,
+
+f3157b91-a52a-4c06-8cc7-442aca69625f-3
+01:08:52.162 --> 01:08:53.880
+potentially every hour, right?
+
+6e820fbe-ccd0-49e6-b1d2-6886f06d1114-0
+01:08:54.800 --> 01:08:58.811
+So, well, I mean, not really
+like especially once this whole
+
+6e820fbe-ccd0-49e6-b1d2-6886f06d1114-1
+01:08:58.811 --> 01:09:01.640
+SDP thing lands, right? So so
+think ahead.
+
+f0a321d2-0fd6-4a3f-8413-e10c3e80dd10-0
+01:09:02.940 --> 01:09:03.670
+A year?
+
+29736ddb-6954-4ddd-8f27-6978b9d65ff1-0
+01:09:04.560 --> 01:09:09.161
+When the SDP project the the in
+region and the SDP thing are
+
+29736ddb-6954-4ddd-8f27-6978b9d65ff1-1
+01:09:09.161 --> 01:09:09.840
+done. Uh.
+
+54412c0b-fb39-4886-9b4c-5c0a6fce521f-0
+01:09:10.660 --> 01:09:14.388
+And we're now supporting all
+secret types, right? What will
+
+54412c0b-fb39-4886-9b4c-5c0a6fce521f-1
+01:09:14.388 --> 01:09:15.010
+happen is.
+
+d840b426-043c-444c-8317-c80fb4fea989-0
+01:09:15.950 --> 01:09:21.000
+Foo Region X go, it'll rotate
+everything for Foo.
+
+982b1d62-170b-4e3d-bc31-6b2fc409a338-0
+01:09:23.030 --> 01:09:23.690
+And.
+
+566d9479-fdbc-48de-845c-071609f22075-0
+01:09:25.700 --> 01:09:29.612
+And it'll happen probably in a
+inside of a pretty quick time
+
+566d9479-fdbc-48de-845c-071609f22075-1
+01:09:29.612 --> 01:09:33.525
+frame. They say, you know, we've
+got all kinds of resilience
+
+566d9479-fdbc-48de-845c-071609f22075-2
+01:09:33.525 --> 01:09:37.630
+baked into it, but realistically
+it's gonna be done in an hour.
+
+3f1a62df-dbbf-40a9-bef4-f5c7d252eb77-0
+01:09:39.110 --> 01:09:39.560
+And.
+
+741217d3-16d4-4d31-8346-4ede6db843bb-0
+01:09:40.880 --> 01:09:44.264
+And and and so maybe within that
+first hour of the second hour,
+
+741217d3-16d4-4d31-8346-4ede6db843bb-1
+01:09:44.264 --> 01:09:47.490
+we were gonna have, you know,
+like these secrets all baking.
+
+741217d3-16d4-4d31-8346-4ede6db843bb-2
+01:09:47.490 --> 01:09:50.769
+And so probably 25 hours into
+it, they're all gonna be baked.
+
+4d671b84-cd41-4b00-85a8-823307a99789-0
+01:09:51.920 --> 01:09:56.347
+And then until the next time
+that schedule gets kicked off,
+
+4d671b84-cd41-4b00-85a8-823307a99789-1
+01:09:56.347 --> 01:09:59.520
+it's it's gonna be the same
+baked payload.
+
+fa5c07b8-521b-4aae-b517-2ce9b1204192-0
+01:10:00.260 --> 01:10:01.190
+You know, so.
+
+7740e112-52a1-4391-8e34-8b3374a8c9dd-0
+01:10:03.100 --> 01:10:07.296
+But for, you know, for 2425
+hours. Yeah. You know, as a
+
+7740e112-52a1-4391-8e34-8b3374a8c9dd-1
+01:10:07.296 --> 01:10:08.870
+secret gets promoted.
+
+dc664fef-90b2-4e78-83fa-eb2199ba4332-0
+01:10:09.570 --> 01:10:13.166
+Those, those baked and baking
+payloads are gonna change a lot
+
+dc664fef-90b2-4e78-83fa-eb2199ba4332-1
+01:10:13.166 --> 01:10:13.340
+so.
+
+7a256bcc-4f7e-4eb9-97a0-ec8c12f25fb2-0
+01:10:16.090 --> 01:10:19.940
+But yeah, yeah, I think you you
+answer that, but I still didn't
+
+7a256bcc-4f7e-4eb9-97a0-ec8c12f25fb2-1
+01:10:19.940 --> 01:10:23.550
+get it like yeah, I understand
+they they gonna change every
+
+7a256bcc-4f7e-4eb9-97a0-ec8c12f25fb2-2
+01:10:23.550 --> 01:10:26.860
+time it rotates or or even
+advance to any other stage.
+
+155a8584-afa3-40f9-832c-663483157d35-0
+01:10:27.930 --> 01:10:32.115
+Uh, But what is the
+significance? As in, will a CMS
+
+155a8584-afa3-40f9-832c-663483157d35-1
+01:10:32.115 --> 01:10:36.783
+be involved? Uh, like the
+Callie. Uh, yeah. So every time
+
+155a8584-afa3-40f9-832c-663483157d35-2
+01:10:36.783 --> 01:10:41.290
+a CMS calls, the service is
+going to give ACMS the most
+
+155a8584-afa3-40f9-832c-663483157d35-3
+01:10:41.290 --> 01:10:45.877
+recent baked or baking state
+based on the context of the
+
+155a8584-afa3-40f9-832c-663483157d35-4
+01:10:45.877 --> 01:10:46.280
+call.
+
+b4041b92-33d5-4077-8045-d99e6c2e4b85-0
+01:10:47.070 --> 01:10:49.680
+UM and right? Yeah.
+
+c6e2986a-ebe7-4e97-95b5-3a4ed0f05047-0
+01:10:50.310 --> 01:10:55.270
+But uh, but will it also return
+these these etags? OK. Uh, that
+
+c6e2986a-ebe7-4e97-95b5-3a4ed0f05047-1
+01:10:55.270 --> 01:10:59.921
+OK, well so. So the etag is
+basically used to match up with
+
+c6e2986a-ebe7-4e97-95b5-3a4ed0f05047-2
+01:10:59.921 --> 01:11:04.417
+the caller, right? So for
+example, if the database has an
+
+c6e2986a-ebe7-4e97-95b5-3a4ed0f05047-3
+01:11:04.417 --> 01:11:06.510
+E tag of 123 and this blob.
+
+dce8d007-36e5-4332-80ab-3a9eb2bef9dc-0
+01:11:07.360 --> 01:11:11.270
+And then he CMS calls and says,
+hey, I'm calling you.
+
+50e1b347-875f-4578-8bf8-7679f3766e2d-0
+01:11:11.970 --> 01:11:16.841
+Last E tag you shared with me
+was 123. Then we're smart enough
+
+50e1b347-875f-4578-8bf8-7679f3766e2d-1
+01:11:16.841 --> 01:11:20.862
+to go. Oh well, it is not
+changed. Here's your 304.
+
+50e1b347-875f-4578-8bf8-7679f3766e2d-2
+01:11:20.862 --> 01:11:24.110
+Nothing changed, right. And then
+one day.
+
+9c56ae84-f27b-48ca-a138-dbdc9740ecb0-0
+01:11:25.350 --> 01:11:29.190
+Or you maybe six hours later,
+ACMS pulls us says hey.
+
+b0a64ce7-b8bd-497f-9222-b3a4cfcfd071-0
+01:11:29.940 --> 01:11:31.720
+123 is the last thing I saw.
+
+e8f44f02-751e-4ba5-b29d-77135f5bcaf8-0
+01:11:33.050 --> 01:11:35.910
+And then you know we we check
+our etag either in memory or in
+
+e8f44f02-751e-4ba5-b29d-77135f5bcaf8-1
+01:11:35.910 --> 01:11:38.725
+the database based on you know
+what's happened recently. And
+
+e8f44f02-751e-4ba5-b29d-77135f5bcaf8-2
+01:11:38.725 --> 01:11:39.510
+we're like Oh no.
+
+26c0ca95-602d-436b-a64f-ddb3dcd057d5-0
+01:11:40.150 --> 01:11:43.620
+We've got our most recent eating
+on file is 234.
+
+f3c6dc03-2dd9-476f-ad46-13b2ca0c4bcb-0
+01:11:44.330 --> 01:11:46.260
+So here half the payload.
+
+62f434f3-4311-48e6-adff-90189c3514b3-0
+01:11:46.880 --> 01:11:50.377
+And now the next time ACMS calls
+us, Hey, 234, and we're gonna.
+
+62f434f3-4311-48e6-adff-90189c3514b3-1
+01:11:50.377 --> 01:11:52.290
+No, that's the most recent,
+right.
+
+0d3b9b1d-b8b5-4f84-a212-cd84a1f7fd19-0
+01:11:53.310 --> 01:11:57.535
+So. So think of that E tag as a
+hash of the paper. Yeah, right.
+
+0d3b9b1d-b8b5-4f84-a212-cd84a1f7fd19-1
+01:11:57.535 --> 01:11:58.790
+Right, right. Yeah.
+
+60de0eb3-6975-4916-b622-126859ed2652-0
+01:12:00.600 --> 01:12:04.670
+OK. And and one last question,
+uh, so there were there were I
+
+60de0eb3-6975-4916-b622-126859ed2652-1
+01:12:04.670 --> 01:12:07.690
+think tables or something, was
+it tables? Uh.
+
+453e01c0-28e3-45d4-ab5e-0f180fbec272-0
+01:12:08.350 --> 01:12:11.211
+Like you mentioned in the
+document pending deployment,
+
+453e01c0-28e3-45d4-ab5e-0f180fbec272-1
+01:12:11.211 --> 01:12:13.240
+info info and current deployment
+info.
+
+38553097-5fe5-4fa1-83cb-e137dda8f751-0
+01:12:13.950 --> 01:12:17.653
+Right. Are these meant to be
+like the existing? Those are the
+
+38553097-5fe5-4fa1-83cb-e137dda8f751-1
+01:12:17.653 --> 01:12:21.118
+existing tables. Yeah. Yeah. I
+was trying to find that in
+
+38553097-5fe5-4fa1-83cb-e137dda8f751-2
+01:12:21.118 --> 01:12:24.464
+customer didn't. No, no, no.
+Those those are in the SQL
+
+38553097-5fe5-4fa1-83cb-e137dda8f751-3
+01:12:24.464 --> 01:12:25.420
+database proper.
+
+0d41f1a3-327b-46a4-afdd-ed6b759fb5b2-0
+01:12:26.970 --> 01:12:32.380
+So so the tables are just to
+feed from the, yeah, and.
+
+61bce6f4-490c-4a60-9841-2ee5aa45e47c-0
+01:12:33.960 --> 01:12:37.034
+And those those, those pending
+and deployment if and all that
+
+61bce6f4-490c-4a60-9841-2ee5aa45e47c-1
+01:12:37.034 --> 01:12:37.630
+that's like.
+
+9a6ea8ea-905f-45f9-8611-b96a128f31e4-0
+01:12:38.410 --> 01:12:42.199
+That's the old way of doing
+things. Yeah. We don't wanna
+
+9a6ea8ea-905f-45f9-8611-b96a128f31e4-1
+01:12:42.199 --> 01:12:45.856
+touch it. Yeah, entity
+frameworks something. OK. Yeah.
+
+9a6ea8ea-905f-45f9-8611-b96a128f31e4-2
+01:12:45.856 --> 01:12:47.119
+And. And it's just.
+
+c74a775e-bb85-4629-ab71-e383ff7fafa7-0
+01:12:49.090 --> 01:12:52.483
+The the other reason we're doing
+kind of this side by side thing
+
+c74a775e-bb85-4629-ab71-e383ff7fafa7-1
+01:12:52.483 --> 01:12:52.640
+is.
+
+4caf8d95-1788-45ce-ab53-af68577c74bf-0
+01:12:54.420 --> 01:12:57.967
+You know what we're doing is
+invasive, right? And we want to
+
+4caf8d95-1788-45ce-ab53-af68577c74bf-1
+01:12:57.967 --> 01:13:01.572
+have a big red button in our
+code that we can hit and say no,
+
+4caf8d95-1788-45ce-ab53-af68577c74bf-2
+01:13:01.572 --> 01:13:03.840
+go back to the old way. We
+screwed up.
+
+a525a601-57e5-4db7-94b7-ab3a76267480-0
+01:13:05.520 --> 01:13:08.565
+Yeah. Yes, yes, that's that's
+why we're. That's why we're, you
+
+a525a601-57e5-4db7-94b7-ab3a76267480-1
+01:13:08.565 --> 01:13:11.080
+know, building a new thing
+alongside the old thing.
+
+3dfcd0af-aa79-4cb8-a9cf-766cb8ea2c47-0
+01:13:11.770 --> 01:13:12.500
+Right, yeah.
+
+a55d47d1-380a-4f4c-8df2-ce8282b6d0d6-0
+01:13:14.510 --> 01:13:15.680
+Yeah.
+
+06b97f3f-03a7-49b0-b137-9cd9c62b936f-0
+01:13:16.440 --> 01:13:17.150
+Awesome, yeah.
+
+99e6ca20-723f-42a6-a83b-a70f95c9f358-0
+01:13:17.910 --> 01:13:21.821
+So next I'm gonna work on that
+one box thing that we discussed
+
+99e6ca20-723f-42a6-a83b-a70f95c9f358-1
+01:13:21.821 --> 01:13:25.919
+about. And I also wanted to talk
+about one of the other bugs. I I
+
+99e6ca20-723f-42a6-a83b-a70f95c9f358-2
+01:13:25.919 --> 01:13:26.539
+looked at.
+
+52c85c55-b558-4ec2-b11b-1e5d2f7e946e-0
+01:13:27.320 --> 01:13:30.569
+Uh, that bug, but you know that
+description. I didn't get it
+
+52c85c55-b558-4ec2-b11b-1e5d2f7e946e-1
+01:13:30.569 --> 01:13:33.658
+very much like, what's exactly
+this bug about because you
+
+52c85c55-b558-4ec2-b11b-1e5d2f7e946e-2
+01:13:33.658 --> 01:13:36.801
+mentioned some hyperlink and it
+goes to somewhere. I don't
+
+52c85c55-b558-4ec2-b11b-1e5d2f7e946e-3
+01:13:36.801 --> 01:13:39.943
+remember. There was like a
+fourth bug that you assigned to
+
+52c85c55-b558-4ec2-b11b-1e5d2f7e946e-4
+01:13:39.943 --> 01:13:42.980
+me. So you want to share your
+screen. We can look at it.
+
+fe27646a-47e3-44c3-881e-29b0b99005cc-0
+01:13:44.860 --> 01:13:48.770
+Yeah, alright. I can just give
+you the link of it, OK.
+
+1c8df516-2e07-4930-834c-1555f141e403-0
+01:13:50.080 --> 01:13:50.440
+Stop.
+
+c2c72d35-fbf8-4d37-b4c5-84662463766e-0
+01:13:51.760 --> 01:13:53.170
+One boat something.
+
+51d1a056-5c69-4140-a134-bb08ffa8a499-0
+01:13:56.000 --> 01:13:56.510
+Excuse me.
+
+5157da4b-1040-417b-b3ea-9911a856ad10-0
+01:14:02.980 --> 01:14:06.372
+I'm just still getting, you
+know, all my books, bookmarks
+
+5157da4b-1040-417b-b3ea-9911a856ad10-1
+01:14:06.372 --> 01:14:07.250
+and everything.
+
+cf6eef57-0e0f-4cc3-8886-fa7d2401ab45-0
+01:14:08.020 --> 01:14:12.210
+I lost those on Friday. I'm just
+still building up and sucks.
+
+aab60716-eb49-4215-9922-4ff4c1900c7e-0
+01:14:12.890 --> 01:14:15.854
+But yeah, but I like. I'm glad
+that this happened. This didn't
+
+aab60716-eb49-4215-9922-4ff4c1900c7e-1
+01:14:15.854 --> 01:14:17.360
+happen like two months from now.
+
+978e3ffc-52c9-4d5c-ba8e-8e0a26851276-0
+01:14:19.070 --> 01:14:20.850
+It is still OK.
+
+85623cab-73f2-447f-9986-42c2c0f0a636-0
+01:14:28.460 --> 01:14:29.240
+Oh.
+
+6ce05692-95d6-47be-9462-0c1d8dd8b452-0
+01:14:36.560 --> 01:14:41.261
+Do you do you happen to have,
+uh, that the the Agile board
+
+6ce05692-95d6-47be-9462-0c1d8dd8b452-1
+01:14:41.261 --> 01:14:44.290
+open? I may maybe I can find it
+here.
+
+b02f8744-e936-4e10-a3ca-af42583a7d0b-0
+01:14:47.390 --> 01:14:50.960
+DSM, SDP.
+
+caac0b9f-2d4b-4560-b2c1-3ff3a7da72bb-0
+01:14:57.450 --> 01:14:58.030
+Father.
+
+a564ccad-aea7-4afe-bd4d-72f73bdd727e-0
+01:15:00.130 --> 01:15:02.730
+Queries. Here we go. I might
+have it.
+
+f94fdb28-a6cc-461b-9989-fcbe6052398f-0
+01:15:16.450 --> 01:15:17.650
+No Dang it.
+
+8a79952a-323a-44e3-ab4b-c2762db96a23-0
+01:15:18.310 --> 01:15:19.080
+Try it again here.
+
+556b75a6-02f1-4970-95e7-b614bf73bc57-0
+01:15:27.690 --> 01:15:30.460
+I keep clicking on the wrong
+bookmark and it takes me.
+
+1abefbec-c6bd-45cd-978d-4089c546fe80-0
+01:15:32.530 --> 01:15:34.430
+Getting confused. Here we go.
+
+92245c03-d098-49fd-a291-cbf96dd354d7-0
+01:15:40.140 --> 01:15:42.010
+So so the there is uh.
+
+41dbc34f-a537-42b6-8304-5f5cdecb9e70-0
+01:15:43.510 --> 01:15:44.900
+There's one bug.
+
+cf03c240-9781-42bd-8561-f1ffc14ba30d-0
+01:15:46.740 --> 01:15:48.390
+Other than the three that we
+worked on.
+
+46d4bef3-0ffa-4b6e-b244-ece222455ad0-0
+01:15:49.090 --> 01:15:52.493
+Like there's a fourth. Yeah, I'm
+looking right now here. So we've
+
+46d4bef3-0ffa-4b6e-b244-ece222455ad0-1
+01:15:52.493 --> 01:15:52.700
+got.
+
+4fae1a4d-87af-4e3b-bd81-3f192022751f-0
+01:15:54.710 --> 01:15:59.224
+Save distribution state is prone
+to deadlocking failures. Yeah,
+
+4fae1a4d-87af-4e3b-bd81-3f192022751f-1
+01:15:59.224 --> 01:16:01.340
+this one is that the one? Yes.
+
+193af1e5-f0cb-440e-bd10-d42c3f7555d5-0
+01:16:04.010 --> 01:16:09.524
+I think you have a link. Uh.
+Yeah, yeah. OK, hold off on this
+
+193af1e5-f0cb-440e-bd10-d42c3f7555d5-1
+01:16:09.524 --> 01:16:09.880
+one.
+
+870ea83a-895b-4589-9587-a4b37860b522-0
+01:16:12.840 --> 01:16:17.068
+Yeah, I don't want to get into
+it right now. I just wanted to
+
+870ea83a-895b-4589-9587-a4b37860b522-1
+01:16:17.068 --> 01:16:17.410
+like.
+
+1a4a52f4-bdfc-4fe2-a036-87915037feb7-0
+01:16:18.760 --> 01:16:21.980
+You to be aware that you know we
+will look at it later.
+
+0a84d8c0-c699-4755-983b-1d14c6b3503b-0
+01:16:22.780 --> 01:16:25.170
+Yeah, what the link was pointing
+at.
+
+32187959-ccd6-4ded-ac78-f51617a2d8e5-0
+01:16:26.660 --> 01:16:27.190
+Is.
+
+17319dab-e997-4be1-812c-814934498347-0
+01:16:32.540 --> 01:16:33.700
+I'll just show you.
+
+129f72b0-3bd9-4e9b-8f9e-3679d91308c9-0
+01:16:40.270 --> 01:16:42.310
+Are we sharing? Wait a minute.
+What happened here?
+
+9702cfc1-b770-4648-b14b-c8f44be67541-0
+01:16:52.970 --> 01:16:53.640
+Excuse me.
+
+413ecc27-3fdd-44d3-9f03-a09e521b4be8-0
+01:16:55.270 --> 01:16:56.730
+Got up really early this
+morning.
+
+07033ecb-bc65-481e-a5a5-7274112a685c-0
+01:17:01.490 --> 01:17:06.405
+We've got an area where we have
+dashboards for all of our SQL
+
+07033ecb-bc65-481e-a5a5-7274112a685c-1
+01:17:06.405 --> 01:17:07.040
+queries.
+
+072a8956-1603-4525-bb75-ff7ec76261da-0
+01:17:10.270 --> 01:17:15.906
+And and it's in the PERF tuning
+and then query provider by
+
+072a8956-1603-4525-bb75-ff7ec76261da-1
+01:17:15.906 --> 01:17:16.480
+query.
+
+a5db989c-4b27-44b3-a406-b4653aceb37e-0
+01:17:18.950 --> 01:17:19.720
+And then.
+
+ad2ea4cf-364c-4161-a261-95a148e976bd-0
+01:17:21.330 --> 01:17:24.260
+It was saved sequel distribution
+state I think.
+
+d8350b30-e06e-4673-bf6d-d21de81adf1b-0
+01:17:28.870 --> 01:17:32.670
+Save distribution state query
+provider and if we look back.
+
+0a477dae-3dfe-4aae-9ae3-b9c2a24ba54e-0
+01:17:34.270 --> 01:17:35.120
+A day.
+
+7c2c3b94-035a-4ff9-9e59-86a640d7f5be-0
+01:17:38.900 --> 01:17:39.870
+Across.
+
+6e16375e-e000-4244-a18a-0597e5eff4a9-0
+01:17:40.630 --> 01:17:41.920
+All instances.
+
+ff2f868c-13d4-4c9a-b07a-7c81d98a33c2-0
+01:17:43.870 --> 01:17:44.940
+We we're seeing.
+
+c4bf753e-8258-43cb-8895-8552f3b8fad3-0
+01:17:45.930 --> 01:17:47.660
+Pretty high level of success.
+
+783e145b-a701-4d7a-a21b-0ca60e406a46-0
+01:17:48.450 --> 01:17:48.750
+Hmm.
+
+bb6bef0e-fdb2-4ff1-857e-97652d96e6dd-0
+01:17:50.000 --> 01:17:51.140
+But there's failures.
+
+311ac305-03da-4cc7-80cf-b9e0d01a7a11-0
+01:17:53.220 --> 01:17:56.750
+You know, 2% failure rate.
+That's too much, right?
+
+e5d90c3e-acde-433f-957a-ddaabc12601f-0
+01:17:58.640 --> 01:17:59.420
+And.
+
+9231e5e9-082a-41a4-a6c8-f9a44579a3b8-0
+01:18:01.150 --> 01:18:04.818
+The kind of failure that we're
+seeing is a storage deadlock
+
+9231e5e9-082a-41a4-a6c8-f9a44579a3b8-1
+01:18:04.818 --> 01:18:05.430
+exception.
+
+2be03f9a-1712-40ee-aafc-8051e75f97cb-0
+01:18:07.130 --> 01:18:11.340
+In fact, that's the only failure
+that we see in this, OK.
+
+15e1416a-2766-4e21-98a8-565f0077e784-0
+01:18:12.240 --> 01:18:12.810
+UM.
+
+8db16b27-aaba-4724-a9e5-fd9fe2f7a2ca-0
+01:18:14.650 --> 01:18:18.595
+And we we definitely do want to
+fix this before hitting
+
+8db16b27-aaba-4724-a9e5-fd9fe2f7a2ca-1
+01:18:18.595 --> 01:18:22.329
+production. I mean we, we do
+have some other code in
+
+8db16b27-aaba-4724-a9e5-fd9fe2f7a2ca-2
+01:18:22.329 --> 01:18:26.204
+production that's hitting
+deadlocks with the fact that
+
+8db16b27-aaba-4724-a9e5-fd9fe2f7a2ca-3
+01:18:26.204 --> 01:18:27.120
+we're seeing.
+
+03a3ba92-cd68-450c-93f3-6d9330d694af-0
+01:18:28.550 --> 01:18:29.580
+This many.
+
+aaf86e72-a6fd-4112-96f8-c1047a243fdd-0
+01:18:31.370 --> 01:18:33.900
+On a really just in one
+environment.
+
+1b65310c-33ef-4226-b66a-4b28204ed772-0
+01:18:34.680 --> 01:18:38.941
+You know, we're not even hitting
+production workloads yet means
+
+1b65310c-33ef-4226-b66a-4b28204ed772-1
+01:18:38.941 --> 01:18:39.940
+that we've got.
+
+cae7767a-44fc-4381-8dba-470add38383a-0
+01:18:40.810 --> 01:18:44.288
+A major bug like we've got some
+other, you know, code paths
+
+cae7767a-44fc-4381-8dba-470add38383a-1
+01:18:44.288 --> 01:18:45.680
+where we hit a deadlock.
+
+ca23b0fc-ca6a-41e5-9400-5bfd18162790-0
+01:18:47.280 --> 01:18:49.140
+Once in a blue moon, but this
+is.
+
+66fd999a-8358-408d-b509-355fe87089ae-0
+01:18:51.770 --> 01:18:53.290
+Yeah, we're almost. Yeah.
+
+90d089c4-128f-4966-a529-be4ca92263ab-0
+01:18:55.040 --> 01:18:58.473
+We're going to be seeing
+hundreds of these a day and in
+
+90d089c4-128f-4966-a529-be4ca92263ab-1
+01:18:58.473 --> 01:19:01.600
+production and and that's that's
+not a good thing.
+
+778232f3-a638-450d-a98f-e0bed8db2887-0
+01:19:03.130 --> 01:19:05.670
+Are you aware of what a SQL
+deadlock is?
+
+b3c7f25d-f0f8-4089-a7b4-5338d882daa3-0
+01:19:07.050 --> 01:19:10.110
+Uh, like I have some ideas, but
+yeah, might be wrong.
+
+a5e0acd1-12dd-4101-9663-20c61551c04c-0
+01:19:10.810 --> 01:19:13.100
+Also, so basically what it is
+is.
+
+1cd2e691-37c2-4dd2-b6e0-3b3c8c899eb8-0
+01:19:14.860 --> 01:19:18.170
+If SQL transactional database
+and so. UM.
+
+355afb77-3c14-4d8f-8f47-2ef9c940ea81-0
+01:19:20.800 --> 01:19:24.134
+You know for concurrency if if
+you got two code paths that are
+
+355afb77-3c14-4d8f-8f47-2ef9c940ea81-1
+01:19:24.134 --> 01:19:27.363
+hitting the same tables, you
+know it takes locks. I'm taking
+
+355afb77-3c14-4d8f-8f47-2ef9c940ea81-2
+01:19:27.363 --> 01:19:30.750
+a lock on this row or this page
+in the table so nobody else can
+
+355afb77-3c14-4d8f-8f47-2ef9c940ea81-3
+01:19:30.750 --> 01:19:33.555
+write to it until I'm done
+writing to it, and then I
+
+355afb77-3c14-4d8f-8f47-2ef9c940ea81-4
+01:19:33.555 --> 01:19:35.620
+release it and then the other
+guy and.
+
+29d0593c-64bf-470a-bbc5-694778f5d19d-0
+01:19:36.310 --> 01:19:39.606
+So. So somebody has to wait on
+me to release my lock and I'm
+
+29d0593c-64bf-470a-bbc5-694778f5d19d-1
+01:19:39.606 --> 01:19:42.794
+gonna have to wait on somebody
+else to release their lock.
+
+29d0593c-64bf-470a-bbc5-694778f5d19d-2
+01:19:42.794 --> 01:19:44.200
+Right? A deadlock is when.
+
+e581959c-3e91-47ea-b900-ede6b34c506c-0
+01:19:45.670 --> 01:19:49.795
+A is waiting for B to release a
+lock, but's not gonna release
+
+e581959c-3e91-47ea-b900-ede6b34c506c-1
+01:19:49.795 --> 01:19:53.987
+the lock until a releases his
+lock, and so then they get stuck
+
+e581959c-3e91-47ea-b900-ede6b34c506c-2
+01:19:53.987 --> 01:19:57.979
+and SQL Server detects that and
+then picks a winner and the
+
+e581959c-3e91-47ea-b900-ede6b34c506c-3
+01:19:57.979 --> 01:20:01.971
+other guy just loses his word,
+right? So this means if this
+
+e581959c-3e91-47ea-b900-ede6b34c506c-4
+01:20:01.971 --> 01:20:05.897
+saved distribution state is
+hitting a deadlock, this means
+
+e581959c-3e91-47ea-b900-ede6b34c506c-5
+01:20:05.897 --> 01:20:06.230
+that.
+
+f2582fc3-246c-4752-90de-30dc8539c55f-0
+01:20:06.960 --> 01:20:09.100
+You know, we're calling that for
+one service.
+
+2d1ed7ec-437f-4898-8d94-ca74f6e04755-0
+01:20:10.230 --> 01:20:14.345
+Saying here's the updated baking
+state. So for that one hour
+
+2d1ed7ec-437f-4898-8d94-ca74f6e04755-1
+01:20:14.345 --> 01:20:15.020
+iteration.
+
+e291ced8-f1d8-4532-967b-8d46ef24de3f-0
+01:20:16.320 --> 01:20:17.780
+Those results were lost.
+
+b8901442-12c0-493f-bd64-9de9af8b834a-0
+01:20:19.830 --> 01:20:23.640
+Now the service is made to like
+be resilient and you know.
+
+39a0c371-663b-4376-a342-4a878ac234ec-0
+01:20:24.300 --> 01:20:27.110
+Has a good chance of catching up
+next time, but.
+
+779f5061-e010-479e-a26a-760220a4fa9b-0
+01:20:28.610 --> 01:20:31.400
+It's it's something that we
+don't wanna have in our code.
+
+51cef14a-a5ee-44d1-a929-99ce989c6fe9-0
+01:20:33.370 --> 01:20:38.152
+And it's probably something that
+we're inflicting on ourselves
+
+51cef14a-a5ee-44d1-a929-99ce989c6fe9-1
+01:20:38.152 --> 01:20:42.934
+because who else is calling save
+distribution state? It's just
+
+51cef14a-a5ee-44d1-a929-99ce989c6fe9-2
+01:20:42.934 --> 01:20:47.489
+us. It's just inside the DSMS
+distribution packager, right?
+
+51cef14a-a5ee-44d1-a929-99ce989c6fe9-3
+01:20:47.489 --> 01:20:52.120
+We're deadlocking ourselves in
+this code path. OK, yeah, so.
+
+463e68d7-8e7b-40fa-8253-aa69b3420faf-0
+01:20:54.360 --> 01:20:56.690
+Yeah. Normally when you start
+seeing deadlocks.
+
+a426b4f4-5096-45ef-8a40-0b5a09aa4324-0
+01:20:57.380 --> 01:21:00.583
+You know, in practice is when
+like some other feature starts
+
+a426b4f4-5096-45ef-8a40-0b5a09aa4324-1
+01:21:00.583 --> 01:21:03.786
+messing with your table and
+they're querying your table in a
+
+a426b4f4-5096-45ef-8a40-0b5a09aa4324-2
+01:21:03.786 --> 01:21:06.150
+way that you didn't expect it to
+be queried.
+
+afce6541-914b-40df-980d-ee25ebf38855-0
+01:21:07.650 --> 01:21:10.340
+But here it's just us so.
+
+77923a15-7868-425a-a3f2-de22ca749ce2-0
+01:21:12.500 --> 01:21:15.060
+Yeah, so, so we definitely do
+wanna fix it.
+
+abf895cb-8a02-417d-b403-0ff27afe2626-0
+01:21:17.000 --> 01:21:17.440
+But.
+
+480f322f-d9dc-4b3c-b499-3b3e738695f3-0
+01:21:18.740 --> 01:21:21.120
+It's definitely something that.
+
+50b92011-fd6f-4e30-b49e-0a88b3b74aed-0
+01:21:23.990 --> 01:21:26.680
+It's gonna be really hard to
+reproduce it in.
+
+7e124b7b-8faf-49cf-8ee4-c93d12ccafc0-0
+01:21:27.630 --> 01:21:28.900
+A1 box environment.
+
+6440a4b2-34e1-43ac-8e8e-7b7a47dcafa0-0
+01:21:31.060 --> 01:21:31.390
+Like.
+
+fa0b7464-3fc2-4589-a763-5934d7493fb6-0
+01:21:32.220 --> 01:21:35.000
+This was probably because.
+
+8a6feb8d-79b6-4c48-8924-c4a75aa7b2a1-0
+01:21:35.620 --> 01:21:39.290
+Like we're seeing it here in
+Canary because it's running on.
+
+151692a9-379a-468a-a281-81965fe4f53b-0
+01:21:41.500 --> 01:21:42.940
+10 different machines.
+
+c7717ae9-47f3-47e9-9504-a4133dcd4131-0
+01:21:44.130 --> 01:21:44.560
+Uh.
+
+66609152-f488-45a4-a0bb-1c751fcfae3c-0
+01:21:45.880 --> 01:21:47.020
+400 threads.
+
+15c72619-eeda-4cf8-a9aa-ecf3373ce4ad-0
+01:21:47.680 --> 01:21:51.387
+Of simultaneous execution once
+an hour, right? So it's it's
+
+15c72619-eeda-4cf8-a9aa-ecf3373ce4ad-1
+01:21:51.387 --> 01:21:54.785
+really thrashing in the
+database. You're not gonna hit
+
+15c72619-eeda-4cf8-a9aa-ecf3373ce4ad-2
+01:21:54.785 --> 01:21:57.690
+that kind of throughput on A1
+box very easily.
+
+0dc9435f-05d5-4f7b-883c-3cb72d6548c3-0
+01:21:58.390 --> 01:21:59.310
+So UM.
+
+2ff2e528-f2e9-44e1-a196-04d02fc2e379-0
+01:22:01.440 --> 01:22:03.470
+Yeah, I did a little write up.
+
+d0d7808d-5871-4693-a1fd-2e960a5c7670-0
+01:22:04.230 --> 01:22:08.791
+On deadlocks to help them make
+more sense, I'll share that with
+
+d0d7808d-5871-4693-a1fd-2e960a5c7670-1
+01:22:08.791 --> 01:22:09.860
+you, but don't.
+
+09e8e3b4-eba4-4aa3-a4a4-19f600a0f2ff-0
+01:22:15.040 --> 01:22:17.830
+Don't get too caught up in the
+weeds on it yet.
+
+170dc7c9-55b2-47b8-adb0-1051f231a45c-0
+01:22:32.150 --> 01:22:32.920
+Just a second here.
+
+f44bf2e3-edd3-4433-9b63-478035a04d18-0
+01:23:09.690 --> 01:23:10.510
+Is this the one?
+
+a57a4446-0e79-4f26-90fd-bf5e9a9d219a-0
+01:23:11.320 --> 01:23:12.040
+Yeah, that's the one.
+
+88ba119e-a30e-4bcd-bf66-31c938d1c5a1-0
+01:23:22.210 --> 01:23:26.060
+So I tried to give a really
+simple explanation.
+
+15e4a78d-8349-42f8-919a-f0c98f31938e-0
+01:23:27.090 --> 01:23:29.260
+Of of what's going on in the
+database.
+
+92169b56-dfcf-4c35-a32a-d156303a0081-0
+01:23:32.200 --> 01:23:35.644
+In practice, these things are so
+hard to track down, so we
+
+92169b56-dfcf-4c35-a32a-d156303a0081-1
+01:23:35.644 --> 01:23:39.030
+definitely want to get it done
+before it's in production.
+
+5a51675e-594c-4833-ac17-fb18fa64608f-0
+01:23:40.720 --> 01:23:41.180
+Yeah.
+
+1c486439-6366-43c5-b8d8-c05a907deadc-0
+01:23:42.370 --> 01:23:42.700
+Yeah.
+
+e89db997-d497-4ea5-9bfd-9df34409f3b2-0
+01:23:43.750 --> 01:23:47.330
+As you were interested on like
+what? Uh, it opened up.
+
+e71ff489-eec1-45ec-aa06-969d551a757f-0
+01:23:48.140 --> 01:23:49.460
+Geneva, that portal?
+
+ccfc38f7-1145-4113-87d2-017c0409f9d4-0
+01:23:51.330 --> 01:23:55.752
+Then the the link to that. OK so
+so this query provider is safe
+
+ccfc38f7-1145-4113-87d2-017c0409f9d4-1
+01:23:55.752 --> 01:23:57.480
+distribution state query.
+
+46154d9c-9ba9-484a-9aec-ea8d7ce12c9a-0
+01:23:58.990 --> 01:24:03.219
+OK, so I'll share it again, it
+probably the link just went
+
+46154d9c-9ba9-484a-9aec-ea8d7ce12c9a-1
+01:24:03.219 --> 01:24:03.650
+stale.
+
+f57d511d-4584-450f-a827-a6332060a287-0
+01:24:05.040 --> 01:24:05.610
+So.
+
+da5da31c-3d7f-46ef-8c85-3a581c8b999d-0
+01:24:07.770 --> 01:24:11.648
+I just put it in the chat again
+so you can play with that and
+
+da5da31c-3d7f-46ef-8c85-3a581c8b999d-1
+01:24:11.648 --> 01:24:15.464
+and what what this portal was
+about. I think you you told me
+
+da5da31c-3d7f-46ef-8c85-3a581c8b999d-2
+01:24:15.464 --> 01:24:16.340
+sometime back.
+
+8fe6cc5d-2961-43fa-a7b2-5ba1208b2f7b-0
+01:24:17.090 --> 01:24:21.682
+So so this is the Geneva portal,
+right? And So what I've done is
+
+8fe6cc5d-2961-43fa-a7b2-5ba1208b2f7b-1
+01:24:21.682 --> 01:24:22.530
+in the code.
+
+bdd0f988-4c22-4360-a667-c76889061f19-0
+01:24:25.000 --> 01:24:27.110
+Our our new style of.
+
+332c0578-9580-4a3a-852e-46ef83147200-0
+01:24:28.490 --> 01:24:32.518
+Calling into the database. We're
+using this pattern called. It's
+
+332c0578-9580-4a3a-852e-46ef83147200-1
+01:24:32.518 --> 01:24:34.440
+gonna be in the storage folder.
+
+d0afc495-e29a-47cf-b138-98c13a5d6f2c-0
+01:24:35.890 --> 01:24:37.200
+And we're using uh.
+
+8bd58121-f94a-4de5-8ef9-cd686ce54063-0
+01:24:38.820 --> 01:24:44.174
+This guy called query provider
+and so everybody inherits from
+
+8bd58121-f94a-4de5-8ef9-cd686ce54063-1
+01:24:44.174 --> 01:24:45.470
+query provider.
+
+b6861595-2a43-4546-9cfe-dc62a0cb889e-0
+01:24:46.910 --> 01:24:47.560
+And.
+
+75e277f3-5f43-4246-95b9-b3849a5d0f95-0
+01:24:49.960 --> 01:24:53.281
+What you do is you'll you'll
+you'll write a concrete
+
+75e277f3-5f43-4246-95b9-b3849a5d0f95-1
+01:24:53.281 --> 01:24:56.915
+implementation of the query
+provider class where you wrap
+
+75e277f3-5f43-4246-95b9-b3849a5d0f95-2
+01:24:56.915 --> 01:24:58.670
+your call into SQL and then.
+
+78dcdc77-4f91-4094-8861-85370dd42764-0
+01:24:59.410 --> 01:25:00.620
+When you execute it.
+
+4ea4e99e-886a-4aa3-ac75-6851063427a9-0
+01:25:03.110 --> 01:25:06.580
+The base class is automatically
+gonna gather a bunch of
+
+4ea4e99e-886a-4aa3-ac75-6851063427a9-1
+01:25:06.580 --> 01:25:07.200
+telemetry.
+
+0ba1d68e-20de-4913-807b-907cb5a4a0a9-0
+01:25:07.990 --> 01:25:10.520
+And all of that telemetry finds
+its way here.
+
+b353be38-553c-449e-875c-6068b9c712c4-0
+01:25:11.490 --> 01:25:13.240
+And so we see.
+
+46e139a9-7b09-4500-93c6-511529cb9344-0
+01:25:15.220 --> 01:25:18.402
+A different query provider for
+each kind of query that's been
+
+46e139a9-7b09-4500-93c6-511529cb9344-1
+01:25:18.402 --> 01:25:19.070
+built so far.
+
+965c8228-aaed-4f30-9f53-001ce8bae491-0
+01:25:20.390 --> 01:25:20.760
+OK.
+
+1728c213-8bb6-4421-a756-2dbe8f533ef2-0
+01:25:21.810 --> 01:25:25.770
+So there should be like a get
+all service ID's.
+
+bb317a43-45bc-4812-9d66-18e31b466363-0
+01:25:28.140 --> 01:25:32.319
+So here's here's one of the
+other ones that gets written.
+
+bb317a43-45bc-4812-9d66-18e31b466363-1
+01:25:32.319 --> 01:25:36.715
+See this one's all green, right,
+right. And then there's get
+
+bb317a43-45bc-4812-9d66-18e31b466363-2
+01:25:36.715 --> 01:25:39.310
+distribution states query
+provider.
+
+bca7a5b4-6f42-408d-a617-6648e686eb17-0
+01:25:43.360 --> 01:25:43.650
+Yeah.
+
+432fbb97-d8ba-41b2-9fb3-c7e4297c387a-0
+01:25:44.560 --> 01:25:47.370
+This guy's all green, right?
+Totally happy.
+
+949e1a33-9d13-4eac-ad69-58cf6e309322-0
+01:25:48.090 --> 01:25:49.140
+
+
+b5c6a829-1426-4b2d-9a65-db4569768946-0
+01:25:52.640 --> 01:25:56.258
+The the the failures should
+really be few and far between
+
+b5c6a829-1426-4b2d-9a65-db4569768946-1
+01:25:56.258 --> 01:26:00.000
+and they should only be things
+like connectivity exceptions
+
+b5c6a829-1426-4b2d-9a65-db4569768946-2
+01:26:00.000 --> 01:26:03.806
+when we see them they should be
+transient things. A deadlock
+
+b5c6a829-1426-4b2d-9a65-db4569768946-3
+01:26:03.806 --> 01:26:07.673
+exception is really really bad
+and we should we want to drive
+
+b5c6a829-1426-4b2d-9a65-db4569768946-4
+01:26:07.673 --> 01:26:08.359
+those to 0.
+
+841ff1f3-4ea0-4c3b-a5bb-b6b6ee451272-0
+01:26:10.180 --> 01:26:10.400
+Right.
+
+22794c92-b594-4711-9197-094f7d600043-0
+01:26:18.180 --> 01:26:19.310
+Yeah. So anyways.
+
+41625fb8-71ac-4b96-99fa-99f84472ea8d-0
+01:26:21.130 --> 01:26:25.435
+Yeah, I I I'll explore more of
+this once we have progress with
+
+41625fb8-71ac-4b96-99fa-99f84472ea8d-1
+01:26:25.435 --> 01:26:28.580
+the one box thing and
+everything. Yeah, cool.
+
+ff6fb5c0-0e50-4b8e-a005-0cb6fdcb5354-0
+01:26:29.940 --> 01:26:33.250
+I wonder do the one boxes show
+up in here?
+
+1a2f1ed5-b620-4de7-806b-03ec13db2349-0
+01:26:51.990 --> 01:26:52.580
+Umm.
+
+bf515778-b7c0-4194-9d42-86c1628c67ff-0
+01:27:00.060 --> 01:27:01.400
+I just want to see if there's.
+
+bf9af003-96d9-4c8c-b0c3-b2e1420384f0-0
+01:27:22.760 --> 01:27:26.310
+Yeah, I don't know if any of
+these work, but anyways.
+
+2c3fc52d-0029-4fb7-8052-7587b6a913ea-0
+01:27:27.840 --> 01:27:30.240
+Yeah, I don't know if one box
+streams here yet.
+
+cc28af27-8d81-48ae-97f1-9d44a7f61d6c-0
+01:27:31.850 --> 01:27:32.500
+So.
+
+8a0a4add-2a57-4261-9305-6df72de9ced9-0
+01:27:34.230 --> 01:27:34.630
+OK.
+
+72d65375-86aa-4fc1-8679-fcde6894153e-0
+01:27:36.260 --> 01:27:37.290
+Yeah, we'll find it out.
+
+6b457082-607d-4a37-b485-e7645121cdb7-0
+01:27:41.130 --> 01:27:41.580
+Cool.
+
+e1a3b8b5-6228-490a-88ac-51a81d547290-0
+01:27:42.730 --> 01:27:45.845
+Yeah, and yeah, that's it. I
+think John, thank you so much
+
+e1a3b8b5-6228-490a-88ac-51a81d547290-1
+01:27:45.845 --> 01:27:47.800
+for your time today. Ohh sure.
+Yeah.
+
+bbdf9475-91d0-4418-9e09-bc13dd9bee34-0
+01:27:48.740 --> 01:27:53.970
+So I'm back up on call
+Srinivas's back on Wednesday.
+
+cbd6d2e4-7da1-4e51-a0c1-eeed377d798e-0
+01:27:55.530 --> 01:27:56.240
+So.
+
+c7808b48-d1eb-46de-aac8-6c4119e06334-0
+01:27:57.420 --> 01:27:57.870
+Uh.
+
+859d6c8d-55c0-4f60-9d3f-9b05d596bd1b-0
+01:27:59.050 --> 01:28:02.983
+By the end of this week, you
+should start being able to see
+
+859d6c8d-55c0-4f60-9d3f-9b05d596bd1b-1
+01:28:02.983 --> 01:28:06.981
+more of me, so I apologize for
+not being very available this
+
+859d6c8d-55c0-4f60-9d3f-9b05d596bd1b-2
+01:28:06.981 --> 01:28:10.455
+last month. No worries, no
+problem. It's yeah. Yeah.
+
+859d6c8d-55c0-4f60-9d3f-9b05d596bd1b-3
+01:28:10.455 --> 01:28:14.388
+Looking forward to getting back
+to writing some code. Yeah.
+
+859d6c8d-55c0-4f60-9d3f-9b05d596bd1b-4
+01:28:14.388 --> 01:28:15.700
+Would be nice. Yeah.
+
+990c2855-e25c-4d3d-b23f-41a5742a231a-0
+01:28:17.310 --> 01:28:20.375
+Awesome. Uh. Yeah. I'm gonna
+talk to you later then. And I'm
+
+990c2855-e25c-4d3d-b23f-41a5742a231a-1
+01:28:20.375 --> 01:28:23.190
+gonna keep you updated, OK?
+Awesome. Thank you so much.
+
+3cbe24ae-8a12-4b73-beb1-632a9b0c292f-0
+01:28:23.900 --> 01:28:25.460
+Thank you. Bye bye.
+
+d80c045c-e342-4e8e-85de-bbe14ded2565-0
+01:28:26.150 --> 01:28:29.700

@@ -1,0 +1,487 @@
+WEBVTT
+
+0:0:0.0 --> 0:0:1.640
+<v Tyler Sorrels>And so it doesn't become an alert.</v>
+
+0:0:2.260 --> 0:0:7.590
+<v Tyler Sorrels>Ohh shoot I I didn't remember to record but I think someone someone's doing it. OK good.</v>
+
+0:0:37.280 --> 0:0:44.20
+<v Srinivas Nidadavolu>It's not like, but I I think it's. I wanna start it now. OK, I stopped it again, but I'm going to start it now. Sorry about that. Yeah, starting it now.</v>
+
+0:0:47.210 --> 0:0:47.700
+<v Tyler Sorrels>OK.</v>
+
+0:0:47.470 --> 0:0:48.80
+<v Srinivas Nidadavolu>Go ahead, Tyler.</v>
+
+0:0:48.480 --> 0:1:9.60
+<v Tyler Sorrels>Alright, thanks. OK. So let's talk briefly about uh, this topic, which is I wanna talk about the the customer alert router that we built and how are using it now we're using it as an intermediate step to get dsms to a service maturity where we're managing everyone's secrets.</v>
+
+0:1:9.830 --> 0:1:27.340
+<v Tyler Sorrels>And nothing ever gets nothing ever expires. Nothing ever fails to get where it's supposed to get to in Azure, and also there aren't. You know, ways for customers to shoot themselves in the foot. So that's where we're trying to get to. This is an intermediate step now.</v>
+
+0:1:28.220 --> 0:1:59.850
+<v Tyler Sorrels>What is the improvement this makes? Well, uh. If you think of a a secret, it has kind of a this Standard Life cycle and D SMS or an Azure and it's, you know, a customer comes the dsms creates a secret then you know it has to declare where that secret needs to be deployed within Azure. And then dsms along with some other partners needs to actually deploy it to where it is. Then it actually needs to be consumed and used in the service and then you know we get into this maintenance phase where DSMS identifies either allows the customer to rotate and update a secret.</v>
+
+0:1:59.940 --> 0:2:33.580
+<v Tyler Sorrels>Or we detect that it's, you know, near expiry and we or for compliance reasons we rotate it and then we need to go back through the loop of determining where it needs to get you in Azure and then delivering it and then some time passes and then the loop starts over we detect or the customer detects that they want to rotate it. So we rotate it and then figure out where it needs to go in Azure and then deliver it. So there are many sticky points in that life cycle and for a long time we've been stuck in this mode of basically we just wait until that life cycle is all the way near complete and almost failed.</v>
+
+0:2:33.880 --> 0:2:48.400
+<v Tyler Sorrels>With a secret either near expiry and D SMS or DSMS believes based on telemetry that a version of that secret deployed somewhere in Azure is about to expire. So this is supposed to help us get out of that bucket now.</v>
+
+0:2:49.470 --> 0:3:11.70
+<v Tyler Sorrels>This helps us identify or or. Or rather we have a code component now that we can use to easily identify anywhere in our code and anywhere in that life cycle when something fails so we don't have to wait, you know, when the life cycle takes months or years. We don't have to wait till the very end until it's expiring. You know to detect a failure that might have happened long ago. Now we can detect.</v>
+
+0:3:11.740 --> 0:3:19.290
+<v Tyler Sorrels>And uh, alert really anywhere. And and that's the value of this, this code component. Now the last thing I wanna say is.</v>
+
+0:3:20.890 --> 0:3:40.980
+<v Tyler Sorrels>And I guess this is a bit of a repeat, but there there are several there, you know this is only staff stopgap measure instead of alerting some of these are good candidates for, you know, after detection instead of alerting the customer to a problem or dsms to a problem, we could replace that alerting code with self healing code. All right. So let's get into it now.</v>
+
+0:3:42.120 --> 0:4:16.160
+<v Tyler Sorrels>First of all, uh, you know, this is in the OneNote and UM Shrini. We had a table somewhere and it looks like it got deleted but but I just kind of recreated it briefly so there's a sub page under auto rollover failures here called alert types and it's just a list of all eight alert types. Now. What is an alert type? It's basically just a name. It's a unique name that that you just write in code and we've done it eight Times Now. Where are those things in code? Well, I just want to show you how easy it is to find them all. So.</v>
+
+0:4:16.470 --> 0:4:31.630
+<v Tyler Sorrels>If we went over to the, you know, there's a code component here and I realize this is probably hard to see in the video. And I'm gonna jump over to a new screen to show you actually real time, but there's a code component. It's a project called Customer alert router. And then you could just look for references to the customer alert router.</v>
+
+0:4:32.850 --> 0:4:47.920
+<v Tyler Sorrels>And so if you did that, you would find there is, uh, eight of these things. And this is actually where they are. And so let me just briefly go over where they are in code, because we're gonna talk about kind of what what we can do in the code, right, so.</v>
+
+0:4:51.630 --> 0:5:11.320
+<v Tyler Sorrels>So in the code and and in some engineers are gonna key on where this is in the code right away. Some won't, but you know there's something called this certificate customer alerter that that is kind of something new I wrote. But you know, something that people are familiar with is the managed chain certificate manager helper. That's basically the managed chain certificate, you know, manager.</v>
+
+0:5:12.320 --> 0:5:18.90
+<v Tyler Sorrels>The task the the fabric task manager, the Storage Account, task manager, the fabric task manager.</v>
+
+0:5:18.880 --> 0:5:31.760
+<v Tyler Sorrels>And so we see a a a common thread there and then you know we do a lot of work on this secret expiry and auto rollover worker. And so we have several alerts or detections happening there. So I just wanted to point that out.</v>
+
+0:5:33.280 --> 0:5:33.690
+<v Tyler Sorrels>Now.</v>
+
+0:5:37.180 --> 0:6:7.280
+<v Tyler Sorrels>I also just OK before. Yeah, so I I will show in a second how easy it is. You know in 30 or 60 seconds, I'm just gonna show a quick document that shows like a tutorial on how to add one of these alerts. It's very simple. It requires no unit testing. It requires nothing other than, you know instantiating, you know, a an object you like and then firing it away to this component. So.</v>
+
+0:6:9.120 --> 0:6:22.400
+<v Tyler Sorrels>Now let's just talk about where we can detect failures. So we talked about this complex life cycle and then I just mentioned, hey, we already have eight alerts and we talked about where they are, where can we detect failures in our system.</v>
+
+0:6:23.660 --> 0:6:30.990
+<v Tyler Sorrels>Well, the answer is on any task task failure. So on anything asynchronous we can detect something is wrong.</v>
+
+0:6:32.380 --> 0:6:40.970
+<v Tyler Sorrels>And and I just. I just wanna like kind of stay at my foot on this because we just really just never did this right. We just never, we just never really did it.</v>
+
+0:6:41.720 --> 0:7:11.690
+<v Tyler Sorrels>And so any time we run a task, we can detach whether or not a fails. We can detect how it fails. So in you know what, what do we use tasks for creating secrets, updating secrets, refreshing storage accounts, rotating secrets and distributing secrets? Basically everything we have to do is a service we can detect immediately whether we fail. So that's pretty good. And if you just look at what we have already in place, it covers.</v>
+
+0:7:11.780 --> 0:7:44.910
+<v Tyler Sorrels>A very large part of the critical paths in in the service and then not only so not only are can we detect anytime we do a task, but we can detect on any timer worker you know. So we have these workers that just run whether or not there's a task running or not. We have a timer worker that just wakes up and like once a day worker or in the auxiliary dsms auxiliary worker we can run whenever we want once a minute and we can do any detection we want. Now the thing I wanna point out is you know the SDP worker this is going away.</v>
+
+0:7:45.150 --> 0:7:59.380
+<v Tyler Sorrels>But it it it it it reads you know all the service objects. Now we can do a little we we already you know in in one of these alerts up here this this expiring deployment D SMS secret alert we look at.</v>
+
+0:8:0.30 --> 0:8:27.260
+<v Tyler Sorrels>Each service object and do a comparison to you know the last updated time stamps on these pending states, goal States and current state to figure out whether or not something is broken and requires action. Now the same thing is true. We can do on the on the secret expiry worker as well. We can check to see whether a particular version of a secret in a service object we think might be might be expiring and we have those. We have those in place.</v>
+
+0:8:29.820 --> 0:8:48.170
+<v Tyler Sorrels>OK. And then basically slightly rephrased as like when can we detect failures and this is getting kind of pedantic or maybe even academic but but essentially I guess what I wanted to point out is we can basically detect anything anywhere we we we just have to, we just have to code it right now.</v>
+
+0:8:48.830 --> 0:9:5.780
+<v Tyler Sorrels>Umm, I'll take a quick pause sharing. I saw you unmute, but I'll just take a quick pause and and if there's nothing else, I'll just move on to showing how to create alert and then how to like add or disable or reenable it. You know in terms of SDP or how to silence a noisy alert or whatever.</v>
+
+0:9:6.990 --> 0:9:12.890
+<v Srinivas Nidadavolu>Yeah, I think I think this is good. I think this having at this framework to kind of just.</v>
+
+0:9:14.270 --> 0:9:14.990
+<v Srinivas Nidadavolu>Enable.</v>
+
+0:9:15.110 --> 0:9:45.400
+<v Srinivas Nidadavolu>Uh, I still kind of do this very easily and in a low key fashion. I think this is a this is great and I think you articulated the the nature of scenarios that we have organically kind of been struggling with. And I think this is an easy pluggable framework for that. So sounds, I mean this is so thank you for doing this and I think it's very, it's great. So let's move on and do this. How do we kind of leverage this right? I think in terms of creating the.</v>
+
+0:9:45.480 --> 0:9:50.970
+<v Srinivas Nidadavolu>And focus done, of course on these others that you already have. Yeah, we can. We can move on to that topic.</v>
+
+0:9:51.950 --> 0:10:13.60
+<v Tyler Sorrels>OK. And uh, I think this is probably a review for someone because I know someone's in the code. I think it's Chandra, you know, generating some of these things. So that's good. But I only wanna show that this is actually a review. We've done this, you know, maybe six months or a year ago or something. And I just wanted to show that we have a sub page here that it says adding, disabling, enabling alert.</v>
+
+0:10:13.700 --> 0:10:44.350
+<v Tyler Sorrels>And this is just a link to document that we already have, or a set of documents, and here it is. And so scuba customer, ICM, router, Scube COTA or ohh, this is basically this is something I added by the way. You know we we leverage scuba and this is maybe for you know Chandra or maybe like an advanced user, but this is where our code is in scuba that basically you know we rely on or that we have a dependency on. So this is a very.</v>
+
+0:10:44.420 --> 0:11:2.410
+<v Tyler Sorrels>Easy, very easy how to create an alert and then fire it off. And you know there's simply all you do is fill out, you know, a few key pieces of data. And there's also, you know, a a A a mapping to show you.</v>
+
+0:11:3.130 --> 0:11:15.710
+<v Tyler Sorrels>What your ICM will look like based on the strings and things like that that you actually put in your code. So you instantiate this customer alert object and then you fire it off into this black hole and it works.</v>
+
+0:11:16.910 --> 0:11:38.470
+<v Tyler Sorrels>And you know, you can take a dependency on this customer alert router anywhere in the code. So obviously the service code is a dependency. But on any micro service you know you can use this because it itself the only dependency it has is the alert framework or whatever or so. Sorry, the lease provider framework and it queues an alert that's picks up by the auxiliary worker and then fired away.</v>
+
+0:11:40.530 --> 0:11:43.70
+<v Tyler Sorrels>OK, one last thing now.</v>
+
+0:11:44.220 --> 0:11:53.700
+<v Tyler Sorrels>The alert name property which I'm trying to put my mouse on here this is this is the alert name. This one says quote manage chain certificate customer error.</v>
+
+0:11:54.750 --> 0:12:4.660
+<v Tyler Sorrels>So this is this is, you know, a a string that you create that then you know you'll be able to use to either enable, disable.</v>
+
+0:12:6.40 --> 0:12:8.620
+<v Tyler Sorrels>Or or whatever. So this is this is something.</v>
+
+0:12:9.960 --> 0:12:14.570
+<v Tyler Sorrels>That you create and I just wanted. I'm just gonna go over to the OneNote real quick.</v>
+
+0:12:15.650 --> 0:12:18.20
+<v Tyler Sorrels>And show that these these alert names.</v>
+
+0:12:18.870 --> 0:12:19.620
+<v Tyler Sorrels>Match.</v>
+
+0:12:21.320 --> 0:12:23.840
+<v Tyler Sorrels>Everything, everything we have.</v>
+
+0:12:24.820 --> 0:12:38.50
+<v Tyler Sorrels>Here. So this was the managed chain certificate customer alert. So you create your own alert you know so I created you know I created names for D SMS service missing secrets error right. So you you create all these errors then.</v>
+
+0:12:39.140 --> 0:12:41.370
+<v Tyler Sorrels>There is a very easy way.</v>
+
+0:12:42.820 --> 0:12:43.550
+<v Tyler Sorrels>To.</v>
+
+0:12:45.380 --> 0:13:0.530
+<v Tyler Sorrels>Either add or remove this from a config value, a string, comma delimited config to do what you want with this thing you know. So basically you can add this to a config value to say. Ohh you know what I don't. I don't wanna route this right now.</v>
+
+0:13:1.280 --> 0:13:7.70
+<v Tyler Sorrels>And you could do that per cloud, right? So that's that's what this is. Uh, this document here says.</v>
+
+0:13:8.880 --> 0:13:9.640
+<v Srinivas Nidadavolu>The next slide.</v>
+
+0:13:8.810 --> 0:13:28.950
+<v Tyler Sorrels>How to SDP slash kill your alert and it shows you specifically this is a config value and it's a common limited value. Ohh here it is here so all you have to do is you know if if we put manage Shane certificate customer error into this config then we would just drop it and you can reenable it per instance whenever you want.</v>
+
+0:13:30.890 --> 0:13:51.140
+<v Srinivas Nidadavolu>That's good. So so one thing that, Tyler one observation is I think why can't we just probably we should make those alert names as enums so that we don't have any typos right? Like if somebody does a slight mistake then they'll end up creating a new alert name. It seems that the alert name is the common index for a class of.</v>
+
+0:13:52.0 --> 0:13:58.370
+<v Srinivas Nidadavolu>Put a class of alerts right? So this many change Significate alert name is the.</v>
+
+0:13:59.520 --> 0:14:2.790
+<v Srinivas Nidadavolu>It's it's one category of an alert and you could.</v>
+
+0:14:3.550 --> 0:14:33.60
+<v Srinivas Nidadavolu>Uh fire off an alert to this category from anywhere in the code, so we have to ensure that that name is actually we don't have any typos, right? And all the places that we're going to reference it in code. So maybe we should just make it an enumeration. So that way we just reuse it and not have to make sure that OK, the exact name because in the in the code sample that you showed, I already noticed like in the in the go back to the previous how to the routing and ICM inside dsms code.</v>
+
+0:14:34.40 --> 0:14:35.290
+<v Srinivas Nidadavolu>Like if you come down.</v>
+
+0:14:36.40 --> 0:14:40.190
+<v Srinivas Nidadavolu>Uh in the title. If you see the many changes that you get is spelled correctly.</v>
+
+0:14:43.700 --> 0:14:44.190
+<v Tyler Sorrels>Let's see.</v>
+
+0:14:40.870 --> 0:14:53.940
+<v Srinivas Nidadavolu>Uh, a domain for D SMS manage chain certificate. So just trying to avoid those types in the alert thing. If somebody says like instead of error they EROR then I think it won't be routed.</v>
+
+0:14:54.840 --> 0:14:56.170
+<v Tyler Sorrels>Yep, you're.</v>
+
+0:14:57.20 --> 0:14:57.880
+<v Tyler Sorrels>Yep, great point.</v>
+
+0:14:58.640 --> 0:15:12.40
+<v Srinivas Nidadavolu>OK and this alert title, I think it's it's what goes into the ICM like that in the, in the head of the ICM, maybe you can take show an ICM as well like how this translates into the ICM itself. Oh, there you go.</v>
+
+0:15:13.320 --> 0:15:19.730
+<v Tyler Sorrels>Yeah, you you can't see quite the whole thing, but. But essentially you know if if if you kept going down here, you know the.</v>
+
+0:15:21.50 --> 0:15:32.680
+<v Tyler Sorrels>The extended you know, so you'd be able to match this, right? So you don't you don't control this. This is controlled by the DS scuba repo. This D SMS secrets customer error and then.</v>
+
+0:15:34.580 --> 0:15:37.590
+<v Tyler Sorrels>You get to uh.</v>
+
+0:15:51.250 --> 0:15:51.730
+<v Srinivas Nidadavolu>OK.</v>
+
+0:15:39.190 --> 0:16:0.690
+<v Tyler Sorrels>Yeah, I I'm sorry, but yeah, if if. Yeah, I I'm kind of taking a little off kilter here but basically you could map you know what what which strings kind of map down to what the ICM looks like. The other thing is you can just add data you can just add information so you can just add in a dictionary you can just add property information that will just continue down like this.</v>
+
+0:16:1.310 --> 0:16:20.600
+<v Srinivas Nidadavolu>And some of these are coming by default, right? For example, the instance of D SMS, the service tree ID that coming by default. And if you want you can add things like resource group and any other as key value pairs that alert and maybe can you show where where we do that in the code like can you go back to that sample of code that you had.</v>
+
+0:16:21.940 --> 0:16:22.690
+<v Srinivas Nidadavolu>So we just.</v>
+
+0:16:22.70 --> 0:16:22.910
+<v Tyler Sorrels>Yeah. So.</v>
+
+0:16:23.680 --> 0:16:36.720
+<v Tyler Sorrels>Right, so, so so you know I I there it may be true that you do not want to include. I was thinking there could be some things that are not specific to a dsms instance. So you don't have to put that in.</v>
+
+0:16:37.410 --> 0:16:37.910
+<v Srinivas Nidadavolu>OK.</v>
+
+0:16:37.410 --> 0:16:56.410
+<v Tyler Sorrels>So the the thing, the thing that you do have to have though is a service tree ID, right? And I removed the necessity of getting that in code because if you just fire this away and it's null the the scuba the scuba alert router will figure it out for you.</v>
+
+0:16:57.630 --> 0:16:58.140
+<v Srinivas Nidadavolu>OK.</v>
+
+0:16:57.500 --> 0:17:3.150
+<v Tyler Sorrels>Based on the the resource name it'll it'll it'll. It'll look it up so.</v>
+
+0:17:5.180 --> 0:17:5.500
+<v Tyler Sorrels>Yeah.</v>
+
+0:17:20.410 --> 0:17:20.900
+<v Tyler Sorrels>That's true.</v>
+
+0:17:7.290 --> 0:17:22.650
+<v Srinivas Nidadavolu>Go ahead. Yeah. So basically things like service tree ID, the instance and the cloud. They can all be implicit for they can all be implicitly inferred by the library. But if you want to overwrite them, you can override them off. Yeah. OK.</v>
+
+0:17:29.840 --> 0:17:30.90
+<v Srinivas Nidadavolu>OK.</v>
+
+0:17:22.520 --> 0:17:35.630
+<v Tyler Sorrels>Yeah, you're right. And I, yeah, I'd have to look to see whether whether yeah, yeah, I that that would be a good update. So not only not only automatically have the service tree ID, but automatically out. Yeah, implicitly add those things.</v>
+
+0:17:36.390 --> 0:17:54.930
+<v Srinivas Nidadavolu>Makes sense. OK, cool. Yeah. Yeah, I think I don't want to interrupt the flow, but this is good. So a simple mechanism to just create this object called customer alert and you have these key value properties that you just add and then you fire it off to this queue and then.</v>
+
+0:17:55.700 --> 0:18:8.970
+<v Srinivas Nidadavolu>Ohh, eventually some magic happens and the customer would get alerted of this of this studio. Right now I think you have the architecture over there. Do you want to go over the architecture like how all of this plumbing is working together?</v>
+
+0:18:16.360 --> 0:18:17.280
+<v Srinivas Nidadavolu>Go ahead with your flow.</v>
+
+0:18:10.860 --> 0:18:17.570
+<v Tyler Sorrels>I'm sure I'm, you know. I'll. I'll. Let's see. I actually have a page.</v>
+
+0:18:18.890 --> 0:18:21.70
+<v Tyler Sorrels>And it's blank so.</v>
+
+0:18:20.550 --> 0:18:24.240
+<v Srinivas Nidadavolu>OK, no worries. But maybe just talk to it at a high level. I think you have.</v>
+
+0:18:24.310 --> 0:18:29.570
+<v Srinivas Nidadavolu>Yeah, yeah, yeah, yeah. Just talk through the the different components of the of the pipeline.</v>
+
+0:18:29.990 --> 0:18:33.700
+<v Tyler Sorrels>Right. Uh so so very, very simply.</v>
+
+0:18:36.110 --> 0:18:40.720
+<v Tyler Sorrels>Let let let's just jump to the code real quick so you know if you you can imagine.</v>
+
+0:18:43.420 --> 0:18:46.820
+<v Tyler Sorrels>Uh, you know what? I'm I I've gotten really good at this. Let me. Let me just try.</v>
+
+0:19:26.520 --> 0:19:34.360
+<v Srinivas Nidadavolu>So we need him to have partner. Very good. I takes me to thing to do all of this, but it seems like you are going at lightning speed, so that's good.</v>
+
+0:19:36.590 --> 0:19:36.820
+<v Tyler Sorrels>OK.</v>
+
+0:19:36.900 --> 0:19:38.370
+<v Tyler Sorrels>So yeah, so.</v>
+
+0:19:39.70 --> 0:20:7.850
+<v Tyler Sorrels>This is a little shoddy, but you can imagine you know, so this is dsms. This is the big service code, right? D SMS service and these are like microservices. This is I don't know whatever microservices. So this is all running in an instance and then we have a dsmsbatch which includes the lease provider. Now again we have this scuba scuba alerter I'll say say which is a code component that.</v>
+
+0:20:10.890 --> 0:20:15.870
+<v Tyler Sorrels>He exists and this is the aux worker Ox. Sorry.</v>
+
+0:20:16.790 --> 0:20:28.980
+<v Tyler Sorrels>Now this is getting a little little messy, but actually I'm gonna delete this so you can see that. So like let's say in the service we detect something we don't like, you know, like, oh, you're you're you're.</v>
+
+0:20:28.580 --> 0:20:29.930
+<v Srinivas Nidadavolu>Something that's not that's good.</v>
+
+0:20:30.610 --> 0:20:30.960
+<v Tyler Sorrels>Sorry.</v>
+
+0:20:31.540 --> 0:20:35.430
+<v Srinivas Nidadavolu>You know domain is not registered like an example of something that we that we.</v>
+
+0:20:34.830 --> 0:21:7.500
+<v Tyler Sorrels>You know, I mean isn't registered, right? So D SMS service writes that to the database and that is, you know through the alert router. And so you don't have to worry about writing with the database, it's all, it's all encapsulated in that component. And then then the auxiliary worker picks it up. Now the auxiliary worker again has some logic to check the config to see whether or not the name of your alert that you queued should be omitted. So the auxiliary worker can drop it if you want the auxiliary worker to just drop it, it can drop it, but if it doesn't, drop it.</v>
+
+0:21:7.980 --> 0:21:38.30
+<v Tyler Sorrels>Then it'll write it to our own kusto database. We have a table called the scuba customer alert I think is what the table is called and and then scuba it we have some code in scuba so that the scuba service comes and and scrapes our kusto data to look for these events and again it comes back so it's scrapes it and it does some logic that we've actually coded up in there. And then based on that logic.</v>
+
+0:21:38.100 --> 0:21:43.820
+<v Tyler Sorrels>It'll actually send an ICM and then that gets to the customer and that's the architecture.</v>
+
+0:21:45.880 --> 0:21:56.270
+<v Srinivas Nidadavolu>Correct. Yeah. So I think maybe also just uh touch point on this. Uh, what's the authentication between the worker and KUSTO? Are we using SMS based set to authenticate?</v>
+
+0:21:56.340 --> 0:21:58.400
+<v Srinivas Nidadavolu>Yeah, put the stuff.</v>
+
+0:22:0.280 --> 0:22:12.550
+<v Tyler Sorrels>Uh, no. We are using the old MDM pipeline, so we actually write to a table on the pilot fish box and actually this is the you know this is the.</v>
+
+0:22:14.340 --> 0:22:16.210
+<v Tyler Sorrels>Geneva pump. Geneva, pump.</v>
+
+0:22:16.360 --> 0:22:16.760
+<v Srinivas Nidadavolu>I see.</v>
+
+0:22:20.960 --> 0:22:21.220
+<v Tyler Sorrels>Yeah.</v>
+
+0:22:29.920 --> 0:22:59.790
+<v Srinivas Nidadavolu>I see. So we are essentially emitting uh, regular MDS telemetry, yeah, event. And we have those events in our monitoring agent configuration problem, blah. So by writing those by logging those events, it's flowing via our standard telemetry pipeline that we have for the service. So it goes into Geneva and then from Geneva gets into KUSTO and and then the rest of the magic with scuba happens.</v>
+
+0:23:0.820 --> 0:23:1.920
+<v Tyler Sorrels>That's exactly right.</v>
+
+0:23:2.560 --> 0:23:3.530
+<v Srinivas Nidadavolu>OK, bye.</v>
+
+0:23:7.650 --> 0:23:8.110
+<v Chandra Prakash Garg>Yeah.</v>
+
+0:23:6.0 --> 0:23:36.840
+<v Srinivas Nidadavolu>Thank you. I think this is good to just know all the various pieces in the in the, in the pipeline and I think it's I think the functionality of how to leverage it. You clearly articulate it and I think some of the scenarios where this benefits is also well articulated and you kind of mentioned in case things are going wacky and we need to kind of disable this, there's a mechanism to kind of do it on a per dsms instance. So I think we covered most of the ground, there are a few questions both from Chandra and Sumeet.</v>
+
+0:23:36.960 --> 0:23:46.500
+<v Srinivas Nidadavolu>For me, we we take this questions and we can wrap it up, but thank you, Tyler. This is actually nice, very informative and good work. So maybe Chandra, you want to go next?</v>
+
+0:23:48.160 --> 0:24:7.450
+<v Chandra Prakash Garg>Not a question, but I think I have a presentation that I can send it Ishkar team initially shared it, so if somebody wants to learn how this happens from our side. As Taylor said, just to ring, we push it to KUSTO and then we grant access to that KUSTO to scuba and then it's all scuba magic.</v>
+
+0:24:8.370 --> 0:24:8.820
+<v Srinivas Nidadavolu>OK.</v>
+
+0:24:8.160 --> 0:24:9.350
+<v Chandra Prakash Garg>Basically actually route.</v>
+
+0:24:9.950 --> 0:24:10.620
+<v Chandra Prakash Garg>Ohh.</v>
+
+0:24:12.240 --> 0:24:12.530
+<v Chandra Prakash Garg>OK.</v>
+
+0:24:9.910 --> 0:24:24.500
+<v Srinivas Nidadavolu>So link that presentation in that wiki there where Tyler had that pull request for understanding scuba. Right. So what the changes we had in scuba. So maybe like put that presentation also in that wiki. So that way we have some context into how the scuba mask is happening.</v>
+
+0:24:25.100 --> 0:24:38.440
+<v Chandra Prakash Garg>Yeah. And just to give a compliment to tell her this looks, you know, like this was a very good win. For example, if you are seeing, you know better life site. So one of the key thing because of this interrogation what happened is.</v>
+
+0:24:39.140 --> 0:25:9.50
+<v Chandra Prakash Garg>Lot of we used to get a lot of issues especially in auto rollover failure and a lot of them was customer one. You know San is invalid or certificate authority whatever. So now we are routing all those two customers. So the actual load on D SMS got reduced for especially on DRI because customer are taking steps up front because as soon as rollover failed the trigger goes to a customer and then they have to mitigate it. So I think this was the step which basically really made a like a.</v>
+
+0:25:9.150 --> 0:25:11.640
+<v Chandra Prakash Garg>Service help like a better and.</v>
+
+0:25:12.780 --> 0:25:23.50
+<v Chandra Prakash Garg>Like more and more, we can identify the scenario. This the the Tyler has put in place a very simplified structure. You just need to raise it like you raise event. You raise a ICM Miller and that's it.</v>
+
+0:25:24.260 --> 0:25:24.900
+<v Srinivas Nidadavolu>Right, right.</v>
+
+0:25:24.250 --> 0:25:30.480
+<v Chandra Prakash Garg>It's a simple function called I I I used it multiple places and it looks pretty simple too. You know, just just call a function and that's.</v>
+
+0:25:31.910 --> 0:25:47.310
+<v Srinivas Nidadavolu>Very good indeed. Yeah, I can close on that. And I think clearly as Chandra articulated, it's helping one thing. I just want to also ensure that everyone is understanding is like this is a tool that we are using to make sure that we are.</v>
+
+0:25:48.310 --> 0:26:17.910
+<v Srinivas Nidadavolu>We are fixing the problem by when it happens and not allowing it to organically require a manual follow up or organically compound over time. PF been in this port of having some organic debt. So this tool is that's why like when customers complain they complain because it's raising a lot of alerts but we feel like once that bow wave is done the the future like the next step of this is to catch it as soon as something is incorrect and then go and raise an alert. But ideally the North star of all of this.</v>
+
+0:26:17.980 --> 0:26:49.440
+<v Srinivas Nidadavolu>Is that we don't even have to do this like the platform itself is preventing these issues from happening in the 1st place. Like we don't we prevent the situation where a customer updates are signing correctly right from the start, but there are certain limitations like say one cert doesn't have certain APIs or we do not have certain transaction semantics whatever and and hence we cannot enforce that right away. So this framework will stay and it will be there. But I just want to kind of relay that. It's proven to be very helpful. But with power comes responsibility also.</v>
+
+0:26:49.530 --> 0:27:19.450
+<v Srinivas Nidadavolu>So let's not overuse it and overkill it and be very conscious and be thoughtful about how and when we we leverage it, right, the the goal is to make sure that we do not make the reduce the version on called Eris. The goal is to improve the ability to detect issues and to kind of heal them quickly. So that's one thing why we also make other investments in the platform to make sure that we plug the any holes and and organically.</v>
+
+0:27:19.690 --> 0:27:48.200
+<v Srinivas Nidadavolu>Support better integration with our dependencies, so just keep that in mind, but at the same time I I do want to again be emphasize the impact that this has. Like it's definitely helping us reduce the amount of amount of tool that we've had with with the dris and with the customers. So in the service help perspective, as Chandra summarized, I think this is proven to be very helpful. So thank you Tyler. Thank you for the week team. I know Chandra all of you have part of this.</v>
+
+0:28:8.620 --> 0:28:8.820
+<v Srinivas Nidadavolu>Yeah.</v>
+
+0:27:46.610 --> 0:28:15.540
+<v Chandra Prakash Garg>So she need just to add one. You have already spoken this. You know, I wanted to emphasize whenever we use it, we should be conscious like we should not flood the customer. That is a very important part. If we can aggregate the you know, all the events for the customer. So he can get a digest. That's the best thing that should be the North Star. We should not flirt them. Like I think that could be the next step in which we basically aggregate and give them a digest kind of a thing. For example Daily Digest or say weekly Digest something of that sort.</v>
+
+0:28:17.890 --> 0:28:18.240
+<v Srinivas Nidadavolu>Right.</v>
+
+0:28:15.870 --> 0:28:24.120
+<v Chandra Prakash Garg>What? The flood the customer? Because when we flood the customer they or they will see bulk auto resolve or something like this. They basically ignore. So we have to make them, yeah.</v>
+
+0:28:27.260 --> 0:28:27.530
+<v Chandra Prakash Garg>Yep.</v>
+
+0:28:34.970 --> 0:28:35.140
+<v Chandra Prakash Garg>Yeah.</v>
+
+0:28:22.670 --> 0:28:36.850
+<v Srinivas Nidadavolu>Yeah, I think all the they're all enhancements. I think this was the first step of building the framework of building the pipeline and then there are so many enhancements like we can think of prioritization. We can think of digests and we can think of things. So definitely I think these are all good ideas.</v>
+
+0:28:35.950 --> 0:28:48.720
+<v Chandra Prakash Garg>But it's a very good framework to start with. I think it we have fantastic framework. We have two now consciously you know start using it and just to keep in mind not to overuse it. But otherwise I think we have a fantastic framework.</v>
+
+0:28:49.100 --> 0:29:1.30
+<v Srinivas Nidadavolu>Right. OK. With that, uh, I don't know, Tyler, if you want to respond to this, if not like maybe Sumeet, uh. Can was handled. Had his hand up. So Sumeet go ahead and then Tyler can respond to both of the questions.</v>
+
+0:29:0.710 --> 0:29:22.80
+<v Sumeet Pande>Yeah. I just wanted to like ask in the code like you mentioned earlier that we could send like a like a like a Dictionary of like a queue value pair through the alert, right? I could not see that in the title of the code like in the screenshots that you shared earlier. So how did you manage to like send additionally like where I need to provide probably send this machine information.</v>
+
+0:29:33.30 --> 0:29:34.900
+<v Srinivas Nidadavolu>So Tyler, you're muted if you're trying to speak.</v>
+
+0:29:39.400 --> 0:29:57.210
+<v Tyler Sorrels>Uh, yeah, I wasn't. But I I I think I I let's see here. So I think the alert, so let's just go into this this thing here. So this custom properties this thing will get mapped in the auxiliary worker as a set of just like key value pairs.</v>
+
+0:29:59.890 --> 0:30:0.560
+<v Tyler Sorrels>Do you see some?</v>
+
+0:30:3.350 --> 0:30:3.650
+<v Tyler Sorrels>OK.</v>
+
+0:30:4.700 --> 0:30:5.70
+<v Tyler Sorrels>Alright, good.</v>
+
+0:30:7.200 --> 0:30:7.520
+<v Tyler Sorrels>Yes.</v>
+
+0:30:3.80 --> 0:30:9.770
+<v Sumeet Pande>Yep, I do. I do. Thank you. Yeah. And that will that will be part of the ICM, right. Like it will, it will show up in the ICM. Right. Yeah. Awesome. Yeah.</v>
+
+0:30:9.170 --> 0:30:39.240
+<v Tyler Sorrels>Right. Right. Right. Yeah. So so real quickly, I just wanted to say one more important thing here, right. So this is dsms config, the these are the dynamic configs. So when we set it here, it'll eventually can get consistent across the cloud. This is what has been kind of the pain point that we've seen a couple of times. So what we do and what you see here is in master currently everything is enabled except for certificate near expiry. That one was the really bad one that Chandra Chandra found and developer and then.</v>
+
+0:30:40.140 --> 0:30:44.130
+<v Tyler Sorrels>We just, we're keeping that like basically restricted forever, so.</v>
+
+0:30:45.670 --> 0:30:47.340
+<v Tyler Sorrels>So as this rolls out.</v>
+
+0:30:48.530 --> 0:31:17.800
+<v Tyler Sorrels>By by instance, you know it's gonna go to stage first and then it's gonna go to Canary and staging Canary have already been cleaned up basically because we've, you know, started this a couple of times, then it's gonna get to pilot, then it's gonna get to public stage one. Then it's gonna get the high traffic regions and you know, we're still, you know, the other. So the implicit, you know, list of enabled alerts here like hey you're push push fabric task failed because your service object sucks.</v>
+
+0:31:18.440 --> 0:31:46.560
+<v Tyler Sorrels>You know that's already been out and stage and Canary and pilot phase. You know when pilot and phase one. But as it goes out to stage two and stage three, you know there might be you know some some customers that find bad state and and that's that's been the boat that we've been in. So I just wanted to call that out now two other configs I just wanted to point out that you know there's some thresholds that are configurable these two thresholds say hey if something is deployed.</v>
+
+0:31:47.570 --> 0:31:48.730
+<v Tyler Sorrels>And it's a secret.</v>
+
+0:31:49.510 --> 0:32:2.210
+<v Tyler Sorrels>And is expiring and is expiring within 15 days route no matter what, right? We've already failed something somewhere. Just route an ICM to the customer if.</v>
+
+0:32:3.810 --> 0:32:35.560
+<v Tyler Sorrels>That threshold, if that number is 7 days, then additionally route an ICM to the dsms DRI. Now these are all set at Sev Threes. You can go back and change that if you want. The last thing I wanted to point is these are all of our tests and developer tenants down here and there's a special, you know, there's a special case or a special string that says, you know, restrict all alerts. And so we we restrict all alerts in in test and developer tenants. And if you wanted to just turn off all alerts and any other instance you could just use this star.</v>
+
+0:32:36.260 --> 0:32:36.980
+<v Tyler Sorrels>And that's it.</v>
+
+0:32:40.650 --> 0:32:43.990
+<v Srinivas Nidadavolu>Perfect. Yeah. Thank you so much. Tyler. I'm gonna stop the recording now.</v>
+
+0:32:44.510 --> 0:32:47.450
+<v Srinivas Nidadavolu>Uh, any questions from anyone else?</v>

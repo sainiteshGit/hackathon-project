@@ -1,0 +1,1595 @@
+0:0:0.0 --> 0:0:1.530 
+Olga Ermolova 
+You get is. 
+
+0:0:3.230 --> 0:0:19.940 
+Olga Ermolova 
+Uh, you know you automatically get multi region. You know you are automatically get all the setup that is already done inside skylight, right? So that I I think that was the the question or is that going to be way too much? 
+
+0:0:20.200 --> 0:0:27.920 
+Olga Ermolova 
+Ohh, we don't need all that headache. Let's just go with plain old simple app services. 
+
+0:0:31.90 --> 0:0:38.220 
+Jackie Kajdzik 
+Umm, I would think you know for MVP, I think we should just build it, you know, make it simple. 
+
+0:0:38.920 --> 0:0:43.930 
+Jackie Kajdzik 
+Rather than introducing, you know Kubernetes and getting all of that set up. 
+
+0:0:44.360 --> 0:0:44.800 
+Olga Ermolova 
+Umm. 
+
+0:0:45.100 --> 0:0:53.210 
+Jackie Kajdzik 
+My other question is, if we're gonna be using, you know, the skylight infrastructure, how does that work for support? 
+
+0:0:55.660 --> 0:0:56.20 
+Jackie Kajdzik 
+Right. 
+
+0:0:55.320 --> 0:0:57.710 
+Olga Ermolova 
+What do you mean? How does that work for support? 
+
+0:0:57.330 --> 0:0:58.700 
+Jackie Kajdzik 
+So if we're using. 
+
+0:0:59.550 --> 0:1:5.630 
+Jackie Kajdzik 
+Being skylights infrastructure, doesn't that mean that all of our stuff will be published in their subscription? 
+
+0:1:7.850 --> 0:1:11.880 
+Olga Ermolova 
+All of our stuff will be published in there subscription. 
+
+0:1:13.250 --> 0:1:24.210 
+Jackie Kajdzik 
+In their yeah, and their Azure subscription. So if we need to troubleshoot or whatnot, well, we need to be added to the eligibility for the skylight infrastructure. 
+
+0:1:29.0 --> 0:1:32.710 
+Olga Ermolova 
+OK, I guess I'm not understanding. Can you repeat that once again? 
+
+0:1:33.300 --> 0:1:38.770 
+Jackie Kajdzik 
+Yeah. So Umm, so let's say we use stylized infrastructure with Kubernetes. 
+
+0:1:39.230 --> 0:1:39.640 
+Olga Ermolova 
+Mm-hmm. 
+
+0:1:39.470 --> 0:1:47.440 
+Jackie Kajdzik 
+Right. And what does that mean exactly? Does that mean that our code? 
+
+0:1:48.180 --> 0:1:55.800 
+Jackie Kajdzik 
+Is going to be published into their Azure subscription or would it still be published to our existing subscription? 
+
+0:1:58.50 --> 0:2:7.620 
+Olga Ermolova 
+Still, uh, our code will be published under resources that are running in skylights infrastructure. 
+
+0:2:8.270 --> 0:2:29.520 
+Olga Ermolova 
+Right. So so for example, if we created a simple Web API right to service our get help APIs right? In order to do that, if we create a simple microservice then that microservice would reside in the Skylight store of subscription. 
+
+0:2:31.300 --> 0:2:31.700 
+Jackie Kajdzik 
+OK. 
+
+0:2:33.390 --> 0:2:35.20 
+Olga Ermolova 
+Right. Would would that be a problem? 
+
+0:2:36.100 --> 0:2:50.470 
+Jackie Kajdzik 
+I'm. I'm just thinking, you know, around, you know, like this first release that it might be easier if we're able to, you know, connect to our existing subscription and be able to troubleshoot that way. 
+
+0:2:52.10 --> 0:2:52.420 
+Jackie Kajdzik 
+Umm. 
+
+0:2:51.90 --> 0:3:5.940 
+Olga Ermolova 
+OK. But we should be able to create our own subscription group even on their no. So unless and until unless and until we replicate skylights infrastructure in our because asks is. 
+
+0:3:9.160 --> 0:3:9.440 
+Jackie Kajdzik 
+Yeah. 
+
+0:3:7.60 --> 0:3:28.30 
+Olga Ermolova 
+One-on-one with the subscription, right? So OK. S resources lives inside a subscription, right? So unless and until we want to replicate their entire infrastructure in our subscription and then build it that way, that would be a different story. But that's not the point. I don't think that's the point, right? Yeah. I think the point is that we want. 
+
+0:3:44.410 --> 0:3:44.660 
+Jackie Kajdzik 
+Yep. 
+
+0:3:49.30 --> 0:3:49.370 
+Jackie Kajdzik 
+Right. 
+
+0:3:28.960 --> 0:4:1.10 
+Olga Ermolova 
+That so the idea, Jackie, I think you've heard it. Is that this is something that Anusha and Li, Anusha and Rodney has paged up is, you know, we have this infrastructure that we use for skylight. It's built on top of a S right? We have a lot of compliance built into it, right, like Geneva and Torus subscriptions and app insights and all sorts of stuff. Right is for more Azure CXP team to use it. 
+
+0:4:1.850 --> 0:4:2.270 
+Jackie Kajdzik 
+Mm-hmm. 
+
+0:4:1.140 --> 0:4:21.570 
+Olga Ermolova 
+Right. So that they already get the infrastructure and I think what they're trying to do is they're also looking for. So it would be, it would not be a shared infrastructure is that there would be a single team that would maintain this infrastructure, right. And other teams can just leverage it. 
+
+0:4:23.10 --> 0:4:23.370 
+Jackie Kajdzik 
+OK. 
+
+0:4:34.670 --> 0:4:36.270 
+Jackie Kajdzik 
+Yeah, well, I just. 
+
+0:4:22.620 --> 0:4:37.30 
+Olga Ermolova 
+Right. But that's the eventual proposal and I think both Lee and Noel are in agreement, but I don't know about more than that, right. So what I am saying, yeah. 
+
+0:4:37.480 --> 0:4:39.230 
+Jackie Kajdzik 
+To me it doesn't seem. 
+
+0:4:40.420 --> 0:4:59.730 
+Jackie Kajdzik 
+Like it's ready to do that yet, right? Like you know, for instance, is the skylight team prepared to take on all of the infrastructure support, you know, for all of the things that we need because, you know, within our subscription, we have a lot more resources than just an app service. 
+
+0:5:0.140 --> 0:5:0.470 
+Olga Ermolova 
+Yeah. 
+
+0:5:1.0 --> 0:5:10.780 
+Jackie Kajdzik 
+Right. So then we've got our resources across multiple subscriptions and it's I guess in my mind, it's difficult to get the whole picture. 
+
+0:5:11.400 --> 0:5:12.10 
+Olga Ermolova 
+Yeah. 
+
+0:5:11.740 --> 0:5:20.550 
+Jackie Kajdzik 
+You know, if you're jumping between subscriptions and I'm pretty sure the skylight team isn't going to want me, you know, giving me access to go and dig around in their subscription. 
+
+0:5:29.760 --> 0:5:30.80 
+Jackie Kajdzik 
+Yeah. 
+
+0:5:38.590 --> 0:5:38.940 
+Jackie Kajdzik 
+Yeah. 
+
+0:5:21.30 --> 0:5:39.800 
+Olga Ermolova 
+Yeah, I I don't think the skylight team has the bandwidth to do it. I think it would be more like a do it yourself, right? So if you wanted to host a Azure function, you would write the you'd go in and you'd update the arm and then deploy it, right? And then. 
+
+0:5:41.90 --> 0:5:47.130 
+Olga Ermolova 
+Once you deploy it, there's gonna be Azure function in there and it's gonna have code and you're going to be able to connect to it, right? 
+
+0:5:48.860 --> 0:5:58.30 
+Olga Ermolova 
+Like similarly, you know we may want a different domain name for our traffic, so we may need new certificates, right? So. 
+
+0:5:57.740 --> 0:5:58.90 
+Jackie Kajdzik 
+Yes. 
+
+0:5:58.860 --> 0:6:3.440 
+Olga Ermolova 
+You'll have to go in and do yourself, right? So it's not. It's not that that we will have. 
+
+0:6:4.720 --> 0:6:5.570 
+Olga Ermolova 
+To do it the only. 
+
+0:6:6.620 --> 0:6:7.590 
+Olga Ermolova 
+What is that, you know? 
+
+0:6:9.570 --> 0:6:10.230 
+Olga Ermolova 
+But uh. 
+
+0:6:12.370 --> 0:6:27.720 
+Olga Ermolova 
+They're looking to do, uh, you know, it's just like when is the right, you know, do we want to jump into that bandwagon? And when is the right time to jump into it? Right. Meaning, I agree with you that for MVP, I don't think we need any complication because we already have. 
+
+0:6:34.320 --> 0:6:35.90 
+Jackie Kajdzik 
+Yeah, yeah. 
+
+0:6:28.460 --> 0:6:46.150 
+Olga Ermolova 
+A lot of dependencies built in and you know we we have to figure all of that out, right. So I'm OK for MVP, we do it as it is and then a little bit later on decide if we want to actually move into the other infrastructure. 
+
+0:6:46.670 --> 0:6:55.360 
+Jackie Kajdzik 
+Yeah, I mean, I would just like more time to do, you know, to really deep dive into what switching over to that infrastructure really means. 
+
+0:6:55.870 --> 0:6:56.300 
+Olga Ermolova 
+Umm. 
+
+0:6:56.470 --> 0:7:1.990 
+Jackie Kajdzik 
+You know, from a support perspective, you know DRI perspective, you know, all all of that. 
+
+0:7:2.510 --> 0:7:2.820 
+Olga Ermolova 
+Yeah. 
+
+0:7:5.240 --> 0:7:6.130 
+Olga Ermolova 
+Yeah, makes sense. 
+
+0:7:6.920 --> 0:7:10.810 
+Olga Ermolova 
+So if we want to get more information about that who we can ask Rodney. 
+
+0:7:11.130 --> 0:7:41.140 
+Olga Ermolova 
+Me or Rodney? Yeah. So, like, if we need some other sources which are not there, how we gonna get them? You will get us access as it will go and do our stuff. I just like want to understand what is the difference. Yeah. So that was self or yeah. It's build that it's different. Yeah. The difference is going to be is that let's say for example if I wanted to create a cosmos DB in the GitHub subscription right I would go write an on template that would create the resource I'd go ahead and deploy the ARM template. 
+
+0:13:16.498 --> 0:13:33.628 
+Olga Ermolova 
+Energy, you know, that is that is not yet defined. I can give you a bunch of example like I just did. So that's that's kind of like what I think or the advantages are. But let me ping Rodney and then see if he has the White Paper and recording and then maybe you guys can listen to it. 
+
+0:13:34.298 --> 0:13:42.838 
+Jackie Kajdzik 
+Yeah. I mean is the is the setup that you guys have for Kubernetes repeatable. So it would be something that we could set up in our own subscription. 
+
+0:13:55.38 --> 0:13:56.68 
+Jackie Kajdzik 
+Yeah, yeah. 
+
+0:13:43.828 --> 0:13:59.998 
+Olga Ermolova 
+Yeah, I I think mostly it should be because we did have a work item for one click deployments right, which is basically you have this ARM template go ahead and run this ARM template and you're all set, right? 
+
+0:14:6.248 --> 0:14:6.558 
+Jackie Kajdzik 
+Yeah. 
+
+0:14:1.48 --> 0:14:9.58 
+Olga Ermolova 
+But I think there are like few things that you need to do manually and I'm not 100% sure what steps we need to do manually. 
+
+0:14:9.428 --> 0:14:22.938 
+Jackie Kajdzik 
+Because because I think it would be, you know, it sounds great. I mean from all of the things that you get, the only issue that I really am having is that it would be in someone else's subscription and then we're taking a dependency on them. 
+
+0:14:25.578 --> 0:14:26.978 
+Jackie Kajdzik 
+Great. So if we deploy. 
+
+0:14:25.868 --> 0:14:29.948 
+Olga Ermolova 
+Well, but it'll be the subscription belongs to the team, right? 
+
+0:14:31.318 --> 0:14:31.748 
+Jackie Kajdzik 
+Right. 
+
+0:14:40.768 --> 0:14:42.98 
+Jackie Kajdzik 
+Right, right. Oh no, I know. 
+
+0:14:32.978 --> 0:14:43.88 
+Olga Ermolova 
+So if we be part of that team, meaning like if meaning the subscription, the Scarlet subscription belongs to Anusha, right. So you would, yeah. 
+
+0:14:46.258 --> 0:14:46.568 
+Jackie Kajdzik 
+OK. 
+
+0:15:9.548 --> 0:15:10.218 
+Jackie Kajdzik 
+Yeah, yeah. 
+
+0:14:45.908 --> 0:15:15.648 
+Olga Ermolova 
+So meaning, I think the subscription part is, yeah, meaning. And then how do how do we handle subscription mapping and service tree mapping and all this stuff that will still need to figure out. But what I'm saying is we will be the first team to try to onboard into that infrastructure and they will be locked. You know they there's there are lots of unknowns, right? And is that something that we want to tackle right now? 
+
+0:15:16.408 --> 0:15:24.98 
+Olga Ermolova 
+And how much time do we have, right. Is that the the time that we will get to try to experiment to figure out if we can be in that or? 
+
+0:15:24.998 --> 0:15:25.338 
+Jackie Kajdzik 
+Right. 
+
+0:15:26.58 --> 0:15:27.588 
+Olga Ermolova 
+But do they have resources? 
+
+0:15:26.118 --> 0:15:28.488 
+Jackie Kajdzik 
+No, I I think we should discuss it for sure. 
+
+0:15:36.78 --> 0:15:36.468 
+Jackie Kajdzik 
+Yeah. 
+
+0:15:45.378 --> 0:15:45.808 
+Jackie Kajdzik 
+Yeah. 
+
+0:15:54.498 --> 0:15:54.828 
+Jackie Kajdzik 
+Nice. 
+
+0:15:28.808 --> 0:15:58.758 
+Olga Ermolova 
+Yeah, I don't think and I will tell you up front, I don't think they have the resources to do the work for you. They will be open for consultation. So like if you wanna go talk to Shane about hey, Shane, what changes do I need to make to do this? You can do it and then plus all of the pipelines you get for free, right? The SDP process you get for free, right, the synthetics and everything like that, you get the whole infrastructure for free. So there's a lot of things you get for free, but as you said. 
+
+0:15:59.78 --> 0:16:1.428 
+Olga Ermolova 
+You know, you also get the complexity for free. 
+
+0:16:1.848 --> 0:16:2.198 
+Jackie Kajdzik 
+Yeah. 
+
+0:16:2.898 --> 0:16:3.228 
+Jackie Kajdzik 
+OK. 
+
+0:16:12.788 --> 0:16:13.838 
+Olga Ermolova 
+Yeah, you're right. 
+
+0:16:4.338 --> 0:16:15.528 
+Jackie Kajdzik 
+Yeah, because I remember we we had a bunch of stuff in all these shared subscriptions and then then there was a big push for everyone to get their own. And so I don't know if we're swinging back the other way now. 
+
+0:16:15.918 --> 0:16:16.588 
+Olga Ermolova 
+Yeah. 
+
+0:16:17.968 --> 0:16:47.798 
+Olga Ermolova 
+Yeah. So let me forward. You guys let me ping Rodney, get the White paper and then also see if there's a recording that I can forward to you guys. Take a look at it. I don't think it's something that we need to decide right away, but eventually at some point, we need to say, OK, if we're gonna be investing X amount of time on building a new infrastructure for gate, for gethelp, then is it worth spending that time on boarding the skylight? 
+
+0:16:47.868 --> 0:16:50.628 
+Olga Ermolova 
+Or onboarding to a completely new infrastructure, right? So. 
+
+0:16:50.428 --> 0:16:51.248 
+Jackie Kajdzik 
+Yeah, yeah. 
+
+0:16:53.838 --> 0:16:57.528 
+Jackie Kajdzik 
+I would love to be able to move the get help management app to this today. 
+
+0:16:59.888 --> 0:17:6.918 
+Olga Ermolova 
+So the get help management app is what the the Web API and and the SQL servers. 
+
+0:17:8.118 --> 0:17:11.988 
+Jackie Kajdzik 
+Yeah, it's the the ancient app that we took on. 
+
+0:17:13.548 --> 0:17:16.158 
+Jackie Kajdzik 
+So the one that's not even on dot net core. 
+
+0:17:16.638 --> 0:17:18.508 
+Jackie Kajdzik 
+Umm, we can't. 
+
+0:17:20.618 --> 0:17:21.248 
+Jackie Kajdzik 
+No, it's off. 
+
+0:17:17.58 --> 0:17:23.138 
+Olga Ermolova 
+Yeah, I looked at the. Yeah, I looked at the code for that. That's the old MVC app that they're using, right? 
+
+0:17:23.278 --> 0:17:23.778 
+Jackie Kajdzik 
+Yeah. 
+
+0:17:24.388 --> 0:17:29.898 
+Olga Ermolova 
+Yeah, that thing. Yeah, that thing needs to be updated to dot net 6. 
+
+0:17:30.508 --> 0:17:30.938 
+Jackie Kajdzik 
+Yes. 
+
+0:17:35.788 --> 0:17:36.858 
+Jackie Kajdzik 
+Yes it is. 
+
+0:17:31.268 --> 0:17:39.458 
+Olga Ermolova 
+Because I think it's using like.net 4-5 or 4/6 and that's and that's pretty it's out of. 
+
+0:17:42.138 --> 0:17:43.868 
+Olga Ermolova 
+It's already been deprecated. 
+
+0:17:45.578 --> 0:17:48.678 
+Jackie Kajdzik 
+Yes, the the get help needs a lot of help. 
+
+0:17:50.448 --> 0:18:2.348 
+Jackie Kajdzik 
+Then we need a huge investment in it and you know, so far no ones been receptive to, you know, doing what it takes to either bring it up to snuff or pushing to get it replaced. 
+
+0:18:6.908 --> 0:18:7.478 
+Olga Ermolova 
+Agreed. 
+
+0:18:12.338 --> 0:18:14.28 
+Olga Ermolova 
+But conversation at least going on. 
+
+0:18:17.628 --> 0:18:20.268 
+Olga Ermolova 
+But yeah, I agree with you, but I know enough. 
+
+0:18:29.928 --> 0:18:30.198 
+Jackie Kajdzik 
+Yeah. 
+
+0:18:21.758 --> 0:18:36.958 
+Olga Ermolova 
+Yeah, we eventually where we will be is we will be out of compliance for a bunch of stuff, right? You know, like we will have component governance issues, all sorts of issues because we're in a downgraded. 
+
+0:18:37.398 --> 0:18:42.58 
+Olga Ermolova 
+Uh.net version like for example you know newtonsoft. 
+
+0:18:52.188 --> 0:18:52.528 
+Jackie Kajdzik 
+Yeah. 
+
+0:19:1.708 --> 0:19:1.928 
+Jackie Kajdzik 
+Yep. 
+
+0:18:42.588 --> 0:19:3.138 
+Olga Ermolova 
+Uh needs to be pretty recent, and then the recent in order to get the recent Newtons after you need recent recent versionof.net, right? Otherwise you're gonna have component and governance issue that's going to flag as 360 and INS 360. We're gonna be we're gonna have to say no, we're not gonna fix this, right, because, you know. 
+
+0:19:4.748 --> 0:19:5.158 
+Olga Ermolova 
+Yeah. 
+
+0:19:2.858 --> 0:19:6.208 
+Jackie Kajdzik 
+Although we've already been doing that for the past, you know, seven months. 
+
+0:19:12.158 --> 0:19:12.528 
+Jackie Kajdzik 
+Right. 
+
+0:19:6.788 --> 0:19:12.598 
+Olga Ermolova 
+Yeah. So is it going to be acceptable for for longer, right, is the question. 
+
+0:19:13.288 --> 0:19:13.628 
+Jackie Kajdzik 
+Right. 
+
+0:19:16.118 --> 0:19:16.778 
+Olga Ermolova 
+Yeah. 
+
+0:19:17.708 --> 0:19:21.598 
+Jackie Kajdzik 
+Well, and the and the fact that we don't have a team that knows what they're doing. 
+
+0:19:22.428 --> 0:19:22.818 
+Jackie Kajdzik 
+Either. 
+
+0:19:23.438 --> 0:19:25.478 
+Olga Ermolova 
+Yeah. Ohh. 
+
+0:19:26.998 --> 0:19:27.668 
+Olga Ermolova 
+Yeah. 
+
+0:19:40.508 --> 0:19:40.838 
+Jackie Kajdzik 
+Umm. 
+
+0:19:42.828 --> 0:19:43.158 
+Jackie Kajdzik 
+Yeah. 
+
+0:19:30.128 --> 0:19:52.218 
+Olga Ermolova 
+I think what we do is I think for now just the Azure function and the Web API. The web app portion of it is pretty straightforward, right? We move on with what we have for this subscription and then once we decide what we're gonna do with the back end, right, are we gonna move it to? 
+
+0:19:54.148 --> 0:20:6.758 
+Olga Ermolova 
+But ICM, or what are we gonna do right? Are we gonna rewrite it? What are we gonna do? And then at that point, I think we take a look at what do we wanna do? Do we wanna move all of this and then create it inside the skillet or? 
+
+0:20:6.938 --> 0:20:7.828 
+Jackie Kajdzik 
+Yeah, yeah. 
+
+0:20:9.508 --> 0:20:10.58 
+Olga Ermolova 
+Sounds good. 
+
+0:20:11.318 --> 0:20:16.588 
+Olga Ermolova 
+So you don't want now even to think about it, you want to. Well, you we should think about it. 
+
+0:20:17.218 --> 0:20:17.528 
+Jackie Kajdzik 
+Yeah. 
+
+0:20:17.498 --> 0:20:49.48 
+Olga Ermolova 
+Right. So think about it later. No, I'm meaning now, right. And then like, whatever decision if we decide to not move now, then let's come back to this conversation when we will rebuild. Get help. Yeah. I hope it will rebuild it. Yeah. So no. So I think I'm. I'm not saying we don't do it right now. I'm just saying that I I don't think we we we need to take the decision right away yeah because even if we don't do it right now we're doing only two small things right. 
+
+0:20:49.128 --> 0:20:52.428 
+Olga Ermolova 
+One is we're mostly Azure functions right? So. 
+
+0:20:52.348 --> 0:20:52.718 
+Jackie Kajdzik 
+Yeah. 
+
+0:21:19.328 --> 0:21:20.658 
+Jackie Kajdzik 
+Yeah. And we are using our. 
+
+0:20:53.608 --> 0:21:23.368 
+Olga Ermolova 
+You know the the more complicated things were completed with less. So I don't want to do to double our efforts, right. First build ourself and then like move to skylight, lot of the stuff the as long as we we use arm right as long as we're using ARM to set up our resources. I think I don't think it will be a waste, right. I think we just take that arm and and put it in skylight but we but we do not need all of that right because. 
+
+0:21:23.448 --> 0:21:54.848 
+Olga Ermolova 
+Half of the total is implemented on Skylight. Yeah. So something what we will implement ourselves. Yeah. So like for example, yeah. So for example, today, if you were going to deploy a app service, you would need a resource group and then you would need an app service, right? So you would have an on template that does that. It creates the resource group and then it deploys the the app services inside the resource group, right? Even if you move to skylight later on, you take the same ARM template. 
+
+0:21:54.948 --> 0:22:0.818 
+Olga Ermolova 
+And then put it in the skylights ARM template. Yeah, but you mentioned that the scarlet it's already done, Geneva. 
+
+0:22:1.618 --> 0:22:29.718 
+Olga Ermolova 
+Yeah, some of the stuff like Geneva and all those thing like for example you don't need to create a Geneva agent, right? You can you can use open telemetry to this log and then it will eventually make it to Geneva because we have sidecars that will listen to app insights logging and then it will automatically write to Geneva. So we do dual logging, right? So some of those stuff you are automatically get. 
+
+0:22:31.498 --> 0:22:37.608 
+Olga Ermolova 
+But I like the idea. Would like I said, if we take their arm Umm and build it on our side. 
+
+0:22:38.908 --> 0:22:39.718 
+Olga Ermolova 
+We could try. 
+
+0:22:41.98 --> 0:22:47.868 
+Olga Ermolova 
+I don't think it's meaning. You know, we could try to run the ARM template and then see how far it can go, right? 
+
+0:22:49.588 --> 0:22:59.8 
+Olga Ermolova 
+But do we really want to defend AS environment? I think for us having an entirely new APS environment is way too much. Much, yeah. 
+
+0:23:2.898 --> 0:23:4.748 
+Olga Ermolova 
+We have to take the expense wise also. 
+
+0:23:3.148 --> 0:23:6.78 
+Jackie Kajdzik 
+Is it too much because of the amount of support or what? 
+
+0:23:6.588 --> 0:23:7.138 
+Olga Ermolova 
+I'm sorry. 
+
+0:23:6.798 --> 0:23:13.258 
+Jackie Kajdzik 
+Or is it it's. Is it too much because of the amount of support it requires or because of the expense? 
+
+0:23:13.818 --> 0:23:15.138 
+Olga Ermolova 
+I think for the expense. 
+
+0:23:15.978 --> 0:23:16.348 
+Jackie Kajdzik 
+OK. 
+
+0:23:18.868 --> 0:23:24.778 
+Olga Ermolova 
+There is support also required. You need to update your container images and things like that right so. 
+
+0:23:24.408 --> 0:23:25.248 
+Jackie Kajdzik 
+Yeah, yeah. 
+
+0:23:28.568 --> 0:23:30.928 
+Olga Ermolova 
+Or if you know they get. 
+
+0:23:31.448 --> 0:23:42.338 
+Olga Ermolova 
+Uh enough. If CXP decides that that infrastructure will be common against all team in CXP, then then at that time we can decide to do the migration. 
+
+0:23:45.448 --> 0:23:46.48 
+Jackie Kajdzik 
+Yeah. 
+
+0:23:44.448 --> 0:24:2.8 
+Olga Ermolova 
+Right. So but I I want you guys to read the White Paper. Yeah, let's and then see if there's a recording that he presented to Lee and Noel about. And then it, you know, it has some good positive points on it. And then maybe you'll have a different thought. 
+
+0:24:4.568 --> 0:24:6.248 
+Olga Ermolova 
+Yeah, I think that'll be great. 
+
+0:24:2.788 --> 0:24:9.958 
+Jackie Kajdzik 
+Yeah. I just like to read up on it a little more. I I don't feel like I have enough info to say no. I don't wanna do it or let's do it, you know? 
+
+0:24:9.778 --> 0:24:10.138 
+Olga Ermolova 
+Yeah. 
+
+0:24:11.758 --> 0:24:32.958 
+Olga Ermolova 
+And lived in come back to this conversation either during playing, either during next grooming, correct. We have everything. Yeah, I don't think. Yeah, I don't think we need to do it during next grooming. Umm, let's take time to do it and then we can we can think about meeting and meeting about like two to three weeks from now. Two weeks from now and then we'll decide what we wanna do. 
+
+0:24:35.358 --> 0:24:35.688 
+Olga Ermolova 
+OK. 
+
+0:24:40.698 --> 0:24:40.958 
+Jackie Kajdzik 
+Yeah. 
+
+0:24:39.558 --> 0:24:48.208 
+Olga Ermolova 
+They can. Do you have any other questions to discuss? But we will just thinking here with Jay also, can we start building function to submit the cosmos DB? 
+
+0:24:48.628 --> 0:24:50.368 
+Jackie Kajdzik 
+Yes. Yep, I can do that. 
+
+0:24:53.768 --> 0:24:54.338 
+Jackie Kajdzik 
+I'll. I'll do it. 
+
+0:24:55.728 --> 0:24:57.288 
+Jackie Kajdzik 
+No, no, no, no, actually. 
+
+0:24:51.238 --> 0:24:57.568 
+Olga Ermolova 
+You can do it or you want us to do take you always. Like I can do. I can do. Let us do something. Take you. I want to. 
+
+0:25:2.68 --> 0:25:2.638 
+Olga Ermolova 
+Uh-huh. 
+
+0:24:58.38 --> 0:25:5.898 
+Jackie Kajdzik 
+I I was planning to do it on Friday and then I got pulled into the get help stuff so so I could do it. Yeah. I'm. I'm planning to do it. 
+
+0:25:9.58 --> 0:25:9.618 
+Jackie Kajdzik 
+For the. 
+
+0:25:4.698 --> 0:25:9.938 
+Olga Ermolova 
+So which which report are we using Jackie for all these Azure function? 
+
+0:25:11.918 --> 0:25:12.528 
+Olga Ermolova 
+Uh-huh. 
+
+0:25:10.458 --> 0:25:13.718 
+Jackie Kajdzik 
+So the Azure function it is on. 
+
+0:25:20.698 --> 0:25:21.58 
+Olga Ermolova 
+OK. 
+
+0:25:15.598 --> 0:25:21.798 
+Jackie Kajdzik 
+Instead of you I at the end of it, it has API at the end of it. So it's just like your UI one. 
+
+0:25:23.138 --> 0:25:23.348 
+Jackie Kajdzik 
+Yeah. 
+
+0:25:24.18 --> 0:25:28.328 
+Olga Ermolova 
+OK. And then is there already a solution or? 
+
+0:25:28.938 --> 0:25:29.398 
+Jackie Kajdzik 
+Oh yeah. 
+
+0:25:31.998 --> 0:25:32.368 
+Jackie Kajdzik 
+Yeah. 
+
+0:25:30.488 --> 0:25:40.528 
+Olga Ermolova 
+OK. Because you know if you want, you can start looking at the the the durable function and you can let Sai do the other one. 
+
+0:25:41.588 --> 0:25:42.18 
+Jackie Kajdzik 
+OK. 
+
+0:25:42.828 --> 0:25:45.538 
+Olga Ermolova 
+Whichever way, because I can, I can help him also. 
+
+0:25:46.228 --> 0:25:50.78 
+Jackie Kajdzik 
+Yeah. Yeah. OK. And when do we get Kelvin? 
+
+0:25:56.268 --> 0:25:56.508 
+Jackie Kajdzik 
+OK. 
+
+0:26:1.148 --> 0:26:1.538 
+Jackie Kajdzik 
+OK. 
+
+0:25:51.368 --> 0:26:5.368 
+Olga Ermolova 
+Uh, from the next week? So no, no, I'm after the next week. So next week is. I'm sorry. No 29. So this week is on vacation and starting from the first day of the next Sprint. So it's Monday. He's going to be with us. 
+
+0:26:5.898 --> 0:26:7.148 
+Jackie Kajdzik 
+OK, alright, awesome. 
+
+0:26:7.648 --> 0:26:11.878 
+Olga Ermolova 
+OK. And then Kelvin's also gonna be able to jump in into. 
+
+0:26:12.678 --> 0:26:13.338 
+Olga Ermolova 
+Ohh. 
+
+0:26:14.848 --> 0:26:23.958 
+Olga Ermolova 
+Doing the function stuff because he's he knows how to do that and then he also knows a lot, but he's also been doing a lot of the Geneva work. 
+
+0:26:24.678 --> 0:26:25.58 
+Jackie Kajdzik 
+OK. 
+
+0:26:25.708 --> 0:26:28.758 
+Olga Ermolova 
+Uh. The synthetic work, so he may be able to help with that. 
+
+0:26:30.158 --> 0:26:31.28 
+Jackie Kajdzik 
+Yeah, for sure. 
+
+0:26:34.398 --> 0:26:43.118 
+Olga Ermolova 
+So jacket to start working on this Cosmos DB API, what do you need me and Sai? What reviewed our jasons? He must and Jason examples. 
+
+0:26:44.448 --> 0:26:44.748 
+Jackie Kajdzik 
+Yep. 
+
+0:26:44.208 --> 0:26:50.348 
+Olga Ermolova 
+Yeah, I touched the to the story. You can use them, you can change them, adjust them if you think that this is not how you. 
+
+0:26:50.948 --> 0:26:51.278 
+Jackie Kajdzik 
+Sure. 
+
+0:26:51.158 --> 0:26:52.248 
+Olga Ermolova 
+Center should be. 
+
+0:26:52.668 --> 0:26:54.248 
+Jackie Kajdzik 
+Yeah. Yeah, no. 
+
+0:27:0.788 --> 0:27:1.58 
+Jackie Kajdzik 
+Yeah. 
+
+0:26:53.548 --> 0:27:14.978 
+Olga Ermolova 
+Also, what if you just to ensure that the all the fields from the UI presented on that jasons right that we didn't miss any field and they also give this fields we created separate Excel sheet to get help team to review like each field how it will be mapped to field on the request payload of Gethelp API. 
+
+0:27:15.278 --> 0:27:16.398 
+Jackie Kajdzik 
+Yes, OK. 
+
+0:27:22.208 --> 0:27:22.568 
+Jackie Kajdzik 
+Yeah. 
+
+0:27:26.868 --> 0:27:27.248 
+Jackie Kajdzik 
+Yeah. 
+
+0:27:16.58 --> 0:27:28.568 
+Olga Ermolova 
+And right, because we will have to make this, uh, I don't know how to how to make this like massage. Right. Like taking our Jason and make it on that way. How get help with PCI expected. So we will need to know what fields. 
+
+0:27:30.428 --> 0:27:33.368 
+Olga Ermolova 
+Like we'll go to what filter on the request. 
+
+0:27:33.838 --> 0:27:35.928 
+Jackie Kajdzik 
+OK. And you've already submitted that to them? 
+
+0:27:37.468 --> 0:27:37.778 
+Jackie Kajdzik 
+OK. 
+
+0:27:47.858 --> 0:27:48.28 
+Jackie Kajdzik 
+Yeah. 
+
+0:27:50.798 --> 0:27:51.458 
+Jackie Kajdzik 
+OK, perfect. 
+
+0:27:56.568 --> 0:27:57.458 
+Jackie Kajdzik 
+Yeah, yeah. 
+
+0:27:36.748 --> 0:28:7.398 
+Olga Ermolova 
+Yes, I send them this uh Jason's examples. We created excel sheet. They will go with that. Excel should just like with all this production issues. I don't know when they will have time for that, but I asked them to finish it by this week because they need to know what to know what to do on the next next Sprint and we need to know what to do next Sprint, so we do not have time. So I'm just pushing on them to finish it by this week this review and provide us what fields go to what field I can share with Excel with you. 
+
+0:28:7.578 --> 0:28:14.698 
+Olga Ermolova 
+So there's another. So one more thing that you, I don't know if you have taken into once the attachments that are. 
+
+0:28:18.558 --> 0:28:18.798 
+Jackie Kajdzik 
+Yep. 
+
+0:28:15.268 --> 0:28:23.628 
+Olga Ermolova 
+Uh, that are included in the form as part of submission. Yeah. How so? How are you gonna accept that attachment? 
+
+0:28:24.358 --> 0:28:25.318 
+Olga Ermolova 
+Put him in accept. 
+
+0:28:26.708 --> 0:28:35.598 
+Olga Ermolova 
+Ohh so for example you can have a multipart body right? You can have your regular. 
+
+0:28:57.448 --> 0:28:57.798 
+Jackie Kajdzik 
+Yep. 
+
+0:28:35.738 --> 0:29:5.308 
+Olga Ermolova 
+Uh, you know Jason payload, but then you need some blob, right? Binary blob as part of the body that contains the attachments. I seen Jackie that they have separate request for that. We might separate request but it's then it becomes a little bit complicated because what happens is that if it's failing right no you submit it first right? And then once submitted you're gonna return a correlation ID back and then we're gonna have to do a post on that correlation ID attachment. 
+
+0:29:30.838 --> 0:29:31.118 
+Jackie Kajdzik 
+Yep. 
+
+0:29:5.688 --> 0:29:34.418 
+Olga Ermolova 
+In order to post it and then you would put it in and then you take that attachment and then hold it in your. Suggest this to make this everything in one request, but you can do it but then they have do changes on their side who get help or not. Yeah meaning. So we will just have attachment blobs right. So if we do it in a single shot, we would send you all the information include the attachment including the attachment. No. But I'm speaking about get help site, will they accept it? 
+
+0:29:35.178 --> 0:29:38.418 
+Olga Ermolova 
+Well, the get outside the site is gonna have to accept it anyway. 
+
+0:29:39.358 --> 0:29:43.838 
+Olga Ermolova 
+Right. Regardless which way we go, they're gonna need to save that attachment somewhere. 
+
+0:29:45.228 --> 0:30:14.918 
+Olga Ermolova 
+I have a question. So when we do the file upload right? Umm after the file upload from the front end we are developing an API for that and we eventually put a call the Azure function right? So when we upload the file where it's gonna get stored? So that's what I'm saying. The upload of the file is not a is not atomic action right? So it's basically the user chooses the files that they want to upload. 
+
+0:30:15.158 --> 0:30:35.28 
+Olga Ermolova 
+And then later on, they'll hit submit. Right now, as part of that. So there's two options. So as part of that submit, we send the entire payload including the attachment with that thing, right. And then the Azure function is gonna have to handle that. The other option is to batch it, which is basically we do the submission first get. 
+
+0:30:35.278 --> 0:30:41.438 
+Olga Ermolova 
+They reference number back and then use that reference number to upload the attachment. 
+
+0:30:42.598 --> 0:30:45.558 
+Olga Ermolova 
+I would prefer to go everything at once, of course, yeah. 
+
+0:30:45.968 --> 0:30:46.338 
+Jackie Kajdzik 
+Yeah. 
+
+0:30:47.188 --> 0:30:58.968 
+Olga Ermolova 
+But OK, but then you'd have to. You'd have to know how you're gonna parse it so you have to. You have to accept that the body is going to be a multipart body, right? It's not gonna be just. 
+
+0:30:59.48 --> 0:31:1.918 
+Olga Ermolova 
+Uh uh. It's not gonna be just. 
+
+0:31:3.48 --> 0:31:34.698 
+Olga Ermolova 
+Jason, it's also gonna have blobs on it. It's not on. It can be like the format that is, yeah, mentioned in the document that is fine. But after we upload right, we don't care of storing the document. So where is it stored in the blob or is it stored? So there's storage. Yeah. So that that's why I brought these up because we didn't discuss this last time. OK. So there's two options, right. So once you let's say for example you get the attachments. 
+
+0:31:35.338 --> 0:32:6.808 
+Olga Ermolova 
+And everything in one shot, right? What do you want to do? Right? Do you want to stay? Store those blobs as columns in the cosmos DB? Or do you want to save those blobs into the blob storage? Right. Yeah. And then you get the link to the blob storage and then put that into the columns. I think we can move, right. So that's, you know, either way is fine with me, but we'll have to. We'll have to determine what we want to do because that increases the scope of the. 
+
+0:32:7.388 --> 0:32:8.128 
+Olga Ermolova 
+The function. 
+
+0:32:8.818 --> 0:32:9.198 
+Jackie Kajdzik 
+Yeah. 
+
+0:32:11.748 --> 0:32:17.848 
+Olga Ermolova 
+But in so, if we do win the like the DB storage way that. 
+
+0:32:18.928 --> 0:32:44.668 
+Olga Ermolova 
+I think if we do it, if it store it in the storage blob storage area and use the link so it in in future if we want to just want the attached list the attachments or like the yeah the separate API that will be helpful. Yeah. So we have to we have to design that piece a little bit because I don't I don't think we need a link we just need a structure in that storage. 
+
+0:32:45.848 --> 0:33:15.78 
+Olga Ermolova 
+That both the API and the reader of the Cosmos DB understands, you know like there needs to be a file structure, right? So like for example it will be storage and then it will be reference numbers and then inside that reference number can be the individual files, right? And when you go to when you go to Cosmos DB to get the attachments, what you would do is you would get the reference number of column out, you'd go to blob storage, find that reference number. 
+
+0:33:15.168 --> 0:33:33.518 
+Olga Ermolova 
+Get all the attachments and then you know use those attachments in the gethelp API. OK. And actually when I was going through the JSON schema so I got some questions. So so for example, if we consider the UI part right. 
+
+0:33:33.578 --> 0:33:34.208 
+Olga Ermolova 
+Uh. 
+
+0:33:36.998 --> 0:33:39.148 
+Olga Ermolova 
+I cannot connect, they won't YAML or Jason. 
+
+0:33:40.488 --> 0:33:49.478 
+Olga Ermolova 
+Not that one off. Yeah, you can open that. Or what do you want? Example. No, I I'm actually referring to the screen in charge of the. 
+
+0:33:50.258 --> 0:33:52.8 
+Olga Ermolova 
+UI of the UI. 
+
+0:33:53.338 --> 0:33:59.518 
+Olga Ermolova 
+What? So for example in in the case of legal? 
+
+0:34:1.158 --> 0:34:1.758 
+Olga Ermolova 
+What floor? 
+
+0:34:6.428 --> 0:34:11.338 
+Olga Ermolova 
+So here we have like, who is that? What floor? Just telling me the flow. 
+
+0:34:12.338 --> 0:34:12.708 
+Olga Ermolova 
+Is it? 
+
+0:34:13.928 --> 0:34:47.998 
+Olga Ermolova 
+License kills. Yeah. For example, here we are having some cases like who are you advocating on behalf like customer or partner? OK. So when we are considering this, so when we select partner, the fields are going to be different, but yeah, we consider the customer, customer, the fields are going to be different. So let's say we are separating out the entire schema. If we are doing customer, we are doing it for customer schema completely or if we are doing partner, you don't have to do that. That's the meaning you don't have to get that complicated, right? So this is a string. This is a string. 
+
+0:34:48.148 --> 0:34:54.968 
+Olga Ermolova 
+OK, right. Users consider it as generic, right? Yeah. Make it more generic. OK. Also, do you need question? 
+
+0:34:56.8 --> 0:35:26.478 
+Olga Ermolova 
+This is this is 1 field was testing side or this is 3 separate fields in Jason object. I don't know you are meaning I would think that it is a partner that is so it would be a Singleton who created this like partner dot shows name or like partner name. No I I would just say partner and name right because and then yeah the UI will select the name and when I when the UI puts it it it puts it as a string. 
+
+0:35:27.8 --> 0:35:57.188 
+Olga Ermolova 
+And other question is, so when we are considering the schema right and we have like 4 different cases when we create an escalation request, not just four, we have multiple but so for example here we have home user license queue and the other one is PSD. For all these types there will be different type of pilots. So when we do the submit are we going to call the single API request? 
+
+0:35:57.428 --> 0:36:28.328 
+Olga Ermolova 
+What was different baseball internally? We're gonna handle it via Azure functions or we're gonna actually call different API calls at the time of submission itself. So it depends, right? So if the, if the submissions are very similar, right. Mm-hmm. Meaning, you know what that function is gonna do is very similar. Then you have one single right. But if if the submit differs between the different forms, right, the number of of validation it needs to do. 
+
+0:36:28.398 --> 0:36:53.348 
+Olga Ermolova 
+Or something else then users right? Different ones. Different one. Yeah. You can say submit license as one Azure function so you know just think about the separation of concerns, right. So as long as it's the same concern that can be done one Azure function is good, but if they have separate concerns then you write multiple one. It doesn't hurt, right? There's nothing. You just write multiple and then you know if you if you need. 
+
+0:36:54.258 --> 0:37:26.848 
+Olga Ermolova 
+Everybody needs to validate and e-mail you. Write a validation component right that validates the e-mail. Need this thing like then I'm asking this is so let's say right now based on the idea what we have, we generalize the fields. But in future if some new field gets added and let's say that doesn't generalize two of for let's say right now we have partner and customer, partner and customer are having the same number of fields and same type of fields string, string. But in future some extra field or some new field comes up. 
+
+0:37:26.988 --> 0:37:37.738 
+Olga Ermolova 
+So that that's gonna not be compatible with both type of cases. Then in that case it will kind of become. Well, you can always version the schema. 
+
+0:37:38.658 --> 0:38:9.408 
+Olga Ermolova 
+Yeah, but I understand what he's speaking about. I I mean, like, in future, we need to think about future changes, right? These changes will come as example just for license and flow and other flows is not affected. Then it's be easier for us to apply these changes if we have separate. That's what I that's what I was saying. The separation of concern. Yeah is like you know if there is a separate so it's so that's what I'm saying, right go simple. It's not a big deal to create different function. OK right. The entry point can be different but if they're all sharing some. 
+
+0:38:29.948 --> 0:38:30.118 
+Jackie Kajdzik 
+Yeah. 
+
+0:38:10.288 --> 0:38:40.998 
+Olga Ermolova 
+Shared logic right? Like validating an e-mail or validating a product right? Then you can have a library that contains all of that, right? So it doesn't hurt. So I I do understand and you're absolutely right that you know, if you don't separate the concern right now then then you have problems later on in the future, right? Yeah. Because I think so. Are there question I have is so right now let's say in this customer field we have multiple information regarding customer, customer, e-mail, customer first name, customer last name. 
+
+0:38:53.308 --> 0:38:53.628 
+Jackie Kajdzik 
+Yeah. 
+
+0:38:41.258 --> 0:39:5.408 
+Olga Ermolova 
+And we do. Yeah, we don't have all those. Yes, in the UI, yes, we have customer last name. Yeah. First name for example. Last for executive legal number. Which one are you guys watching? Which one are you looking in this Case No, no, no. Which which form are you looking at executive I am referring the figma link. Yeah. So right now we're only doing license. 
+
+0:39:6.88 --> 0:39:18.498 
+Olga Ermolova 
+Yeah, I'm yeah, but we speak actually aggregative legal and fresh. No. So license doesn't have those fields. No. OK. But it has different and still there are few items for the same customer. For example we have for home user, right. 
+
+0:39:20.718 --> 0:39:52.508 
+Olga Ermolova 
+First name, last name, location and everything. Yeah, that's fine. Even in Asia right now. Right now in the licensing, we use customer as a string. Yeah, right. That's fine. Actually, no. Like, look customer, it's like urban outfit list and then CXP ID and then customer location. So I would say that this is customer dot name customer dot PID, customer duplication. So three fields, right, that's fine. Not one field. My concern is not about having those fields on you. I my question is most words. So when we write the JSON schema right? 
+
+0:39:52.588 --> 0:40:22.288 
+Olga Ermolova 
+For example, if you are creating a customer like customer data type in internally and in future if we want to say let's say hey I want all the cases listed by the this customer like just all the cases submitted for this customer and if I want to select that particular customer internally we will be like object inside an object and then referring the name will be like becoming complex right? So do we want to? 
+
+0:40:23.348 --> 0:40:44.698 
+Olga Ermolova 
+Mainly, primarily identify any particular name in so. So the way I look at it is typing right meaning so, you know like in like you know JavaScript versus C# strongly typed versus not strongly typed. OK, right. So if you have a loose type that means you represent a customer by the customer name and the tip. 
+
+0:40:45.568 --> 0:41:4.638 
+Olga Ermolova 
+Uh differentiated using a pipe, right? That's that's kind of like no typing at all, right? Versus if you want a strongly type it, you say customer as a name, a tip it and a location. I think my question is not also about typing. I will just give you a small example. 
+
+0:41:7.718 --> 0:41:8.138 
+Olga Ermolova 
+Go back. 
+
+0:41:12.408 --> 0:41:21.218 
+Olga Ermolova 
+Because I would like to separate them because if I wanted to do something like I wanted to search. So it's more about nested object JSON nesting. Yeah so. 
+
+0:41:23.48 --> 0:41:51.548 
+Olga Ermolova 
+If if there's one nesting is there, and if we want to list the number of, let's say if we want to get the list of cases submitted by this customer and in that customer we will be specific whenever we are looking for a customer, we might looking with the help of customer e-mail right. And actually I wanted to. So now we wanted to store it like customer dot customer name dot yeah big dot dot like so when we query nested object yeah. 
+
+0:41:52.548 --> 0:42:2.968 
+Olga Ermolova 
+So what is wrong with the nested object nesting? So nesting might be Inc like increase our complexity in the query search. Ohh. 
+
+0:42:3.888 --> 0:42:33.738 
+Olga Ermolova 
+And when create right index when we want to filter out so. So The thing is you want to 1st so the here's the trick right. So you wanna first know how you want to filter before you create a data. You don't create a data 1st and then you filter it later on. Yeah, it's not gonna work properly. Yeah. So if you want to avoid complexity of nesting then what you need to do is OK who's gonna be able to search this data right? How are they gonna search this data? 
+
+0:42:33.838 --> 0:42:51.218 
+Olga Ermolova 
+Yeah, right. And then how are we gonna store this data comes after that, right. So you may be able to just say I I'm gonna. I'm gonna have nesting in there, but I'm going to create a index that has enough information for me to satisfy the filter. 
+
+0:42:52.158 --> 0:43:22.328 
+Olga Ermolova 
+Right. Or maybe I wanna promote something on top so that I can look at it right. So first think about you know what the requirement is for filtering, right. And once you figure out I want to filter by this, I wanna filter by this. Then go and look at it and then see you know how you can how it will look best, right is it. But you know you wanna optimize the performance right? Maybe it needs to be a top level or maybe it doesn't. Maybe users put that as a as the. 
+
+0:43:22.418 --> 0:43:32.698 
+Olga Ermolova 
+In. That's right. So yeah. And if we do not make it unnested, so to know this use cases, what would be the right way for me to know that? 
+
+0:43:33.498 --> 0:43:36.38 
+Olga Ermolova 
+So we need to ask the business right meaning. 
+
+0:43:37.318 --> 0:43:50.648 
+Olga Ermolova 
+You know what I would say that the business this OK, so again things simple. OK, yeah. OK. Don't go complicated. Yeah. Now this data really is a transit data. 
+
+0:43:51.378 --> 0:43:54.828 
+Olga Ermolova 
+Right, so this data is not going to be queried by anybody else. 
+
+0:43:55.608 --> 0:44:26.278 
+Olga Ermolova 
+Right. The because the data that's going to be queried by somebody is gonna be in the SQL later on, right? So this is just a temporary data that we use in transit to create the case. So think about the case over there and then you know now you may, you may say that well, what if somebody wanted to find out what all their pending escalations were right then how how would they wanna search it, right. But unfortunately you'll have to figure out how they wanna search that data. 
+
+0:44:26.508 --> 0:44:33.608 
+Olga Ermolova 
+Alright, maybe they wanna say, well, they wanna get all the pending escalations by customer or by Tibet or whatever it is, right? 
+
+0:44:35.208 --> 0:45:5.218 
+Olga Ermolova 
+But I would not worry too much about that in this phase, because this data will go away. This data is not something that is searchable, and since we were talking about the status of the case right now, we only submit a case. It gets inserted into Cosmos whenever a cosmos gets inserted, it trigger function will happen and eventually it will call the different APIs. That's fine, but from the GUI perspective, how so? 
+
+0:45:5.308 --> 0:45:34.918 
+Olga Ermolova 
+In order for us to show the status of the case, how we gonna get the status. So generally the the pattern for that is first of all, I think the system today does that using notification, right? So basically what we do is the API returns of 201 back. That means that all validations are passed and it has submitted the escalation right. And then when you get a tool one, you get a message saying we'll send you an e-mail. 
+
+0:45:35.308 --> 0:45:49.968 
+Olga Ermolova 
+Right now, if you want a more dynamic check right as to what is going on technically the way it would work is during a 201 you would send a correlation ID back to the UI, right and then the UI can. 
+
+0:45:50.808 --> 0:45:54.78 
+Olga Ermolova 
+Calling API to search the status of that case. 
+
+0:45:54.218 --> 0:45:56.488 
+Jackie Kajdzik 
+That's what we do today on the current UI. 
+
+0:45:56.128 --> 0:46:20.178 
+Olga Ermolova 
+Uh, there, OK, so you would not only need a submit API, but you would also need a status API with the correlation ID and then in the cosmos DB you also need a status field. So you need to update your. But this is what we do right? We send back our message to Cosmos DB and don't see my we have message and we have. 
+
+0:46:23.288 --> 0:46:35.38 
+Olga Ermolova 
+Is he in Cosmos? We have status. When it was last updated and the message, I don't know if we want to keep it this message error message or we want to keep adjust this message. I don't know. Yeah. 
+
+0:46:36.78 --> 0:46:48.38 
+Olga Ermolova 
+I think my question is more towards this UI screen. So how do we get all this? This we get from another API, right? Jackie? I don't I just from get help. 
+
+0:46:47.568 --> 0:46:49.358 
+Jackie Kajdzik 
+I can't see what you're talking about. 
+
+0:46:48.968 --> 0:46:56.8 
+Olga Ermolova 
+Ohh sorry. So the list of escalations that that person has opened I can share this link quickly. 
+
+0:46:55.298 --> 0:46:56.658 
+Jackie Kajdzik 
+Oh, the my cases view. 
+
+0:46:56.998 --> 0:46:58.568 
+Olga Ermolova 
+Yeah, the main screen. 
+
+0:46:57.958 --> 0:47:2.648 
+Jackie Kajdzik 
+Yeah, we need a we need a call for that. And I already have it for what we use today. 
+
+0:47:3.908 --> 0:47:5.78 
+Jackie Kajdzik 
+So we can just reuse. 
+
+0:47:4.738 --> 0:47:6.268 
+Olga Ermolova 
+That's a completely separate API. 
+
+0:47:6.568 --> 0:47:6.848 
+Jackie Kajdzik 
+Yeah. 
+
+0:47:13.508 --> 0:47:15.438 
+Jackie Kajdzik 
+Yeah, because let's go to two different sources. 
+
+0:47:7.898 --> 0:47:20.688 
+Olga Ermolova 
+OK, we later also separate out the consumer versus commercial. I am because it is only for get help, right. One of the category, but what what screen did it shows it also has. 
+
+0:47:21.618 --> 0:47:22.578 
+Olga Ermolova 
+Uh, I think. 
+
+0:47:23.868 --> 0:47:25.468 
+Olga Ermolova 
+I'm here. Yeah, this is great. 
+
+0:47:25.588 --> 0:47:30.158 
+Olga Ermolova 
+Go quick if you create a scalation and come back, it will automatically pop up. 
+
+0:47:31.628 --> 0:47:36.818 
+Olga Ermolova 
+Where did you get this figma from? I don't have this stigma. Uh-huh. Do you have this one? 
+
+0:47:38.448 --> 0:47:39.488 
+Jackie Kajdzik 
+Yeah, go to home. 
+
+0:47:38.148 --> 0:47:45.48 
+Olga Ermolova 
+Yeah, they updated the figure recently. Get help 2.0. Yeah. Yeah. No, this is already there. 
+
+0:47:47.878 --> 0:47:49.928 
+Olga Ermolova 
+I can share my wrong. 
+
+0:48:3.538 --> 0:48:7.68 
+Olga Ermolova 
+But Jackie will not see it. You need to share your screen. Yeah. Will you share your screen? 
+
+0:48:9.568 --> 0:48:13.478 
+Olga Ermolova 
+I have 8 minutes I I think I won't take more time. 
+
+0:48:25.248 --> 0:48:27.8 
+Olga Ermolova 
+So this one, this one, this one. 
+
+0:48:30.398 --> 0:48:31.938 
+Jackie Kajdzik 
+Yeah, we have a a. 
+
+0:48:32.748 --> 0:48:38.948 
+Jackie Kajdzik 
+We have a call already. One thing I need to understand is when it says view details, what does that go to? 
+
+0:48:40.738 --> 0:48:42.718 
+Olga Ermolova 
+I think the view details. 
+
+0:48:43.758 --> 0:48:45.278 
+Olga Ermolova 
+Somebody has EE. 
+
+0:48:51.518 --> 0:48:58.328 
+Olga Ermolova 
+Can you talk? Ohh, so I think basically yeah. Details will give you more information. The first one is just a card. 
+
+0:48:59.258 --> 0:49:1.488 
+Olga Ermolova 
+But the details, as all the other information. 
+
+0:49:2.38 --> 0:49:4.238 
+Jackie Kajdzik 
+OK, for some of that we won't be able to get. 
+
+0:49:11.478 --> 0:49:11.668 
+Jackie Kajdzik 
+Yeah. 
+
+0:49:2.658 --> 0:49:24.788 
+Olga Ermolova 
+But from where do we get the status? We get that from the get help? Yeah, not from Cosmos, not from our cost. No, no, no. Our cosmos is just a transit area, right? It's just there for resiliency purpose, right. So it's just there for us to kick start our workflow. It should not be used for any external use. OK. So when when we create a correlation ID? 
+
+0:49:26.338 --> 0:49:46.168 
+Olga Ermolova 
+We are also using that correlation ID in the get help or any existing you just for the correlation ID. Will the lifetime of the correlation ID is from the beginning till the time the case is created. So once the case has been created the case number is then the then the ID. 
+
+0:49:48.148 --> 0:49:48.378 
+Jackie Kajdzik 
+Yeah. 
+
+0:49:47.898 --> 0:50:5.218 
+Olga Ermolova 
+Right. The correlation ID is this to track the progress of the escalation from the time it was submitted till the time case actually gets created right? And once that is done then we're done. So there is a difference between the case submitted versus case created, right? 
+
+0:50:6.418 --> 0:50:20.398 
+Olga Ermolova 
+So how we gonna get the information about case submission like when was the case submitted versus when? So we always have. So will you. We can always use the correlation ID, right? So you have so let's say for example. 
+
+0:50:21.528 --> 0:50:51.398 
+Olga Ermolova 
+You know, I started like, OK, I have a function that, you know, reads from the cosmos DB. It reads in the correlation ID and then it makes a call with some, creates a case, right. And then after the case has been created, I have a correlation ID and a case ID, right. I can put them together, right. So when we create a case in the get help, for example, are we gonna also create a field in the gethelpsystem saying that this case was submitted at that time? 
+
+0:50:54.98 --> 0:50:55.818 
+Jackie Kajdzik 
+Now, there's already a time stamp in. 
+
+0:50:51.678 --> 0:51:2.298 
+Olga Ermolova 
+I don't think we need to do that. OK. But if you think there is a need, then we can think about it. I don't think so. Jackie, do you think we need the correlation ID in the database? 
+
+0:51:2.558 --> 0:51:6.88 
+Jackie Kajdzik 
+No, no, I'm what I'm saying is there's already a timestamp in there. 
+
+0:51:4.78 --> 0:51:7.348 
+Olga Ermolova 
+Or uh creation information. 
+
+0:51:7.738 --> 0:51:8.78 
+Jackie Kajdzik 
+Yeah. 
+
+0:51:10.348 --> 0:51:10.628 
+Jackie Kajdzik 
+Yep. 
+
+0:51:8.558 --> 0:51:12.628 
+Olga Ermolova 
+Or submission information. Example metadata related to submission. 
+
+0:51:17.278 --> 0:51:20.818 
+Olga Ermolova 
+Because submitted case is when we just filled out. 
+
+0:51:24.518 --> 0:51:25.428 
+Olga Ermolova 
+They can hear us. 
+
+0:51:24.408 --> 0:51:25.518 
+Sai Nitesh Palamakula 
+They can hear us. 
+
+0:51:25.788 --> 0:51:26.598 
+Jackie Kajdzik 
+Yeah, I can hear you. 
+
+0:51:28.198 --> 0:51:58.398 
+Olga Ermolova 
+So he submitted this when we just like first our function Azure function when it get our kids and did like the first validation that we requested like looks yes when at the time of inserting into Cosmos is case submitted at the time of calling the API is case not even submitted to Cosmos DB just like we validated that time if everything is fine we get back with 201 like case submitted yeah. Then the process that the cosmos DPM when the process. 
+
+0:52:0.98 --> 0:52:2.748 
+Olga Ermolova 
+We want to to update once again that the. 
+
+0:52:3.548 --> 0:52:8.498 
+Olga Ermolova 
+It's stored the cosmos DB. You are you're we don't want to update you either. The stored in Cosmos DB because it's so far. 
+
+0:52:9.518 --> 0:52:39.418 
+Olga Ermolova 
+Uh, no, we don't need to. The UI doesn't need to know anything about the case of this, the cosmos DB. It just gets a, you know, reference number that we can use to track what happened, right. And then that reference number will go all the way till the actual case was created when the actual case was created. That's where we log saying that this correlation ID created this case and then that's it. OK, one last question I have. 
+
+0:52:39.548 --> 0:52:50.538 
+Olga Ermolova 
+So in this case we have in review in Progress Blog closed multiple states. OK, so let's say in review we have one case related to consumer and the other case related to commercial. 
+
+0:52:52.238 --> 0:52:59.308 
+Olga Ermolova 
+So whenever we load up this page from UE GUI, so are we gonna make two different API calls? 
+
+0:52:59.488 --> 0:52:59.758 
+Jackie Kajdzik 
+Yep. 
+
+0:53:0.428 --> 0:53:1.128 
+Jackie Kajdzik 
+We have to. 
+
+0:53:0.358 --> 0:53:2.858 
+Olga Ermolova 
+Or like whatever number of OK. 
+
+0:53:3.458 --> 0:53:5.18 
+Olga Ermolova 
+So we want to get help I want to. 
+
+0:53:5.758 --> 0:53:6.928 
+Olga Ermolova 
+See if sourajeet can. 
+
+0:53:7.38 --> 0:53:7.898 
+Jackie Kajdzik 
+Correct. Yeah. 
+
+0:53:8.28 --> 0:53:8.398 
+Olga Ermolova 
+Umm. 
+
+0:53:12.508 --> 0:53:13.198 
+Olga Ermolova 
+That's OK. 
+
+0:53:14.818 --> 0:53:18.118 
+Olga Ermolova 
+Now I'm thinking that I need to add redox into the client app. 
+
+0:53:20.178 --> 0:53:24.108 
+Olga Ermolova 
+I hadn't even even looked at the the thing I'll just do as needed. 
+
+0:53:26.798 --> 0:53:42.678 
+Olga Ermolova 
+Ticket and one more question. It's strange question but it came to my mind just today. So this piece of functionality when we submit the emails from get help I will going to continue doing so with unified escalation management or we will remove this functionality from the new application. 
+
+0:53:44.788 --> 0:53:45.448 
+Jackie Kajdzik 
+Umm. 
+
+0:53:46.428 --> 0:53:56.978 
+Jackie Kajdzik 
+It it kind of depends on what we want to do. I mean as soon as we get the response back that the case was created and get help or created in DFC then we we trigger an e-mail. 
+
+0:53:58.218 --> 0:54:4.888 
+Olga Ermolova 
+No, no, I mean like that now which emails not only for us with trigger emails, we get help Portal as well. 
+
+0:54:5.348 --> 0:54:6.78 
+Jackie Kajdzik 
+Yeah, we do. 
+
+0:54:5.988 --> 0:54:8.718 
+Olga Ermolova 
+Us. Are we going to continue doing so? 
+
+0:54:10.308 --> 0:54:16.548 
+Jackie Kajdzik 
+And yes, until the get help team can implement it on their own and not rely on us. 
+
+0:54:20.438 --> 0:54:20.808 
+Jackie Kajdzik 
+No. 
+
+0:54:22.628 --> 0:54:23.8 
+Jackie Kajdzik 
+No. 
+
+0:54:17.128 --> 0:54:25.488 
+Olga Ermolova 
+But do we have this? Ask for them? Because before that we didn't expect it from them. Who's the get help team vendors? Ohh OK. 
+
+0:54:26.758 --> 0:54:32.798 
+Olga Ermolova 
+I was like, why do you? What do you mean? Get help team. Aren't we either get help team? Yes we do. And we don't. 
+
+0:54:37.198 --> 0:54:38.238 
+Jackie Kajdzik 
+Yeah, we only. 
+
+0:54:37.8 --> 0:54:50.178 
+Olga Ermolova 
+OK. And but you know by the way, this is just a figma, right? This is no, I was considering this thinking of something that we might need to show up on the GUI for the JSON thing. Yeah, that's why I asked this question. Yeah. 
+
+0:54:50.848 --> 0:54:55.368 
+Olga Ermolova 
+OK, I think it just last question. Do you have everything what you need to start building this function? 
+
+0:54:55.808 --> 0:54:56.88 
+Jackie Kajdzik 
+Yeah. 
+
+0:54:55.768 --> 0:54:59.598 
+Olga Ermolova 
+There are Jason schemas there adjacent examples that what you can adjust. 
+
+0:55:0.998 --> 0:55:1.598 
+Olga Ermolova 
+We. 
+
+0:55:0.198 --> 0:55:2.898 
+Jackie Kajdzik 
+Yeah. And then it's you said there are in the item. 
+
+0:55:4.88 --> 0:55:5.698 
+Jackie Kajdzik 
+OK. Yep, I'll find them. 
+
+0:55:3.398 --> 0:55:9.18 
+Olga Ermolova 
+Yes. Umm, maybe in child or in parent, but definitely there. 
+
+0:55:9.418 --> 0:55:9.808 
+Jackie Kajdzik 
+OK. 
+
+0:55:11.238 --> 0:55:15.578 
+Olga Ermolova 
+Once again, like it was just like initial version, right? If you think that it should be somehow different, you can. 
+
+0:55:16.418 --> 0:55:17.618 
+Olga Ermolova 
+My jiffy how you wish. 
+
+0:55:18.398 --> 0:55:18.888 
+Jackie Kajdzik 
+Yeah. 
+
+0:55:36.718 --> 0:55:37.98 
+Jackie Kajdzik 
+Yeah. 
+
+0:55:19.128 --> 0:55:38.948 
+Olga Ermolova 
+They also created based on the like complexity thing. Few changes I made Olga to them. I will also upload them, right? Yeah. Then you can remove my old version and attach yours. Just do not confuse. Right. Yeah. They're like version one view where you can remove attachments like remove old one attaching new one. Yeah, I will do that. 
+
+0:55:38.118 --> 0:55:40.778 
+Jackie Kajdzik 
+Sigh. Whenever you're done. Would you let me know? 
+
+0:55:41.368 --> 0:55:44.408 
+Olga Ermolova 
+Yeah, I'll ping you, Jackie, in some time. 
+
+0:55:44.808 --> 0:55:45.138 
+Jackie Kajdzik 
+OK. 
+
+0:55:56.168 --> 0:55:57.138 
+Jackie Kajdzik 
+Oh, they did OK. 
+
+0:55:45.888 --> 0:55:57.948 
+Olga Ermolova 
+Jackie and the boat is like I'm sorry, just I was not able to to show up on our stand up. They sent you the payload. How you need to send them ACE flag to get help. Did you get that? Mm-hmm. 
+
+0:55:57.698 --> 0:56:1.148 
+Jackie Kajdzik 
+Umm, I don't know how they sent it and they tagged me in an item. 
+
+0:56:1.278 --> 0:56:4.618 
+Olga Ermolova 
+I believe they're just take your right and provided the payload. 
+
+0:56:5.38 --> 0:56:6.518 
+Jackie Kajdzik 
+OK, I'll I'll look for it. 
+
+0:56:7.58 --> 0:56:9.8 
+Olga Ermolova 
+Umm, what time is the stand up? 
+
+0:56:9.678 --> 0:56:10.398 
+Olga Ermolova 
+It's 1:00 PM. 
+
+0:56:13.218 --> 0:56:14.88 
+Olga Ermolova 
+U FM stand up. 
+
+0:56:14.848 --> 0:56:15.298 
+Olga Ermolova 
+Are you there? 
+
+0:56:17.18 --> 0:56:24.408 
+Olga Ermolova 
+No, it should 110, but actually we wanted to reschedule it. Yeah, because it's in like Eva Scrum of Scrum. Mm-hmm. 
+
+0:56:26.48 --> 0:56:27.378 
+Olga Ermolova 
+Tell me what is your best time? 
+
+0:56:29.668 --> 0:56:29.998 
+Olga Ermolova 
+Who? 
+
+0:56:33.508 --> 0:56:34.938 
+Olga Ermolova 
+Between two ohh. 
+
+0:56:35.928 --> 0:56:37.238 
+Olga Ermolova 
+Just delayed though. 
+
+0:56:39.618 --> 0:56:44.658 
+Olga Ermolova 
+I'll, I'll let you know. I have to check because every Tuesdays or have different. 
+
+0:56:46.348 --> 0:56:52.458 
+Olga Ermolova 
+Excuse me, but you don't need to come to every stand up. It's fine if you come to our planning and grooming. OK, sounds good. 
+
+0:56:53.858 --> 0:56:55.328 
+Olga Ermolova 
+But if you wish, of course, you're welcome. 
+
+0:57:0.8 --> 0:57:0.398 
+Jackie Kajdzik 
+OK. 
+
+0:56:57.278 --> 0:57:1.68 
+Olga Ermolova 
+I guess thank you. Jake is so much. Thank you. See you, Jackie. 
+
+0:57:1.428 --> 0:57:2.558 
+Jackie Kajdzik 
+Alright, bye bye. 
+
+0:57:2.918 --> 0:57:3.608 
+Olga Ermolova 
+Thank you. 

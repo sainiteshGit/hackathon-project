@@ -1,7 +1,8 @@
+package informationRetrieval;
 import java.util.Set;
 import java.util.HashSet;
 import java.io.*;
-class StopWords {
+public class StopWords {
     public static void main(String args[]){
 
         String path="/Users/SaiNitesh/Hackathon/stopWords.txt";

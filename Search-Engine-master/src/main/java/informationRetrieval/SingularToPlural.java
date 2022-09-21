@@ -11,19 +11,23 @@ public class SingularToPlural{
     public static void main(String args[]){
         String plural="apples";
         
+        System.out.println(plural);
         String result=getSingular(plural);
         System.out.println(result);
 
         plural="always";
+        System.out.println(plural);
         result=getSingular(plural);
         System.out.println(result);
 
         plural="girls";
+        System.out.println(plural);
         result=getSingular(plural);
         System.out.println(result);
 
 
         plural="boys";
+        System.out.println(plural);
         result=getSingular(plural);
         System.out.println(result);
 
@@ -39,8 +43,11 @@ public class SingularToPlural{
         NPPhraseSpec subject = nlgFactory.createNounPhrase(plural); 
         subject.setFeature(Feature.NUMBER, NumberAgreement.SINGULAR); 
         singular=realiser.realiseSentence(subject);
-        System.out.println(singular);
-        return singular;
+        //System.out.println(singular);
+        if(singular!=null && singular.length()>1){
+            singular=singular.substring(0,singular.length()-1);
+        }
+        return singular.toLowerCase();
     }
 
 

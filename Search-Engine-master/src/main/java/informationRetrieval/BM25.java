@@ -1,11 +1,13 @@
 package informationRetrieval;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -184,42 +186,20 @@ public class BM25 {
 	    file.delete();
 	}
 
-
-	public static class MyProperties extends Properties {
-		private static final long serialVersionUID = 1L;
-	
-		public Enumeration<Object> keys() {
-			Enumeration<Object> keysEnum = super.keys();
-			Vector<Object> keyList = new Vector<Object>();
-	
-			while (keysEnum.hasMoreElements()) {
-				keyList.add(keysEnum.nextElement());
-			}
-	
-			Collections.sort(keyList, new Comparator<Object>() {
-				@Override
-				public int compare(Object o1, Object o2) {
-					return ((Double) o2).compareTo((Double) o1);
-					
-				}
-			});
-	
-			return keyList.elements();
-		}
-	}
 	private static void writeTempTokenFile(HashMap<String,Integer> freqMapForFile, String filePath) {
-		MyProperties properties = new MyProperties();
 
-		for(Entry<String, Integer> entry: freqMapForFile.entrySet()) {
-			properties.put(entry.getKey(), entry.getValue().toString());
+		File file = new File(filePath);  
+		try(BufferedWriter bf=new BufferedWriter(new FileWriter(file))){
+
+			for(Entry<String, Integer> entry: freqMapForFile.entrySet()) {
+				bf.write(entry.getKey()+"="+entry.getValue().toString());
+				bf.newLine();
+			}
+            bf.flush();
 		}
-		try {
-			properties.store(new OutputStreamWriter(new FileOutputStream(filePath),"utf-8"), null);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+        catch (Exception e) {
+            e.printStackTrace();
+        }
 	}
 
 
@@ -269,18 +249,18 @@ public class BM25 {
 	}
 	private static void writeTokenFile(HashMap<String,Double> freqMapForFile, String filePath) {
 		
-		Properties properties = new Properties();
+		File file = new File(filePath);  
+		try(BufferedWriter bf=new BufferedWriter(new FileWriter(file))){
 
-		for(Entry<String, Double> entry: freqMapForFile.entrySet()) {
-			properties.put(entry.getKey(), entry.getValue().toString());
+			for(Entry<String, Double> entry: freqMapForFile.entrySet()) {
+				bf.write(entry.getKey()+"="+entry.getValue().toString());
+				bf.newLine();
+			}
+            bf.flush();
 		}
-		try {
-			properties.store(new OutputStreamWriter(new FileOutputStream(filePath),"utf-8"), null);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+        catch (Exception e) {
+            e.printStackTrace();
+        }
 	}
 
 	private static double calculateTF(double word_freq, int doc_size) {

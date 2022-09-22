@@ -45,5 +45,25 @@
   <artifactId>SimpleNLG</artifactId>
   <version>4.5.0</version>
 </dependency>
+<dependency>
+  <groupId>com.azure</groupId>
+  <artifactId>azure-core</artifactId>
+  <version>1.32.0</version>
+</dependency>
+<dependency>
+    <groupId>com.azure</groupId>
+    <artifactId>azure-storage-blob</artifactId>
+    <version>12.13.0</version>
+</dependency>
+<dependency>
+    <groupId>com.azure</groupId>
+    <artifactId>azure-storage-common</artifactId>
+    <version>12.18.1</version>
+</dependency>
+<dependency>
+    <groupId>com.azure</groupId>
+    <artifactId>azure-core-http-netty</artifactId>
+    <version>1.12.5</version>
+</dependency>
   </dependencies>
 </project>

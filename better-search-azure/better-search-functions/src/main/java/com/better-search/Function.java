@@ -9,7 +9,7 @@ import com.microsoft.azure.functions.annotation.AuthorizationLevel;
 import com.microsoft.azure.functions.annotation.FunctionName;
 import com.microsoft.azure.functions.annotation.HttpTrigger;
 
-import java.util.Optional;
+import java.util.*;
 
 /**
  * Azure Functions with HTTP Trigger.
@@ -58,7 +58,16 @@ public class Function {
         if (searchQuery == null) {
             return request.createResponseBuilder(HttpStatus.BAD_REQUEST).body("Please pass a name on the query string or in the request body").build();
         } else {
-            return request.createResponseBuilder(HttpStatus.OK).body("Your Query, " + searchQuery).build();
+			System.out.println("Executing Query: "+searchQuery);
+			List<Map.Entry<String, Double>>  results = QueryExecution.search(searchQuery);
+			StringBuilder sb = new StringBuilder();
+			System.out.println("# of results: "+results.size());
+			for(Map.Entry<String, Double> entry : results){
+				sb.append(entry.getKey() + ":" + entry.getValue());
+				sb.append("\n");
+			}
+			System.out.println(sb.toString());
+            return request.createResponseBuilder(HttpStatus.OK).body(sb.toString()).build();
         }
     }
 }

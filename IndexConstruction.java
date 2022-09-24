@@ -1,4 +1,4 @@
-package informationRetrieval;
+package com.bettersearch;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -40,6 +40,16 @@ import simplenlg.phrasespec.NPPhraseSpec;
 import simplenlg.realiser.english.Realiser;
 import java.util.Set;
 import java.util.HashSet;
+import com.azure.storage.blob.*;
+import com.azure.storage.blob.models.*;
+import com.azure.storage.blob.specialized.BlobInputStream;
+import com.microsoft.azure.storage.CloudStorageAccount;
+import com.microsoft.azure.storage.blob.CloudBlobClient;
+import com.microsoft.azure.storage.blob.CloudBlobContainer;
+import com.microsoft.azure.storage.blob.CloudBlobDirectory;
+import com.microsoft.azure.storage.blob.CloudBlockBlob;
+import com.microsoft.azure.storage.blob.ListBlobItem;
+
 import java.io.*;
 
 public class IndexConstruction {
@@ -123,44 +133,90 @@ public class IndexConstruction {
     }
 	
 
-	public static void main(String[] args) throws IOException {
+	public static void deleteDir(String path){
+		String storageConnectionString="DefaultEndpointsProtocol=https;AccountName=hacktranscriptstorage;AccountKey=C14dvwE6bePyof3aCgLNk1xL9OtPSyMExRzJB8EalswgfQdtHJilD5Q8XVb07FM210X1LDnLC6xa+AStsRBc+g==;EndpointSuffix=core.windows.net";
+        String containerName="hackblob";
+        try{
+            CloudStorageAccount account = CloudStorageAccount.parse(storageConnectionString);
+            CloudBlobClient serviceClient = account.createCloudBlobClient();
+
+            // Container name must be lower case.
+            CloudBlobContainer container = serviceClient.getContainerReference(containerName);
+            CloudBlockBlob blob=container.getBlockBlobReference(path);
+			blob.deleteIfExists();
+        }
+        catch(Exception e){
+            System.out.print("EXception e:::"+e);
+        }
+        return;
+
+	}
+
+	public static HashMap<String,File> getListOfFiles(String dirPath){
+
+		HashMap<String,File> files=new HashMap<String,File>();
+
+		String storageConnectionString="DefaultEndpointsProtocol=https;AccountName=hacktranscriptstorage;AccountKey=C14dvwE6bePyof3aCgLNk1xL9OtPSyMExRzJB8EalswgfQdtHJilD5Q8XVb07FM210X1LDnLC6xa+AStsRBc+g==;EndpointSuffix=core.windows.net";
+        String containerName="hackblob";
+        try{
+            CloudStorageAccount account = CloudStorageAccount.parse(storageConnectionString);
+            CloudBlobClient serviceClient = account.createCloudBlobClient();
+
+            // Container name must be lower case.
+            CloudBlobContainer container = serviceClient.getContainerReference(containerName);
+            CloudBlockBlob blob=container.getBlockBlobReference(dirPath);
+			CloudBlobDirectory blobDirectory = container.getDirectoryReference(dirPath);
+			Iterable<ListBlobItem> listBlobItem = blobDirectory.listBlobs();
+			for (ListBlobItem blobItem : listBlobItem) {
+				if (blobItem instanceof CloudBlockBlob) {
+						CloudBlockBlob blockBlob = (CloudBlockBlob) blobItem;
+						String fileName=blobItem.getUri().toString();
+						String fileText=blockBlob.downloadText();
+						files.put(fileName,new File(fileText));
+				}
+			}
+        }
+        catch(Exception e){
+            System.out.print("EXception e:::"+e);
+        }
+		return files;
+
+	}
+
+	public static void indexConstruct() throws IOException {
 
 		long startTime = System.currentTimeMillis();
-
-		File inputFolder = new File(args[0]);
-		String outputDir = args[1];
-		File outputFolder = new File(outputDir);
+		String inputDir="input/";
+		String outputDir = "output/";
 
 
 		IndexConstruction bm25 = new IndexConstruction();
-		File[] files = inputFolder.listFiles();
-		bm25.setNumDocs(files.length);
-		String tempPath="D:/hackathon/Search-Engine-master/temp";
-		FileUtils.deleteDirectory(new File(tempPath));
-		FileUtils.deleteDirectory(new File(outputDir));
+		HashMap<String,File> fileMap = getListOfFiles(inputDir);
+		List<String> fileNames=new ArrayList<>(fileMap.keySet());
 
-		Files.createDirectories(Paths.get(tempPath));
-		Files.createDirectories(Paths.get(outputDir));
+		bm25.setNumDocs(fileNames.size());
+		String tempPath="temp/";
+		deleteDir(tempPath);
+		deleteDir(outputDir);
 
-		for(int i=0;i<files.length;i++) {
-			if(files[i].isFile()) {
-				Document doc = Jsoup.parse(files[i], "utf-8");
-				doc = new Cleaner(Whitelist.simpleText()).clean(doc);
-				if(doc.body()!=null) {
-					String text=doc.body().text();
-					//comment below line, instead handling in createTokenFrequencyMap()
+		for(int i=0;i<fileNames.size();i++) {
 
-					//text=text.replaceAll("[0-9]","");
-					text=text.replaceAll("\\u000B","");
-					text=text.replaceAll("\\u0001","");
-					HashMap<String, Integer> freqMapForFile = createTokenFrequencyMap(text);
-					//writeTempTokenFile(freqMapForFile,tempPath+"/"+ String.valueOf(i+1) +".properties");
-					writeTempTokenFile(freqMapForFile,tempPath+"/"+ findFileName(String.valueOf(files[i])) +".properties");
-				}
+			Document doc = Jsoup.parse(fileMap.get(fileNames.get(i)), "utf-8");
+			doc = new Cleaner(Whitelist.simpleText()).clean(doc);
+			if(doc.body()!=null) {
+				String text=doc.body().text();
+				//comment below line, instead handling in createTokenFrequencyMap()
+
+				//text=text.replaceAll("[0-9]","");
+				text=text.replaceAll("\\u000B","");
+				text=text.replaceAll("\\u0001","");
+				HashMap<String, Integer> freqMapForFile = createTokenFrequencyMap(text);
+				//writeTempTokenFile(freqMapForFile,tempPath+"/"+ String.valueOf(i+1) +".properties");
+				writeTempTokenFile(freqMapForFile,tempPath+"/"+ findFileName(fileNames.get(i)) +".properties");
 			}
 		}
 		bm25.setAvgDocSize();	
-		BM25scoreForFile(tempPath,outputFolder);
+		BM25scoreForFile(tempPath,outputDir);
 		LinkedHashMap<String, List<DocIdAndScore>> sortedIndexMap = sortInvertedIndexMapAlphabetically();
 
 		//FileUtils.forceDeleteOnExit(new File(tempPath));
@@ -185,31 +241,29 @@ public class IndexConstruction {
 	}
 	
 	private static void createPostingAndDictionary(String outputDir, LinkedHashMap<String, List<DocIdAndScore>> sortedIndexMap) {
-		PrintWriter pwriter=null;
-		PrintWriter dwriter=null;
-		int location=1;
-		try {
-			pwriter = new PrintWriter(outputDir+"/postings.txt", "UTF-8");
-			dwriter = new PrintWriter(outputDir+"/dictionary.txt", "UTF-8");
+		String postingFilePath=outputDir+"/postings.txt";
+		String dictionaryFilePath=outputDir+"/dictionary.txt";
+		StringBuilder postingSb=new StringBuilder();
+		StringBuilder dictionaySb=new StringBuilder();
 
-		} catch (FileNotFoundException | UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
+		int location=1;
+
 		for(String term_key : sortedIndexMap.keySet()) {
 			List<DocIdAndScore> posting = sortedIndexMap.get(term_key);
 			if(term_key.length()>45) {
 				continue;
 			}
 			for(DocIdAndScore post : posting) {
-				pwriter.println(post.docId+SEPERATOR_COMMA+post.score);
+				postingSb.append(post.docId+SEPERATOR_COMMA+post.score+"\n");
 			}
-			dwriter.println(term_key);
-			dwriter.println(invertedIndexCountMap.get(term_key)); //signify how many documents has this term
-			dwriter.println(location);
+			dictionaySb.append(term_key+"\n");
+			dictionaySb.append(invertedIndexCountMap.get(term_key)+"\n");
+			dictionaySb.append(location);
 			location += posting.size();
 		}
-		pwriter.close();
-		dwriter.close();
+		upload(postingSb.toString().getBytes(), postingFilePath);
+		upload(dictionaySb.toString().getBytes(), dictionaryFilePath);
+
 	}
 
 
@@ -218,31 +272,44 @@ public class IndexConstruction {
 	}
 
 	private static void writeTempTokenFile(HashMap<String,Integer> freqMapForFile, String filePath) {
-		Properties properties = new Properties();
+		StringBuilder sb=new StringBuilder();
 
 		for(Entry<String, Integer> entry: freqMapForFile.entrySet()) {
-			properties.put(entry.getKey(), entry.getValue().toString());
+			sb.append(entry.getKey()+"="+entry.getValue().toString()+"\n");
 		}
-		try {
-			properties.store(new OutputStreamWriter(new FileOutputStream(filePath),"utf-8"), null);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		upload(sb.toString().getBytes(), filePath);
 	}
 
+	public static void upload(byte[] content, String fileName){
+        String storageConnectionString="DefaultEndpointsProtocol=https;AccountName=hacktranscriptstorage;AccountKey=C14dvwE6bePyof3aCgLNk1xL9OtPSyMExRzJB8EalswgfQdtHJilD5Q8XVb07FM210X1LDnLC6xa+AStsRBc+g==;EndpointSuffix=core.windows.net";
+        String containerName="hackblob";
+        try{
+            CloudStorageAccount account = CloudStorageAccount.parse(storageConnectionString);
+            CloudBlobClient serviceClient = account.createCloudBlobClient();
 
-	private static void BM25scoreForFile(String tempPath, File outputFolder) {
-		File dir = new File(tempPath);
-		File[] propListing = dir.listFiles();
+            // Container name must be lower case.
+            CloudBlobContainer container = serviceClient.getContainerReference(containerName);
+            CloudBlockBlob blob=container.getBlockBlobReference("input/"+fileName);
+            blob.uploadFromByteArray(content, 0, content.length-1);   
+        }
+        catch(Exception e){
+            System.out.print("EXception e:::"+e);
+        }
+        return;
+      }
+
+
+	private static void BM25scoreForFile(String tempPath, String outputFolder) {
+
+		HashMap<String,File> fileMap=getListOfFiles(tempPath);
+		List<String> files=new ArrayList<>(fileMap.keySet());
 		double max_wt = Double.MIN_VALUE;
 		double min_wt = Double.MAX_VALUE;
 
-		for (File prop : propListing) {
+		for (String fileName : files) {
 			InputStream propStream = null;
 			try {
-				propStream = new FileInputStream(prop.toString());
+				propStream = new FileInputStream(fileMap.get(fileName));
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}
@@ -278,7 +345,7 @@ public class IndexConstruction {
 				e.printStackTrace();
 			}
 			//write into one file at a time
-			writeTokenFile(scoreMapPerFile,tempPath+"/"+prop.getName());
+			writeTokenFile(scoreMapPerFile,tempPath+"/"+fileName);
 			try {
 				propStream.close();
 			} catch (IOException e) {
@@ -304,13 +371,13 @@ public class IndexConstruction {
 
 	private static void normalizeScores(double max_wt, double min_wt, String outputFolder) {
 
-		File dir = new File(outputFolder);
-		File[] propListing = dir.listFiles();
-		for (File prop : propListing) {
+		HashMap<String,File> fileMap=getListOfFiles(outputFolder);
+		List<String> files=new ArrayList<>(fileMap.keySet());
+		for (String fileName:files) {
 			InputStream propStream = null;
 			Properties properties = new Properties();
 			try {
-				propStream = new FileInputStream(prop.toString());
+				propStream = new FileInputStream(fileMap.get(fileName));
 
 
 			} catch (FileNotFoundException e) {
@@ -325,10 +392,10 @@ public class IndexConstruction {
 					double normScore = (score - min_wt)/(max_wt-min_wt);
 
 					if(invertedIndexMap.containsKey(key)) {
-						invertedIndexMap.get(key).add(new DocIdAndScore(prop.getName().replace(".properties",""), normScore));
+						invertedIndexMap.get(key).add(new DocIdAndScore(fileName.replace(".properties",""), normScore));
 					}else {
 						ArrayList<DocIdAndScore> list = new ArrayList<>();
-						list.add(new DocIdAndScore(prop.getName().replace(".properties",""), normScore));
+						list.add(new DocIdAndScore(fileName.replace(".properties",""), normScore));
 						invertedIndexMap.put(key, list);
 					}
 				}
@@ -339,18 +406,11 @@ public class IndexConstruction {
 	}
 
 	private static void writeTokenFile(HashMap<String,Double> freqMapForFile, String filePath) {
-		Properties properties = new Properties();
-
+		StringBuilder sb=new StringBuilder();
 		for(Entry<String, Double> entry: freqMapForFile.entrySet()) {
-			properties.put(entry.getKey(), entry.getValue().toString());
+			sb.append(entry.getKey()+"="+entry.getValue().toString());
 		}
-		try {
-			properties.store(new OutputStreamWriter(new FileOutputStream(filePath),"utf-8"), null);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		upload(sb.toString().getBytes(), filePath);
 	}
 
 	private static double calculateTF(double word_freq, int doc_size) {
@@ -371,18 +431,55 @@ public class IndexConstruction {
 	}
 	
 	public static HashSet<String> buildSetForStopWords(){
-		String path = "D:/hackathon/Search-Engine-master/src/main/java/informationRetrieval/stopWords.txt";
+		String path = "stopWords.txt";
+		List<String> wordLines=readFileFromBlob(path);
        HashSet<String> words = new HashSet<String>();
-       try(BufferedReader reader = new BufferedReader(new FileReader(path))){
-         for(String line = reader.readLine(); line != null; line = reader.readLine()) {
-             line=line.replaceAll("\\s", "");
-             words.add(line);
-          }
+	   for(String line:wordLines) {
+			line=line.replaceAll("\\s", "");
+			words.add(line);
+	 	}  
+        return words;
+    }
+
+	public static List<String> readFileFromBlob(String fileName){
+
+		String connectStr = "DefaultEndpointsProtocol=https;AccountName=hackathonrgb442;AccountKey=/XQmCiIzXPph0lR/e6xUl2QuYa277SJcoReYC1FF2g5Vww4nYdl6gLLnLgBsBygkkzU2tUy5p32t+ASt7fvYdg==;EndpointSuffix=core.windows.net";
+		String containerName = "hackblob";
+		List<String> result = new ArrayList<>();
+        try{
+
+            BlobServiceClient blobServiceClient = new BlobServiceClientBuilder().connectionString(connectStr).buildClient();
+            BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(containerName);
+            // Create a local file in the ./data/ directory for uploading and downloading
+            //String localPath = ".data/";
+            //String fileName = "quickstart"+ "testFile.txt";
+            // Get a reference to a blob
+            BlobClient blobClient = containerClient.getBlobClient(fileName);
+            System.out.println("\nReading to Blob storage as blob:\n\t" + blobClient.getBlobUrl());
+            // Upload the blob
+            //StringBuilder result = new StringBuilder();
+			
+            try (BlobInputStream blobIS = blobClient.openInputStream()) {
+                InputStreamReader inputStream = new InputStreamReader(blobIS, "UTF-8");
+                BufferedReader reader = new BufferedReader(inputStream);
+                for (String line; (line = reader.readLine()) != null; ) {
+                    result.add(line);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+				throw e;
+            }
+            System.out.println("Blob found: "+result);
+
+            return result;
+
         }
         catch(Exception e){
-             System.out.println("error while reading file");
+			result.clear();
+            e.printStackTrace();
+			
         }
-        return words;
+        return result;
     }
 	
 	public static String getSingular(String plural){

@@ -1,0 +1,732 @@
+welcome to my ultimate design patterns
+course I'm mosh and I'm super excited to be your instructor let me give you a quick overview what this course is all about
+and what you need to know before you get started in this course you're gonna learn how to design reusable and
+extensible object-oriented software in order to take this course you should have at least three months of
+programming experience it doesn't matter what language you're familiar with you just need some basic programming
+experience also if you're familiar with basic object-oriented programming concepts such as classes on interfaces
+that will be great but not required I'll give you a basic overview of these concepts in the next
+section now before we get started I want to set the expectation in this course we're not gonna work on any algorithms
+you're not gonna see me working with loops or Eve statements or implement complex logic that is not the purpose of
+this course I've covered all the algorithmic topics in my data structure as an algorithms course also we're not
+gonna build an application instead we're gonna talk about designing object-oriented software we're gonna
+talk about how you should structure your classes and how this classes should collaborate our focus will be on
+building reusable and extensible software software that can be easily extended the techniques we are going to
+cover in this course are extremely important and every software engineer working with object-oriented system should master this so I'm super excited
+to be your instructor design patterns is one of my favorite topics and a lot of you guys have been waiting for this
+course for a long time so let's jump in and get started
+[Music]
+you might ask what art design patterns well design patterns are elegant solutions to repeating problems in
+software design for example may want to implement the undo mechanism in your application that's a repeating problem in software
+design right now we have a couple of different patterns for implementing the undo feature one of them is the momento
+pattern so a design pattern shows you how you should structure your classes and how these classes should talk to
+each other now in this series we'll be exploring 23 design patterns that were originally documented in the 90s in the
+book called design patterns elements of reusable object-oriented software the book was written by four
+authors that are known as Gang of Four so quite often we refer to these patterns as Gang of Four patterns the
+Gang of Four patterns include 23 design patterns in three categories creational structural and behavioral creational
+patterns are all about different ways to create objects structural patterns are about the relationships between these
+objects and behavioral patterns are about the interaction or communication between these objects in the first part
+of this series we'll be talking about the behavioral design patterns and by the way these design patterns don't
+represent all the patterns in their work there are many unofficial and undocumented patterns out there that you
+might find useful in certain situations but these 23 design patterns are the classic ones that every software
+engineer must understand one of the benefits of design patterns is that they help us communicate with other
+developers at a more abstract level for example you may tell your coworker hey we can use the command pattern to
+improve this code you can simply use the name of the pattern to communicate the idea you don't have to write a lot of
+code to express that idea another benefit of studying and understanding this design patterns is that it makes
+you a better designer you will learn how to build reusable extensible and maintainable software no matter what
+programming language you use or what kind of applications you build and finally another benefit of learning design patterns is that they help you
+learn and use new frameworks faster one of the questions I often get is marché how do you learn various things
+quickly I tell you what I'm not a genius yes I do have years of experience in fact I started programming when I was
+seven and now I'm 37 but one thing that I believe has helped me enormously is understanding this design patterns
+because I see these design patterns used in various frameworks and libraries so every time I learn a new framework it
+kind of looks familiar to me it's just a different syntax that I have to memorize so these are the benefits of learning
+design patterns
+unlike other courses on books that teach you design patterns like a list of recipes to follow in this course I'm
+going to teach you the art of designing object-oriented software so I'm not gonna give you a catalog of design
+patterns ordered alphabetically I'm specifically ordered the patterns in this course to teach you various
+important concepts so even though you can jump to a specific pattern to learn more about it it's best if you take the
+course from the beginning to the end because throughout the sections I'll talk about various principles and if you
+skip those you're gonna miss out a lot so if you want to get the most out of this course watch all the sections in
+order every section is short and sweet and you can watch it in half an hour or less if you have taken any of my courses
+you know that I don't waste your time by long slow and repetitive explanations also in this course I'll be using Java
+but you don't have to be a Java developer in order to take this course in the next section I'm gonna give you a
+quick overview of the Java syntax so you can easily understand the code we write if you use Python or C sharp or some
+other language you can take the concepts in this course and apply them in your favorite programming language again our
+focus is on the art of designing object-oriented software not a particular programming language now if
+you are a Java developer I still encourage you to watch the next section even though it may appear a little bit basic for you because in the next
+section I'm going to talk about the essential object-oriented programming concepts such as encapsulation abstraction inheritance and polymorphism
+a lot of developers don't really understand this concept properly so I'll see you in the next section
+in this section I'm going to give you a quick tour of Java and the essential object-oriented programming concepts you
+need to understand in order to take this course we'll be talking about classes interfaces encapsulation abstraction
+inheritance polymorphism and UML which is the graphical notation we'll be using throughout this course if you know Java
+you can skip the first video or two where I create a new project and show you how to work with a class but I
+highly encourage you to watch all the other lessons especially the lesson about interfaces because interfaces are
+one of the most misunderstood concepts in Java and in many programming languages also make sure to watch all
+the other lessons such as encapsulation abstraction inheritance and polymorphism these are extremely important I want to
+make sure we're on the same page and you really understand what these concepts are if you don't understand these
+concepts properly you're not going to be able to understand design patterns so let's jump in and get started all right
+in this course I'm gonna use IntelliJ which is a very popular Java IDE but you can use any ID that you prefer if you
+want to use IntelliJ and code along with me we can get it from jetbrains comm slash idea slash download it comes in
+two editions ultimate which is paid and community which is free and open source here in IntelliJ let's create a brand
+new project so we select Java on the left next we select create project from
+template we want to create a command line application next we shall give this
+project a name let's call it design patterns over here we should specify the
+base package name a package in Java is a container for one or more classes in
+some languages like C sharp it's called and namespace so here we should type the base package name by convention we use
+the reverse domain name my domain is code with match calm so here we have calm that code with Marsh this is just a
+convention it doesn't mean you should have a domain name registered on an Internet you can type anything here okay
+all right as you can see every Java project has this main file main dat Java and in this file we have a class with
+the exact same name this class is declared in this package comm that code with wash so the package statement on
+top of the file determines where this class is going to be defined okay now in
+this class we have a method called main both this method and this class are declared as public
+this means they're accessible anywhere in this codebase we'll talk about this later in this section now the main
+method is declared as static this means we can call this method directly without having to create an instance of the main
+class void is the return type of this method which means this method is not gonna return a value and here in
+parentheses we have the parameters of this method in this case we have a single parameter which is a string array
+called args if we execute this program from the command line and pass a few different arguments we can capture those
+arguments using the string array okay now in Java we use curly braces to
+represent a block of code and by convention we put the left brace on the same line in some languages like C sharp
+we put the left brace on a new line but this is unconventional in Java so let's bring it back where it was so this is
+the basics of a Java program next I'm going to show you how to create and use classes
+all right let me show you how to work with classes so in the project window we expand the project folder here we have
+the source folder this is where we have all the source code for this project and it's folder we have our base package
+which contains the main class now we right-click the package name and add a
+new class we're going to call this user in this class we can have filled or
+attributes for storing data and methods let's declare a field for storing the
+users name so public string name and we terminated
+with a semicolon so in Java we terminate our statements with a semicolon now technically this is a bad practice
+to declare fields as public I'm going to talk about this later in this section for now let's declare everything as public so
+string is the type of this field and it's called name now we can go to the main class and create a new instance of
+the user class so we type user user equals new user so we're declaring a
+variable called user the type of is variable is our user class and here
+we're setting this to a new instance of the user class once again we are terminating the statement with a
+semicolon now using the dot operator we can access the field and methods in this
+class so we can set the name field to Marsh and once again we terminate this
+with a semicolon note that in Java we use double quotes to surround strings now we can print
+this field on the terminal so we have the system class this class has a field
+called out this is an object that has a method called print line this is like
+console to write line of c-sharp now here we can pass user that name and then
+we can run this program using ctrl + R there you go so here's my name on the
+terminal beautiful now we can specify the name when creating a new user so we
+go back to the user class we add a constructor a constructor is a method that gets called when we create a new
+instance of a class so here we type public then we type the name of the class
+and then we had parentheses this is where we can declare parameters next we add our curly braces so let's
+add a parameter here called string name now we can set the name field to the
+value of the name parameter however both the parameter and the field have the
+same identifier so if we type name equals name the Java compiler thinks
+we're referring to this name parameter so on the left side we should prefix this with this dot
+so we're saying set the name field of the current object to the value of the
+name parameter so this is a reference to the current object if we type this dot
+we can see all the fields and methods in this class okay
+now back to the main method when creating a new user object we can
+pass the name we don't need to set it explicitly and then we can print it on a terminal so run we get the same result
+as before beautiful now let's add a method in this class so we start with
+public we don't wanna return a value so we use void we call this method say
+hello and here we're gonna print a message like hi my name is and then we can
+combine this string with the value of the name field now in this context we
+don't have a name parameter so we don't have to use that this keyword we can simply reference the name field directly
+okay now back in the main method instead of printing the name of a user we can
+call user dot say hello then run and we
+get this message so this is how we can create and use classes in Java
+one of the important concepts in object-oriented systems is coupling which determines how much a class is
+coupled or dependent on another class for example here in the main class we
+are using the user class so the main class is coupled or dependent on the user class so if you change the user
+class the main class might be affected we have to change it or at least we have to recompile and redeploy let me show
+you so I'm going to go back to the user class and introduce a new parameter in this constructor let's say integer H so
+we have changed the user class now the main class is broken we cannot compile this code we have to
+pass this argument over here so this is the problem with coupling let me show
+you another example back in the user class let's add a hyphen before this message now back in the main class we
+don't have a breaking change our code compiler fect li well however because we have changed the code in the user class
+this class has to be recompiled and that means all the classes that are dependent
+on this class have to be recompile as well that this is a very simple program we only have two classes but what if we
+had hundreds or thousands of classes and many of them were highly dependent on each other in an application like that
+if it change the class we could end up with lots of cascading changes an application built this way is really
+hard to change hard to extend let me give you a metaphor think of your car if you get a flat tire you only need to
+replace that tire you don't need to replace this steering wheel or the engine right your car is an example of a
+loosely coupled system the components in your car work together but they are not tightly coupled or dependent on each
+other so you can replace individual parts independently our applications should be the same way but how can we
+build loosely coupled applications using interfaces and that's what I'm going to cover next
+interfaces are one of the most misunderstood constructs in Java and in many other programming languages I
+talked about this in detail in the second part of my ultimate java course that is about 4 hours long but let me
+explain very briefly an interface is a contract that specifies the capabilities
+that a class should provide let me give you a metaphor imagine you want to open a restaurant you need a chef it doesn't
+matter who the chef is so you're not dependent on a particular chef you're only dependent on someone who can
+perform the role of a chef someone with certain capabilities this is an example of a loosely coupled
+system now I told you that an interface is a contract that specifies the capabilities that a class should provide
+so in this example we can represent the role of a chef with an interface and the
+actual chef's with classes that implement the chef's interface so this is the idea behind interfaces with
+interfaces we can build loosely coupled applications let me show you this in code so let's say you want to build a
+tax calculator tax calculation is complex and the rules may change from one year to another we can have a
+calculator for year 2019 and another for year 2020 just like we can have different people filling the role of a
+chef at a restaurant right but what do all tax calculators have in common they
+probably have a method called calculate tax we can represent this with an interface so in this package let's add a
+new class first we change the kind to interface and call it tax calculator so
+this is just a contract that specifies the methods that our calculator classes should implement so here we had a method
+float calculate tax note that we only
+have a method declaration so we're terminating the statement with a semicolon this method does not have a
+body it doesn't have implementation if you have curly braces here we get a compilation error so this interface is
+saying hey if you want to build a tax calculator class that class should have a method with this signature okay
+let's add a real tax calculator in this project so we add a new class we call
+this tax calculator 2019 now over here we type implements tax
+calculator now we have a compilation error because we haven't implemented the calculate tax method in this class we
+can put the caret over here press alternator and select implement methods
+intellij added the calculate tax method in our class but don't worry about this
+overwrite this is called an annotation I talked about this in the second part of my ultimate Java series for now all that
+matters is that this class has a method with this signature here we can return one now let's create another calculator
+so once again we add a new class we call it tax calculator 2020 once again we say
+implements tax calculator then alternator implement methods beautiful
+now in year 2020 and we can return to so we have two different implementations
+of this interface now in our application instead of working with these concrete
+implementations we should work with this interface this is called programming to
+an interface so anywhere we need a tax calculator in this program we're gonna work with this interface for example we
+can go back in the main class let's add a public static method I made the static
+so we can call it directly from the main method okay now this method should return a tax calculator so here we're
+using our interface let's call it get calculator for now we're gonna return a new tax
+calculator 2019 now in our main method we're gonna call the get calculator
+method and store the result in a variable called calculator so in this
+method we have a dependency or coupling to this interface now this interface is very simple it's very lightweight all it
+has is a method called calculate tax as long as we keep the signature of this
+method exactly as these we're not gonna have a breaking change this is how we achieve loose coupling so with this
+style of programming if we go to our tax calculator 2019 and let's say add a new
+method here public float calculate insurance we have changed this class but
+this change is not gonna impact our main method over here because we're
+programming to an interface not a concrete implementation now if you have been paying close attention and you
+might say but marsh over here we are newing up a tax calculator 2019 so if
+you make any changes in this class this class has to be recompiled and that means the main class should also be
+recompile that is true but this is a very simple example to demonstrate this concept in a real enterprise application
+we're now going to write code like this we use what we call a dependency injection framework that gives us real
+implementations of an interface so in our code we work with interfaces now if
+this concept is new to you don't worry we're gonna talk about this more and more throughout the course
+so you learn the basics of classes on interfaces over the next few videos we're going to talk about the four core principles of
+object-oriented programming it's easier to explain it using a real example so in this project I'm going to add a new
+class called account this represents a bank account a human is a field for
+storing the balance of this account so public float balance now with this
+implementation we can go to the main class and create a new account
+now we have repeated the class name twice so it's better to use the VAR keyword over here now with this
+implementation we can set the balance to any amount we can set it to a positive value or a negative value
+but what if negative balances are not allowed in our application we shouldn't be able to write code like this in other
+words we shouldn't allow other classes like the main class to change the state of this object directly they shouldn't
+be able to change the data in this object so to solve this problem we go back to our account class and replace
+this public keyword with private public and private are examples of access
+modifiers many other object-oriented languages have the same concept now back
+in the main class we have a compilation error because we cannot access the balanced field from outside of this
+class it's hidden inside this class so within this class we can use it anywhere but we cannot access it from outside of
+this class but what if you really need to change the balance how are we gonna be able to do that well here in the
+account class we can add a method public void set balance
+we give it a parameter called balance and here we set this that balance to balance now because we have a method
+here in this method we can perform some kind of validation so before setting the
+balance we can make sure it's a positive value so if balance is greater than zero
+then we can set it now a better implementation is to throw an exception or an error if the balance is an invalid
+value but let's not worry about that we don't want to do too much Java in this course we're gonna stick to the basics
+this is what we call a setter a method that is used for setting the value of a field by the same token we can have a
+getter so if you want to read the value of the balance field we can call a method called get balance so public
+float get balance and here we return the value of the
+banners field this is the encapsulation principle in action so encapsulation is
+really about bundling the data and methods that operate on the data within one unit or one class and hiding the
+values or state of an object inside the class so with this we can create robust
+applications we can prevent our objects from going in an invalid state so this
+is the encapsulation principle now we can take this to the next level instead of this method set balanced it would be
+better if you had methods like withdraw and deposit so instead of sending the balance to some kind of random value
+it's better to record some kind of transaction so we know when we deposited or withdrew money from this account so
+let's add a new method public void deposit we give it a parameter called
+amount and then we can set this that balance to this that balance plus amount
+or in Java we can use the Augmented assignment operator so we can rewrite
+the statement like this this the balance plus equals amount these two statements
+are identical right in this case we don't even need the disk keyword because our parameter is called amount so that
+is better of course here we need to do some kind of validation as well you want to make sure that amount is a positive
+value so if amount is greater than zero then we update the ballas similarly
+we're going to add a method called withdraw for taking money out of this account
+once again we add our validation logic if amount is greater than zero then we
+reduce the balance by this amount this is a better implementation so let's get
+rid of the set balance method now from the main method
+instead of setting the balance to some random value we can use the deposit or withdrawal methods that we created so
+initially we deposit $10 into this account then we withdraw
+$5 finally we get the balance and printed so sou t-tap that's our print
+line statement and here we can call account that get balance let's run the program and the balance is five dollars
+beautiful so this is all about encapsulation next we're going to talk about abstraction
+now let's talk about the second principle of object-oriented programming abstraction abstraction means that we
+should reduce complexity by hiding unnecessary details in our classes let me give you a metaphor think of the
+remote control of your TV this remote control has a bunch of buttons that allow you to work with your TV inside
+the remote control you have an electronic board and bunch of transistors and so on now we don't
+directly work with this transistors their implementation detail there's so much complexity there we don't want to
+worry about that complexity we don't care what happens inside that remote control when we press the turn on button
+this is the abstraction principle in action so the abstraction principle says that we should hide the unnecessary
+details in our classes and this helps us reduce complexity let's say this in code let's say we want to implement a class
+for sending emails to our users so let's add a new class we call this mail
+service in this class we need a method for sending an email so public void send
+email now in a real application here we should have a parameter of type email but let's not worry about it in this
+demo that's part of sending an email there are a number of things that should happen under the hood we have to connect
+to a mail server we have to authenticate we have to send the email and then disconnect so we could have a method
+like connect in this method we simply print a message like connect
+similarly we can have a method called disconnect and here we print this
+message and let's add one more method public void authenticate here we're
+gonna send our username and password to the mail server so let's say I authenticate now in our send email
+method we're gonna call these methods one by one first we're gonna connect then we're gonna authenticate next we're
+gonna send the actual email and finally we're going to disconnect now let's use this in our main class so over here
+let's create a mail service and set it to a new mail service now look at the
+interface of this class and by interface I'm not talking about the interface construct in Java I'm just talking about
+the interface of a class like the interface of a remote control what we see on that remote control or what we
+see in this class here we have four methods but the first three are implementation detail we don't care
+about this you don't care about connecting to a mail server we don't care about authentication all we care
+about is the ability to send an email so these three methods are adding extra
+complexity to this class they're making it harder for the consumers of this class to use this class so we applied
+the abstraction principle we go to our mail service and make this methods private now there are implementation
+detail and they're hidden from outside of this class one more time we make this
+private and one last time now back in the main class
+look at the interface of this class it has a single method it's much easier to use it's like a remote control with only
+four buttons have you seen how hard it is to use one of those remote controls that have 50 buttons you really don't
+know how to use them if you want to change the volume you have to look all over the place now this mail service class has a single method its phrase
+easy to use and more importantly if we change any of those private methods the main class is not going to get affected
+so if I introduce a parameter in this method let's say timeout
+the only breaking change that we have is over here the main class is not affected
+because the main class cannot see the connect method this is the benefit of applying the abstraction principle we
+can change the implementation detail without affecting other classes in our application next we're going to talk
+about inheritance
+let's talk about the third principle of object-oriented programming inheritance inheritance is a mechanism for reusing
+code let's say we want to build a Glee framework a graphical user interface framework in this framework we want to
+have classes like text box button checkbox and so on now Onis classes
+should have some common behavior for example we should be able to enable or disable them should be able to set their
+focus we should be able to set their position and so on now when implementing this class is we
+don't want to implement these behaviors in every single class that's a lot of code duplication inheritance is a
+mechanism that allows us to reuse code across our classes so we can implement
+all these common behaviors in a parent or base class and then have all these other classes inherit those behaviors
+let me show you so let's add a new class we're gonna call this UI control that's
+the base or the parent class for all widgets on the user interface
+now in this class we want to have the ability to enable or disable a control so a method called enable and here let's
+just print a message called enable now let's create a textbox class so we have
+a new class called textbox we run this class to inherit the code that we wrote
+in the UI control class so over here we type extends UI control
+now you can go to the main class and create a textbox object so VAR textbox
+will send it to a new text box I'll take a look here we have the enable method we
+didn't implement it in the textbox class we implemented it in the UI control class but the textbox inherited this
+code from its parent now when we run this program we can see the enabled message beautiful now there is more to
+inheritance than we can cover in this video I've dedicated an entire section about inheritance in the second part of
+my ultimate Java serious so if you want to learn more go watch that course next we're going to talk about polymorphism
+let's talk about the fourth principle of object-oriented programming polymorphism poly means many more fins form so
+polymorphism means many forms and it's basically the ability of an object to take on many forms let me show you this
+in code so continuing with a GUI framework we want to have the ability to draw each widget on the screen so in a
+UI control class let's add a method public void draw now this method is not
+gonna have an implementation because we don't know how to draw a UI control because the algorithm for drawing a widget is
+specific to the type of the widget drawing a text box is different from drawing a check box so we can leave the
+implementation empty or better we can declare this as abstract so public
+abstract void draw now we have a couple of compilation errors the first one is
+here because an abstract method cannot have a body so we remove the braces and
+terminate this with a semicolon this is like a method that we declare in an interface it's only a method declaration
+it doesn't have implementation now because we have an abstract method in this class we should declare this class
+as abstract as well this is like a half-baked cake we cannot use it
+directly we cannot instantiate it we cannot create a new instance of the UI control we can only extend it now if you
+go to our text box class we see a compilation error because this class has not implemented the draw method of the
+UI control so we put the caret over here press alt + enter' and implement methods
+exactly like how we implement the methods on an interface so now we have
+this public void draw method over here let's print drawing a text box
+now let's add another class in this project new class we're going to call this checkbox
+this classroom inherits all the code from the UI control so we type extends UI control then we have IntelliJ
+implement the abstract methods of this class there you go now we print drawing a checkbox so each
+widget knows how to draw itself okay now in our main class let's add a public
+static method public static void draw UI control we give it a parameter of type
+UI control and in this method we call control dot draw now in our main method
+we're going to call this method so draw your eye control now the UI control class is the parent or the base of the
+text box and check box classes so every textbox is a UI control and every check
+box is a UI control as well so we're calling this method we can pass a new
+instance of the textbox class and run the program here we see drawing a textbox if we pass
+and you check box we see drawing a check
+box so even though in this method we are working with a UI control object at
+runtime this object can take on many different forms it can behave like a check box or
+a text box or a button and so on this is polymorphism in action so an object can
+take on many different forms that's all about polymorphism so we have covered all the essential object-oriented
+principles next we're going to talk about um L which is the graphical notation we're gonna use throughout this
+course
+now that we have covered the essentials of Java let's talk about UML yeoman is
+short for unified modeling language and it's a visual language that we use to model our systems we're going to use it
+throughout this course to represent our classes and the relationship here are a few examples this is how we can
+represent a class in UML so we have this rectangle on the top we have the name of the class in the middle section we have
+the fields and down below we have the methods so here we have a class called shape in this class we have a field
+called position X and the type of this field is integer so after the colon we
+specify the type of a field or a parameter or the return type of a method so here we have a method called render
+it doesn't have any parameters that is why we have an empty pair of parentheses and it doesn't return any values so we
+don't have a colon after the name of the method so that means the return type of this method is void now this minus sign
+means this field is declared as private you can see that over here and obviously the plus sign means this is declared as
+public now in this course we're assuming that all of our fields are private and all of our methods are public so in the
+future diagrams I'm not going to display the minus and plus signs to keep things simple so this is how we can represent a
+class in UML now let's talk about the three types of relationships between classes this is what we call the
+inheritance relationship so this diagram is saying that the rectangle class inherits from or extends the shape class
+you can verify that over here so class rectangle extends shape now we're
+accurately in UML the inheritance relationship is indicated by an arrow with an empty triangle but in the
+software I'm using we don't have such an arrow so I'm gonna display my inheritance relationships with an arrow
+with a filled triangle ok now let's talk about the second type of relationship
+between classes this is called the composition relationship it's indicated by an arrow with a diamond so that means
+the shape class is composed of the size class in practical terms that means in the
+shape class we have a field of type size so the shape class is composed of this
+size class as another example you can say the car class is composed of the
+wheel class because every car has four wheels now in UML we have another type
+of relationship called aggregation which is kind of similar to composition but I don't want to bring too much UML in this
+course you want to keep things simple and focus on design patterns so if you have some background in UML you may
+argue that here we should use an aggregation relationship instead of composition let's not worry about these
+subtle details so this is the composition relationship now let's talk about the third type of relationship
+between classes this is what we call the dependency relationship it's indicated
+by dashed arrow so that means somewhere in the shape class we have a reference to the document class here's an example
+in the shape class we have a method called render and this method has a parameter of type document so document
+is not a field in this class but it's used somewhere in this class in this case it's a parameter but it could also
+be a local variable defined in the render method so somewhere in the shape class we have a reference or a
+dependency to the document class okay so here are the three types of
+relationships we're going to use in this course inheritance composition and dependency
+hey guys maj here i just wanted to let you know that this video you've been watching is the first hour of my
+ultimate design patterns course in this youtube video we talked about two design patterns but my ultimate design patterns
+course includes over 20 design patterns these are the design patterns that every software engineer must master so if you
+want to learn more I highly encourage you to enroll in my ultimate design patterns course the first 200 students
+can get the course with a big discount I'll put the link down below if you're interested the first design pattern
+we're going to talk about is the momento pattern we use this pattern for implementing undo mechanisms let me show
+you first of all I'm gonna add a new package to this project so in your package we call this momentum this is
+where we're gonna write all the code for this pattern now let's say we want to build a code editor that supports the
+undo mechanism so we add a new class in this package we call it editor in this
+class we need a feel for storing the current content of the editor so private string content we also need a getter and
+a setter for this field now we don't have to type these manually by hand we can have IntelliJ create these for us so
+we put the carrot on the field name press alt' + enter' and select create
+getter and setter for content there you go so here's our editor class now before
+talking about the momento pattern I want you to spend 10 to 15 minutes and think about a solution to implement the undo
+feature in this class so in our main class we should be able to create a new editor let's say editor equals new
+editor then we should be able to set the content of your times let's say a and B
+and C and then we should be able to undo the content
+so it spent 10 to 15 minutes and think about a solution to implement this feature this is extremely important
+because I want to teach you the art of problem solving unlike other courses I'm not gonna give you a UML diagram saying this is the
+moment of pattern and this is how it works I want to take you through the same thought process that Gang of Four have been through so you understand how
+and why they came up with a momento pattern so spend 10 to 15 minutes and
+propose a solution when you're done come back see the next lesson
+all right here's our editor class with the content field not to keep the screen clean I didn't add the getter and the
+setter that we created in the last video now the simplest way to solve this problem is by introducing a new field
+called previous content so every time we want to change the value of the content field we store the current value in the
+previous content field and then change the content field that's a very simple solution and it works however with this
+approach we can only undo once if you want to be able to undo multiple times we need a list so we should rename this
+field to previous contents note the plural name and the type of this field is gonna be a list that's a reasonable
+solution now what if some time in the future we introduce a new field like title so our editor window is gonna have
+a content and a title now to support the undo mechanism we need another field
+like previous titles to keep track of all the changes to the title field now
+as you can see this solution is not very extensible every time we introduce a new field we need to add an extra field for
+storing all the changes to that field so we need to come up with a better solution now let me remove these two
+fields okay that's better so instead of having multiple fields in this class we
+need a separate class like editor state this class will be purely responsible for storing the state of our editor at a
+given time correctly we have only one field in this class called content in the future we can add title and other
+fields all these fields are gonna be in a single class okay so in our editor class we need to store a list of editor
+States so we need a composition relationship between these two classes and that means we should rename this
+field from previous contents to previous States so you have a list of editor
+States inside the area class beautiful now this is a better solution because it
+allows us to undo multiple times and we're not gonna pollute the editor class with too many fields okay however this
+solution is violating a very important principle in object-oriented design that
+is a single responsibility rinsable that basically means every class should have a single responsibility let me give you a
+metaphor think of a restaurant in a restaurant every person has a specific role they do
+a single thing the waiter is purely responsible for taking orders they don't cook for you now imagine a restaurant
+where the waiter takes your order he cooks for you he goes shopping he also does taxes it doesn't make sense a
+restaurant like that is gonna be very unmanageable we have the same situation in software to build maintainable
+software we should design our classes in such a way that they have a single responsibility now back to our design
+our editor class correctly has two responsibilities one of them is state management the other is providing the
+features that we need from an editor we need to take all the state management work outside of this class and put it
+somewhere else so we shouldn't have this field inside this class previous States let's delete this that means we're not
+gonna have an association with the editor of state class so delayed that's better we need to introduce a new class called
+history this class will have a single responsibility and that would be state management so it will keep track of the
+changes in the state of the editor okay now in this class we need a field called
+States this is the field that we previously had in our editor class okay so we have this field here and that
+means we're gonna have a composition relationship with the editor state the
+history class is gonna store 0 or more editor state objects in a list ok we
+also need two methods push and pop with push we add a new state in the history and we pop we remove and return the last
+state now technically we could use a stat here instead of a list but that's implementation detail let's not worry
+about it too much at this stage now let the area class no longer stores state objects internally we should give it two
+new methods create state and restore state the create state method
+stores the current state of the editor inside a state object and returns it so
+we call this method and say hey save your current state and give it to me we'll get an editor state object then we
+call the push method of the history class say hey history save this state this is
+how these classes collaborate okay the restor method takes a state object and brings this editor back to that
+state so it will reset its fields based on what we have in this state object now
+look at the type of relationship we have between the editor and the editor state classes we have a dependency
+relationship that means the editor class uses the editor of state because to
+create state method returns an editor a state object okay well congratulations you came up with your first pattern this
+is called the momento pattern we use the momentum pattern to implement undo mechanisms in our classes now here's our
+representation of the momentum pattern but if you look at the Gang of Four book or any of the courses or books on this
+topic you will see different names for these classes the editor is called the originator the editor state is called
+the momentum and the history is called the caretaker these are just some abstract names that Gang of Four came up
+with to demonstrate the concept it doesn't mean you have to use them to name your classes always use meaningful
+names for your classes so this is the moment of pattern in this pattern we have three participants or three players
+originator momentum and caretaker now that you understand this pattern let's go ahead and implement it in code
+alright first of all in the moment a package let's add a new class we call
+this editor state currently we need only a single field in this class so private
+string content it would be nice to initialize this field from the
+constructor so we can press alt + enter' and add a constructor with a parameter
+there you go so we have a constructor this constructor has a single parameter and in the body of this constructor we
+initialize this field with the value of this parameter pretty simple now I would
+prefer to declare this field as final this will make sure that once we initialize this field we cannot
+accidentally change it on our program so this will add robustness to our code now
+we also need a getter here for reading the value of this field later on so I'll turn enter and create getter for content
+that's it we're done with this class now let's go to our editor class here we
+need two new methods create state and restore so public editor state create
+state when we call this method the editor will save its current state
+inside an editor state object and return it so return new editor State and here
+we pass the value of the content field now let's create the restore method it's
+pretty easy public void restore we give it a state object
+and here we set the content field to stay it but get content as simple as
+that the last piece of the puzzle is the history class so in this package let's
+add in your class we call it history here we can use a stack or a list I
+don't want this course to be wait Java is specific so I'm gonna go with a list private list of editor State now what is
+going on here well this list is an interface that is declared in the Java that util package
+so first we need to import it otherwise the compiler doesn't recognize it we can press alt' + enter' and intellij
+imported it on the top so import java.util that list now this list interface is a generic interface which
+means we can use it to build a list of different types of objects we can have a list of strings we can have a list of
+integers a list of editor states so with this angle brackets we specify the type of objects we want to store in
+this list in this case we want to store editor state objects okay now let's call this field state and set
+it to new array list what is going on here well I told you
+that this list is an interface that is declared in the java.util package in this package we have a class called
+ArrayList that implements this interface so you're programming to an interface because the ArrayList class might have
+other methods that we are not interested in we only need the functionality that is declared in the list interface okay
+now here we need two methods push on pub public void push it takes an editor
+state object and here we call States then add state this will add the state
+object at the end of the list okay now public editor state pop here we need
+to calculate the index of the last item in this list that is very easy so far last index now the list interface has a
+method called size this returns the number of items in this list now the index of the first item in the list is 0
+so to get the index of the last item we should get the size and reduce it by 1
+now we get the last item last item or last state that's better
+states that get with this we can get an item at a given index so let's get this
+item then we need to remove it from this list so we call States done remove and
+pass the last state object and finally we return the last date from this method
+that is our history class now let's put all of this together and see the undo mechanism in action so here in the main
+method first we create an editor object next we create a history object so of
+our history equals new history here we set the content to a at the same
+time you want to save this date in the history so we call editor that creates
+date this will return the current state and we'll add it to our history so we call history that push with this object
+a simple a stack one more time we set the content to be and right after that
+we save this date in the history next we set the content to see now here we can
+undo so we call history but pop this
+will return the Prima state and then we'll give this to our editor so we say hey earlier restore yourself with this
+date like this now if you print the current state of the editor it should be
+be take a look so print editor but get content take a
+look we get B if you undo one more time you're gonna see a so let's duplicate
+this line now run there you go so this
+is how we implement the momento pattern
+in this section I'm going to talk about the state pattern let's say you want to build a drawing application like
+Photoshop in Photoshop and in many other applications we have a palette of tools over here and this canvas behaves
+differently depending on the tool that we select for example if you select the selection tool you can see the icon of
+the cursor changes now when we click and drag we say this - rectangle similarly
+if you select the brush tool and click and drag we see this orange line so
+basically this canvas object is responding to Mouse events like Mouse up and mouse down but what it does changes
+depending on the currently selected tool let's simulate this in code so in this project first I'm gonna add a
+new package state we're gonna write all the code for this section in this
+package now here we need a new class called canvas this class should respond to
+Mouse events like Mouse down and mouse up so here when the two methods public
+void Mouse down and I'm gonna duplicate this and rename the second one to Mouse
+up now in both these methods we should do different things depending on the
+currently selected tool the first minute to figure out what is the currently selected tool we can represent that
+using an enum an enum in Java is like a set of constants let me show you so in
+this package we add a new class first we change the kind from class to enum and
+then call it tool type I hear we need to define a few constants
+like selection note that I'm using uppercase letters to name this constant
+this is a convention in Java so this is our selection tool we also need a brush
+and an eraser now back in our canvas class here may need a field to store the
+currently selected tool that is really easy so private tool type current - we
+also need a getter and a setter for this field so we put the carrot over here press alt' + enter' and create getter
+and setter beautiful now in our mouse down method we should write code like this if current 2 equals tool type dot
+selection here we should change the icon of the cursor to the selection icon so
+we simulate that by printing something on the terminal selection icon now else
+if current tool equals tool type that brush then we're going to print a
+different message brush icon one more time elsif current total equals
+tool type that eraser then we're gonna print eraser icon now when it's similar
+code in the mouse up method so to save time I'm gonna copy this and then paste
+it over here and then change what we print on the terminal so the moment the user releases the mouse button if the
+current tool is a selection tool you're gonna draw a dashed rectangle so draw
+dashed rectangle if the current tool is brush we're gonna draw a line and if
+it's an eraser we're gonna erase something okay we could also implement
+this using a switch and case statement now if you have been programmed for a while you have probably seen patterns
+like this in your code you have a long list of if an LS or Sushant case statements and you have probably
+repeated these statements in different places in your code so in this example we have this decision making statements
+in these two methods chances are in a real application in a real drawing application we should also respond to
+keyboard events like e up and key down and we probably have to repeat all this decision-making inside those methods as
+well so the approach that we have taken is not maintainable the more tools with support the longer these decision making
+statements are going to be and maintaining this code is going to become really difficult also here we have the
+lack of extensibility it's not easy to extend this application let's say tomorrow we're going to add a new tool
+for drawing a circle we have to go to different parts of our code and make changes for example in our mouse down
+method we should add another else--if statement to see if the current tool is the circle tool then we change the icon
+to the circle icon we have to make a similar change in the mouse up method so
+extending this application is not easy now what we really need here is given the canvas the ability to behave
+differently based on the currently selected tool so in both these methods we're executing different code depending
+on the currently selected tool we want this method to behave differently depending on the current tool
+in the course we talked about the four essential principles of object-oriented programming encapsulation abstraction
+inheritance and polymorphism which one of these principles do you think we cannot play here to solve this problem I
+want you to spend ten minutes on this exercise and figure out a way to solve this problem when you're done come back
+watch the next lesson
+earlier in the course we talked about polymorphism I told you that polymorphism is a mechanism that allows
+an object to take on many different forms so earlier we built this UI control class we declared this as
+abstract because it has a single abstract method abstract methods are methods that have no implementation so
+here we have a draw method but we don't know how to draw a UI control the drawing algorithm will be dependent on
+the type of the UI control so we created two specific UI controls one of them was
+the textbox class which extends the UI control and this is where we're implementing the logic for drawing a
+textbox now in our main class we had code like this we declared a static
+method called draw UI control which takes a UI control and simply calls control that draw that depending on the
+type of the object that we pass to this method our application behaves differently this is polymorphism in action so if it has
+an instance of the textbox class the draw method of the textbox class will be called even though we're working with
+the UI control class here so this control object can take on many different forms
+this is polymorphism here's the UML diagram of this classes so our main class talks to the UI control which is
+the parent or the base of these two classes text box and checkbox in UI
+control we have an abstract method called draw and we have implemented this method in our child classes now we can
+use the same technique to get rid of those ugly if and else statements in our canvas class so here's our canvas class
+we have the current tool field and these two methods we want these methods to behave differently depending on the
+current tool so we introduce a new class called tool this is going to be an abstract class like our UI control in
+this class we're going to declare two abstract methods mouse up and mouse down what happens when the user releases the
+mouse button will be determined in child classes so we introduce new classes like
+selection and brush in this classes we're gonna implement the logic for mouse up and mouse down
+events now our canvas class is going to work with the abstract tool class it
+doesn't care about any specific tools but it will behave differently depending on this specific tool that we give it at
+runtime and this is what we call the state pattern because the state pattern allows an object to behave differently
+when it state changes now if you look at the classic definition of the state pattern in the Gang of Four book or
+other books on courses you're gonna sit different labels so instead of canvas we have context and instead of tool we have
+state with two concrete implementations also instead of mouse up and mouse down
+methods we have the request method that is handled by the state class so as I told you before this is just an abstract
+concept it doesn't mean you should name your classes context or state there are two abstract always use meaningful names
+that fit the domain of your application next I'm going to show you how to implement this state pattern in code
+so here in the state package let's add a new class tool in this class we need to
+abstract methods so public abstract void mouse down and mouse up now because
+these methods are abstract we should mark the class as abstract as well now
+we could also use an interface here because an interface is simply a contract that determines the
+capabilities that a class should provide so earlier you saw that the metals in an interface don't have an implementation
+they're exactly like our abstract methods here now what is the difference between an interface and an abstract
+class well they're both abstract concepts we cannot instantiate them we cannot create a new instance of this
+tool class or the tool interface so because they're abstract and don't have much code they allow us to build loosely
+coupled applications we prefer to use an abstract class if you want to provide some common code to all the child
+classes in this case we're not providing any common code to our tools so I'm gonna replace this abstract class with
+that interface take a look public interface now in interfaces we don't need the abstract keyword because
+these methods are considered abstract by default so we remove the abstract keyword also these methods are
+considered to be public so we don't need the public keyword either that makes our code cleaner so we have an interface for
+a person take a tool now let's implement specific tools so let's add a class
+called selection tool here we type implements tool now note that here we
+have two interfaces with the same name the first one is the one that we just created we also have a tool interface in
+Java X package don't worry about that let's import the interface that we created okay now we should implement
+this interface so we press alt' + enter' and implement these methods so this is
+where we implement the logic with the selection tool when the user presses the mouse button we should
+change the icon to the selection icon and when they release the mouse button
+we should draw a dashed rectangle okay now let's add one more class this one is
+going to be our brush tool brush tool also implements the tool interface here
+we have a different logic so when the user presses the mouse button we should display the brush icon and when they
+release the mouse button we should draw a line now let's see how we can incorporate these into our canvas class
+so let's open up the canvas class first we should change the type of this field
+from tool type to tool so we're programming to an interface okay now we
+have a bunch of compilation errors it doesn't matter we're going to delete all the code in these methods all this nasty
+disgusting code now we should change the return type of our getter
+instead of tool type we're going to use tool and similarly for our setter we're gonna pass a tool object beautiful
+now in our mouse down metha we're gonna call current tool dot mouse
+down and similarly here we call current tool dot mouse up that's all we have to
+do isn't this code beautiful so the canvas class is simply delegating for
+your specific tool to determine what should happen when the user process or releases the mouse button with this
+implementation we don't have a long list of decision-making statements so our application is more maintainable and we
+can also easily extend it let me show you so right now we only have two types
+of tools a selection tool and a brush tool let's use this and then I'll show you how to extend this application to
+support a new tool so we go to our main class first we create a canvas object so
+Camus's now we set the current tool set
+current tool here we should pass an object that implements the tool interface so we can pass a selection
+tool then we call mouse down and finally
+mouse up let's see what happens
+so the icon change to the selection icon and then we draw a - rectangle beautiful if we pass an
+instance of the brush tool class will get different result there you go
+now let's say tomorrow we're gonna support a new tool that's really easy all we have to do is to add a new class
+that implements the tool interface take a look so here I'm gonna add a new class
+let's say eraser tool you have this class implement the tool interface and
+over here we implement our logic so erase your icon and here erase something
+now we go back to our main class and simply pass a new instance of the eraser
+tool class take a look we get different
+result and that brings us to a very important principle in object-oriented programming open-closed principle that
+basically means our classes should be open for extension but closed for modification so we're not allowed to
+change the code in our classes we can only extend it now with this principle we can add new functionality without
+changing the existing code we can support new functions by adding new classes now why does this matter
+well how many times have you found yourself changing the code in a class and then breaking something your
+application the open closed principle prevents situations like that every time we want to support a new feature we
+simply add new classes and we test those glasses okay so following this principle
+makes our applications extensible and robust if this concept is new to you
+don't worry you're going to see more examples of this later in the course
+so design planners are great they help us build maintainable extensible and
+reusable objects however sometimes they get misused here's an example you've got
+this guy over here his name is John Smith he's a fairly arrogant developer you've probably seen him in my other
+courses he recently learned about design patterns and started refactoring some existing code to apply these patters now
+he feels superior to his coworkers he feels like a superstar developer just because he learned about this date
+pattern and applied it in code that is what I call abusing patterns remember this every pattern has a context it's
+there to solve a particular problem and that's why I've taken a problem driven approach in this course so you learn and
+understand when and how to apply these patterns if you just blindly apply these patterns in your code you're gonna
+increase complexity because you're gonna end up with more moving parts so not only haven't you solved the problem but
+you actually created a new problem you created what we call a design smell in your application that is an application
+with an overly complicated design some people call it over-engineered I don't like to use that term because a real
+engineer always tries to understand a problem first and then they think of various solutions and pick the one that
+best fits the problem that is the definition of an engineer at least for me over engineering a solution is what
+code monkeys do programmers will blame the right code without understanding the problem they're trying to solve as
+Leonardo da Vinci said simplicity is the ultimate sophistication so keep things simple and pragmatic
+don't blindly apply these design patterns without understanding the problem you're trying to solve next I'm
+gonna show you a real example of abusing the state pattern
+all right let me show you how the state pattern can easily be abused let's say you want to implement a stopwatch app in
+this app we need a stopwatch class with a click method when we click it it either starts counting or stops so in
+our state package let's add a sub package I'm going to call this abuse
+now this package we're going to add a new class called stop watch here we need
+the click method now depending on the state of this object we should do
+different things we can represent the state with an enum with two states or we
+can use a boolean I think a boolean is easier so let's go with a boolean so private boolean is running now when we
+click the stopwatch if it's running then we're gonna stop it so we set is
+running to false and then we print stopped otherwise we're gonna set is
+running to true and then print running let's test our implementation after this
+point so in the main class we create a stopwatch and then
+click it initially it stopped so when we run this application we should see the running message
+there you go beautiful now if you click it one more time we see two messages
+running and then stop if we click it one more time we see running stopped running beautiful
+so this is a very simple straightforward implementation now John Smith takes away
+this code he's sitting in the office and he thinks hmm the click method is behaving differently depending on the
+state of the stopwatch so that is the case for the state pattern it's gonna refactor this code like this first it's
+going to create a new class or an interface called state
+so we need an interface here this interface is going to have one method click and you're gonna have two classes
+that implement this interface so John adds two classes one of them is stopped
+state the other is running state running
+state now both these glasses should implement the state interface if the
+stopwatch is running we should stop it and then print a message but how are we going to be able to stop this stopwatch
+we don't have access to the stopwatch object here well we can add a constructor so public running state
+we give this constructor a parameter of type stopwatch and then store it in a
+field so we declare a private field here private stopwatch we call it stopwatch and we initialize
+it in the constructor this the stopwatch equals stopwatch now in the click method
+we should change the state of the stopwatch so first we need to go to the stopwatch class
+an out of field to store the current state of this object so we don't in this field anymore
+let's declare a private field of type state called current state now let's
+generate a getter and a setter for this field that is super easy there you go up
+so back to the running State when we call the click method we should
+change the state of the stopwatch so we call stopwatch that set state
+and here we pass the next date that is the stopped state so new stopped State
+now here we have a compilation error because this class doesn't implement the state interface so let's add it real
+quick implements state all right
+the back in the running State class the problem is gone beautiful so we change the state and then print a message
+saying stopped now we need a similar approach in the stopped state class so
+here we generate a constructor I'm going to show you a shortcut if you're on Mac press command + n if you're on Windows
+press ctrl + n with this we can bring up the generate palette and generate a constructor now here we can add a
+parameter that is stopwatch and at the same time we can create and
+initialize a private field so we put the carrot on the parameter name press alt'
++ enter' and select create field for parameter stopwatch there you go so we
+got a private field and this field is initialized over here beautiful now in the click method we should change the
+state of the stopwatch so we call stopwatch that's that current state if
+it stopped we should set it to the running state so new running state now
+here we should pass a reference to the stopwatch that is the stopwatch field that we have in this class okay then we
+print a message saying ready okay now we have a compilation error and the running
+state class because when we try to change the state of the stopwatch we're
+passing a new instance of the stop state class the constructor of the stop state class expects a stopwatch object so we
+pass that object over here problem so so you have to state classes and the
+final part you go to the stopwatch and replace this implementation with current
+state dot click so we're delegating the task of clicking the stopwatch to the
+state object and by the way initially we should set this to the stopped state so
+Neil stop state now here we should pass a reference to a stopwatch object that
+is gonna be this that represents the current object we're done now back in
+the main method so internally we changed the implementation of the stopwatch but it behaves the same thing let's run the
+program we see the exact same result as before beautiful however
+this implementation is way more complex than the simple if a nail statement that we had before so there is absolutely
+nothing wrong with even else or Sushant case statements if you have a few decision making branches in a single
+method like how we did in the stopwatch class we had those decision-making statements in a single place there is
+absolutely nothing wrong with that implementation but in our previous example in our canvas class we had those
+decision-making statements in multiple places in the mouse down and mouse op methods and more importantly if you
+wanted to support a new tool we had to modify different parts of our code that is the reason why we refactor this code
+we change this structure and use this state pattern in contrast in the stopwatch all that decision-making was
+in a single place and we know that this Dulwich is not going to have a new state in the future
+it's either stopped or running a simple as that so we don't have a maintainability issue here
+we don't have extensibility issue we ended up refactoring this code well I didn't just smoothly that but he made
+this code overly complicated without gaining any benefits now we have more
+moving parts we have an interface plus two implementations and our logic is spread
+over these two different classes in contrast and the previous implementation all that logic was in a single place
+so here is the bottom line don't abuse the design patterns
+congratulations on completing this YouTube tutorial as I told you before this video is the first hour of my
+ultimate design patterns course if you want to learn more I highly encourage you to enroll in my course where we talk
+about twenty other design patterns these are the essential design patterns that every software engineer must master the
+first 200 students can get the course with a big discount so if you're interested and will now before this
+offer expires you can find the link below this video thank you and have a fantastic day
+[Music] you
